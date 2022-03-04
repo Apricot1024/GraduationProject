@@ -1,8 +1,0 @@
-/home/apricot/Geant4Work/B1/build_Cu/CMakeFiles/install/strip.dir
-/home/apricot/Geant4Work/B1/build_Cu/CMakeFiles/install/local.dir
-/home/apricot/Geant4Work/B1/build_Cu/CMakeFiles/install.dir
-/home/apricot/Geant4Work/B1/build_Cu/CMakeFiles/list_install_components.dir
-/home/apricot/Geant4Work/B1/build_Cu/CMakeFiles/rebuild_cache.dir
-/home/apricot/Geant4Work/B1/build_Cu/CMakeFiles/edit_cache.dir
-/home/apricot/Geant4Work/B1/build_Cu/CMakeFiles/B1.dir
-/home/apricot/Geant4Work/B1/build_Cu/CMakeFiles/exampleB1.dir
