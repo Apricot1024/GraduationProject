@@ -1,0 +1,5832 @@
+
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00 [MT]   (10-December-2021)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+<<< Reference Physics List QBBC 
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+  OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+  OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+  OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+  OpenInventorQt (OIQt, OI)
+  RayTracerX (RayTracerX)
+  TOOLSSG_QT_GLES (TSG_QT_GLES, TSG)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+
+==========================================================================================
+G4TaskRunManager :: Using G4ThreadPool...
+==========================================================================================
+
+Checking overlaps for volume Envelope:0 (G4Box) ... OK! 
+Checking overlaps for volume Shape1:0 (G4Box) ... OK! 
+Checking overlaps for volume Shape2:0 (G4Sphere) ... OK! 
+### HadronInelasticQBBC Construct Process:
+    Emin(FTFP)= 3 GeV; Emax(FTFP)= 100000 GeV
+    Emin(BERT)= 1 GeV; Emax(BERT)= 6 GeV; Emax(BERTpions)= 12 GeV;
+    Emin(BIC) = 0 GeV; Emax(BIC)= 1.5 GeV.
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+=======================================================================
+======                 Electromagnetic Physics Parameters      ========
+=======================================================================
+LPM effect enabled                                 1
+Enable creation and use of sampling tables         0
+Apply cuts on all EM processes                     0
+Use general process                                0
+Enable linear polarisation for gamma               0
+Enable sampling of quantum entanglement            0
+X-section factor for integral approach             0.8
+Min kinetic energy for tables                      100 eV 
+Max kinetic energy for tables                      100 TeV
+Number of bins per decade of a table               7
+Verbose level                                      1
+Verbose level for worker thread                    0
+Bremsstrahlung energy threshold above which 
+  primary e+- is added to the list of secondary    100 TeV
+Bremsstrahlung energy threshold above which primary
+  muon/hadron is added to the list of secondary    100 TeV
+Lowest triplet kinetic energy                      1 MeV
+Enable sampling of gamma linear polarisation       0
+5D gamma conversion model type                     0
+5D gamma conversion model on isolated ion          0
+Livermore data directory                           livermore
+=======================================================================
+======                 Ionisation Parameters                   ========
+=======================================================================
+Step function for e+-                              (0.2, 1 mm)
+Step function for muons/hadrons                    (0.2, 0.1 mm)
+Step function for light ions                       (0.2, 0.1 mm)
+Step function for general ions                     (0.2, 0.1 mm)
+Lowest e+e- kinetic energy                         1 keV
+Lowest muon/hadron kinetic energy                  1 keV
+Fluctuations of dE/dx are enabled                  1
+Use ICRU90 data                                    0
+Use built-in Birks satuaration                     0
+Build CSDA range enabled                           0
+Use cut as a final range enabled                   0
+Enable angular generator interface                 0
+Max kinetic energy for CSDA tables                 1 GeV
+Max kinetic energy for NIEL computation            0 eV 
+Linear loss limit                                  0.01
+Read data from file for e+e- pair production by mu 0
+=======================================================================
+======                 Multiple Scattering Parameters          ========
+=======================================================================
+Type of msc step limit algorithm for e+-           1
+Type of msc step limit algorithm for muons/hadrons 0
+Msc lateral displacement for e+- enabled           1
+Msc lateral displacement for muons and hadrons     0
+Urban msc model lateral displacement alg96         1
+Range factor for msc step limit for e+-            0.04
+Range factor for msc step limit for muons/hadrons  0.2
+Geometry factor for msc step limitation of e+-     2.5
+Safety factor for msc step limit for e+-           0.6
+Skin parameter for msc step limitation of e+-      1
+Lambda limit for msc step limit for e+-            1 mm
+Use Mott correction for e- scattering              0
+Factor used for dynamic computation of angular 
+  limit between single and multiple scattering     1
+Fixed angular limit between single 
+  and multiple scattering                          3.1416 rad
+Upper energy limit for e+- multiple scattering     100 MeV
+Type of electron single scattering model           0
+Type of nuclear form-factor                        1
+Screening factor                                   1
+=======================================================================
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina : Emin=    0 eV  Emax=  100 TeV
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+     BetheHeitlerLPM : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e-  XStype:4  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+CoulombScat:  for e- XStype:3 SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e+  XStype:4  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+annihil:  for e+ XStype:2 SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+ XStype:3 SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for proton  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for proton  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for proton  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for proton XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for GenericIon  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+ionIoni:  for GenericIon  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      Stopping Power data for 17 ion/material pairs
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+msc:  for alpha  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+ionIoni:  for alpha  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
+
+msc:  for anti_proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for anti_proton  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for anti_proton  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for anti_proton  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for anti_proton XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for kaon+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon+ XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for kaon-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon- XStype:3 SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+muIoni:  for mu+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu+ XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+muIoni:  for mu-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu- XStype:3 SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for pi+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi+ XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for pi-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi- XStype:3 SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for B-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: B-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for D-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: D-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: ionElastic
+        Model:          NNDiffuseElastic: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: anti_lambdaInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:               GammaNPreco: 0 eV  ---> 200 MeV
+        Model:            BertiniCascade: 199 MeV ---> 6 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            GammaNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 12 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 12 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for sigma-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: sigma-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1
+Isomer production flag                              1
+Internal e- conversion flag                         1
+Store e- internal conversion data                   0
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+=======================================================================
+
+=========================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+
+============================================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Creating 100 tasks with 100 events/task...
+============================================================================================
+
+G4WT6 > eventID=100
+G4WT6 > eventID=100
+G4WT6 > eventID=101
+G4WT6 > eventID=101
+G4WT6 > eventID=104
+G4WT6 > eventID=105
+G4WT6 > eventID=106
+G4WT6 > eventID=107
+G4WT6 > eventID=108
+G4WT6 > eventID=109
+G4WT6 > eventID=110
+G4WT3 > eventID=203
+G4WT3 > eventID=203
+G4WT3 > eventID=204
+G4WT6 > eventID=114
+G4WT6 > eventID=114
+G4WT6 > eventID=117
+G4WT3 > eventID=209
+G4WT6 > eventID=119
+G4WT6 > eventID=119
+G4WT3 > eventID=211
+G4WT3 > eventID=212
+G4WT3 > eventID=212
+G4WT3 > eventID=213
+G4WT3 > eventID=214
+G4WT3 > eventID=217
+G4WT3 > eventID=218
+G4WT3 > eventID=219
+G4WT3 > eventID=219
+G4WT3 > eventID=220
+G4WT9 > eventID=300
+G4WT3 > eventID=221
+G4WT9 > eventID=303
+G4WT9 > eventID=303
+G4WT3 > eventID=224
+G4WT9 > eventID=304
+G4WT3 > eventID=227
+G4WT9 > eventID=308
+G4WT9 > eventID=309
+G4WT9 > eventID=312
+G4WT9 > eventID=313
+G4WT6 > eventID=120
+G4WT6 > eventID=121
+G4WT6 > eventID=121
+G4WT6 > eventID=121
+G4WT6 > eventID=122
+G4WT9 > eventID=314
+G4WT9 > eventID=316
+G4WT9 > eventID=318
+G4WT9 > eventID=321
+G4WT10 > eventID=503
+G4WT6 > eventID=124
+G4WT10 > eventID=504
+G4WT6 > eventID=126
+G4WT10 > eventID=506
+G4WT10 > eventID=506
+G4WT6 > eventID=129
+G4WT8 > eventID=600
+G4WT0 > eventID=701
+G4WT6 > eventID=131
+G4WT0 > eventID=703
+G4WT0 > eventID=704
+G4WT0 > eventID=704
+G4WT0 > eventID=705
+G4WT0 > eventID=707
+G4WT10 > eventID=511
+G4WT0 > eventID=708
+G4WT10 > eventID=514
+G4WT1 > eventID=400
+G4WT10 > eventID=516
+G4WT10 > eventID=517
+G4WT1 > eventID=402
+G4WT8 > eventID=601
+G4WT8 > eventID=602
+G4WT1 > eventID=406
+G4WT11 > eventID=803
+G4WT6 > eventID=145
+G4WT1 > eventID=407
+G4WT6 > eventID=146
+G4WT0 > eventID=712
+G4WT9 > eventID=330
+G4WT1 > eventID=410
+G4WT9 > eventID=333
+G4WT11 > eventID=805
+G4WT0 > eventID=715
+G4WT7 > eventID=900
+G4WT8 > eventID=609
+G4WT0 > eventID=716
+G4WT0 > eventID=716
+G4WT9 > eventID=333
+G4WT0 > eventID=717
+G4WT9 > eventID=334
+G4WT0 > eventID=718
+G4WT8 > eventID=611
+G4WT9 > eventID=337
+G4WT0 > eventID=721
+G4WT8 > eventID=614
+G4WT0 > eventID=722
+G4WT6 > eventID=156
+G4WT0 > eventID=723
+G4WT6 > eventID=157
+G4WT8 > eventID=617
+G4WT9 > eventID=342
+G4WT7 > eventID=911
+G4WT9 > eventID=344
+G4WT10 > eventID=519
+G4WT10 > eventID=520
+G4WT6 > eventID=162
+G4WT10 > eventID=521
+G4WT6 > eventID=164
+G4WT8 > eventID=620
+G4WT8 > eventID=622
+G4WT11 > eventID=806
+G4WT5 > eventID=1001
+G4WT1 > eventID=412
+G4WT11 > eventID=807
+G4WT2 > eventID=0
+G4WT6 > eventID=169
+G4WT6 > eventID=170
+G4WT1 > eventID=415
+G4WT7 > eventID=917
+G4WT0 > eventID=728
+G4WT0 > eventID=729
+G4WT1 > eventID=417
+G4WT7 > eventID=920
+G4WT7 > eventID=921
+G4WT3 > eventID=240
+G4WT11 > eventID=808
+G4WT11 > eventID=808
+G4WT3 > eventID=241
+G4WT0 > eventID=734
+G4WT11 > eventID=809
+G4WT11 > eventID=810
+G4WT4 > eventID=1102
+G4WT5 > eventID=1004
+G4WT3 > eventID=243
+G4WT11 > eventID=811
+G4WT4 > eventID=1103
+G4WT4 > eventID=1103
+G4WT3 > eventID=244
+G4WT11 > eventID=812
+G4WT3 > eventID=245
+G4WT11 > eventID=813
+G4WT10 > eventID=523
+G4WT11 > eventID=814
+G4WT1 > eventID=422
+G4WT6 > eventID=171
+G4WT1 > eventID=423
+G4WT1 > eventID=423
+G4WT1 > eventID=423
+G4WT1 > eventID=423
+G4WT11 > eventID=816
+G4WT5 > eventID=1007
+G4WT11 > eventID=817
+G4WT8 > eventID=626
+G4WT5 > eventID=1009
+G4WT8 > eventID=627
+G4WT1 > eventID=423
+G4WT8 > eventID=628
+G4WT11 > eventID=820
+G4WT11 > eventID=820
+G4WT8 > eventID=630
+G4WT0 > eventID=736
+G4WT8 > eventID=631
+G4WT11 > eventID=823
+G4WT10 > eventID=525
+G4WT6 > eventID=175
+G4WT2 > eventID=5
+G4WT0 > eventID=738
+G4WT0 > eventID=738
+G4WT0 > eventID=739
+G4WT11 > eventID=825
+G4WT0 > eventID=740
+G4WT0 > eventID=740
+G4WT2 > eventID=8
+G4WT10 > eventID=528
+G4WT0 > eventID=741
+G4WT0 > eventID=741
+G4WT11 > eventID=827
+G4WT2 > eventID=9
+G4WT2 > eventID=10
+G4WT2 > eventID=11
+G4WT2 > eventID=11
+G4WT9 > eventID=346
+G4WT9 > eventID=346
+G4WT3 > eventID=249
+G4WT3 > eventID=250
+G4WT3 > eventID=250
+G4WT3 > eventID=250
+G4WT3 > eventID=251
+G4WT9 > eventID=349
+G4WT5 > eventID=1014
+G4WT6 > eventID=186
+G4WT6 > eventID=186
+G4WT6 > eventID=186
+G4WT5 > eventID=1016
+G4WT3 > eventID=255
+G4WT9 > eventID=354
+G4WT5 > eventID=1019
+G4WT3 > eventID=257
+G4WT5 > eventID=1020
+G4WT3 > eventID=258
+G4WT6 > eventID=192
+G4WT1 > eventID=428
+G4WT10 > eventID=530
+G4WT0 > eventID=746
+G4WT1 > eventID=429
+G4WT10 > eventID=531
+G4WT6 > eventID=193
+G4WT1 > eventID=430
+G4WT10 > eventID=532
+G4WT10 > eventID=532
+G4WT10 > eventID=533
+G4WT4 > eventID=1110
+G4WT10 > eventID=535
+G4WT4 > eventID=1111
+G4WT0 > eventID=751
+G4WT0 > eventID=751
+G4WT0 > eventID=752
+G4WT11 > eventID=832
+G4WT0 > eventID=752
+G4WT11 > eventID=832
+G4WT4 > eventID=1115
+G4WT0 > eventID=755
+G4WT0 > eventID=756
+G4WT1 > eventID=433
+G4WT4 > eventID=1117
+G4WT11 > eventID=837
+G4WT7 > eventID=925
+G4WT1 > eventID=434
+G4WT11 > eventID=838
+G4WT2 > eventID=17
+G4WT1 > eventID=435
+G4WT2 > eventID=19
+G4WT1 > eventID=437
+G4WT11 > eventID=841
+G4WT1 > eventID=437
+G4WT8 > eventID=631
+G4WT1 > eventID=438
+G4WT2 > eventID=21
+G4WT2 > eventID=22
+G4WT6 > eventID=199
+G4WT1 > eventID=440
+G4WT2 > eventID=23
+G4WT11 > eventID=845
+G4WT11 > eventID=845
+G4WT11 > eventID=845
+G4WT11 > eventID=845
+G4WT7 > eventID=929
+G4WT8 > eventID=636
+G4WT0 > eventID=763
+G4WT0 > eventID=764
+G4WT8 > eventID=642
+G4WT7 > eventID=935
+G4WT7 > eventID=937
+G4WT1 > eventID=442
+G4WT2 > eventID=25
+G4WT2 > eventID=25
+G4WT2 > eventID=25
+G4WT1 > eventID=443
+G4WT1 > eventID=443
+G4WT2 > eventID=27
+G4WT2 > eventID=27
+G4WT7 > eventID=940
+G4WT7 > eventID=941
+G4WT3 > eventID=260
+G4WT6 > eventID=1201
+G4WT6 > eventID=1201
+G4WT6 > eventID=1201
+G4WT6 > eventID=1201
+G4WT7 > eventID=944
+G4WT6 > eventID=1202
+G4WT7 > eventID=945
+G4WT11 > eventID=847
+G4WT11 > eventID=847
+G4WT11 > eventID=847
+G4WT11 > eventID=847
+G4WT3 > eventID=266
+G4WT11 > eventID=847
+G4WT11 > eventID=847
+G4WT11 > eventID=847
+G4WT6 > eventID=1204
+G4WT8 > eventID=643
+G4WT8 > eventID=643
+G4WT11 > eventID=848
+G4WT6 > eventID=1206
+G4WT8 > eventID=645
+G4WT8 > eventID=648
+G4WT8 > eventID=649
+G4WT8 > eventID=649
+G4WT8 > eventID=649
+G4WT8 > eventID=649
+G4WT8 > eventID=649
+G4WT6 > eventID=1213
+G4WT6 > eventID=1213
+G4WT11 > eventID=857
+G4WT11 > eventID=857
+G4WT11 > eventID=858
+G4WT11 > eventID=859
+G4WT9 > eventID=358
+G4WT3 > eventID=268
+G4WT3 > eventID=268
+G4WT9 > eventID=361
+G4WT1 > eventID=445
+G4WT2 > eventID=33
+G4WT4 > eventID=1118
+G4WT6 > eventID=1216
+G4WT3 > eventID=271
+G4WT1 > eventID=448
+G4WT0 > eventID=768
+G4WT5 > eventID=1023
+G4WT7 > eventID=946
+G4WT10 > eventID=540
+G4WT7 > eventID=946
+G4WT9 > eventID=365
+G4WT7 > eventID=946
+G4WT5 > eventID=1024
+G4WT9 > eventID=367
+G4WT0 > eventID=770
+G4WT9 > eventID=368
+G4WT5 > eventID=1026
+G4WT0 > eventID=771
+G4WT0 > eventID=772
+G4WT7 > eventID=949
+G4WT9 > eventID=370
+G4WT9 > eventID=370
+G4WT10 > eventID=545
+G4WT9 > eventID=370
+G4WT6 > eventID=1218
+G4WT5 > eventID=1029
+G4WT4 > eventID=1124
+G4WT10 > eventID=547
+G4WT6 > eventID=1220
+G4WT7 > eventID=952
+G4WT7 > eventID=954
+G4WT4 > eventID=1126
+G4WT7 > eventID=956
+G4WT5 > eventID=1033
+G4WT6 > eventID=1223
+G4WT7 > eventID=958
+G4WT7 > eventID=959
+G4WT5 > eventID=1036
+G4WT9 > eventID=372
+G4WT10 > eventID=549
+G4WT11 > eventID=862
+G4WT11 > eventID=862
+G4WT9 > eventID=373
+G4WT10 > eventID=550
+G4WT5 > eventID=1039
+G4WT9 > eventID=374
+G4WT7 > eventID=961
+G4WT11 > eventID=863
+G4WT9 > eventID=375
+G4WT2 > eventID=35
+G4WT10 > eventID=552
+G4WT5 > eventID=1041
+G4WT10 > eventID=552
+G4WT10 > eventID=552
+G4WT10 > eventID=552
+G4WT10 > eventID=552
+G4WT5 > eventID=1042
+G4WT5 > eventID=1042
+G4WT5 > eventID=1042
+G4WT9 > eventID=378
+G4WT6 > eventID=1225
+G4WT2 > eventID=35
+G4WT9 > eventID=378
+G4WT9 > eventID=379
+G4WT2 > eventID=36
+G4WT6 > eventID=1227
+G4WT2 > eventID=37
+G4WT3 > eventID=290
+G4WT3 > eventID=290
+G4WT8 > eventID=653
+G4WT10 > eventID=552
+G4WT2 > eventID=38
+G4WT5 > eventID=1047
+G4WT8 > eventID=654
+G4WT10 > eventID=553
+G4WT5 > eventID=1048
+G4WT5 > eventID=1049
+G4WT8 > eventID=656
+G4WT1 > eventID=453
+G4WT0 > eventID=773
+G4WT1 > eventID=453
+G4WT7 > eventID=967
+G4WT10 > eventID=556
+G4WT8 > eventID=657
+G4WT2 > eventID=42
+G4WT7 > eventID=968
+G4WT8 > eventID=659
+G4WT7 > eventID=971
+G4WT11 > eventID=865
+G4WT2 > eventID=44
+G4WT4 > eventID=1128
+G4WT4 > eventID=1129
+G4WT4 > eventID=1129
+G4WT4 > eventID=1130
+G4WT6 > eventID=1231
+G4WT2 > eventID=46
+G4WT6 > eventID=1233
+G4WT1 > eventID=456
+G4WT7 > eventID=976
+G4WT1 > eventID=457
+G4WT2 > eventID=48
+G4WT7 > eventID=978
+G4WT2 > eventID=49
+G4WT7 > eventID=981
+G4WT7 > eventID=981
+G4WT2 > eventID=50
+G4WT2 > eventID=50
+G4WT7 > eventID=983
+G4WT3 > eventID=291
+G4WT3 > eventID=291
+G4WT7 > eventID=986
+G4WT3 > eventID=292
+G4WT7 > eventID=987
+G4WT7 > eventID=987
+G4WT0 > eventID=777
+G4WT2 > eventID=55
+G4WT3 > eventID=298
+G4WT8 > eventID=660
+G4WT10 > eventID=558
+G4WT10 > eventID=559
+G4WT7 > eventID=989
+G4WT11 > eventID=870
+G4WT7 > eventID=990
+G4WT10 > eventID=562
+G4WT4 > eventID=1138
+G4WT7 > eventID=992
+G4WT4 > eventID=1138
+G4WT4 > eventID=1139
+G4WT7 > eventID=994
+G4WT10 > eventID=565
+G4WT1 > eventID=460
+G4WT4 > eventID=1141
+G4WT4 > eventID=1142
+G4WT1 > eventID=462
+G4WT11 > eventID=871
+G4WT4 > eventID=1143
+G4WT9 > eventID=382
+G4WT1 > eventID=463
+G4WT10 > eventID=569
+G4WT9 > eventID=383
+G4WT1 > eventID=464
+G4WT4 > eventID=1144
+G4WT9 > eventID=384
+G4WT8 > eventID=663
+G4WT1 > eventID=466
+G4WT10 > eventID=571
+G4WT6 > eventID=1237
+G4WT6 > eventID=1238
+G4WT4 > eventID=1149
+G4WT6 > eventID=1239
+G4WT8 > eventID=664
+G4WT6 > eventID=1242
+G4WT6 > eventID=1242
+G4WT8 > eventID=665
+G4WT0 > eventID=780
+G4WT0 > eventID=781
+G4WT8 > eventID=668
+G4WT0 > eventID=783
+G4WT0 > eventID=784
+G4WT0 > eventID=785
+G4WT10 > eventID=574
+G4WT10 > eventID=576
+G4WT8 > eventID=672
+G4WT1 > eventID=470
+G4WT5 > eventID=1050
+G4WT5 > eventID=1050
+G4WT10 > eventID=578
+G4WT5 > eventID=1051
+G4WT5 > eventID=1051
+G4WT10 > eventID=579
+G4WT8 > eventID=673
+G4WT7 > eventID=995
+G4WT11 > eventID=872
+G4WT11 > eventID=873
+G4WT7 > eventID=997
+G4WT10 > eventID=583
+G4WT7 > eventID=998
+G4WT7 > eventID=998
+G4WT7 > eventID=999
+G4WT5 > eventID=1058
+G4WT10 > eventID=586
+G4WT5 > eventID=1059
+G4WT2 > eventID=61
+G4WT9 > eventID=385
+G4WT6 > eventID=1246
+G4WT0 > eventID=790
+G4WT0 > eventID=790
+G4WT9 > eventID=386
+G4WT7 > eventID=1403
+G4WT6 > eventID=1248
+G4WT7 > eventID=1404
+G4WT7 > eventID=1404
+G4WT10 > eventID=589
+G4WT2 > eventID=65
+G4WT10 > eventID=591
+G4WT6 > eventID=1251
+G4WT6 > eventID=1251
+G4WT5 > eventID=1066
+G4WT7 > eventID=1407
+G4WT5 > eventID=1067
+G4WT11 > eventID=877
+G4WT5 > eventID=1067
+G4WT5 > eventID=1067
+G4WT5 > eventID=1068
+G4WT6 > eventID=1254
+G4WT11 > eventID=879
+G4WT7 > eventID=1410
+G4WT10 > eventID=596
+G4WT7 > eventID=1410
+G4WT6 > eventID=1255
+G4WT9 > eventID=388
+G4WT4 > eventID=1151
+G4WT5 > eventID=1071
+G4WT5 > eventID=1071
+G4WT9 > eventID=389
+G4WT9 > eventID=390
+G4WT4 > eventID=1153
+G4WT4 > eventID=1154
+G4WT3 > eventID=1301
+G4WT4 > eventID=1154
+G4WT9 > eventID=392
+G4WT5 > eventID=1076
+G4WT8 > eventID=673
+G4WT3 > eventID=1303
+G4WT8 > eventID=673
+G4WT8 > eventID=673
+G4WT8 > eventID=673
+G4WT8 > eventID=673
+G4WT3 > eventID=1304
+G4WT4 > eventID=1158
+G4WT3 > eventID=1306
+G4WT9 > eventID=397
+G4WT0 > eventID=794
+G4WT8 > eventID=677
+G4WT9 > eventID=398
+G4WT9 > eventID=398
+G4WT2 > eventID=71
+G4WT3 > eventID=1309
+G4WT9 > eventID=399
+G4WT0 > eventID=796
+G4WT9 > eventID=399
+G4WT2 > eventID=72
+G4WT11 > eventID=888
+G4WT0 > eventID=798
+G4WT2 > eventID=74
+G4WT9 > eventID=1501
+G4WT1 > eventID=471
+G4WT0 > eventID=1600
+G4WT1 > eventID=472
+G4WT8 > eventID=683
+G4WT1 > eventID=472
+G4WT3 > eventID=1309
+G4WT3 > eventID=1309
+G4WT0 > eventID=1602
+G4WT1 > eventID=475
+G4WT0 > eventID=1603
+G4WT1 > eventID=475
+G4WT0 > eventID=1603
+G4WT1 > eventID=475
+G4WT1 > eventID=475
+G4WT1 > eventID=475
+G4WT1 > eventID=475
+G4WT1 > eventID=478
+G4WT2 > eventID=83
+G4WT11 > eventID=889
+G4WT4 > eventID=1160
+G4WT4 > eventID=1160
+G4WT3 > eventID=1318
+G4WT1 > eventID=482
+G4WT11 > eventID=889
+G4WT6 > eventID=1258
+G4WT0 > eventID=1605
+G4WT7 > eventID=1410
+G4WT7 > eventID=1410
+G4WT6 > eventID=1259
+G4WT9 > eventID=1502
+G4WT11 > eventID=892
+G4WT11 > eventID=892
+G4WT11 > eventID=892
+G4WT9 > eventID=1503
+G4WT7 > eventID=1413
+G4WT11 > eventID=893
+G4WT0 > eventID=1609
+G4WT9 > eventID=1504
+G4WT0 > eventID=1609
+G4WT7 > eventID=1414
+G4WT6 > eventID=1264
+G4WT1 > eventID=490
+G4WT6 > eventID=1265
+G4WT1 > eventID=492
+G4WT1 > eventID=494
+G4WT3 > eventID=1320
+G4WT10 > eventID=597
+G4WT1 > eventID=495
+G4WT10 > eventID=598
+G4WT1 > eventID=496
+G4WT10 > eventID=599
+G4WT9 > eventID=1509
+G4WT1 > eventID=499
+G4WT1 > eventID=499
+G4WT8 > eventID=689
+G4WT10 > eventID=1702
+G4WT7 > eventID=1419
+G4WT4 > eventID=1165
+G4WT9 > eventID=1512
+G4WT6 > eventID=1269
+G4WT6 > eventID=1269
+G4WT6 > eventID=1269
+G4WT8 > eventID=691
+G4WT7 > eventID=1419
+G4WT7 > eventID=1419
+G4WT7 > eventID=1419
+G4WT9 > eventID=1514
+G4WT8 > eventID=692
+G4WT7 > eventID=1420
+G4WT1 > eventID=1804
+G4WT10 > eventID=1706
+G4WT10 > eventID=1706
+G4WT10 > eventID=1708
+G4WT7 > eventID=1423
+G4WT11 > eventID=895
+G4WT0 > eventID=1610
+G4WT5 > eventID=1077
+G4WT4 > eventID=1166
+G4WT11 > eventID=896
+G4WT4 > eventID=1167
+G4WT0 > eventID=1611
+G4WT0 > eventID=1611
+G4WT4 > eventID=1168
+G4WT4 > eventID=1169
+G4WT0 > eventID=1613
+G4WT4 > eventID=1171
+G4WT8 > eventID=695
+G4WT11 > eventID=899
+G4WT3 > eventID=1321
+G4WT11 > eventID=1900
+G4WT8 > eventID=696
+G4WT11 > eventID=1900
+G4WT3 > eventID=1323
+G4WT4 > eventID=1175
+G4WT8 > eventID=698
+G4WT3 > eventID=1325
+G4WT4 > eventID=1177
+G4WT3 > eventID=1325
+G4WT6 > eventID=1273
+G4WT4 > eventID=1179
+G4WT9 > eventID=1518
+G4WT5 > eventID=1080
+G4WT8 > eventID=2000
+G4WT5 > eventID=1080
+G4WT8 > eventID=2000
+G4WT3 > eventID=1328
+G4WT5 > eventID=1081
+G4WT0 > eventID=1618
+G4WT3 > eventID=1329
+G4WT5 > eventID=1082
+G4WT6 > eventID=1278
+G4WT8 > eventID=2002
+G4WT6 > eventID=1278
+G4WT8 > eventID=2004
+G4WT9 > eventID=1519
+G4WT2 > eventID=85
+G4WT9 > eventID=1519
+G4WT9 > eventID=1519
+G4WT11 > eventID=1904
+G4WT2 > eventID=87
+G4WT2 > eventID=88
+G4WT5 > eventID=1089
+G4WT11 > eventID=1907
+G4WT5 > eventID=1090
+G4WT11 > eventID=1908
+G4WT2 > eventID=91
+G4WT9 > eventID=1525
+G4WT2 > eventID=92
+G4WT5 > eventID=1093
+G4WT10 > eventID=1714
+G4WT10 > eventID=1714
+G4WT8 > eventID=2013
+G4WT2 > eventID=95
+G4WT5 > eventID=1094
+G4WT8 > eventID=2014
+G4WT2 > eventID=96
+G4WT9 > eventID=1530
+G4WT5 > eventID=1096
+G4WT8 > eventID=2015
+G4WT1 > eventID=1809
+G4WT9 > eventID=1531
+G4WT9 > eventID=1531
+G4WT9 > eventID=1531
+G4WT2 > eventID=99
+G4WT8 > eventID=2016
+G4WT5 > eventID=1096
+G4WT6 > eventID=1285
+G4WT11 > eventID=1910
+G4WT2 > eventID=2102
+G4WT11 > eventID=1911
+G4WT11 > eventID=1912
+G4WT0 > eventID=1626
+G4WT1 > eventID=1812
+G4WT10 > eventID=1724
+G4WT1 > eventID=1812
+G4WT1 > eventID=1812
+G4WT1 > eventID=1812
+G4WT4 > eventID=1181
+G4WT5 > eventID=2200
+G4WT6 > eventID=1287
+G4WT4 > eventID=1182
+G4WT6 > eventID=1287
+G4WT11 > eventID=1916
+G4WT5 > eventID=2202
+G4WT6 > eventID=1289
+G4WT1 > eventID=1814
+G4WT6 > eventID=1291
+G4WT4 > eventID=1188
+G4WT9 > eventID=1539
+G4WT8 > eventID=2017
+G4WT4 > eventID=1190
+G4WT9 > eventID=1542
+G4WT9 > eventID=1542
+G4WT9 > eventID=1542
+G4WT9 > eventID=1542
+G4WT9 > eventID=1542
+G4WT4 > eventID=1194
+G4WT10 > eventID=1730
+G4WT4 > eventID=1196
+G4WT10 > eventID=1731
+G4WT8 > eventID=2022
+G4WT9 > eventID=1546
+G4WT4 > eventID=1198
+G4WT10 > eventID=1733
+G4WT4 > eventID=1198
+G4WT4 > eventID=1198
+G4WT5 > eventID=2204
+G4WT4 > eventID=1199
+G4WT5 > eventID=2205
+G4WT9 > eventID=1549
+G4WT11 > eventID=1918
+G4WT7 > eventID=1424
+G4WT11 > eventID=1918
+G4WT5 > eventID=2207
+G4WT5 > eventID=2207
+G4WT10 > eventID=1737
+G4WT9 > eventID=1551
+G4WT11 > eventID=1920
+G4WT7 > eventID=1426
+G4WT0 > eventID=1632
+G4WT7 > eventID=1428
+G4WT6 > eventID=1296
+G4WT8 > eventID=2024
+G4WT8 > eventID=2024
+G4WT6 > eventID=1298
+G4WT7 > eventID=1430
+G4WT0 > eventID=1638
+G4WT0 > eventID=1640
+G4WT3 > eventID=1336
+G4WT7 > eventID=1435
+G4WT1 > eventID=1817
+G4WT10 > eventID=1739
+G4WT7 > eventID=1436
+G4WT7 > eventID=1436
+G4WT3 > eventID=1338
+G4WT0 > eventID=1642
+G4WT6 > eventID=2400
+G4WT6 > eventID=2401
+G4WT3 > eventID=1340
+G4WT6 > eventID=2402
+G4WT7 > eventID=1440
+G4WT10 > eventID=1744
+G4WT6 > eventID=2404
+G4WT1 > eventID=1823
+G4WT3 > eventID=1343
+G4WT2 > eventID=2107
+G4WT3 > eventID=1344
+G4WT10 > eventID=1746
+G4WT10 > eventID=1746
+G4WT3 > eventID=1346
+G4WT3 > eventID=1348
+G4WT10 > eventID=1747
+G4WT7 > eventID=1447
+G4WT3 > eventID=1351
+G4WT7 > eventID=1449
+G4WT3 > eventID=1352
+G4WT7 > eventID=1449
+G4WT7 > eventID=1450
+G4WT6 > eventID=2405
+G4WT6 > eventID=2406
+G4WT0 > eventID=1646
+G4WT11 > eventID=1921
+G4WT0 > eventID=1646
+G4WT7 > eventID=1452
+G4WT0 > eventID=1646
+G4WT11 > eventID=1921
+G4WT11 > eventID=1922
+G4WT11 > eventID=1922
+G4WT0 > eventID=1648
+G4WT0 > eventID=1648
+G4WT11 > eventID=1923
+G4WT0 > eventID=1648
+G4WT2 > eventID=2108
+G4WT0 > eventID=1649
+G4WT10 > eventID=1752
+G4WT5 > eventID=2209
+G4WT3 > eventID=1353
+G4WT5 > eventID=2210
+G4WT3 > eventID=1354
+G4WT5 > eventID=2211
+G4WT2 > eventID=2112
+G4WT6 > eventID=2409
+G4WT4 > eventID=2303
+G4WT10 > eventID=1754
+G4WT6 > eventID=2411
+G4WT2 > eventID=2113
+G4WT8 > eventID=2033
+G4WT2 > eventID=2114
+G4WT10 > eventID=1755
+G4WT5 > eventID=2217
+G4WT2 > eventID=2115
+G4WT5 > eventID=2218
+G4WT9 > eventID=1556
+G4WT4 > eventID=2306
+G4WT6 > eventID=2415
+G4WT10 > eventID=1756
+G4WT2 > eventID=2116
+G4WT2 > eventID=2117
+G4WT3 > eventID=1358
+G4WT4 > eventID=2307
+G4WT11 > eventID=1926
+G4WT4 > eventID=2308
+G4WT9 > eventID=1559
+G4WT10 > eventID=1757
+G4WT1 > eventID=1825
+G4WT0 > eventID=1653
+G4WT9 > eventID=1562
+G4WT2 > eventID=2119
+G4WT1 > eventID=1827
+G4WT9 > eventID=1563
+G4WT1 > eventID=1828
+G4WT3 > eventID=1359
+G4WT8 > eventID=2038
+G4WT3 > eventID=1361
+G4WT4 > eventID=2312
+G4WT7 > eventID=1455
+G4WT1 > eventID=1831
+G4WT3 > eventID=1362
+G4WT10 > eventID=1761
+G4WT1 > eventID=1833
+G4WT3 > eventID=1364
+G4WT3 > eventID=1364
+G4WT3 > eventID=1364
+G4WT1 > eventID=1835
+G4WT11 > eventID=1931
+G4WT2 > eventID=2121
+G4WT9 > eventID=1565
+G4WT9 > eventID=1565
+G4WT2 > eventID=2122
+G4WT4 > eventID=2313
+G4WT11 > eventID=1934
+G4WT11 > eventID=1934
+G4WT10 > eventID=1764
+G4WT2 > eventID=2123
+G4WT2 > eventID=2123
+G4WT10 > eventID=1765
+G4WT7 > eventID=1460
+G4WT11 > eventID=1939
+G4WT11 > eventID=1941
+G4WT5 > eventID=2219
+G4WT4 > eventID=2314
+G4WT3 > eventID=1365
+G4WT11 > eventID=1943
+G4WT5 > eventID=2220
+G4WT11 > eventID=1943
+G4WT4 > eventID=2315
+G4WT4 > eventID=2315
+G4WT4 > eventID=2315
+G4WT5 > eventID=2221
+G4WT4 > eventID=2316
+G4WT4 > eventID=2316
+G4WT5 > eventID=2222
+G4WT5 > eventID=2223
+G4WT10 > eventID=1769
+G4WT5 > eventID=2224
+G4WT3 > eventID=1370
+G4WT10 > eventID=1770
+G4WT6 > eventID=2422
+G4WT4 > eventID=2322
+G4WT10 > eventID=1770
+G4WT6 > eventID=2424
+G4WT4 > eventID=2324
+G4WT5 > eventID=2229
+G4WT4 > eventID=2325
+G4WT5 > eventID=2232
+G4WT3 > eventID=1378
+G4WT8 > eventID=2044
+G4WT4 > eventID=2330
+G4WT4 > eventID=2330
+G4WT3 > eventID=1380
+G4WT3 > eventID=1380
+G4WT11 > eventID=1948
+G4WT3 > eventID=1381
+G4WT11 > eventID=1949
+G4WT11 > eventID=1949
+G4WT0 > eventID=1666
+G4WT11 > eventID=1951
+G4WT2 > eventID=2124
+G4WT6 > eventID=2426
+G4WT11 > eventID=1951
+G4WT2 > eventID=2125
+G4WT11 > eventID=1952
+G4WT6 > eventID=2428
+G4WT0 > eventID=1669
+G4WT11 > eventID=1953
+G4WT0 > eventID=1671
+G4WT2 > eventID=2129
+G4WT0 > eventID=1673
+G4WT0 > eventID=1675
+G4WT0 > eventID=1676
+G4WT1 > eventID=1841
+G4WT1 > eventID=1841
+G4WT0 > eventID=1677
+G4WT11 > eventID=1958
+G4WT1 > eventID=1844
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT8 > eventID=2048
+G4WT11 > eventID=1970
+G4WT10 > eventID=1776
+G4WT11 > eventID=1971
+G4WT11 > eventID=1973
+G4WT11 > eventID=1973
+G4WT9 > eventID=1569
+G4WT11 > eventID=1974
+G4WT10 > eventID=1780
+G4WT9 > eventID=1571
+G4WT6 > eventID=2430
+G4WT2 > eventID=2134
+G4WT2 > eventID=2135
+G4WT2 > eventID=2135
+G4WT11 > eventID=1978
+G4WT1 > eventID=1852
+G4WT9 > eventID=1575
+G4WT0 > eventID=1683
+G4WT6 > eventID=2435
+G4WT9 > eventID=1576
+G4WT9 > eventID=1577
+G4WT2 > eventID=2140
+G4WT8 > eventID=2057
+G4WT5 > eventID=2236
+G4WT9 > eventID=1583
+G4WT9 > eventID=1585
+G4WT5 > eventID=2243
+G4WT10 > eventID=1781
+G4WT5 > eventID=2244
+G4WT11 > eventID=1981
+G4WT11 > eventID=1981
+G4WT5 > eventID=2245
+G4WT11 > eventID=1982
+G4WT2 > eventID=2143
+G4WT7 > eventID=1468
+G4WT11 > eventID=1983
+G4WT5 > eventID=2247
+G4WT11 > eventID=1984
+G4WT10 > eventID=1788
+G4WT6 > eventID=2437
+G4WT5 > eventID=2250
+G4WT10 > eventID=1789
+G4WT6 > eventID=2438
+G4WT10 > eventID=1789
+G4WT6 > eventID=2438
+G4WT6 > eventID=2438
+G4WT5 > eventID=2251
+G4WT6 > eventID=2439
+G4WT10 > eventID=1790
+G4WT6 > eventID=2439
+G4WT9 > eventID=1591
+G4WT11 > eventID=1988
+G4WT10 > eventID=1792
+G4WT5 > eventID=2254
+G4WT5 > eventID=2254
+G4WT11 > eventID=1989
+G4WT7 > eventID=1477
+G4WT3 > eventID=1385
+G4WT3 > eventID=1386
+G4WT11 > eventID=1991
+G4WT3 > eventID=1387
+G4WT7 > eventID=1481
+G4WT3 > eventID=1388
+G4WT7 > eventID=1482
+G4WT7 > eventID=1482
+G4WT7 > eventID=1482
+G4WT3 > eventID=1390
+G4WT11 > eventID=1995
+G4WT3 > eventID=1391
+G4WT7 > eventID=1484
+G4WT7 > eventID=1484
+G4WT7 > eventID=1484
+G4WT3 > eventID=1393
+G4WT11 > eventID=1997
+G4WT11 > eventID=1997
+G4WT7 > eventID=1486
+G4WT4 > eventID=2331
+G4WT8 > eventID=2058
+G4WT4 > eventID=2332
+G4WT6 > eventID=2441
+G4WT1 > eventID=1854
+G4WT3 > eventID=1394
+G4WT1 > eventID=1854
+G4WT1 > eventID=1854
+G4WT1 > eventID=1854
+G4WT1 > eventID=1854
+G4WT4 > eventID=2333
+G4WT1 > eventID=1854
+G4WT1 > eventID=1854
+G4WT9 > eventID=1594
+G4WT1 > eventID=1854
+G4WT1 > eventID=1854
+G4WT1 > eventID=1854
+G4WT4 > eventID=2334
+G4WT11 > eventID=2502
+G4WT1 > eventID=1855
+G4WT6 > eventID=2445
+G4WT1 > eventID=1856
+G4WT6 > eventID=2445
+G4WT11 > eventID=2504
+G4WT6 > eventID=2446
+G4WT0 > eventID=1684
+G4WT6 > eventID=2446
+G4WT6 > eventID=2446
+G4WT4 > eventID=2338
+G4WT3 > eventID=1396
+G4WT3 > eventID=1396
+G4WT1 > eventID=1858
+G4WT0 > eventID=1685
+G4WT6 > eventID=2448
+G4WT8 > eventID=2058
+G4WT11 > eventID=2507
+G4WT8 > eventID=2058
+G4WT3 > eventID=1396
+G4WT3 > eventID=1396
+G4WT4 > eventID=2342
+G4WT0 > eventID=1688
+G4WT8 > eventID=2060
+G4WT8 > eventID=2061
+G4WT8 > eventID=2061
+G4WT8 > eventID=2061
+G4WT8 > eventID=2061
+G4WT8 > eventID=2061
+G4WT11 > eventID=2512
+G4WT0 > eventID=1692
+G4WT5 > eventID=2257
+G4WT3 > eventID=2700
+G4WT11 > eventID=2515
+G4WT5 > eventID=2258
+G4WT5 > eventID=2258
+G4WT0 > eventID=1696
+G4WT3 > eventID=2702
+G4WT5 > eventID=2259
+G4WT3 > eventID=2705
+G4WT5 > eventID=2259
+G4WT5 > eventID=2259
+G4WT11 > eventID=2517
+G4WT11 > eventID=2517
+G4WT11 > eventID=2517
+G4WT11 > eventID=2518
+G4WT6 > eventID=2450
+G4WT7 > eventID=1487
+G4WT6 > eventID=2451
+G4WT3 > eventID=2710
+G4WT3 > eventID=2711
+G4WT7 > eventID=1489
+G4WT7 > eventID=1489
+G4WT3 > eventID=2711
+G4WT7 > eventID=1489
+G4WT6 > eventID=2453
+G4WT3 > eventID=2712
+G4WT7 > eventID=1490
+G4WT7 > eventID=1490
+G4WT7 > eventID=1491
+G4WT3 > eventID=2714
+G4WT7 > eventID=1492
+G4WT3 > eventID=2717
+G4WT7 > eventID=1494
+G4WT7 > eventID=1495
+G4WT6 > eventID=2454
+G4WT7 > eventID=1496
+G4WT6 > eventID=2456
+G4WT3 > eventID=2722
+G4WT3 > eventID=2722
+G4WT7 > eventID=1499
+G4WT7 > eventID=1499
+G4WT1 > eventID=1859
+G4WT1 > eventID=1859
+G4WT3 > eventID=2726
+G4WT10 > eventID=1798
+G4WT3 > eventID=2730
+G4WT3 > eventID=2730
+G4WT10 > eventID=2900
+G4WT4 > eventID=2345
+G4WT9 > eventID=2618
+G4WT10 > eventID=2901
+G4WT10 > eventID=2902
+G4WT4 > eventID=2346
+G4WT10 > eventID=2903
+G4WT9 > eventID=2621
+G4WT8 > eventID=2062
+G4WT9 > eventID=2621
+G4WT10 > eventID=2904
+G4WT8 > eventID=2064
+G4WT9 > eventID=2623
+G4WT4 > eventID=2351
+G4WT9 > eventID=2625
+G4WT10 > eventID=2909
+G4WT9 > eventID=2626
+G4WT4 > eventID=2354
+G4WT8 > eventID=2068
+G4WT9 > eventID=2627
+G4WT4 > eventID=2355
+G4WT9 > eventID=2628
+G4WT9 > eventID=2628
+G4WT9 > eventID=2629
+G4WT2 > eventID=2153
+G4WT11 > eventID=2519
+G4WT8 > eventID=2072
+G4WT8 > eventID=2072
+G4WT4 > eventID=2358
+G4WT4 > eventID=2358
+G4WT4 > eventID=2358
+G4WT2 > eventID=2155
+G4WT8 > eventID=2073
+G4WT8 > eventID=2073
+G4WT11 > eventID=2521
+G4WT1 > eventID=1862
+G4WT10 > eventID=2916
+G4WT2 > eventID=2156
+G4WT11 > eventID=2522
+G4WT5 > eventID=2263
+G4WT1 > eventID=1863
+G4WT11 > eventID=2522
+G4WT1 > eventID=1863
+G4WT11 > eventID=2522
+G4WT11 > eventID=2522
+G4WT1 > eventID=1865
+G4WT1 > eventID=1865
+G4WT11 > eventID=2525
+G4WT2 > eventID=2161
+G4WT2 > eventID=2162
+G4WT1 > eventID=1868
+G4WT7 > eventID=2802
+G4WT1 > eventID=1869
+G4WT11 > eventID=2530
+G4WT1 > eventID=1870
+G4WT1 > eventID=1870
+G4WT7 > eventID=2805
+G4WT7 > eventID=2806
+G4WT10 > eventID=2920
+G4WT1 > eventID=1871
+G4WT11 > eventID=2532
+G4WT7 > eventID=2807
+G4WT11 > eventID=2533
+G4WT7 > eventID=2808
+G4WT1 > eventID=1873
+G4WT11 > eventID=2534
+G4WT2 > eventID=2163
+G4WT7 > eventID=2811
+G4WT6 > eventID=2457
+G4WT11 > eventID=2537
+G4WT7 > eventID=2813
+G4WT7 > eventID=2813
+G4WT11 > eventID=2539
+G4WT0 > eventID=1698
+G4WT6 > eventID=2461
+G4WT0 > eventID=1699
+G4WT2 > eventID=2170
+G4WT11 > eventID=2542
+G4WT0 > eventID=3000
+G4WT7 > eventID=2817
+G4WT5 > eventID=2266
+G4WT0 > eventID=3001
+G4WT6 > eventID=2464
+G4WT5 > eventID=2267
+G4WT6 > eventID=2465
+G4WT7 > eventID=2819
+G4WT0 > eventID=3002
+G4WT7 > eventID=2820
+G4WT8 > eventID=2075
+G4WT9 > eventID=2633
+G4WT9 > eventID=2634
+G4WT9 > eventID=2635
+G4WT9 > eventID=2635
+G4WT9 > eventID=2636
+G4WT8 > eventID=2081
+G4WT0 > eventID=3010
+G4WT6 > eventID=2466
+G4WT2 > eventID=2176
+G4WT9 > eventID=2639
+G4WT6 > eventID=2467
+G4WT2 > eventID=2177
+G4WT8 > eventID=2084
+G4WT9 > eventID=2640
+G4WT6 > eventID=2468
+G4WT6 > eventID=2468
+G4WT6 > eventID=2468
+G4WT7 > eventID=2824
+G4WT9 > eventID=2642
+G4WT5 > eventID=2267
+G4WT4 > eventID=2359
+G4WT4 > eventID=2360
+G4WT1 > eventID=1876
+G4WT4 > eventID=2361
+G4WT1 > eventID=1877
+G4WT1 > eventID=1877
+G4WT4 > eventID=2363
+G4WT9 > eventID=2647
+G4WT1 > eventID=1879
+G4WT0 > eventID=3014
+G4WT0 > eventID=3014
+G4WT5 > eventID=2274
+G4WT1 > eventID=1881
+G4WT5 > eventID=2274
+G4WT2 > eventID=2180
+G4WT5 > eventID=2275
+G4WT5 > eventID=2275
+G4WT0 > eventID=3016
+G4WT2 > eventID=2181
+G4WT5 > eventID=2276
+G4WT0 > eventID=3018
+G4WT2 > eventID=2183
+G4WT2 > eventID=2185
+G4WT3 > eventID=2738
+G4WT2 > eventID=2185
+G4WT5 > eventID=2280
+G4WT5 > eventID=2280
+G4WT0 > eventID=3022
+G4WT6 > eventID=2469
+G4WT3 > eventID=2740
+G4WT6 > eventID=2469
+G4WT1 > eventID=1881
+G4WT6 > eventID=2470
+G4WT3 > eventID=2742
+G4WT6 > eventID=2473
+G4WT4 > eventID=2372
+G4WT1 > eventID=1886
+G4WT6 > eventID=2475
+G4WT3 > eventID=2747
+G4WT2 > eventID=2188
+G4WT2 > eventID=2188
+G4WT0 > eventID=3031
+G4WT4 > eventID=2377
+G4WT11 > eventID=2543
+G4WT4 > eventID=2377
+G4WT8 > eventID=2089
+G4WT6 > eventID=2476
+G4WT8 > eventID=2089
+G4WT2 > eventID=2192
+G4WT2 > eventID=2192
+G4WT11 > eventID=2545
+G4WT8 > eventID=2090
+G4WT2 > eventID=2193
+G4WT2 > eventID=2193
+G4WT2 > eventID=2193
+G4WT5 > eventID=2281
+G4WT11 > eventID=2547
+G4WT2 > eventID=2194
+G4WT2 > eventID=2195
+G4WT8 > eventID=2093
+G4WT1 > eventID=1888
+G4WT10 > eventID=2920
+G4WT1 > eventID=1888
+G4WT5 > eventID=2285
+G4WT5 > eventID=2285
+G4WT11 > eventID=2550
+G4WT10 > eventID=2921
+G4WT11 > eventID=2550
+G4WT1 > eventID=1889
+G4WT5 > eventID=2286
+G4WT10 > eventID=2922
+G4WT10 > eventID=2922
+G4WT10 > eventID=2922
+G4WT10 > eventID=2923
+G4WT9 > eventID=2649
+G4WT4 > eventID=2381
+G4WT10 > eventID=2924
+G4WT10 > eventID=2925
+G4WT9 > eventID=2651
+G4WT4 > eventID=2383
+G4WT10 > eventID=2926
+G4WT5 > eventID=2292
+G4WT10 > eventID=2927
+G4WT4 > eventID=2384
+G4WT4 > eventID=2384
+G4WT9 > eventID=2654
+G4WT9 > eventID=2654
+G4WT2 > eventID=2199
+G4WT5 > eventID=2295
+G4WT6 > eventID=2478
+G4WT4 > eventID=2389
+G4WT6 > eventID=2482
+G4WT9 > eventID=2659
+G4WT4 > eventID=2390
+G4WT6 > eventID=2483
+G4WT6 > eventID=2483
+G4WT3 > eventID=2751
+G4WT10 > eventID=2936
+G4WT1 > eventID=1891
+G4WT11 > eventID=2551
+G4WT10 > eventID=2937
+G4WT11 > eventID=2552
+G4WT11 > eventID=2552
+G4WT1 > eventID=1893
+G4WT2 > eventID=3103
+G4WT11 > eventID=2554
+G4WT2 > eventID=3104
+G4WT11 > eventID=2557
+G4WT1 > eventID=1897
+G4WT2 > eventID=3107
+G4WT1 > eventID=1898
+G4WT11 > eventID=2558
+G4WT2 > eventID=3108
+G4WT4 > eventID=3301
+G4WT6 > eventID=2484
+G4WT6 > eventID=2485
+G4WT4 > eventID=3303
+G4WT6 > eventID=2486
+G4WT6 > eventID=2489
+G4WT11 > eventID=2561
+G4WT4 > eventID=3308
+G4WT11 > eventID=2562
+G4WT0 > eventID=3035
+G4WT6 > eventID=2492
+G4WT6 > eventID=2492
+G4WT6 > eventID=2492
+G4WT4 > eventID=3311
+G4WT4 > eventID=3311
+G4WT0 > eventID=3037
+G4WT1 > eventID=3202
+G4WT0 > eventID=3041
+G4WT1 > eventID=3205
+G4WT4 > eventID=3317
+G4WT0 > eventID=3043
+G4WT0 > eventID=3043
+G4WT0 > eventID=3043
+G4WT5 > eventID=2296
+G4WT8 > eventID=2097
+G4WT7 > eventID=2825
+G4WT8 > eventID=2097
+G4WT5 > eventID=2297
+G4WT8 > eventID=2098
+G4WT7 > eventID=2827
+G4WT8 > eventID=2099
+G4WT5 > eventID=2299
+G4WT5 > eventID=3500
+G4WT5 > eventID=3501
+G4WT5 > eventID=3501
+G4WT10 > eventID=2939
+G4WT2 > eventID=3115
+G4WT10 > eventID=2939
+G4WT2 > eventID=3115
+G4WT2 > eventID=3115
+G4WT2 > eventID=3117
+G4WT11 > eventID=2564
+G4WT10 > eventID=2942
+G4WT11 > eventID=2564
+G4WT2 > eventID=3119
+G4WT11 > eventID=2565
+G4WT5 > eventID=3508
+G4WT5 > eventID=3509
+G4WT10 > eventID=2946
+G4WT10 > eventID=2946
+G4WT8 > eventID=3403
+G4WT11 > eventID=2569
+G4WT8 > eventID=3404
+G4WT8 > eventID=3404
+G4WT2 > eventID=3122
+G4WT7 > eventID=2834
+G4WT11 > eventID=2574
+G4WT7 > eventID=2835
+G4WT11 > eventID=2575
+G4WT11 > eventID=2575
+G4WT5 > eventID=3510
+G4WT9 > eventID=2660
+G4WT6 > eventID=2496
+G4WT7 > eventID=2836
+G4WT6 > eventID=2497
+G4WT8 > eventID=3411
+G4WT3 > eventID=2752
+G4WT7 > eventID=2838
+G4WT8 > eventID=3412
+G4WT7 > eventID=2841
+G4WT8 > eventID=3414
+G4WT7 > eventID=2841
+G4WT3 > eventID=2756
+G4WT3 > eventID=2756
+G4WT6 > eventID=3602
+G4WT11 > eventID=2577
+G4WT8 > eventID=3416
+G4WT8 > eventID=3417
+G4WT9 > eventID=2661
+G4WT3 > eventID=2756
+G4WT3 > eventID=2757
+G4WT9 > eventID=2662
+G4WT9 > eventID=2662
+G4WT9 > eventID=2662
+G4WT2 > eventID=3130
+G4WT5 > eventID=3512
+G4WT3 > eventID=2758
+G4WT2 > eventID=3131
+G4WT9 > eventID=2664
+G4WT10 > eventID=2948
+G4WT9 > eventID=2666
+G4WT0 > eventID=3043
+G4WT0 > eventID=3043
+G4WT0 > eventID=3043
+G4WT9 > eventID=2668
+G4WT2 > eventID=3136
+G4WT7 > eventID=2846
+G4WT7 > eventID=2846
+G4WT2 > eventID=3137
+G4WT6 > eventID=3605
+G4WT3 > eventID=2759
+G4WT8 > eventID=3422
+G4WT3 > eventID=2760
+G4WT7 > eventID=2849
+G4WT7 > eventID=2850
+G4WT6 > eventID=3608
+G4WT6 > eventID=3608
+G4WT9 > eventID=2673
+G4WT7 > eventID=2851
+G4WT3 > eventID=2763
+G4WT3 > eventID=2763
+G4WT8 > eventID=3427
+G4WT9 > eventID=2674
+G4WT6 > eventID=3610
+G4WT3 > eventID=2764
+G4WT3 > eventID=2764
+G4WT3 > eventID=2764
+G4WT4 > eventID=3320
+G4WT3 > eventID=2765
+G4WT3 > eventID=2765
+G4WT2 > eventID=3138
+G4WT3 > eventID=2765
+G4WT2 > eventID=3138
+G4WT4 > eventID=3322
+G4WT2 > eventID=3139
+G4WT2 > eventID=3139
+G4WT2 > eventID=3139
+G4WT4 > eventID=3324
+G4WT9 > eventID=2681
+G4WT7 > eventID=2852
+G4WT3 > eventID=2770
+G4WT9 > eventID=2683
+G4WT6 > eventID=3610
+G4WT6 > eventID=3610
+G4WT2 > eventID=3140
+G4WT9 > eventID=2687
+G4WT6 > eventID=3613
+G4WT6 > eventID=3613
+G4WT10 > eventID=2949
+G4WT7 > eventID=2857
+G4WT7 > eventID=2857
+G4WT0 > eventID=3045
+G4WT4 > eventID=3326
+G4WT6 > eventID=3614
+G4WT4 > eventID=3326
+G4WT2 > eventID=3143
+G4WT0 > eventID=3046
+G4WT10 > eventID=2951
+G4WT5 > eventID=3513
+G4WT2 > eventID=3144
+G4WT5 > eventID=3513
+G4WT2 > eventID=3145
+G4WT5 > eventID=3515
+G4WT2 > eventID=3147
+G4WT10 > eventID=2955
+G4WT10 > eventID=2955
+G4WT11 > eventID=2583
+G4WT2 > eventID=3151
+G4WT11 > eventID=2584
+G4WT11 > eventID=2584
+G4WT10 > eventID=2959
+G4WT10 > eventID=2960
+G4WT11 > eventID=2588
+G4WT5 > eventID=3516
+G4WT11 > eventID=2589
+G4WT10 > eventID=2963
+G4WT11 > eventID=2590
+G4WT11 > eventID=2590
+G4WT10 > eventID=2964
+G4WT6 > eventID=3615
+G4WT1 > eventID=3215
+G4WT1 > eventID=3215
+G4WT7 > eventID=2862
+G4WT5 > eventID=3518
+G4WT5 > eventID=3518
+G4WT7 > eventID=2863
+G4WT5 > eventID=3519
+G4WT5 > eventID=3519
+G4WT0 > eventID=3048
+G4WT6 > eventID=3618
+G4WT1 > eventID=3218
+G4WT1 > eventID=3218
+G4WT1 > eventID=3218
+G4WT1 > eventID=3219
+G4WT1 > eventID=3219
+G4WT5 > eventID=3522
+G4WT5 > eventID=3522
+G4WT5 > eventID=3523
+G4WT0 > eventID=3048
+G4WT1 > eventID=3224
+G4WT6 > eventID=3625
+G4WT3 > eventID=2774
+G4WT3 > eventID=2774
+G4WT3 > eventID=2774
+G4WT6 > eventID=3626
+G4WT1 > eventID=3225
+G4WT1 > eventID=3225
+G4WT3 > eventID=2776
+G4WT1 > eventID=3226
+G4WT6 > eventID=3628
+G4WT1 > eventID=3228
+G4WT4 > eventID=3329
+G4WT4 > eventID=3330
+G4WT1 > eventID=3231
+G4WT6 > eventID=3632
+G4WT4 > eventID=3331
+G4WT6 > eventID=3632
+G4WT1 > eventID=3232
+G4WT5 > eventID=3524
+G4WT10 > eventID=2965
+G4WT10 > eventID=2965
+G4WT8 > eventID=3427
+G4WT10 > eventID=2966
+G4WT4 > eventID=3334
+G4WT8 > eventID=3428
+G4WT0 > eventID=3049
+G4WT0 > eventID=3050
+G4WT3 > eventID=2778
+G4WT2 > eventID=3152
+G4WT10 > eventID=2971
+G4WT10 > eventID=2971
+G4WT10 > eventID=2971
+G4WT0 > eventID=3054
+G4WT3 > eventID=2780
+G4WT4 > eventID=3341
+G4WT11 > eventID=2599
+G4WT3 > eventID=2780
+G4WT9 > eventID=2687
+G4WT5 > eventID=3533
+G4WT0 > eventID=3057
+G4WT2 > eventID=3156
+G4WT0 > eventID=3058
+G4WT9 > eventID=2689
+G4WT2 > eventID=3157
+G4WT0 > eventID=3059
+G4WT11 > eventID=3700
+G4WT4 > eventID=3345
+G4WT2 > eventID=3158
+G4WT0 > eventID=3060
+G4WT9 > eventID=2691
+G4WT2 > eventID=3159
+G4WT0 > eventID=3061
+G4WT5 > eventID=3535
+G4WT4 > eventID=3347
+G4WT2 > eventID=3160
+G4WT11 > eventID=3703
+G4WT5 > eventID=3536
+G4WT1 > eventID=3233
+G4WT11 > eventID=3708
+G4WT1 > eventID=3234
+G4WT1 > eventID=3234
+G4WT11 > eventID=3709
+G4WT7 > eventID=2864
+G4WT11 > eventID=3710
+G4WT1 > eventID=3235
+G4WT8 > eventID=3430
+G4WT5 > eventID=3539
+G4WT8 > eventID=3430
+G4WT2 > eventID=3162
+G4WT7 > eventID=2865
+G4WT11 > eventID=3712
+G4WT8 > eventID=3431
+G4WT1 > eventID=3237
+G4WT3 > eventID=2782
+G4WT2 > eventID=3163
+G4WT1 > eventID=3238
+G4WT2 > eventID=3164
+G4WT8 > eventID=3432
+G4WT1 > eventID=3239
+G4WT7 > eventID=2868
+G4WT3 > eventID=2785
+G4WT7 > eventID=2869
+G4WT8 > eventID=3434
+G4WT10 > eventID=2974
+G4WT3 > eventID=2787
+G4WT7 > eventID=2871
+G4WT3 > eventID=2787
+G4WT5 > eventID=3540
+G4WT5 > eventID=3541
+G4WT7 > eventID=2873
+G4WT8 > eventID=3438
+G4WT3 > eventID=2790
+G4WT2 > eventID=3171
+G4WT9 > eventID=2699
+G4WT2 > eventID=3172
+G4WT8 > eventID=3439
+G4WT7 > eventID=2876
+G4WT5 > eventID=3544
+G4WT2 > eventID=3173
+G4WT10 > eventID=2977
+G4WT7 > eventID=2877
+G4WT10 > eventID=2978
+G4WT8 > eventID=3440
+G4WT10 > eventID=2980
+G4WT10 > eventID=2980
+G4WT8 > eventID=3442
+G4WT0 > eventID=3064
+G4WT10 > eventID=2984
+G4WT0 > eventID=3066
+G4WT5 > eventID=3548
+G4WT10 > eventID=2987
+G4WT3 > eventID=2795
+G4WT8 > eventID=3446
+G4WT6 > eventID=3633
+G4WT0 > eventID=3067
+G4WT5 > eventID=3549
+G4WT3 > eventID=3900
+G4WT4 > eventID=3349
+G4WT4 > eventID=3349
+G4WT8 > eventID=3448
+G4WT9 > eventID=3807
+G4WT4 > eventID=3351
+G4WT9 > eventID=3807
+G4WT9 > eventID=3807
+G4WT9 > eventID=3807
+G4WT3 > eventID=3903
+G4WT9 > eventID=3808
+G4WT6 > eventID=3642
+G4WT0 > eventID=3072
+G4WT4 > eventID=3353
+G4WT9 > eventID=3810
+G4WT3 > eventID=3906
+G4WT4 > eventID=3355
+G4WT3 > eventID=3907
+G4WT4 > eventID=3356
+G4WT9 > eventID=3812
+G4WT5 > eventID=3555
+G4WT9 > eventID=3813
+G4WT4 > eventID=3358
+G4WT9 > eventID=3815
+G4WT9 > eventID=3815
+G4WT6 > eventID=3644
+G4WT6 > eventID=3646
+G4WT6 > eventID=3647
+G4WT9 > eventID=3819
+G4WT11 > eventID=3713
+G4WT11 > eventID=3714
+G4WT9 > eventID=3821
+G4WT9 > eventID=3821
+G4WT8 > eventID=3449
+G4WT8 > eventID=3449
+G4WT11 > eventID=3717
+G4WT8 > eventID=3450
+G4WT8 > eventID=3450
+G4WT9 > eventID=3824
+G4WT11 > eventID=3718
+G4WT6 > eventID=3647
+G4WT11 > eventID=3719
+G4WT10 > eventID=2988
+G4WT1 > eventID=3240
+G4WT7 > eventID=2886
+G4WT6 > eventID=3647
+G4WT6 > eventID=3647
+G4WT6 > eventID=3647
+G4WT6 > eventID=3647
+G4WT6 > eventID=3647
+G4WT6 > eventID=3647
+G4WT6 > eventID=3647
+G4WT1 > eventID=3241
+G4WT11 > eventID=3720
+G4WT6 > eventID=3648
+G4WT7 > eventID=2888
+G4WT6 > eventID=3648
+G4WT7 > eventID=2888
+G4WT7 > eventID=2888
+G4WT1 > eventID=3243
+G4WT7 > eventID=2888
+G4WT7 > eventID=2888
+G4WT7 > eventID=2888
+G4WT7 > eventID=2888
+G4WT7 > eventID=2888
+G4WT6 > eventID=3650
+G4WT0 > eventID=3075
+G4WT11 > eventID=3724
+G4WT6 > eventID=3651
+G4WT7 > eventID=2890
+G4WT7 > eventID=2890
+G4WT5 > eventID=3562
+G4WT7 > eventID=2891
+G4WT7 > eventID=2891
+G4WT8 > eventID=3454
+G4WT7 > eventID=2892
+G4WT1 > eventID=3248
+G4WT5 > eventID=3564
+G4WT0 > eventID=3077
+G4WT0 > eventID=3077
+G4WT7 > eventID=2893
+G4WT7 > eventID=2895
+G4WT0 > eventID=3079
+G4WT5 > eventID=3567
+G4WT7 > eventID=2896
+G4WT10 > eventID=2990
+G4WT2 > eventID=3186
+G4WT2 > eventID=3188
+G4WT0 > eventID=3082
+G4WT10 > eventID=2995
+G4WT3 > eventID=3913
+G4WT3 > eventID=3913
+G4WT2 > eventID=3190
+G4WT2 > eventID=3190
+G4WT3 > eventID=3914
+G4WT4 > eventID=3366
+G4WT8 > eventID=3459
+G4WT10 > eventID=2997
+G4WT5 > eventID=3570
+G4WT8 > eventID=3460
+G4WT10 > eventID=2998
+G4WT4 > eventID=3368
+G4WT10 > eventID=2999
+G4WT2 > eventID=3193
+G4WT3 > eventID=3918
+G4WT2 > eventID=3194
+G4WT10 > eventID=4001
+G4WT4 > eventID=3371
+G4WT5 > eventID=3575
+G4WT7 > eventID=2896
+G4WT10 > eventID=4004
+G4WT2 > eventID=3197
+G4WT2 > eventID=3197
+G4WT2 > eventID=3197
+G4WT10 > eventID=4005
+G4WT5 > eventID=3577
+G4WT5 > eventID=3577
+G4WT7 > eventID=2899
+G4WT1 > eventID=3251
+G4WT7 > eventID=4101
+G4WT1 > eventID=3252
+G4WT1 > eventID=3253
+G4WT4 > eventID=3372
+G4WT11 > eventID=3729
+G4WT1 > eventID=3255
+G4WT4 > eventID=3374
+G4WT4 > eventID=3374
+G4WT4 > eventID=3374
+G4WT0 > eventID=3084
+G4WT5 > eventID=3580
+G4WT6 > eventID=3652
+G4WT7 > eventID=4106
+G4WT7 > eventID=4106
+G4WT0 > eventID=3086
+G4WT1 > eventID=3260
+G4WT11 > eventID=3736
+G4WT11 > eventID=3736
+G4WT1 > eventID=3261
+G4WT6 > eventID=3656
+G4WT0 > eventID=3088
+G4WT0 > eventID=3088
+G4WT0 > eventID=3088
+G4WT8 > eventID=3462
+G4WT6 > eventID=3659
+G4WT11 > eventID=3740
+G4WT6 > eventID=3661
+G4WT1 > eventID=3266
+G4WT3 > eventID=3923
+G4WT11 > eventID=3742
+G4WT11 > eventID=3742
+G4WT1 > eventID=3267
+G4WT11 > eventID=3742
+G4WT1 > eventID=3267
+G4WT0 > eventID=3093
+G4WT1 > eventID=3268
+G4WT1 > eventID=3268
+G4WT8 > eventID=3463
+G4WT3 > eventID=3926
+G4WT4 > eventID=3377
+G4WT8 > eventID=3467
+G4WT8 > eventID=3469
+G4WT11 > eventID=3744
+G4WT8 > eventID=3469
+G4WT8 > eventID=3469
+G4WT8 > eventID=3469
+G4WT8 > eventID=3469
+G4WT8 > eventID=3469
+G4WT8 > eventID=3469
+G4WT8 > eventID=3470
+G4WT2 > eventID=4202
+G4WT0 > eventID=3094
+G4WT0 > eventID=3094
+G4WT2 > eventID=4203
+G4WT11 > eventID=3748
+G4WT0 > eventID=3095
+G4WT2 > eventID=4204
+G4WT2 > eventID=4205
+G4WT7 > eventID=4107
+G4WT3 > eventID=3930
+G4WT7 > eventID=4114
+G4WT11 > eventID=3751
+G4WT1 > eventID=3272
+G4WT7 > eventID=4116
+G4WT3 > eventID=3932
+G4WT6 > eventID=3664
+G4WT8 > eventID=3471
+G4WT7 > eventID=4117
+G4WT1 > eventID=3274
+G4WT6 > eventID=3664
+G4WT7 > eventID=4117
+G4WT8 > eventID=3471
+G4WT7 > eventID=4117
+G4WT7 > eventID=4117
+G4WT1 > eventID=3275
+G4WT1 > eventID=3276
+G4WT3 > eventID=3934
+G4WT5 > eventID=3590
+G4WT3 > eventID=3934
+G4WT8 > eventID=3474
+G4WT9 > eventID=3841
+G4WT8 > eventID=3474
+G4WT5 > eventID=3591
+G4WT3 > eventID=3935
+G4WT5 > eventID=3592
+G4WT8 > eventID=3476
+G4WT8 > eventID=3476
+G4WT3 > eventID=3937
+G4WT8 > eventID=3477
+G4WT9 > eventID=3853
+G4WT6 > eventID=3665
+G4WT1 > eventID=3277
+G4WT10 > eventID=4009
+G4WT11 > eventID=3752
+G4WT7 > eventID=4126
+G4WT11 > eventID=3752
+G4WT11 > eventID=3752
+G4WT3 > eventID=3939
+G4WT6 > eventID=3667
+G4WT3 > eventID=3940
+G4WT6 > eventID=3668
+G4WT0 > eventID=3097
+G4WT3 > eventID=3941
+G4WT11 > eventID=3755
+G4WT0 > eventID=3098
+G4WT6 > eventID=3669
+G4WT10 > eventID=4010
+G4WT4 > eventID=3381
+G4WT6 > eventID=3670
+G4WT4 > eventID=3382
+G4WT3 > eventID=3943
+G4WT0 > eventID=3098
+G4WT10 > eventID=4015
+G4WT0 > eventID=3099
+G4WT4 > eventID=3387
+G4WT11 > eventID=3758
+G4WT5 > eventID=3593
+G4WT10 > eventID=4018
+G4WT0 > eventID=4301
+G4WT4 > eventID=3390
+G4WT10 > eventID=4019
+G4WT3 > eventID=3946
+G4WT10 > eventID=4020
+G4WT2 > eventID=4207
+G4WT5 > eventID=3593
+G4WT10 > eventID=4021
+G4WT0 > eventID=4304
+G4WT5 > eventID=3595
+G4WT4 > eventID=3394
+G4WT10 > eventID=4023
+G4WT4 > eventID=3395
+G4WT10 > eventID=4024
+G4WT5 > eventID=3597
+G4WT10 > eventID=4024
+G4WT5 > eventID=3597
+G4WT10 > eventID=4025
+G4WT7 > eventID=4129
+G4WT7 > eventID=4129
+G4WT7 > eventID=4129
+G4WT0 > eventID=4310
+G4WT5 > eventID=3598
+G4WT7 > eventID=4130
+G4WT4 > eventID=3396
+G4WT8 > eventID=3478
+G4WT1 > eventID=3283
+G4WT1 > eventID=3283
+G4WT4 > eventID=3398
+G4WT6 > eventID=3674
+G4WT1 > eventID=3284
+G4WT6 > eventID=3675
+G4WT3 > eventID=3951
+G4WT6 > eventID=3677
+G4WT4 > eventID=4502
+G4WT6 > eventID=3679
+G4WT3 > eventID=3952
+G4WT1 > eventID=3292
+G4WT6 > eventID=3682
+G4WT1 > eventID=3292
+G4WT6 > eventID=3683
+G4WT6 > eventID=3683
+G4WT6 > eventID=3683
+G4WT5 > eventID=4405
+G4WT1 > eventID=3295
+G4WT5 > eventID=4407
+G4WT1 > eventID=3297
+G4WT5 > eventID=4409
+G4WT7 > eventID=4131
+G4WT5 > eventID=4410
+G4WT3 > eventID=3956
+G4WT3 > eventID=3956
+G4WT3 > eventID=3957
+G4WT3 > eventID=3959
+G4WT6 > eventID=3683
+G4WT10 > eventID=4026
+G4WT10 > eventID=4027
+G4WT10 > eventID=4027
+G4WT10 > eventID=4028
+G4WT7 > eventID=4134
+G4WT9 > eventID=3855
+G4WT3 > eventID=3964
+G4WT3 > eventID=3964
+G4WT9 > eventID=3860
+G4WT5 > eventID=4415
+G4WT11 > eventID=3759
+G4WT9 > eventID=3861
+G4WT9 > eventID=3861
+G4WT9 > eventID=3861
+G4WT11 > eventID=3760
+G4WT9 > eventID=3862
+G4WT9 > eventID=3862
+G4WT9 > eventID=3865
+G4WT3 > eventID=3970
+G4WT9 > eventID=3866
+G4WT3 > eventID=3971
+G4WT9 > eventID=3867
+G4WT1 > eventID=4601
+G4WT9 > eventID=3868
+G4WT3 > eventID=3973
+G4WT1 > eventID=4607
+G4WT7 > eventID=4135
+G4WT3 > eventID=3981
+G4WT1 > eventID=4613
+G4WT1 > eventID=4613
+G4WT7 > eventID=4137
+G4WT3 > eventID=3982
+G4WT7 > eventID=4138
+G4WT3 > eventID=3983
+G4WT10 > eventID=4032
+G4WT7 > eventID=4139
+G4WT10 > eventID=4033
+G4WT2 > eventID=4218
+G4WT5 > eventID=4416
+G4WT7 > eventID=4141
+G4WT5 > eventID=4418
+G4WT11 > eventID=3765
+G4WT10 > eventID=4037
+G4WT8 > eventID=3481
+G4WT11 > eventID=3766
+G4WT11 > eventID=3768
+G4WT8 > eventID=3485
+G4WT9 > eventID=3875
+G4WT8 > eventID=3486
+G4WT9 > eventID=3876
+G4WT9 > eventID=3877
+G4WT8 > eventID=3488
+G4WT7 > eventID=4143
+G4WT7 > eventID=4144
+G4WT7 > eventID=4147
+G4WT6 > eventID=3683
+G4WT11 > eventID=3770
+G4WT7 > eventID=4148
+G4WT7 > eventID=4149
+G4WT6 > eventID=3686
+G4WT7 > eventID=4150
+G4WT7 > eventID=4151
+G4WT6 > eventID=3687
+G4WT11 > eventID=3776
+G4WT9 > eventID=3883
+G4WT11 > eventID=3777
+G4WT9 > eventID=3884
+G4WT6 > eventID=3691
+G4WT11 > eventID=3779
+G4WT6 > eventID=3692
+G4WT6 > eventID=3693
+G4WT11 > eventID=3781
+G4WT4 > eventID=4506
+G4WT4 > eventID=4509
+G4WT4 > eventID=4510
+G4WT4 > eventID=4512
+G4WT4 > eventID=4512
+G4WT0 > eventID=4312
+G4WT10 > eventID=4040
+G4WT10 > eventID=4040
+G4WT2 > eventID=4220
+G4WT10 > eventID=4040
+G4WT2 > eventID=4221
+G4WT2 > eventID=4221
+G4WT7 > eventID=4152
+G4WT10 > eventID=4044
+G4WT2 > eventID=4224
+G4WT7 > eventID=4154
+G4WT10 > eventID=4048
+G4WT0 > eventID=4324
+G4WT3 > eventID=3985
+G4WT3 > eventID=3985
+G4WT0 > eventID=4326
+G4WT3 > eventID=3986
+G4WT5 > eventID=4419
+G4WT5 > eventID=4421
+G4WT5 > eventID=4422
+G4WT5 > eventID=4423
+G4WT8 > eventID=3493
+G4WT2 > eventID=4231
+G4WT9 > eventID=3887
+G4WT8 > eventID=3493
+G4WT8 > eventID=3493
+G4WT8 > eventID=3493
+G4WT8 > eventID=3493
+G4WT8 > eventID=3493
+G4WT8 > eventID=3493
+G4WT2 > eventID=4232
+G4WT5 > eventID=4426
+G4WT8 > eventID=3495
+G4WT8 > eventID=3496
+G4WT6 > eventID=3695
+G4WT8 > eventID=3496
+G4WT0 > eventID=4327
+G4WT6 > eventID=3696
+G4WT6 > eventID=3697
+G4WT8 > eventID=3498
+G4WT0 > eventID=4331
+G4WT0 > eventID=4332
+G4WT6 > eventID=4801
+G4WT5 > eventID=4428
+G4WT5 > eventID=4429
+G4WT4 > eventID=4512
+G4WT4 > eventID=4512
+G4WT4 > eventID=4512
+G4WT5 > eventID=4431
+G4WT4 > eventID=4514
+G4WT1 > eventID=4619
+G4WT7 > eventID=4160
+G4WT4 > eventID=4516
+G4WT4 > eventID=4517
+G4WT6 > eventID=4802
+G4WT7 > eventID=4166
+G4WT10 > eventID=4052
+G4WT10 > eventID=4052
+G4WT7 > eventID=4168
+G4WT10 > eventID=4055
+G4WT5 > eventID=4433
+G4WT7 > eventID=4171
+G4WT10 > eventID=4056
+G4WT2 > eventID=4238
+G4WT5 > eventID=4434
+G4WT4 > eventID=4518
+G4WT2 > eventID=4240
+G4WT11 > eventID=3785
+G4WT2 > eventID=4242
+G4WT11 > eventID=3787
+G4WT2 > eventID=4243
+G4WT2 > eventID=4244
+G4WT1 > eventID=4626
+G4WT9 > eventID=3892
+G4WT2 > eventID=4245
+G4WT2 > eventID=4245
+G4WT1 > eventID=4628
+G4WT2 > eventID=4246
+G4WT4 > eventID=4521
+G4WT9 > eventID=3894
+G4WT1 > eventID=4629
+G4WT2 > eventID=4246
+G4WT9 > eventID=3894
+G4WT9 > eventID=3895
+G4WT4 > eventID=4523
+G4WT2 > eventID=4248
+G4WT4 > eventID=4524
+G4WT9 > eventID=3897
+G4WT4 > eventID=4525
+G4WT8 > eventID=4707
+G4WT11 > eventID=3789
+G4WT8 > eventID=4707
+G4WT1 > eventID=4634
+G4WT6 > eventID=4805
+G4WT1 > eventID=4634
+G4WT8 > eventID=4709
+G4WT9 > eventID=3898
+G4WT6 > eventID=4807
+G4WT6 > eventID=4807
+G4WT9 > eventID=3899
+G4WT9 > eventID=3899
+G4WT9 > eventID=4900
+G4WT0 > eventID=4335
+G4WT11 > eventID=3794
+G4WT5 > eventID=4435
+G4WT3 > eventID=3990
+G4WT8 > eventID=4713
+G4WT7 > eventID=4174
+G4WT10 > eventID=4058
+G4WT6 > eventID=4812
+G4WT3 > eventID=3991
+G4WT3 > eventID=3991
+G4WT6 > eventID=4812
+G4WT10 > eventID=4059
+G4WT5 > eventID=4437
+G4WT6 > eventID=4813
+G4WT7 > eventID=4176
+G4WT9 > eventID=4902
+G4WT10 > eventID=4061
+G4WT3 > eventID=3994
+G4WT10 > eventID=4062
+G4WT9 > eventID=4904
+G4WT9 > eventID=4905
+G4WT9 > eventID=4909
+G4WT8 > eventID=4714
+G4WT7 > eventID=4177
+G4WT11 > eventID=3796
+G4WT11 > eventID=3797
+G4WT3 > eventID=3998
+G4WT8 > eventID=4718
+G4WT3 > eventID=3999
+G4WT0 > eventID=4338
+G4WT9 > eventID=4912
+G4WT8 > eventID=4719
+G4WT6 > eventID=4814
+G4WT7 > eventID=4180
+G4WT7 > eventID=4180
+G4WT6 > eventID=4818
+G4WT4 > eventID=4526
+G4WT0 > eventID=4344
+G4WT0 > eventID=4344
+G4WT7 > eventID=4181
+G4WT4 > eventID=4527
+G4WT10 > eventID=4070
+G4WT4 > eventID=4528
+G4WT0 > eventID=4347
+G4WT0 > eventID=4348
+G4WT4 > eventID=4532
+G4WT4 > eventID=4532
+G4WT4 > eventID=4533
+G4WT4 > eventID=4533
+G4WT4 > eventID=4533
+G4WT4 > eventID=4533
+G4WT4 > eventID=4533
+G4WT3 > eventID=5000
+G4WT3 > eventID=5000
+G4WT5 > eventID=4440
+G4WT5 > eventID=4440
+G4WT2 > eventID=4250
+G4WT3 > eventID=5001
+G4WT1 > eventID=4637
+G4WT2 > eventID=4251
+G4WT3 > eventID=5002
+G4WT2 > eventID=4252
+G4WT11 > eventID=3798
+G4WT2 > eventID=4256
+G4WT1 > eventID=4642
+G4WT3 > eventID=5003
+G4WT3 > eventID=5004
+G4WT1 > eventID=4644
+G4WT3 > eventID=5005
+G4WT1 > eventID=4645
+G4WT10 > eventID=4077
+G4WT11 > eventID=5100
+G4WT5 > eventID=4441
+G4WT11 > eventID=5100
+G4WT10 > eventID=4078
+G4WT5 > eventID=4442
+G4WT2 > eventID=4263
+G4WT3 > eventID=5007
+G4WT3 > eventID=5007
+G4WT3 > eventID=5007
+G4WT5 > eventID=4446
+G4WT7 > eventID=4185
+G4WT11 > eventID=5105
+G4WT7 > eventID=4188
+G4WT11 > eventID=5105
+G4WT6 > eventID=4821
+G4WT7 > eventID=4193
+G4WT7 > eventID=4193
+G4WT6 > eventID=4822
+G4WT6 > eventID=4822
+G4WT7 > eventID=4194
+G4WT6 > eventID=4823
+G4WT11 > eventID=5109
+G4WT6 > eventID=4824
+G4WT5 > eventID=4450
+G4WT11 > eventID=5110
+G4WT11 > eventID=5110
+G4WT5 > eventID=4452
+G4WT5 > eventID=4452
+G4WT10 > eventID=4081
+G4WT10 > eventID=4081
+G4WT11 > eventID=5113
+G4WT6 > eventID=4829
+G4WT5 > eventID=4455
+G4WT9 > eventID=4916
+G4WT9 > eventID=4916
+G4WT11 > eventID=5115
+G4WT11 > eventID=5116
+G4WT11 > eventID=5117
+G4WT11 > eventID=5117
+G4WT6 > eventID=4832
+G4WT11 > eventID=5118
+G4WT6 > eventID=4833
+G4WT6 > eventID=4834
+G4WT11 > eventID=5120
+G4WT10 > eventID=4086
+G4WT6 > eventID=4836
+G4WT11 > eventID=5121
+G4WT6 > eventID=4837
+G4WT10 > eventID=4087
+G4WT6 > eventID=4838
+G4WT9 > eventID=4917
+G4WT9 > eventID=4918
+G4WT10 > eventID=4089
+G4WT6 > eventID=4841
+G4WT11 > eventID=5126
+G4WT6 > eventID=4842
+G4WT11 > eventID=5127
+G4WT5 > eventID=4459
+G4WT6 > eventID=4843
+G4WT9 > eventID=4921
+G4WT11 > eventID=5128
+G4WT6 > eventID=4843
+G4WT11 > eventID=5128
+G4WT9 > eventID=4923
+G4WT0 > eventID=4349
+G4WT0 > eventID=4351
+G4WT6 > eventID=4847
+G4WT9 > eventID=4926
+G4WT9 > eventID=4926
+G4WT9 > eventID=4926
+G4WT8 > eventID=4726
+G4WT0 > eventID=4353
+G4WT0 > eventID=4353
+G4WT0 > eventID=4356
+G4WT0 > eventID=4358
+G4WT4 > eventID=4538
+G4WT0 > eventID=4359
+G4WT0 > eventID=4359
+G4WT4 > eventID=4539
+G4WT4 > eventID=4540
+G4WT4 > eventID=4541
+G4WT4 > eventID=4541
+G4WT4 > eventID=4541
+G4WT4 > eventID=4541
+G4WT0 > eventID=4363
+G4WT2 > eventID=4264
+G4WT9 > eventID=4926
+G4WT9 > eventID=4926
+G4WT9 > eventID=4926
+G4WT1 > eventID=4647
+G4WT9 > eventID=4927
+G4WT1 > eventID=4648
+G4WT1 > eventID=4648
+G4WT9 > eventID=4929
+G4WT2 > eventID=4268
+G4WT1 > eventID=4649
+G4WT1 > eventID=4649
+G4WT1 > eventID=4649
+G4WT10 > eventID=4089
+G4WT10 > eventID=4090
+G4WT9 > eventID=4931
+G4WT2 > eventID=4271
+G4WT9 > eventID=4932
+G4WT7 > eventID=4197
+G4WT1 > eventID=4653
+G4WT7 > eventID=4198
+G4WT10 > eventID=4094
+G4WT1 > eventID=4654
+G4WT2 > eventID=4274
+G4WT1 > eventID=4655
+G4WT10 > eventID=4095
+G4WT10 > eventID=4095
+G4WT10 > eventID=4095
+G4WT8 > eventID=4738
+G4WT10 > eventID=4095
+G4WT10 > eventID=4095
+G4WT10 > eventID=4095
+G4WT2 > eventID=4276
+G4WT8 > eventID=4740
+G4WT10 > eventID=4097
+G4WT10 > eventID=4097
+G4WT4 > eventID=4543
+G4WT4 > eventID=4543
+G4WT4 > eventID=4545
+G4WT5 > eventID=4467
+G4WT5 > eventID=4470
+G4WT4 > eventID=4546
+G4WT3 > eventID=5011
+G4WT4 > eventID=4547
+G4WT3 > eventID=5012
+G4WT3 > eventID=5012
+G4WT3 > eventID=5013
+G4WT4 > eventID=4550
+G4WT7 > eventID=4199
+G4WT3 > eventID=5015
+G4WT4 > eventID=4552
+G4WT3 > eventID=5017
+G4WT0 > eventID=4366
+G4WT3 > eventID=5018
+G4WT3 > eventID=5018
+G4WT3 > eventID=5019
+G4WT0 > eventID=4367
+G4WT3 > eventID=5020
+G4WT0 > eventID=4368
+G4WT7 > eventID=5207
+G4WT0 > eventID=4370
+G4WT7 > eventID=5207
+G4WT4 > eventID=4555
+G4WT0 > eventID=4373
+G4WT7 > eventID=5210
+G4WT0 > eventID=4374
+G4WT7 > eventID=5210
+G4WT0 > eventID=4374
+G4WT4 > eventID=4557
+G4WT11 > eventID=5130
+G4WT8 > eventID=4742
+G4WT8 > eventID=4742
+G4WT11 > eventID=5131
+G4WT2 > eventID=4278
+G4WT11 > eventID=5132
+G4WT8 > eventID=4744
+G4WT8 > eventID=4744
+G4WT11 > eventID=5135
+G4WT2 > eventID=4282
+G4WT2 > eventID=4283
+G4WT1 > eventID=4657
+G4WT10 > eventID=5302
+G4WT2 > eventID=4285
+G4WT2 > eventID=4286
+G4WT9 > eventID=4936
+G4WT2 > eventID=4287
+G4WT10 > eventID=5306
+G4WT10 > eventID=5306
+G4WT10 > eventID=5306
+G4WT10 > eventID=5307
+G4WT8 > eventID=4747
+G4WT8 > eventID=4747
+G4WT1 > eventID=4659
+G4WT1 > eventID=4661
+G4WT1 > eventID=4661
+G4WT1 > eventID=4661
+G4WT4 > eventID=4558
+G4WT11 > eventID=5141
+G4WT11 > eventID=5142
+G4WT1 > eventID=4661
+G4WT1 > eventID=4661
+G4WT1 > eventID=4662
+G4WT6 > eventID=4848
+G4WT11 > eventID=5144
+G4WT11 > eventID=5145
+G4WT11 > eventID=5146
+G4WT11 > eventID=5147
+G4WT10 > eventID=5308
+G4WT1 > eventID=4665
+G4WT1 > eventID=4665
+G4WT3 > eventID=5022
+G4WT10 > eventID=5309
+G4WT4 > eventID=4568
+G4WT3 > eventID=5023
+G4WT10 > eventID=5311
+G4WT3 > eventID=5024
+G4WT10 > eventID=5312
+G4WT9 > eventID=4944
+G4WT1 > eventID=4670
+G4WT9 > eventID=4945
+G4WT9 > eventID=4947
+G4WT1 > eventID=4673
+G4WT9 > eventID=4948
+G4WT1 > eventID=4674
+G4WT9 > eventID=4949
+G4WT9 > eventID=4952
+G4WT9 > eventID=4952
+G4WT1 > eventID=4677
+G4WT1 > eventID=4678
+G4WT9 > eventID=4954
+G4WT10 > eventID=5316
+G4WT9 > eventID=4955
+G4WT1 > eventID=4680
+G4WT3 > eventID=5029
+G4WT10 > eventID=5318
+G4WT10 > eventID=5318
+G4WT4 > eventID=4572
+G4WT0 > eventID=4379
+G4WT4 > eventID=4573
+G4WT0 > eventID=4380
+G4WT3 > eventID=5033
+G4WT4 > eventID=4575
+G4WT0 > eventID=4382
+G4WT0 > eventID=4382
+G4WT4 > eventID=4577
+G4WT4 > eventID=4578
+G4WT8 > eventID=4752
+G4WT10 > eventID=5321
+G4WT8 > eventID=4753
+G4WT0 > eventID=4389
+G4WT6 > eventID=4854
+G4WT8 > eventID=4755
+G4WT6 > eventID=4855
+G4WT6 > eventID=4856
+G4WT0 > eventID=4392
+G4WT6 > eventID=4858
+G4WT8 > eventID=4759
+G4WT5 > eventID=4480
+G4WT10 > eventID=5322
+G4WT3 > eventID=5034
+G4WT8 > eventID=4762
+G4WT2 > eventID=4293
+G4WT8 > eventID=4762
+G4WT5 > eventID=4483
+G4WT2 > eventID=4294
+G4WT10 > eventID=5324
+G4WT10 > eventID=5324
+G4WT10 > eventID=5325
+G4WT10 > eventID=5326
+G4WT10 > eventID=5326
+G4WT5 > eventID=4487
+G4WT2 > eventID=4297
+G4WT5 > eventID=4488
+G4WT5 > eventID=4488
+G4WT2 > eventID=4298
+G4WT5 > eventID=4488
+G4WT5 > eventID=4488
+G4WT3 > eventID=5034
+G4WT3 > eventID=5034
+G4WT2 > eventID=4299
+G4WT11 > eventID=5148
+G4WT4 > eventID=4582
+G4WT11 > eventID=5148
+G4WT4 > eventID=4584
+G4WT7 > eventID=5210
+G4WT7 > eventID=5210
+G4WT7 > eventID=5210
+G4WT7 > eventID=5210
+G4WT7 > eventID=5210
+G4WT7 > eventID=5210
+G4WT4 > eventID=4586
+G4WT3 > eventID=5039
+G4WT11 > eventID=5153
+G4WT3 > eventID=5040
+G4WT6 > eventID=4859
+G4WT7 > eventID=5212
+G4WT6 > eventID=4859
+G4WT4 > eventID=4589
+G4WT4 > eventID=4589
+G4WT7 > eventID=5213
+G4WT4 > eventID=4589
+G4WT4 > eventID=4589
+G4WT4 > eventID=4589
+G4WT4 > eventID=4589
+G4WT4 > eventID=4589
+G4WT7 > eventID=5214
+G4WT2 > eventID=4299
+G4WT7 > eventID=5215
+G4WT10 > eventID=5329
+G4WT2 > eventID=5400
+G4WT2 > eventID=5400
+G4WT2 > eventID=5400
+G4WT10 > eventID=5331
+G4WT2 > eventID=5401
+G4WT2 > eventID=5402
+G4WT3 > eventID=5045
+G4WT10 > eventID=5333
+G4WT5 > eventID=4488
+G4WT2 > eventID=5403
+G4WT8 > eventID=4768
+G4WT1 > eventID=4681
+G4WT8 > eventID=4769
+G4WT5 > eventID=4492
+G4WT8 > eventID=4770
+G4WT1 > eventID=4684
+G4WT1 > eventID=4685
+G4WT8 > eventID=4773
+G4WT6 > eventID=4865
+G4WT8 > eventID=4775
+G4WT6 > eventID=4866
+G4WT1 > eventID=4689
+G4WT1 > eventID=4689
+G4WT1 > eventID=4689
+G4WT1 > eventID=4689
+G4WT8 > eventID=4777
+G4WT6 > eventID=4868
+G4WT6 > eventID=4868
+G4WT6 > eventID=4868
+G4WT6 > eventID=4868
+G4WT8 > eventID=4779
+G4WT8 > eventID=4779
+G4WT8 > eventID=4780
+G4WT6 > eventID=4870
+G4WT6 > eventID=4870
+G4WT0 > eventID=4394
+G4WT7 > eventID=5219
+G4WT2 > eventID=5406
+G4WT7 > eventID=5220
+G4WT0 > eventID=4396
+G4WT7 > eventID=5222
+G4WT7 > eventID=5222
+G4WT7 > eventID=5223
+G4WT7 > eventID=5226
+G4WT2 > eventID=5413
+G4WT7 > eventID=5227
+G4WT4 > eventID=4590
+G4WT4 > eventID=4590
+G4WT5 > eventID=4498
+G4WT5 > eventID=4499
+G4WT5 > eventID=4499
+G4WT1 > eventID=4693
+G4WT5 > eventID=4499
+G4WT1 > eventID=4693
+G4WT5 > eventID=5601
+G4WT5 > eventID=5601
+G4WT0 > eventID=5500
+G4WT1 > eventID=4696
+G4WT0 > eventID=5501
+G4WT1 > eventID=4698
+G4WT5 > eventID=5604
+G4WT11 > eventID=5158
+G4WT5 > eventID=5605
+G4WT1 > eventID=5700
+G4WT11 > eventID=5159
+G4WT10 > eventID=5334
+G4WT1 > eventID=5701
+G4WT11 > eventID=5160
+G4WT10 > eventID=5335
+G4WT10 > eventID=5335
+G4WT1 > eventID=5702
+G4WT0 > eventID=5506
+G4WT1 > eventID=5703
+G4WT11 > eventID=5164
+G4WT11 > eventID=5164
+G4WT11 > eventID=5164
+G4WT11 > eventID=5164
+G4WT4 > eventID=4592
+G4WT11 > eventID=5164
+G4WT4 > eventID=4593
+G4WT6 > eventID=4876
+G4WT11 > eventID=5166
+G4WT4 > eventID=4594
+G4WT11 > eventID=5166
+G4WT11 > eventID=5166
+G4WT11 > eventID=5167
+G4WT6 > eventID=4879
+G4WT11 > eventID=5167
+G4WT11 > eventID=5167
+G4WT4 > eventID=4596
+G4WT6 > eventID=4880
+G4WT7 > eventID=5229
+G4WT4 > eventID=4598
+G4WT4 > eventID=5800
+G4WT7 > eventID=5233
+G4WT6 > eventID=4885
+G4WT4 > eventID=5802
+G4WT7 > eventID=5234
+G4WT6 > eventID=4886
+G4WT10 > eventID=5337
+G4WT4 > eventID=5804
+G4WT4 > eventID=5804
+G4WT4 > eventID=5804
+G4WT7 > eventID=5237
+G4WT10 > eventID=5339
+G4WT4 > eventID=5806
+G4WT10 > eventID=5340
+G4WT4 > eventID=5807
+G4WT2 > eventID=5413
+G4WT9 > eventID=4957
+G4WT10 > eventID=5342
+G4WT9 > eventID=4958
+G4WT9 > eventID=4958
+G4WT10 > eventID=5344
+G4WT2 > eventID=5416
+G4WT10 > eventID=5344
+G4WT3 > eventID=5048
+G4WT10 > eventID=5344
+G4WT10 > eventID=5344
+G4WT10 > eventID=5344
+G4WT2 > eventID=5417
+G4WT2 > eventID=5417
+G4WT10 > eventID=5345
+G4WT3 > eventID=5050
+G4WT2 > eventID=5419
+G4WT10 > eventID=5346
+G4WT11 > eventID=5168
+G4WT4 > eventID=5809
+G4WT9 > eventID=4963
+G4WT0 > eventID=5508
+G4WT0 > eventID=5509
+G4WT11 > eventID=5170
+G4WT0 > eventID=5510
+G4WT0 > eventID=5510
+G4WT2 > eventID=5420
+G4WT0 > eventID=5511
+G4WT2 > eventID=5421
+G4WT0 > eventID=5512
+G4WT9 > eventID=4965
+G4WT0 > eventID=5515
+G4WT5 > eventID=5605
+G4WT1 > eventID=5706
+G4WT1 > eventID=5706
+G4WT5 > eventID=5606
+G4WT1 > eventID=5707
+G4WT1 > eventID=5707
+G4WT1 > eventID=5707
+G4WT9 > eventID=4970
+G4WT5 > eventID=5608
+G4WT4 > eventID=5811
+G4WT0 > eventID=5523
+G4WT5 > eventID=5612
+G4WT5 > eventID=5612
+G4WT2 > eventID=5427
+G4WT5 > eventID=5613
+G4WT0 > eventID=5525
+G4WT0 > eventID=5525
+G4WT0 > eventID=5525
+G4WT0 > eventID=5525
+G4WT0 > eventID=5526
+G4WT5 > eventID=5616
+G4WT5 > eventID=5616
+G4WT0 > eventID=5527
+G4WT11 > eventID=5175
+G4WT11 > eventID=5176
+G4WT4 > eventID=5812
+G4WT4 > eventID=5814
+G4WT4 > eventID=5814
+G4WT4 > eventID=5815
+G4WT11 > eventID=5184
+G4WT6 > eventID=4889
+G4WT11 > eventID=5185
+G4WT8 > eventID=4781
+G4WT4 > eventID=5819
+G4WT8 > eventID=4782
+G4WT4 > eventID=5820
+G4WT4 > eventID=5820
+G4WT8 > eventID=4783
+G4WT4 > eventID=5821
+G4WT6 > eventID=4893
+G4WT8 > eventID=4785
+G4WT3 > eventID=5051
+G4WT8 > eventID=4786
+G4WT10 > eventID=5347
+G4WT4 > eventID=5824
+G4WT10 > eventID=5349
+G4WT7 > eventID=5240
+G4WT9 > eventID=4977
+G4WT9 > eventID=4979
+G4WT7 > eventID=5245
+G4WT7 > eventID=5246
+G4WT10 > eventID=5350
+G4WT9 > eventID=4984
+G4WT10 > eventID=5351
+G4WT10 > eventID=5352
+G4WT9 > eventID=4986
+G4WT8 > eventID=4792
+G4WT9 > eventID=4986
+G4WT8 > eventID=4792
+G4WT8 > eventID=4794
+G4WT10 > eventID=5356
+G4WT10 > eventID=5357
+G4WT10 > eventID=5357
+G4WT10 > eventID=5359
+G4WT9 > eventID=4992
+G4WT9 > eventID=4992
+G4WT10 > eventID=5360
+G4WT10 > eventID=5362
+G4WT9 > eventID=4994
+G4WT9 > eventID=4995
+G4WT8 > eventID=5901
+G4WT2 > eventID=5428
+G4WT2 > eventID=5431
+G4WT2 > eventID=5432
+G4WT10 > eventID=5373
+G4WT2 > eventID=5436
+G4WT10 > eventID=5377
+G4WT10 > eventID=5378
+G4WT2 > eventID=5440
+G4WT2 > eventID=5441
+G4WT2 > eventID=5443
+G4WT2 > eventID=5443
+G4WT2 > eventID=5444
+G4WT10 > eventID=5384
+G4WT5 > eventID=5620
+G4WT8 > eventID=5901
+G4WT8 > eventID=5901
+G4WT5 > eventID=5622
+G4WT5 > eventID=5623
+G4WT5 > eventID=5625
+G4WT3 > eventID=5060
+G4WT8 > eventID=5908
+G4WT8 > eventID=5909
+G4WT5 > eventID=5627
+G4WT3 > eventID=5062
+G4WT8 > eventID=5912
+G4WT3 > eventID=5064
+G4WT8 > eventID=5914
+G4WT3 > eventID=5067
+G4WT3 > eventID=5068
+G4WT5 > eventID=5635
+G4WT5 > eventID=5639
+G4WT8 > eventID=5926
+G4WT5 > eventID=5641
+G4WT5 > eventID=5643
+G4WT5 > eventID=5645
+G4WT5 > eventID=5646
+G4WT6 > eventID=4894
+G4WT7 > eventID=5246
+G4WT2 > eventID=5453
+G4WT2 > eventID=5453
+G4WT7 > eventID=5247
+G4WT2 > eventID=5454
+G4WT5 > eventID=5648
+G4WT3 > eventID=5074
+G4WT11 > eventID=5188
+G4WT4 > eventID=5829
+G4WT3 > eventID=5079
+G4WT3 > eventID=5082
+G4WT7 > eventID=5248
+G4WT7 > eventID=5249
+G4WT7 > eventID=5250
+G4WT7 > eventID=5251
+G4WT2 > eventID=5457
+G4WT7 > eventID=5258
+G4WT2 > eventID=5462
+G4WT7 > eventID=5261
+G4WT7 > eventID=5262
+G4WT2 > eventID=5472
+G4WT2 > eventID=5474
+G4WT6 > eventID=4896
+G4WT8 > eventID=5927
+G4WT6 > eventID=4896
+G4WT6 > eventID=4896
+G4WT8 > eventID=5928
+G4WT8 > eventID=5929
+G4WT4 > eventID=5836
+G4WT4 > eventID=5837
+G4WT8 > eventID=5933
+G4WT8 > eventID=5934
+G4WT4 > eventID=5841
+G4WT8 > eventID=5936
+G4WT8 > eventID=5937
+G4WT4 > eventID=5844
+G4WT4 > eventID=5844
+G4WT4 > eventID=5845
+G4WT8 > eventID=5940
+G4WT8 > eventID=5940
+G4WT4 > eventID=5850
+G4WT4 > eventID=5851
+G4WT4 > eventID=5852
+G4WT10 > eventID=5389
+G4WT10 > eventID=5390
+G4WT1 > eventID=5717
+G4WT1 > eventID=5718
+G4WT1 > eventID=5721
+G4WT10 > eventID=5392
+G4WT10 > eventID=5395
+G4WT1 > eventID=5727
+G4WT10 > eventID=5397
+G4WT10 > eventID=5399
+G4WT10 > eventID=5399
+G4WT10 > eventID=5399
+G4WT10 > eventID=5399
+G4WT1 > eventID=5731
+G4WT10 > eventID=6000
+G4WT10 > eventID=6001
+G4WT0 > eventID=5528
+G4WT6 > eventID=4898
+G4WT6 > eventID=4899
+G4WT0 > eventID=5530
+G4WT6 > eventID=6100
+G4WT0 > eventID=5532
+G4WT4 > eventID=5861
+G4WT4 > eventID=5861
+G4WT6 > eventID=6105
+G4WT6 > eventID=6106
+G4WT8 > eventID=5943
+G4WT4 > eventID=5866
+G4WT4 > eventID=5866
+G4WT4 > eventID=5867
+G4WT8 > eventID=5947
+G4WT11 > eventID=5188
+G4WT11 > eventID=5189
+G4WT8 > eventID=5951
+G4WT11 > eventID=5191
+G4WT5 > eventID=5651
+G4WT2 > eventID=5476
+G4WT5 > eventID=5651
+G4WT2 > eventID=5476
+G4WT8 > eventID=5952
+G4WT8 > eventID=5952
+G4WT5 > eventID=5652
+G4WT0 > eventID=5537
+G4WT10 > eventID=6006
+G4WT10 > eventID=6007
+G4WT10 > eventID=6007
+G4WT10 > eventID=6008
+G4WT3 > eventID=5083
+G4WT10 > eventID=6009
+G4WT3 > eventID=5083
+G4WT3 > eventID=5084
+G4WT3 > eventID=5085
+G4WT5 > eventID=5657
+G4WT3 > eventID=5088
+G4WT3 > eventID=5089
+G4WT5 > eventID=5661
+G4WT3 > eventID=5090
+G4WT3 > eventID=5091
+G4WT1 > eventID=5733
+G4WT5 > eventID=5662
+G4WT3 > eventID=5094
+G4WT1 > eventID=5736
+G4WT3 > eventID=5096
+G4WT3 > eventID=5096
+G4WT6 > eventID=6108
+G4WT0 > eventID=5541
+G4WT0 > eventID=5542
+G4WT6 > eventID=6110
+G4WT10 > eventID=6011
+G4WT10 > eventID=6012
+G4WT6 > eventID=6112
+G4WT0 > eventID=5545
+G4WT11 > eventID=5194
+G4WT7 > eventID=5266
+G4WT7 > eventID=5266
+G4WT7 > eventID=5266
+G4WT11 > eventID=5195
+G4WT6 > eventID=6116
+G4WT11 > eventID=5196
+G4WT6 > eventID=6116
+G4WT11 > eventID=5196
+G4WT6 > eventID=6116
+G4WT10 > eventID=6017
+G4WT11 > eventID=5197
+G4WT11 > eventID=5197
+G4WT8 > eventID=5962
+G4WT8 > eventID=5962
+G4WT7 > eventID=5268
+G4WT6 > eventID=6118
+G4WT4 > eventID=5869
+G4WT1 > eventID=5738
+G4WT8 > eventID=5965
+G4WT4 > eventID=5871
+G4WT1 > eventID=5741
+G4WT6 > eventID=6121
+G4WT4 > eventID=5873
+G4WT4 > eventID=5875
+G4WT4 > eventID=5876
+G4WT1 > eventID=5745
+G4WT4 > eventID=5878
+G4WT1 > eventID=5747
+G4WT7 > eventID=5274
+G4WT1 > eventID=5747
+G4WT4 > eventID=5880
+G4WT0 > eventID=5546
+G4WT4 > eventID=5881
+G4WT11 > eventID=5198
+G4WT6 > eventID=6124
+G4WT11 > eventID=6200
+G4WT11 > eventID=6201
+G4WT6 > eventID=6126
+G4WT11 > eventID=6201
+G4WT6 > eventID=6127
+G4WT6 > eventID=6127
+G4WT0 > eventID=5550
+G4WT6 > eventID=6137
+G4WT0 > eventID=5550
+G4WT0 > eventID=5550
+G4WT6 > eventID=6140
+G4WT7 > eventID=5275
+G4WT1 > eventID=5749
+G4WT3 > eventID=5096
+G4WT3 > eventID=5097
+G4WT3 > eventID=5098
+G4WT0 > eventID=5555
+G4WT3 > eventID=6301
+G4WT1 > eventID=5754
+G4WT1 > eventID=5755
+G4WT3 > eventID=6304
+G4WT3 > eventID=6305
+G4WT1 > eventID=5758
+G4WT2 > eventID=5480
+G4WT11 > eventID=6203
+G4WT2 > eventID=5481
+G4WT11 > eventID=6204
+G4WT2 > eventID=5481
+G4WT11 > eventID=6204
+G4WT11 > eventID=6205
+G4WT10 > eventID=6025
+G4WT10 > eventID=6025
+G4WT11 > eventID=6206
+G4WT10 > eventID=6026
+G4WT2 > eventID=5485
+G4WT11 > eventID=6211
+G4WT11 > eventID=6212
+G4WT7 > eventID=5277
+G4WT11 > eventID=6216
+G4WT11 > eventID=6216
+G4WT10 > eventID=6029
+G4WT2 > eventID=5487
+G4WT2 > eventID=5487
+G4WT10 > eventID=6032
+G4WT2 > eventID=5489
+G4WT10 > eventID=6033
+G4WT2 > eventID=5491
+G4WT2 > eventID=5491
+G4WT10 > eventID=6036
+G4WT5 > eventID=5665
+G4WT9 > eventID=4999
+G4WT2 > eventID=5493
+G4WT2 > eventID=5494
+G4WT8 > eventID=5966
+G4WT0 > eventID=5556
+G4WT2 > eventID=5494
+G4WT2 > eventID=5494
+G4WT2 > eventID=5494
+G4WT5 > eventID=5667
+G4WT1 > eventID=5759
+G4WT0 > eventID=5557
+G4WT1 > eventID=5760
+G4WT5 > eventID=5669
+G4WT8 > eventID=5969
+G4WT1 > eventID=5761
+G4WT5 > eventID=5670
+G4WT1 > eventID=5762
+G4WT5 > eventID=5672
+G4WT9 > eventID=6407
+G4WT5 > eventID=5673
+G4WT1 > eventID=5764
+G4WT2 > eventID=5494
+G4WT9 > eventID=6409
+G4WT2 > eventID=5495
+G4WT5 > eventID=5675
+G4WT9 > eventID=6410
+G4WT2 > eventID=5496
+G4WT9 > eventID=6411
+G4WT9 > eventID=6412
+G4WT4 > eventID=5882
+G4WT1 > eventID=5765
+G4WT9 > eventID=6413
+G4WT4 > eventID=5884
+G4WT4 > eventID=5884
+G4WT10 > eventID=6041
+G4WT2 > eventID=5498
+G4WT9 > eventID=6416
+G4WT2 > eventID=5498
+G4WT2 > eventID=5498
+G4WT9 > eventID=6416
+G4WT2 > eventID=5499
+G4WT0 > eventID=5564
+G4WT4 > eventID=5887
+G4WT0 > eventID=5565
+G4WT0 > eventID=5566
+G4WT0 > eventID=5566
+G4WT7 > eventID=5291
+G4WT7 > eventID=5291
+G4WT0 > eventID=5567
+G4WT0 > eventID=5567
+G4WT1 > eventID=5769
+G4WT1 > eventID=5771
+G4WT1 > eventID=5774
+G4WT10 > eventID=6045
+G4WT4 > eventID=5889
+G4WT4 > eventID=5890
+G4WT1 > eventID=5776
+G4WT4 > eventID=5890
+G4WT2 > eventID=6500
+G4WT4 > eventID=5893
+G4WT8 > eventID=5972
+G4WT4 > eventID=5895
+G4WT2 > eventID=6502
+G4WT8 > eventID=5974
+G4WT5 > eventID=5677
+G4WT1 > eventID=5782
+G4WT5 > eventID=5678
+G4WT2 > eventID=6504
+G4WT8 > eventID=5976
+G4WT5 > eventID=5680
+G4WT8 > eventID=5978
+G4WT8 > eventID=5978
+G4WT8 > eventID=5978
+G4WT5 > eventID=5681
+G4WT3 > eventID=6317
+G4WT0 > eventID=5569
+G4WT5 > eventID=5682
+G4WT1 > eventID=5787
+G4WT2 > eventID=6507
+G4WT1 > eventID=5788
+G4WT2 > eventID=6508
+G4WT5 > eventID=5684
+G4WT3 > eventID=6321
+G4WT2 > eventID=6509
+G4WT9 > eventID=6421
+G4WT1 > eventID=5791
+G4WT10 > eventID=6046
+G4WT9 > eventID=6422
+G4WT10 > eventID=6046
+G4WT5 > eventID=5686
+G4WT8 > eventID=5978
+G4WT10 > eventID=6047
+G4WT5 > eventID=5687
+G4WT10 > eventID=6047
+G4WT10 > eventID=6047
+G4WT8 > eventID=5979
+G4WT10 > eventID=6047
+G4WT5 > eventID=5688
+G4WT8 > eventID=5981
+G4WT8 > eventID=5981
+G4WT6 > eventID=6141
+G4WT0 > eventID=5573
+G4WT8 > eventID=5982
+G4WT8 > eventID=5983
+G4WT6 > eventID=6142
+G4WT8 > eventID=5983
+G4WT0 > eventID=5575
+G4WT5 > eventID=5693
+G4WT8 > eventID=5984
+G4WT0 > eventID=5576
+G4WT1 > eventID=5793
+G4WT9 > eventID=6427
+G4WT9 > eventID=6427
+G4WT1 > eventID=5796
+G4WT6 > eventID=6143
+G4WT0 > eventID=5580
+G4WT8 > eventID=5989
+G4WT8 > eventID=5990
+G4WT9 > eventID=6428
+G4WT9 > eventID=6429
+G4WT1 > eventID=6601
+G4WT1 > eventID=6602
+G4WT4 > eventID=5898
+G4WT2 > eventID=6510
+G4WT1 > eventID=6604
+G4WT9 > eventID=6432
+G4WT2 > eventID=6516
+G4WT0 > eventID=5583
+G4WT11 > eventID=6219
+G4WT6 > eventID=6146
+G4WT6 > eventID=6146
+G4WT11 > eventID=6223
+G4WT4 > eventID=6701
+G4WT11 > eventID=6224
+G4WT1 > eventID=6609
+G4WT8 > eventID=5990
+G4WT8 > eventID=5993
+G4WT8 > eventID=5994
+G4WT8 > eventID=5994
+G4WT5 > eventID=5695
+G4WT10 > eventID=6049
+G4WT7 > eventID=5292
+G4WT10 > eventID=6049
+G4WT11 > eventID=6232
+G4WT10 > eventID=6051
+G4WT10 > eventID=6051
+G4WT11 > eventID=6234
+G4WT11 > eventID=6234
+G4WT2 > eventID=6521
+G4WT6 > eventID=6158
+G4WT10 > eventID=6055
+G4WT6 > eventID=6159
+G4WT10 > eventID=6059
+G4WT8 > eventID=5994
+G4WT4 > eventID=6702
+G4WT4 > eventID=6702
+G4WT4 > eventID=6702
+G4WT4 > eventID=6702
+G4WT4 > eventID=6702
+G4WT4 > eventID=6702
+G4WT4 > eventID=6703
+G4WT8 > eventID=5996
+G4WT4 > eventID=6704
+G4WT8 > eventID=5998
+G4WT0 > eventID=5584
+G4WT4 > eventID=6707
+G4WT8 > eventID=6800
+G4WT8 > eventID=6800
+G4WT8 > eventID=6800
+G4WT8 > eventID=6800
+G4WT0 > eventID=5587
+G4WT8 > eventID=6800
+G4WT4 > eventID=6709
+G4WT5 > eventID=5696
+G4WT8 > eventID=6801
+G4WT4 > eventID=6711
+G4WT4 > eventID=6712
+G4WT0 > eventID=5591
+G4WT4 > eventID=6714
+G4WT7 > eventID=5297
+G4WT9 > eventID=6439
+G4WT5 > eventID=6901
+G4WT9 > eventID=6440
+G4WT5 > eventID=6902
+G4WT9 > eventID=6441
+G4WT1 > eventID=6614
+G4WT9 > eventID=6444
+G4WT9 > eventID=6445
+G4WT2 > eventID=6522
+G4WT2 > eventID=6522
+G4WT2 > eventID=6523
+G4WT1 > eventID=6621
+G4WT7 > eventID=5297
+G4WT2 > eventID=6524
+G4WT5 > eventID=6903
+G4WT2 > eventID=6525
+G4WT2 > eventID=6525
+G4WT2 > eventID=6526
+G4WT5 > eventID=6905
+G4WT5 > eventID=6905
+G4WT5 > eventID=6906
+G4WT7 > eventID=7101
+G4WT5 > eventID=6906
+G4WT2 > eventID=6529
+G4WT11 > eventID=6238
+G4WT11 > eventID=6238
+G4WT7 > eventID=7102
+G4WT5 > eventID=6907
+G4WT3 > eventID=6325
+G4WT7 > eventID=7102
+G4WT3 > eventID=6326
+G4WT7 > eventID=7104
+G4WT7 > eventID=7107
+G4WT7 > eventID=7108
+G4WT3 > eventID=6333
+G4WT7 > eventID=7112
+G4WT3 > eventID=6337
+G4WT10 > eventID=6068
+G4WT2 > eventID=6530
+G4WT5 > eventID=6909
+G4WT2 > eventID=6531
+G4WT2 > eventID=6532
+G4WT10 > eventID=6072
+G4WT2 > eventID=6536
+G4WT10 > eventID=6075
+G4WT2 > eventID=6537
+G4WT2 > eventID=6538
+G4WT2 > eventID=6539
+G4WT11 > eventID=6244
+G4WT8 > eventID=6804
+G4WT2 > eventID=6540
+G4WT8 > eventID=6805
+G4WT0 > eventID=7000
+G4WT8 > eventID=6807
+G4WT1 > eventID=6626
+G4WT8 > eventID=6807
+G4WT8 > eventID=6808
+G4WT0 > eventID=7004
+G4WT11 > eventID=6245
+G4WT4 > eventID=6718
+G4WT1 > eventID=6629
+G4WT8 > eventID=6810
+G4WT1 > eventID=6630
+G4WT11 > eventID=6247
+G4WT11 > eventID=6247
+G4WT1 > eventID=6631
+G4WT4 > eventID=6720
+G4WT11 > eventID=6248
+G4WT7 > eventID=7118
+G4WT4 > eventID=6723
+G4WT11 > eventID=6252
+G4WT5 > eventID=6919
+G4WT8 > eventID=6812
+G4WT8 > eventID=6814
+G4WT8 > eventID=6817
+G4WT8 > eventID=6820
+G4WT9 > eventID=6456
+G4WT9 > eventID=6457
+G4WT2 > eventID=6543
+G4WT2 > eventID=6543
+G4WT1 > eventID=6637
+G4WT1 > eventID=6638
+G4WT2 > eventID=6548
+G4WT7 > eventID=7122
+G4WT3 > eventID=6349
+G4WT1 > eventID=6644
+G4WT3 > eventID=6350
+G4WT4 > eventID=6724
+G4WT7 > eventID=7125
+G4WT4 > eventID=6724
+G4WT3 > eventID=6351
+G4WT7 > eventID=7127
+G4WT0 > eventID=7013
+G4WT3 > eventID=6353
+G4WT7 > eventID=7128
+G4WT7 > eventID=7128
+G4WT1 > eventID=6649
+G4WT4 > eventID=6729
+G4WT0 > eventID=7016
+G4WT0 > eventID=7016
+G4WT3 > eventID=6356
+G4WT8 > eventID=6821
+G4WT8 > eventID=6821
+G4WT8 > eventID=6822
+G4WT1 > eventID=6653
+G4WT0 > eventID=7019
+G4WT8 > eventID=6824
+G4WT9 > eventID=6464
+G4WT9 > eventID=6465
+G4WT6 > eventID=6166
+G4WT7 > eventID=7130
+G4WT8 > eventID=6829
+G4WT6 > eventID=6168
+G4WT6 > eventID=6168
+G4WT4 > eventID=6731
+G4WT4 > eventID=6732
+G4WT6 > eventID=6170
+G4WT8 > eventID=6832
+G4WT6 > eventID=6171
+G4WT6 > eventID=6172
+G4WT6 > eventID=6173
+G4WT2 > eventID=6551
+G4WT2 > eventID=6551
+G4WT6 > eventID=6174
+G4WT2 > eventID=6551
+G4WT11 > eventID=6263
+G4WT6 > eventID=6175
+G4WT6 > eventID=6175
+G4WT11 > eventID=6264
+G4WT5 > eventID=6931
+G4WT6 > eventID=6176
+G4WT6 > eventID=6177
+G4WT5 > eventID=6933
+G4WT2 > eventID=6551
+G4WT10 > eventID=6083
+G4WT2 > eventID=6553
+G4WT3 > eventID=6359
+G4WT9 > eventID=6468
+G4WT8 > eventID=6833
+G4WT8 > eventID=6834
+G4WT5 > eventID=6940
+G4WT8 > eventID=6835
+G4WT8 > eventID=6836
+G4WT0 > eventID=7020
+G4WT8 > eventID=6836
+G4WT8 > eventID=6836
+G4WT8 > eventID=6836
+G4WT3 > eventID=6364
+G4WT8 > eventID=6839
+G4WT10 > eventID=6088
+G4WT9 > eventID=6473
+G4WT1 > eventID=6656
+G4WT1 > eventID=6656
+G4WT8 > eventID=6843
+G4WT8 > eventID=6843
+G4WT4 > eventID=6741
+G4WT8 > eventID=6844
+G4WT10 > eventID=6094
+G4WT5 > eventID=6942
+G4WT8 > eventID=6845
+G4WT10 > eventID=6095
+G4WT5 > eventID=6943
+G4WT11 > eventID=6267
+G4WT7 > eventID=7136
+G4WT5 > eventID=6944
+G4WT7 > eventID=7137
+G4WT6 > eventID=6179
+G4WT5 > eventID=6947
+G4WT9 > eventID=6478
+G4WT5 > eventID=6947
+G4WT11 > eventID=6272
+G4WT5 > eventID=6948
+G4WT5 > eventID=6950
+G4WT6 > eventID=6184
+G4WT5 > eventID=6951
+G4WT2 > eventID=6560
+G4WT6 > eventID=6185
+G4WT6 > eventID=6185
+G4WT10 > eventID=7201
+G4WT6 > eventID=6188
+G4WT0 > eventID=7024
+G4WT6 > eventID=6190
+G4WT6 > eventID=6191
+G4WT6 > eventID=6192
+G4WT0 > eventID=7027
+G4WT0 > eventID=7027
+G4WT0 > eventID=7027
+G4WT0 > eventID=7027
+G4WT6 > eventID=6193
+G4WT4 > eventID=6748
+G4WT6 > eventID=6194
+G4WT11 > eventID=6278
+G4WT1 > eventID=6656
+G4WT10 > eventID=7201
+G4WT2 > eventID=6567
+G4WT10 > eventID=7202
+G4WT2 > eventID=6568
+G4WT2 > eventID=6568
+G4WT10 > eventID=7203
+G4WT2 > eventID=6569
+G4WT1 > eventID=6659
+G4WT1 > eventID=6659
+G4WT10 > eventID=7207
+G4WT4 > eventID=6750
+G4WT1 > eventID=6662
+G4WT10 > eventID=7208
+G4WT4 > eventID=6751
+G4WT3 > eventID=6369
+G4WT10 > eventID=7209
+G4WT10 > eventID=7209
+G4WT7 > eventID=7138
+G4WT4 > eventID=6754
+G4WT4 > eventID=6755
+G4WT0 > eventID=7027
+G4WT0 > eventID=7027
+G4WT0 > eventID=7027
+G4WT7 > eventID=7142
+G4WT3 > eventID=6370
+G4WT7 > eventID=7143
+G4WT0 > eventID=7028
+G4WT7 > eventID=7144
+G4WT9 > eventID=6483
+G4WT0 > eventID=7031
+G4WT9 > eventID=6484
+G4WT7 > eventID=7147
+G4WT0 > eventID=7034
+G4WT3 > eventID=6376
+G4WT1 > eventID=6670
+G4WT2 > eventID=6575
+G4WT1 > eventID=6671
+G4WT10 > eventID=7210
+G4WT7 > eventID=7149
+G4WT9 > eventID=6491
+G4WT10 > eventID=7212
+G4WT1 > eventID=6674
+G4WT11 > eventID=6280
+G4WT7 > eventID=7152
+G4WT7 > eventID=7152
+G4WT7 > eventID=7152
+G4WT7 > eventID=7152
+G4WT11 > eventID=6282
+G4WT11 > eventID=6282
+G4WT4 > eventID=6759
+G4WT4 > eventID=6759
+G4WT11 > eventID=6284
+G4WT11 > eventID=6284
+G4WT7 > eventID=7156
+G4WT7 > eventID=7156
+G4WT7 > eventID=7156
+G4WT6 > eventID=6198
+G4WT9 > eventID=6492
+G4WT5 > eventID=6959
+G4WT8 > eventID=6846
+G4WT2 > eventID=6580
+G4WT8 > eventID=6847
+G4WT3 > eventID=6384
+G4WT4 > eventID=6762
+G4WT8 > eventID=6851
+G4WT4 > eventID=6763
+G4WT4 > eventID=6764
+G4WT3 > eventID=6388
+G4WT4 > eventID=6765
+G4WT3 > eventID=6389
+G4WT4 > eventID=6765
+G4WT6 > eventID=7301
+G4WT10 > eventID=7213
+G4WT8 > eventID=6857
+G4WT4 > eventID=6769
+G4WT6 > eventID=7303
+G4WT1 > eventID=6675
+G4WT6 > eventID=7304
+G4WT6 > eventID=7304
+G4WT10 > eventID=7217
+G4WT1 > eventID=6677
+G4WT10 > eventID=7218
+G4WT10 > eventID=7218
+G4WT10 > eventID=7219
+G4WT6 > eventID=7307
+G4WT10 > eventID=7220
+G4WT6 > eventID=7308
+G4WT7 > eventID=7156
+G4WT10 > eventID=7222
+G4WT10 > eventID=7222
+G4WT10 > eventID=7222
+G4WT10 > eventID=7222
+G4WT1 > eventID=6682
+G4WT7 > eventID=7159
+G4WT10 > eventID=7226
+G4WT2 > eventID=6586
+G4WT2 > eventID=6588
+G4WT10 > eventID=7229
+G4WT0 > eventID=7039
+G4WT2 > eventID=6589
+G4WT7 > eventID=7166
+G4WT6 > eventID=7310
+G4WT6 > eventID=7311
+G4WT0 > eventID=7043
+G4WT6 > eventID=7312
+G4WT7 > eventID=7170
+G4WT4 > eventID=6771
+G4WT7 > eventID=7171
+G4WT0 > eventID=7045
+G4WT5 > eventID=6961
+G4WT4 > eventID=6775
+G4WT4 > eventID=6775
+G4WT5 > eventID=6963
+G4WT0 > eventID=7049
+G4WT3 > eventID=6393
+G4WT4 > eventID=6777
+G4WT5 > eventID=6965
+G4WT8 > eventID=6859
+G4WT0 > eventID=7052
+G4WT9 > eventID=7405
+G4WT1 > eventID=6688
+G4WT1 > eventID=6688
+G4WT8 > eventID=6861
+G4WT0 > eventID=7054
+G4WT8 > eventID=6864
+G4WT5 > eventID=6966
+G4WT11 > eventID=6299
+G4WT2 > eventID=6597
+G4WT5 > eventID=6967
+G4WT3 > eventID=6396
+G4WT7 > eventID=7172
+G4WT11 > eventID=7501
+G4WT2 > eventID=6599
+G4WT9 > eventID=7406
+G4WT9 > eventID=7407
+G4WT9 > eventID=7409
+G4WT7 > eventID=7177
+G4WT6 > eventID=7315
+G4WT7 > eventID=7177
+G4WT9 > eventID=7411
+G4WT6 > eventID=7316
+G4WT10 > eventID=7232
+G4WT7 > eventID=7179
+G4WT6 > eventID=7317
+G4WT6 > eventID=7317
+G4WT6 > eventID=7317
+G4WT4 > eventID=6779
+G4WT7 > eventID=7183
+G4WT8 > eventID=6866
+G4WT8 > eventID=6867
+G4WT10 > eventID=7238
+G4WT6 > eventID=7322
+G4WT8 > eventID=6868
+G4WT8 > eventID=6868
+G4WT9 > eventID=7413
+G4WT5 > eventID=6969
+G4WT10 > eventID=7240
+G4WT8 > eventID=6869
+G4WT8 > eventID=6869
+G4WT5 > eventID=6970
+G4WT9 > eventID=7414
+G4WT11 > eventID=7505
+G4WT11 > eventID=7506
+G4WT2 > eventID=7600
+G4WT6 > eventID=7327
+G4WT11 > eventID=7508
+G4WT5 > eventID=6973
+G4WT6 > eventID=7329
+G4WT5 > eventID=6974
+G4WT5 > eventID=6974
+G4WT7 > eventID=7184
+G4WT11 > eventID=7510
+G4WT4 > eventID=6783
+G4WT11 > eventID=7511
+G4WT7 > eventID=7185
+G4WT4 > eventID=6784
+G4WT0 > eventID=7059
+G4WT0 > eventID=7059
+G4WT0 > eventID=7059
+G4WT2 > eventID=7606
+G4WT5 > eventID=6980
+G4WT9 > eventID=7416
+G4WT9 > eventID=7416
+G4WT0 > eventID=7065
+G4WT9 > eventID=7418
+G4WT9 > eventID=7418
+G4WT8 > eventID=6875
+G4WT8 > eventID=6875
+G4WT8 > eventID=6875
+G4WT8 > eventID=6875
+G4WT0 > eventID=7068
+G4WT4 > eventID=6787
+G4WT3 > eventID=6399
+G4WT8 > eventID=6878
+G4WT3 > eventID=7700
+G4WT0 > eventID=7071
+G4WT8 > eventID=6879
+G4WT0 > eventID=7072
+G4WT0 > eventID=7072
+G4WT2 > eventID=7608
+G4WT0 > eventID=7073
+G4WT0 > eventID=7073
+G4WT3 > eventID=7703
+G4WT0 > eventID=7074
+G4WT0 > eventID=7075
+G4WT2 > eventID=7611
+G4WT7 > eventID=7193
+G4WT7 > eventID=7194
+G4WT5 > eventID=6986
+G4WT5 > eventID=6987
+G4WT3 > eventID=7706
+G4WT5 > eventID=6988
+G4WT3 > eventID=7707
+G4WT5 > eventID=6989
+G4WT5 > eventID=6990
+G4WT0 > eventID=7076
+G4WT11 > eventID=7511
+G4WT11 > eventID=7511
+G4WT11 > eventID=7511
+G4WT7 > eventID=7198
+G4WT5 > eventID=6991
+G4WT7 > eventID=7199
+G4WT2 > eventID=7613
+G4WT1 > eventID=6695
+G4WT1 > eventID=6697
+G4WT6 > eventID=7334
+G4WT1 > eventID=6697
+G4WT6 > eventID=7335
+G4WT2 > eventID=7617
+G4WT6 > eventID=7335
+G4WT8 > eventID=6881
+G4WT4 > eventID=6791
+G4WT8 > eventID=6882
+G4WT4 > eventID=6793
+G4WT1 > eventID=7902
+G4WT8 > eventID=6884
+G4WT1 > eventID=7903
+G4WT8 > eventID=6886
+G4WT8 > eventID=6887
+G4WT4 > eventID=6797
+G4WT8 > eventID=6888
+G4WT9 > eventID=7420
+G4WT1 > eventID=7908
+G4WT2 > eventID=7621
+G4WT9 > eventID=7421
+G4WT5 > eventID=6992
+G4WT11 > eventID=7513
+G4WT2 > eventID=7623
+G4WT11 > eventID=7514
+G4WT11 > eventID=7514
+G4WT5 > eventID=6995
+G4WT11 > eventID=7516
+G4WT8 > eventID=6895
+G4WT5 > eventID=6997
+G4WT5 > eventID=6997
+G4WT5 > eventID=6997
+G4WT5 > eventID=6997
+G4WT8 > eventID=6897
+G4WT10 > eventID=7241
+G4WT8 > eventID=6897
+G4WT5 > eventID=6998
+G4WT5 > eventID=6998
+G4WT4 > eventID=6798
+G4WT3 > eventID=7709
+G4WT3 > eventID=7709
+G4WT10 > eventID=7244
+G4WT5 > eventID=6999
+G4WT10 > eventID=7245
+G4WT5 > eventID=8001
+G4WT7 > eventID=7801
+G4WT1 > eventID=7909
+G4WT10 > eventID=7246
+G4WT5 > eventID=8006
+G4WT5 > eventID=8007
+G4WT3 > eventID=7713
+G4WT10 > eventID=7250
+G4WT7 > eventID=7802
+G4WT10 > eventID=7251
+G4WT3 > eventID=7717
+G4WT7 > eventID=7805
+G4WT8 > eventID=6899
+G4WT10 > eventID=7253
+G4WT8 > eventID=8100
+G4WT7 > eventID=7807
+G4WT7 > eventID=7807
+G4WT8 > eventID=8101
+G4WT11 > eventID=7519
+G4WT6 > eventID=7337
+G4WT6 > eventID=7337
+G4WT0 > eventID=7081
+G4WT0 > eventID=7082
+G4WT6 > eventID=7343
+G4WT4 > eventID=8200
+G4WT9 > eventID=7423
+G4WT9 > eventID=7424
+G4WT11 > eventID=7524
+G4WT5 > eventID=8009
+G4WT4 > eventID=8203
+G4WT4 > eventID=8203
+G4WT8 > eventID=8105
+G4WT8 > eventID=8105
+G4WT5 > eventID=8010
+G4WT11 > eventID=7525
+G4WT3 > eventID=7721
+G4WT5 > eventID=8011
+G4WT5 > eventID=8011
+G4WT5 > eventID=8012
+G4WT6 > eventID=7345
+G4WT1 > eventID=7911
+G4WT1 > eventID=7912
+G4WT2 > eventID=7632
+G4WT2 > eventID=7632
+G4WT2 > eventID=7632
+G4WT8 > eventID=8106
+G4WT11 > eventID=7527
+G4WT2 > eventID=7633
+G4WT4 > eventID=8205
+G4WT6 > eventID=7349
+G4WT11 > eventID=7530
+G4WT11 > eventID=7532
+G4WT4 > eventID=8210
+G4WT8 > eventID=8107
+G4WT5 > eventID=8012
+G4WT8 > eventID=8107
+G4WT11 > eventID=7534
+G4WT8 > eventID=8108
+G4WT5 > eventID=8013
+G4WT8 > eventID=8109
+G4WT11 > eventID=7536
+G4WT5 > eventID=8015
+G4WT8 > eventID=8111
+G4WT9 > eventID=7425
+G4WT8 > eventID=8113
+G4WT10 > eventID=7254
+G4WT2 > eventID=7634
+G4WT10 > eventID=7255
+G4WT8 > eventID=8115
+G4WT8 > eventID=8116
+G4WT0 > eventID=7086
+G4WT7 > eventID=7809
+G4WT4 > eventID=8217
+G4WT3 > eventID=7724
+G4WT4 > eventID=8219
+G4WT3 > eventID=7726
+G4WT3 > eventID=7727
+G4WT8 > eventID=8118
+G4WT3 > eventID=7728
+G4WT7 > eventID=7810
+G4WT4 > eventID=8222
+G4WT8 > eventID=8123
+G4WT11 > eventID=7536
+G4WT8 > eventID=8124
+G4WT1 > eventID=7921
+G4WT2 > eventID=7639
+G4WT7 > eventID=7817
+G4WT6 > eventID=7355
+G4WT4 > eventID=8225
+G4WT4 > eventID=8226
+G4WT4 > eventID=8227
+G4WT2 > eventID=7643
+G4WT7 > eventID=7821
+G4WT6 > eventID=7359
+G4WT4 > eventID=8230
+G4WT2 > eventID=7647
+G4WT4 > eventID=8231
+G4WT6 > eventID=7364
+G4WT4 > eventID=8232
+G4WT6 > eventID=7365
+G4WT2 > eventID=7650
+G4WT4 > eventID=8234
+G4WT3 > eventID=7729
+G4WT11 > eventID=7539
+G4WT3 > eventID=7730
+G4WT3 > eventID=7730
+G4WT3 > eventID=7730
+G4WT6 > eventID=7370
+G4WT3 > eventID=7731
+G4WT6 > eventID=7371
+G4WT6 > eventID=7371
+G4WT11 > eventID=7542
+G4WT10 > eventID=7259
+G4WT9 > eventID=7428
+G4WT10 > eventID=7260
+G4WT11 > eventID=7543
+G4WT10 > eventID=7260
+G4WT8 > eventID=8125
+G4WT5 > eventID=8020
+G4WT9 > eventID=7430
+G4WT10 > eventID=7262
+G4WT9 > eventID=7430
+G4WT9 > eventID=7430
+G4WT10 > eventID=7262
+G4WT10 > eventID=7262
+G4WT9 > eventID=7430
+G4WT9 > eventID=7430
+G4WT9 > eventID=7430
+G4WT9 > eventID=7430
+G4WT9 > eventID=7430
+G4WT10 > eventID=7264
+G4WT9 > eventID=7432
+G4WT9 > eventID=7432
+G4WT10 > eventID=7266
+G4WT9 > eventID=7437
+G4WT3 > eventID=7732
+G4WT3 > eventID=7732
+G4WT4 > eventID=8239
+G4WT4 > eventID=8240
+G4WT8 > eventID=8127
+G4WT5 > eventID=8022
+G4WT8 > eventID=8127
+G4WT0 > eventID=7092
+G4WT5 > eventID=8023
+G4WT0 > eventID=7094
+G4WT8 > eventID=8130
+G4WT4 > eventID=8243
+G4WT0 > eventID=7095
+G4WT7 > eventID=7829
+G4WT4 > eventID=8244
+G4WT8 > eventID=8132
+G4WT2 > eventID=7652
+G4WT11 > eventID=7549
+G4WT7 > eventID=7832
+G4WT7 > eventID=7832
+G4WT8 > eventID=8134
+G4WT7 > eventID=7833
+G4WT5 > eventID=8030
+G4WT7 > eventID=7834
+G4WT7 > eventID=7835
+G4WT10 > eventID=7268
+G4WT10 > eventID=7268
+G4WT7 > eventID=7837
+G4WT11 > eventID=7552
+G4WT7 > eventID=7837
+G4WT5 > eventID=8032
+G4WT7 > eventID=7841
+G4WT5 > eventID=8035
+G4WT8 > eventID=8137
+G4WT4 > eventID=8248
+G4WT8 > eventID=8138
+G4WT5 > eventID=8037
+G4WT5 > eventID=8038
+G4WT8 > eventID=8140
+G4WT2 > eventID=7659
+G4WT3 > eventID=7736
+G4WT4 > eventID=8252
+G4WT8 > eventID=8140
+G4WT8 > eventID=8140
+G4WT8 > eventID=8140
+G4WT5 > eventID=8040
+G4WT8 > eventID=8140
+G4WT1 > eventID=7924
+G4WT8 > eventID=8140
+G4WT8 > eventID=8140
+G4WT8 > eventID=8140
+G4WT8 > eventID=8140
+G4WT1 > eventID=7925
+G4WT5 > eventID=8042
+G4WT8 > eventID=8141
+G4WT5 > eventID=8043
+G4WT1 > eventID=7927
+G4WT8 > eventID=8142
+G4WT8 > eventID=8142
+G4WT2 > eventID=7665
+G4WT5 > eventID=8046
+G4WT8 > eventID=8145
+G4WT5 > eventID=8046
+G4WT5 > eventID=8046
+G4WT1 > eventID=7931
+G4WT5 > eventID=8046
+G4WT5 > eventID=8046
+G4WT2 > eventID=7668
+G4WT2 > eventID=7670
+G4WT11 > eventID=7556
+G4WT11 > eventID=7557
+G4WT11 > eventID=7559
+G4WT0 > eventID=7097
+G4WT6 > eventID=7373
+G4WT2 > eventID=7675
+G4WT6 > eventID=7373
+G4WT0 > eventID=7099
+G4WT0 > eventID=8300
+G4WT2 > eventID=7677
+G4WT2 > eventID=7677
+G4WT0 > eventID=8301
+G4WT0 > eventID=8302
+G4WT6 > eventID=7377
+G4WT2 > eventID=7680
+G4WT4 > eventID=8253
+G4WT9 > eventID=7439
+G4WT10 > eventID=7269
+G4WT6 > eventID=7378
+G4WT6 > eventID=7379
+G4WT6 > eventID=7380
+G4WT10 > eventID=7272
+G4WT4 > eventID=8256
+G4WT10 > eventID=7274
+G4WT5 > eventID=8050
+G4WT5 > eventID=8050
+G4WT10 > eventID=7276
+G4WT3 > eventID=7736
+G4WT6 > eventID=7380
+G4WT3 > eventID=7736
+G4WT6 > eventID=7381
+G4WT10 > eventID=7277
+G4WT3 > eventID=7737
+G4WT4 > eventID=8263
+G4WT10 > eventID=7278
+G4WT10 > eventID=7278
+G4WT6 > eventID=7383
+G4WT10 > eventID=7279
+G4WT10 > eventID=7279
+G4WT6 > eventID=7384
+G4WT6 > eventID=7385
+G4WT10 > eventID=7281
+G4WT6 > eventID=7386
+G4WT6 > eventID=7386
+G4WT11 > eventID=7560
+G4WT10 > eventID=7284
+G4WT6 > eventID=7388
+G4WT10 > eventID=7285
+G4WT11 > eventID=7563
+G4WT10 > eventID=7285
+G4WT3 > eventID=7745
+G4WT11 > eventID=7565
+G4WT10 > eventID=7287
+G4WT3 > eventID=7747
+G4WT3 > eventID=7748
+G4WT3 > eventID=7749
+G4WT3 > eventID=7750
+G4WT11 > eventID=7569
+G4WT3 > eventID=7751
+G4WT11 > eventID=7571
+G4WT11 > eventID=7571
+G4WT6 > eventID=7390
+G4WT10 > eventID=7289
+G4WT6 > eventID=7393
+G4WT10 > eventID=7291
+G4WT3 > eventID=7757
+G4WT10 > eventID=7292
+G4WT10 > eventID=7292
+G4WT5 > eventID=8053
+G4WT7 > eventID=7848
+G4WT7 > eventID=7848
+G4WT10 > eventID=7294
+G4WT7 > eventID=7849
+G4WT5 > eventID=8056
+G4WT5 > eventID=8056
+G4WT0 > eventID=8304
+G4WT5 > eventID=8056
+G4WT5 > eventID=8056
+G4WT0 > eventID=8304
+G4WT7 > eventID=7851
+G4WT7 > eventID=7853
+G4WT7 > eventID=7853
+G4WT9 > eventID=7442
+G4WT0 > eventID=8309
+G4WT9 > eventID=7445
+G4WT9 > eventID=7446
+G4WT1 > eventID=7935
+G4WT9 > eventID=7448
+G4WT9 > eventID=7448
+G4WT9 > eventID=7448
+G4WT0 > eventID=8314
+G4WT1 > eventID=7938
+G4WT0 > eventID=8316
+G4WT6 > eventID=7397
+G4WT1 > eventID=7940
+G4WT0 > eventID=8317
+G4WT6 > eventID=7399
+G4WT8 > eventID=8152
+G4WT1 > eventID=7942
+G4WT9 > eventID=7453
+G4WT8 > eventID=8153
+G4WT5 > eventID=8058
+G4WT9 > eventID=7455
+G4WT5 > eventID=8060
+G4WT5 > eventID=8061
+G4WT4 > eventID=8271
+G4WT8 > eventID=8158
+G4WT8 > eventID=8158
+G4WT8 > eventID=8159
+G4WT8 > eventID=8159
+G4WT8 > eventID=8159
+G4WT8 > eventID=8159
+G4WT8 > eventID=8159
+G4WT8 > eventID=8159
+G4WT4 > eventID=8274
+G4WT4 > eventID=8275
+G4WT4 > eventID=8275
+G4WT10 > eventID=7296
+G4WT10 > eventID=7296
+G4WT4 > eventID=8276
+G4WT3 > eventID=7758
+G4WT3 > eventID=7758
+G4WT6 > eventID=8404
+G4WT4 > eventID=8277
+G4WT6 > eventID=8404
+G4WT3 > eventID=7759
+G4WT6 > eventID=8405
+G4WT4 > eventID=8279
+G4WT4 > eventID=8279
+G4WT10 > eventID=8501
+G4WT4 > eventID=8281
+G4WT1 > eventID=7944
+G4WT0 > eventID=8319
+G4WT3 > eventID=7765
+G4WT5 > eventID=8063
+G4WT1 > eventID=7950
+G4WT1 > eventID=7951
+G4WT3 > eventID=7770
+G4WT3 > eventID=7770
+G4WT3 > eventID=7770
+G4WT3 > eventID=7770
+G4WT3 > eventID=7772
+G4WT1 > eventID=7954
+G4WT6 > eventID=8409
+G4WT1 > eventID=7960
+G4WT10 > eventID=8504
+G4WT10 > eventID=8504
+G4WT11 > eventID=7575
+G4WT11 > eventID=7576
+G4WT9 > eventID=7464
+G4WT9 > eventID=7466
+G4WT10 > eventID=8510
+G4WT0 > eventID=8322
+G4WT10 > eventID=8510
+G4WT11 > eventID=7580
+G4WT9 > eventID=7467
+G4WT11 > eventID=7581
+G4WT10 > eventID=8512
+G4WT5 > eventID=8070
+G4WT10 > eventID=8514
+G4WT11 > eventID=7585
+G4WT11 > eventID=7585
+G4WT2 > eventID=7682
+G4WT5 > eventID=8074
+G4WT0 > eventID=8329
+G4WT7 > eventID=7859
+G4WT2 > eventID=7689
+G4WT10 > eventID=8516
+G4WT7 > eventID=7860
+G4WT7 > eventID=7860
+G4WT1 > eventID=7967
+G4WT1 > eventID=7967
+G4WT6 > eventID=8416
+G4WT1 > eventID=7969
+G4WT6 > eventID=8418
+G4WT1 > eventID=7970
+G4WT1 > eventID=7970
+G4WT1 > eventID=7970
+G4WT10 > eventID=8521
+G4WT6 > eventID=8420
+G4WT7 > eventID=7866
+G4WT6 > eventID=8422
+G4WT1 > eventID=7974
+G4WT6 > eventID=8423
+G4WT1 > eventID=7975
+G4WT6 > eventID=8424
+G4WT10 > eventID=8525
+G4WT1 > eventID=7976
+G4WT1 > eventID=7976
+G4WT6 > eventID=8425
+G4WT11 > eventID=7591
+G4WT8 > eventID=8161
+G4WT7 > eventID=7869
+G4WT11 > eventID=7592
+G4WT11 > eventID=7592
+G4WT6 > eventID=8429
+G4WT11 > eventID=7595
+G4WT4 > eventID=8282
+G4WT5 > eventID=8076
+G4WT5 > eventID=8077
+G4WT2 > eventID=7694
+G4WT4 > eventID=8284
+G4WT4 > eventID=8286
+G4WT5 > eventID=8079
+G4WT4 > eventID=8286
+G4WT5 > eventID=8080
+G4WT4 > eventID=8287
+G4WT5 > eventID=8080
+G4WT5 > eventID=8081
+G4WT7 > eventID=7873
+G4WT7 > eventID=7873
+G4WT9 > eventID=7471
+G4WT7 > eventID=7873
+G4WT9 > eventID=7471
+G4WT7 > eventID=7873
+G4WT7 > eventID=7873
+G4WT9 > eventID=7472
+G4WT7 > eventID=7874
+G4WT7 > eventID=7874
+G4WT9 > eventID=7473
+G4WT7 > eventID=7875
+G4WT4 > eventID=8292
+G4WT2 > eventID=7699
+G4WT2 > eventID=8600
+G4WT8 > eventID=8170
+G4WT2 > eventID=8601
+G4WT8 > eventID=8171
+G4WT8 > eventID=8173
+G4WT8 > eventID=8173
+G4WT4 > eventID=8297
+G4WT8 > eventID=8174
+G4WT3 > eventID=7775
+G4WT11 > eventID=7595
+G4WT11 > eventID=7595
+G4WT11 > eventID=7595
+G4WT11 > eventID=7595
+G4WT11 > eventID=7595
+G4WT11 > eventID=7595
+G4WT11 > eventID=7595
+G4WT11 > eventID=7595
+G4WT11 > eventID=7596
+G4WT3 > eventID=7778
+G4WT11 > eventID=7597
+G4WT3 > eventID=7779
+G4WT11 > eventID=7598
+G4WT7 > eventID=7880
+G4WT11 > eventID=7599
+G4WT11 > eventID=7599
+G4WT5 > eventID=8088
+G4WT9 > eventID=7474
+G4WT8 > eventID=8176
+G4WT8 > eventID=8176
+G4WT8 > eventID=8177
+G4WT5 > eventID=8091
+G4WT8 > eventID=8178
+G4WT8 > eventID=8178
+G4WT8 > eventID=8178
+G4WT8 > eventID=8178
+G4WT4 > eventID=8704
+G4WT8 > eventID=8180
+G4WT3 > eventID=7782
+G4WT3 > eventID=7784
+G4WT8 > eventID=8182
+G4WT8 > eventID=8183
+G4WT9 > eventID=7480
+G4WT6 > eventID=8434
+G4WT5 > eventID=8092
+G4WT8 > eventID=8184
+G4WT8 > eventID=8184
+G4WT8 > eventID=8184
+G4WT4 > eventID=8711
+G4WT8 > eventID=8185
+G4WT4 > eventID=8712
+G4WT4 > eventID=8712
+G4WT9 > eventID=7483
+G4WT6 > eventID=8436
+G4WT6 > eventID=8436
+G4WT6 > eventID=8436
+G4WT5 > eventID=8093
+G4WT0 > eventID=8335
+G4WT5 > eventID=8094
+G4WT11 > eventID=7599
+G4WT7 > eventID=7883
+G4WT11 > eventID=8802
+G4WT7 > eventID=7884
+G4WT7 > eventID=7884
+G4WT11 > eventID=8805
+G4WT7 > eventID=7886
+G4WT10 > eventID=8527
+G4WT7 > eventID=7888
+G4WT0 > eventID=8336
+G4WT7 > eventID=7889
+G4WT1 > eventID=7976
+G4WT0 > eventID=8336
+G4WT9 > eventID=7484
+G4WT0 > eventID=8336
+G4WT9 > eventID=7485
+G4WT0 > eventID=8337
+G4WT0 > eventID=8340
+G4WT0 > eventID=8341
+G4WT8 > eventID=8189
+G4WT5 > eventID=8099
+G4WT5 > eventID=8099
+G4WT5 > eventID=8099
+G4WT0 > eventID=8343
+G4WT5 > eventID=8099
+G4WT5 > eventID=8900
+G4WT8 > eventID=8191
+G4WT5 > eventID=8900
+G4WT0 > eventID=8345
+G4WT7 > eventID=7890
+G4WT9 > eventID=7493
+G4WT9 > eventID=7494
+G4WT9 > eventID=7494
+G4WT9 > eventID=7494
+G4WT10 > eventID=8535
+G4WT7 > eventID=7892
+G4WT10 > eventID=8535
+G4WT10 > eventID=8535
+G4WT10 > eventID=8535
+G4WT10 > eventID=8535
+G4WT3 > eventID=7785
+G4WT10 > eventID=8535
+G4WT10 > eventID=8537
+G4WT0 > eventID=8352
+G4WT3 > eventID=7788
+G4WT8 > eventID=8192
+G4WT8 > eventID=8194
+G4WT3 > eventID=7791
+G4WT6 > eventID=8438
+G4WT2 > eventID=8605
+G4WT1 > eventID=7980
+G4WT2 > eventID=8606
+G4WT6 > eventID=8440
+G4WT2 > eventID=8607
+G4WT6 > eventID=8441
+G4WT2 > eventID=8609
+G4WT1 > eventID=7985
+G4WT7 > eventID=7892
+G4WT6 > eventID=8446
+G4WT7 > eventID=7897
+G4WT6 > eventID=8450
+G4WT7 > eventID=7898
+G4WT7 > eventID=7899
+G4WT6 > eventID=8453
+G4WT3 > eventID=7792
+G4WT8 > eventID=8196
+G4WT6 > eventID=8455
+G4WT8 > eventID=8197
+G4WT7 > eventID=9003
+G4WT6 > eventID=8456
+G4WT6 > eventID=8456
+G4WT2 > eventID=8611
+G4WT2 > eventID=8611
+G4WT6 > eventID=8457
+G4WT10 > eventID=8538
+G4WT10 > eventID=8539
+G4WT2 > eventID=8612
+G4WT4 > eventID=8718
+G4WT10 > eventID=8540
+G4WT4 > eventID=8719
+G4WT10 > eventID=8540
+G4WT10 > eventID=8540
+G4WT0 > eventID=8353
+G4WT10 > eventID=8541
+G4WT0 > eventID=8354
+G4WT10 > eventID=8543
+G4WT5 > eventID=8902
+G4WT8 > eventID=9100
+G4WT5 > eventID=8903
+G4WT2 > eventID=8616
+G4WT0 > eventID=8359
+G4WT8 > eventID=9102
+G4WT5 > eventID=8906
+G4WT0 > eventID=8360
+G4WT5 > eventID=8907
+G4WT0 > eventID=8362
+G4WT0 > eventID=8362
+G4WT3 > eventID=7798
+G4WT0 > eventID=8363
+G4WT3 > eventID=7799
+G4WT5 > eventID=8909
+G4WT0 > eventID=8364
+G4WT0 > eventID=8365
+G4WT0 > eventID=8365
+G4WT5 > eventID=8910
+G4WT7 > eventID=9013
+G4WT7 > eventID=9015
+G4WT1 > eventID=7986
+G4WT10 > eventID=8543
+G4WT5 > eventID=8915
+G4WT5 > eventID=8915
+G4WT5 > eventID=8915
+G4WT5 > eventID=8915
+G4WT10 > eventID=8545
+G4WT5 > eventID=8916
+G4WT1 > eventID=7989
+G4WT10 > eventID=8547
+G4WT1 > eventID=7993
+G4WT8 > eventID=9105
+G4WT2 > eventID=8619
+G4WT1 > eventID=7996
+G4WT2 > eventID=8621
+G4WT1 > eventID=7998
+G4WT8 > eventID=9110
+G4WT8 > eventID=9110
+G4WT8 > eventID=9110
+G4WT8 > eventID=9111
+G4WT7 > eventID=9023
+G4WT6 > eventID=8461
+G4WT2 > eventID=8625
+G4WT6 > eventID=8461
+G4WT6 > eventID=8461
+G4WT6 > eventID=8461
+G4WT6 > eventID=8461
+G4WT1 > eventID=9301
+G4WT7 > eventID=9024
+G4WT1 > eventID=9302
+G4WT4 > eventID=8720
+G4WT5 > eventID=8917
+G4WT5 > eventID=8918
+G4WT9 > eventID=7499
+G4WT5 > eventID=8919
+G4WT9 > eventID=9401
+G4WT4 > eventID=8725
+G4WT4 > eventID=8726
+G4WT9 > eventID=9404
+G4WT9 > eventID=9404
+G4WT9 > eventID=9404
+G4WT7 > eventID=9027
+G4WT7 > eventID=9027
+G4WT9 > eventID=9405
+G4WT10 > eventID=8556
+G4WT10 > eventID=8556
+G4WT2 > eventID=8627
+G4WT1 > eventID=9305
+G4WT5 > eventID=8921
+G4WT2 > eventID=8629
+G4WT11 > eventID=8818
+G4WT11 > eventID=8819
+G4WT10 > eventID=8560
+G4WT10 > eventID=8561
+G4WT2 > eventID=8632
+G4WT10 > eventID=8563
+G4WT2 > eventID=8633
+G4WT2 > eventID=8633
+G4WT10 > eventID=8563
+G4WT5 > eventID=8926
+G4WT5 > eventID=8927
+G4WT2 > eventID=8636
+G4WT2 > eventID=8636
+G4WT11 > eventID=8827
+G4WT6 > eventID=8463
+G4WT9 > eventID=9406
+G4WT3 > eventID=9201
+G4WT7 > eventID=9035
+G4WT6 > eventID=8464
+G4WT11 > eventID=8829
+G4WT3 > eventID=9202
+G4WT3 > eventID=9203
+G4WT6 > eventID=8466
+G4WT7 > eventID=9038
+G4WT7 > eventID=9038
+G4WT5 > eventID=8930
+G4WT4 > eventID=8728
+G4WT4 > eventID=8729
+G4WT8 > eventID=9113
+G4WT5 > eventID=8934
+G4WT5 > eventID=8934
+G4WT6 > eventID=8467
+G4WT6 > eventID=8467
+G4WT8 > eventID=9115
+G4WT4 > eventID=8733
+G4WT8 > eventID=9116
+G4WT3 > eventID=9206
+G4WT7 > eventID=9040
+G4WT4 > eventID=8735
+G4WT3 > eventID=9207
+G4WT8 > eventID=9118
+G4WT3 > eventID=9207
+G4WT7 > eventID=9041
+G4WT3 > eventID=9208
+G4WT6 > eventID=8472
+G4WT7 > eventID=9042
+G4WT6 > eventID=8473
+G4WT7 > eventID=9043
+G4WT7 > eventID=9043
+G4WT6 > eventID=8474
+G4WT4 > eventID=8739
+G4WT8 > eventID=9122
+G4WT7 > eventID=9044
+G4WT4 > eventID=8740
+G4WT3 > eventID=9212
+G4WT7 > eventID=9045
+G4WT7 > eventID=9045
+G4WT3 > eventID=9213
+G4WT3 > eventID=9214
+G4WT8 > eventID=9126
+G4WT0 > eventID=8369
+G4WT3 > eventID=9216
+G4WT3 > eventID=9216
+G4WT3 > eventID=9217
+G4WT1 > eventID=9307
+G4WT5 > eventID=8936
+G4WT1 > eventID=9310
+G4WT6 > eventID=8476
+G4WT7 > eventID=9048
+G4WT6 > eventID=8477
+G4WT10 > eventID=8569
+G4WT1 > eventID=9313
+G4WT5 > eventID=8936
+G4WT9 > eventID=9407
+G4WT5 > eventID=8938
+G4WT9 > eventID=9408
+G4WT1 > eventID=9318
+G4WT0 > eventID=8369
+G4WT9 > eventID=9410
+G4WT9 > eventID=9411
+G4WT10 > eventID=8578
+G4WT7 > eventID=9050
+G4WT10 > eventID=8579
+G4WT10 > eventID=8579
+G4WT5 > eventID=8943
+G4WT11 > eventID=8836
+G4WT5 > eventID=8944
+G4WT10 > eventID=8581
+G4WT11 > eventID=8837
+G4WT8 > eventID=9127
+G4WT11 > eventID=8837
+G4WT8 > eventID=9128
+G4WT8 > eventID=9129
+G4WT4 > eventID=8747
+G4WT7 > eventID=9051
+G4WT0 > eventID=8372
+G4WT9 > eventID=9419
+G4WT7 > eventID=9051
+G4WT8 > eventID=9133
+G4WT0 > eventID=8375
+G4WT3 > eventID=9222
+G4WT0 > eventID=8375
+G4WT0 > eventID=8375
+G4WT0 > eventID=8375
+G4WT0 > eventID=8375
+G4WT0 > eventID=8375
+G4WT0 > eventID=8375
+G4WT3 > eventID=9224
+G4WT3 > eventID=9224
+G4WT0 > eventID=8376
+G4WT4 > eventID=8751
+G4WT4 > eventID=8751
+G4WT8 > eventID=9139
+G4WT8 > eventID=9139
+G4WT3 > eventID=9228
+G4WT3 > eventID=9228
+G4WT0 > eventID=8380
+G4WT3 > eventID=9230
+G4WT0 > eventID=8382
+G4WT4 > eventID=8758
+G4WT3 > eventID=9235
+G4WT0 > eventID=8385
+G4WT0 > eventID=8386
+G4WT5 > eventID=8945
+G4WT11 > eventID=8839
+G4WT9 > eventID=9422
+G4WT7 > eventID=9054
+G4WT11 > eventID=8839
+G4WT11 > eventID=8840
+G4WT9 > eventID=9423
+G4WT9 > eventID=9425
+G4WT9 > eventID=9426
+G4WT11 > eventID=8844
+G4WT11 > eventID=8845
+G4WT1 > eventID=9319
+G4WT1 > eventID=9320
+G4WT1 > eventID=9321
+G4WT6 > eventID=8481
+G4WT11 > eventID=8850
+G4WT11 > eventID=8853
+G4WT6 > eventID=8485
+G4WT7 > eventID=9058
+G4WT11 > eventID=8855
+G4WT11 > eventID=8855
+G4WT1 > eventID=9330
+G4WT6 > eventID=8490
+G4WT7 > eventID=9063
+G4WT7 > eventID=9063
+G4WT7 > eventID=9063
+G4WT7 > eventID=9063
+G4WT7 > eventID=9063
+G4WT7 > eventID=9063
+G4WT7 > eventID=9063
+G4WT6 > eventID=8494
+G4WT7 > eventID=9063
+G4WT7 > eventID=9063
+G4WT7 > eventID=9063
+G4WT7 > eventID=9064
+G4WT5 > eventID=8945
+G4WT7 > eventID=9065
+G4WT5 > eventID=8947
+G4WT5 > eventID=8949
+G4WT7 > eventID=9069
+G4WT7 > eventID=9069
+G4WT7 > eventID=9071
+G4WT0 > eventID=8387
+G4WT5 > eventID=8953
+G4WT5 > eventID=8953
+G4WT5 > eventID=8953
+G4WT9 > eventID=9440
+G4WT5 > eventID=8954
+G4WT9 > eventID=9441
+G4WT9 > eventID=9441
+G4WT0 > eventID=8391
+G4WT0 > eventID=8391
+G4WT0 > eventID=8392
+G4WT9 > eventID=9443
+G4WT0 > eventID=8393
+G4WT9 > eventID=9444
+G4WT9 > eventID=9444
+G4WT5 > eventID=8959
+G4WT5 > eventID=8959
+G4WT4 > eventID=8762
+G4WT0 > eventID=8395
+G4WT4 > eventID=8763
+G4WT4 > eventID=8763
+G4WT5 > eventID=8961
+G4WT4 > eventID=8764
+G4WT10 > eventID=8588
+G4WT0 > eventID=8398
+G4WT4 > eventID=8766
+G4WT10 > eventID=8590
+G4WT0 > eventID=9500
+G4WT10 > eventID=8591
+G4WT10 > eventID=8593
+G4WT2 > eventID=8642
+G4WT6 > eventID=8498
+G4WT11 > eventID=8856
+G4WT2 > eventID=8642
+G4WT2 > eventID=8642
+G4WT2 > eventID=8643
+G4WT6 > eventID=9600
+G4WT6 > eventID=9600
+G4WT6 > eventID=9600
+G4WT6 > eventID=9600
+G4WT2 > eventID=8644
+G4WT6 > eventID=9600
+G4WT6 > eventID=9600
+G4WT6 > eventID=9601
+G4WT6 > eventID=9601
+G4WT6 > eventID=9601
+G4WT4 > eventID=8774
+G4WT2 > eventID=8646
+G4WT6 > eventID=9603
+G4WT2 > eventID=8648
+G4WT2 > eventID=8649
+G4WT6 > eventID=9605
+G4WT6 > eventID=9606
+G4WT2 > eventID=8650
+G4WT6 > eventID=9606
+G4WT6 > eventID=9607
+G4WT6 > eventID=9609
+G4WT6 > eventID=9609
+G4WT2 > eventID=8654
+G4WT2 > eventID=8654
+G4WT8 > eventID=9141
+G4WT6 > eventID=9611
+G4WT7 > eventID=9073
+G4WT2 > eventID=8657
+G4WT2 > eventID=8657
+G4WT2 > eventID=8657
+G4WT7 > eventID=9074
+G4WT5 > eventID=8962
+G4WT3 > eventID=9239
+G4WT7 > eventID=9076
+G4WT11 > eventID=8868
+G4WT11 > eventID=8869
+G4WT7 > eventID=9077
+G4WT11 > eventID=8870
+G4WT3 > eventID=9243
+G4WT5 > eventID=8964
+G4WT3 > eventID=9244
+G4WT7 > eventID=9080
+G4WT11 > eventID=8872
+G4WT0 > eventID=9503
+G4WT0 > eventID=9503
+G4WT3 > eventID=9246
+G4WT11 > eventID=8873
+G4WT3 > eventID=9246
+G4WT11 > eventID=8873
+G4WT11 > eventID=8873
+G4WT11 > eventID=8873
+G4WT11 > eventID=8873
+G4WT7 > eventID=9082
+G4WT3 > eventID=9248
+G4WT11 > eventID=8874
+G4WT0 > eventID=9506
+G4WT3 > eventID=9249
+G4WT0 > eventID=9506
+G4WT11 > eventID=8875
+G4WT8 > eventID=9147
+G4WT5 > eventID=8966
+G4WT5 > eventID=8966
+G4WT0 > eventID=9509
+G4WT3 > eventID=9252
+G4WT3 > eventID=9253
+G4WT10 > eventID=8594
+G4WT10 > eventID=8595
+G4WT8 > eventID=9151
+G4WT4 > eventID=8782
+G4WT4 > eventID=8782
+G4WT4 > eventID=8782
+G4WT10 > eventID=8599
+G4WT10 > eventID=9701
+G4WT5 > eventID=8970
+G4WT1 > eventID=9338
+G4WT5 > eventID=8970
+G4WT1 > eventID=9340
+G4WT1 > eventID=9341
+G4WT11 > eventID=8882
+G4WT9 > eventID=9444
+G4WT1 > eventID=9343
+G4WT9 > eventID=9445
+G4WT9 > eventID=9445
+G4WT2 > eventID=8658
+G4WT9 > eventID=9445
+G4WT2 > eventID=8658
+G4WT2 > eventID=8659
+G4WT2 > eventID=8661
+G4WT9 > eventID=9449
+G4WT2 > eventID=8662
+G4WT2 > eventID=8663
+G4WT2 > eventID=8665
+G4WT9 > eventID=9455
+G4WT9 > eventID=9457
+G4WT10 > eventID=9702
+G4WT10 > eventID=9703
+G4WT10 > eventID=9703
+G4WT6 > eventID=9614
+G4WT10 > eventID=9705
+G4WT6 > eventID=9615
+G4WT10 > eventID=9705
+G4WT4 > eventID=8783
+G4WT4 > eventID=8785
+G4WT7 > eventID=9085
+G4WT5 > eventID=8973
+G4WT1 > eventID=9343
+G4WT7 > eventID=9086
+G4WT1 > eventID=9344
+G4WT7 > eventID=9087
+G4WT1 > eventID=9345
+G4WT7 > eventID=9088
+G4WT7 > eventID=9089
+G4WT1 > eventID=9347
+G4WT1 > eventID=9348
+G4WT1 > eventID=9348
+G4WT1 > eventID=9349
+G4WT5 > eventID=8981
+G4WT7 > eventID=9095
+G4WT7 > eventID=9095
+G4WT3 > eventID=9256
+G4WT8 > eventID=9154
+G4WT5 > eventID=8981
+G4WT2 > eventID=8669
+G4WT3 > eventID=9257
+G4WT3 > eventID=9260
+G4WT8 > eventID=9158
+G4WT3 > eventID=9261
+G4WT3 > eventID=9263
+G4WT2 > eventID=8676
+G4WT3 > eventID=9265
+G4WT3 > eventID=9266
+G4WT8 > eventID=9161
+G4WT8 > eventID=9165
+G4WT8 > eventID=9166
+G4WT8 > eventID=9167
+G4WT8 > eventID=9167
+G4WT1 > eventID=9351
+G4WT1 > eventID=9356
+G4WT3 > eventID=9268
+G4WT3 > eventID=9269
+G4WT2 > eventID=8681
+G4WT6 > eventID=9623
+G4WT3 > eventID=9272
+G4WT3 > eventID=9273
+G4WT6 > eventID=9627
+G4WT1 > eventID=9359
+G4WT5 > eventID=8981
+G4WT5 > eventID=8983
+G4WT6 > eventID=9629
+G4WT3 > eventID=9274
+G4WT6 > eventID=9631
+G4WT6 > eventID=9632
+G4WT9 > eventID=9460
+G4WT8 > eventID=9171
+G4WT6 > eventID=9635
+G4WT6 > eventID=9637
+G4WT1 > eventID=9364
+G4WT9 > eventID=9463
+G4WT1 > eventID=9365
+G4WT1 > eventID=9366
+G4WT4 > eventID=8790
+G4WT1 > eventID=9367
+G4WT1 > eventID=9367
+G4WT5 > eventID=8989
+G4WT4 > eventID=8793
+G4WT8 > eventID=9174
+G4WT9 > eventID=9471
+G4WT4 > eventID=8797
+G4WT4 > eventID=8797
+G4WT5 > eventID=8994
+G4WT0 > eventID=9518
+G4WT3 > eventID=9274
+G4WT1 > eventID=9371
+G4WT3 > eventID=9278
+G4WT3 > eventID=9278
+G4WT9 > eventID=9477
+G4WT5 > eventID=8997
+G4WT3 > eventID=9279
+G4WT7 > eventID=9099
+G4WT11 > eventID=8883
+G4WT2 > eventID=8683
+G4WT2 > eventID=8683
+G4WT2 > eventID=8683
+G4WT2 > eventID=8683
+G4WT11 > eventID=8884
+G4WT3 > eventID=9281
+G4WT11 > eventID=8886
+G4WT11 > eventID=8886
+G4WT7 > eventID=9803
+G4WT11 > eventID=8887
+G4WT0 > eventID=9519
+G4WT7 > eventID=9804
+G4WT11 > eventID=8888
+G4WT0 > eventID=9521
+G4WT7 > eventID=9806
+G4WT0 > eventID=9522
+G4WT0 > eventID=9522
+G4WT11 > eventID=8891
+G4WT11 > eventID=8895
+G4WT11 > eventID=8896
+G4WT2 > eventID=8686
+G4WT11 > eventID=8897
+G4WT2 > eventID=8689
+G4WT11 > eventID=9900
+G4WT6 > eventID=9637
+G4WT10 > eventID=9715
+G4WT11 > eventID=9900
+G4WT11 > eventID=9900
+G4WT6 > eventID=9638
+G4WT7 > eventID=9811
+G4WT3 > eventID=9284
+G4WT1 > eventID=9372
+G4WT6 > eventID=9639
+G4WT7 > eventID=9812
+G4WT6 > eventID=9640
+G4WT10 > eventID=9717
+G4WT6 > eventID=9640
+G4WT6 > eventID=9640
+G4WT6 > eventID=9641
+G4WT3 > eventID=9285
+G4WT6 > eventID=9642
+G4WT3 > eventID=9287
+G4WT11 > eventID=9904
+G4WT3 > eventID=9289
+G4WT6 > eventID=9645
+G4WT6 > eventID=9646
+G4WT3 > eventID=9291
+G4WT8 > eventID=9183
+G4WT6 > eventID=9647
+G4WT1 > eventID=9375
+G4WT6 > eventID=9647
+G4WT7 > eventID=9822
+G4WT1 > eventID=9376
+G4WT10 > eventID=9721
+G4WT10 > eventID=9722
+G4WT7 > eventID=9824
+G4WT2 > eventID=8689
+G4WT11 > eventID=9907
+G4WT11 > eventID=9908
+G4WT2 > eventID=8692
+G4WT8 > eventID=9184
+G4WT2 > eventID=8694
+G4WT5 > eventID=8999
+G4WT1 > eventID=9379
+G4WT9 > eventID=9480
+G4WT1 > eventID=9380
+G4WT2 > eventID=8696
+G4WT3 > eventID=9291
+G4WT11 > eventID=9909
+G4WT9 > eventID=9483
+G4WT2 > eventID=8698
+G4WT4 > eventID=8798
+G4WT2 > eventID=8698
+G4WT11 > eventID=9910
+G4WT3 > eventID=9293
+G4WT9 > eventID=9485
+G4WT6 > eventID=9652
+G4WT11 > eventID=9913
+G4WT6 > eventID=9653
+G4WT9 > eventID=9488
+G4WT9 > eventID=9488
+G4WT8 > eventID=9188
+G4WT3 > eventID=9298
+G4WT8 > eventID=9188
+G4WT9 > eventID=9489
+G4WT3 > eventID=9299
+G4WT9 > eventID=9490
+G4WT8 > eventID=9190
+G4WT10 > eventID=9725
+G4WT10 > eventID=9725
+G4WT9 > eventID=9493
+G4WT10 > eventID=9726
+G4WT1 > eventID=9381
+G4WT10 > eventID=9727
+G4WT6 > eventID=9656
+G4WT10 > eventID=9734
+G4WT7 > eventID=9825
+G4WT11 > eventID=9915
+G4WT11 > eventID=9916
+G4WT10 > eventID=9737
+G4WT7 > eventID=9828
+G4WT8 > eventID=9194
+G4WT7 > eventID=9829
+G4WT6 > eventID=9663
+G4WT7 > eventID=9831
+G4WT6 > eventID=9664
+G4WT0 > eventID=9535
+G4WT7 > eventID=9832
+G4WT0 > eventID=9536
+G4WT6 > eventID=9666
+G4WT0 > eventID=9537
+G4WT8 > eventID=9196
+G4WT6 > eventID=9668
+G4WT6 > eventID=9669
+G4WT0 > eventID=9540
+G4WT11 > eventID=9917
+G4WT11 > eventID=9917
+G4WT9 > eventID=9497
+G4WT6 > eventID=9671
+G4WT11 > eventID=9919
+G4WT6 > eventID=9672
+G4WT7 > eventID=9833
+G4WT7 > eventID=9834
+G4WT0 > eventID=9545
+G4WT1 > eventID=9392
+G4WT7 > eventID=9835
+G4WT0 > eventID=9549
+G4WT11 > eventID=9920
+G4WT11 > eventID=9920
+G4WT7 > eventID=9838
+G4WT11 > eventID=9922
+G4WT1 > eventID=9394
+G4WT6 > eventID=9677
+G4WT1 > eventID=9395
+G4WT0 > eventID=9557
+G4WT6 > eventID=9678
+G4WT1 > eventID=9396
+G4WT6 > eventID=9680
+G4WT11 > eventID=9927
+G4WT11 > eventID=9928
+G4WT6 > eventID=9682
+G4WT1 > eventID=9397
+G4WT0 > eventID=9563
+G4WT6 > eventID=9684
+G4WT0 > eventID=9564
+G4WT1 > eventID=9398
+G4WT7 > eventID=9841
+G4WT6 > eventID=9685
+G4WT0 > eventID=9565
+G4WT1 > eventID=9399
+G4WT11 > eventID=9928
+G4WT10 > eventID=9741
+G4WT6 > eventID=9686
+G4WT10 > eventID=9742
+G4WT11 > eventID=9930
+G4WT11 > eventID=9930
+G4WT10 > eventID=9743
+G4WT11 > eventID=9932
+G4WT6 > eventID=9690
+G4WT6 > eventID=9691
+G4WT10 > eventID=9746
+G4WT7 > eventID=9850
+G4WT7 > eventID=9850
+G4WT10 > eventID=9749
+G4WT11 > eventID=9937
+G4WT11 > eventID=9941
+G4WT10 > eventID=9755
+G4WT11 > eventID=9943
+G4WT11 > eventID=9944
+G4WT11 > eventID=9944
+G4WT7 > eventID=9851
+G4WT11 > eventID=9945
+G4WT11 > eventID=9945
+G4WT11 > eventID=9945
+G4WT11 > eventID=9945
+G4WT10 > eventID=9758
+G4WT7 > eventID=9853
+G4WT10 > eventID=9760
+G4WT10 > eventID=9761
+G4WT10 > eventID=9761
+G4WT6 > eventID=9699
+G4WT7 > eventID=9856
+G4WT7 > eventID=9857
+G4WT11 > eventID=9951
+G4WT10 > eventID=9764
+G4WT10 > eventID=9765
+G4WT11 > eventID=9953
+G4WT10 > eventID=9766
+G4WT10 > eventID=9768
+G4WT11 > eventID=9955
+G4WT7 > eventID=9863
+G4WT11 > eventID=9957
+G4WT0 > eventID=9567
+G4WT0 > eventID=9568
+G4WT11 > eventID=9959
+G4WT11 > eventID=9959
+G4WT0 > eventID=9570
+G4WT0 > eventID=9572
+G4WT11 > eventID=9963
+G4WT7 > eventID=9865
+G4WT11 > eventID=9964
+G4WT0 > eventID=9575
+G4WT0 > eventID=9576
+G4WT0 > eventID=9576
+G4WT0 > eventID=9577
+G4WT11 > eventID=9966
+G4WT11 > eventID=9966
+G4WT7 > eventID=9870
+G4WT0 > eventID=9581
+G4WT7 > eventID=9871
+G4WT7 > eventID=9872
+G4WT0 > eventID=9584
+G4WT11 > eventID=9972
+G4WT7 > eventID=9874
+G4WT0 > eventID=9585
+G4WT7 > eventID=9875
+G4WT7 > eventID=9875
+G4WT0 > eventID=9586
+G4WT0 > eventID=9586
+G4WT7 > eventID=9875
+G4WT0 > eventID=9586
+G4WT0 > eventID=9587
+G4WT0 > eventID=9588
+G4WT7 > eventID=9878
+G4WT0 > eventID=9589
+G4WT11 > eventID=9980
+G4WT0 > eventID=9592
+G4WT11 > eventID=9982
+G4WT10 > eventID=9772
+G4WT10 > eventID=9773
+G4WT7 > eventID=9881
+G4WT10 > eventID=9774
+G4WT10 > eventID=9775
+G4WT11 > eventID=9990
+G4WT11 > eventID=9990
+G4WT10 > eventID=9777
+G4WT11 > eventID=9992
+G4WT7 > eventID=9886
+G4WT10 > eventID=9780
+G4WT10 > eventID=9781
+G4WT11 > eventID=9994
+G4WT10 > eventID=9781
+G4WT10 > eventID=9781
+G4WT11 > eventID=9994
+G4WT10 > eventID=9781
+G4WT10 > eventID=9781
+G4WT10 > eventID=9782
+G4WT10 > eventID=9783
+G4WT11 > eventID=9997
+G4WT10 > eventID=9785
+G4WT11 > eventID=9998
+G4WT7 > eventID=9891
+G4WT10 > eventID=9787
+G4WT7 > eventID=9891
+G4WT7 > eventID=9892
+G4WT7 > eventID=9892
+G4WT10 > eventID=9793
+G4WT7 > eventID=9897
+G4WT10 > eventID=9793
+G4WT10 > eventID=9794
+G4WT7 > eventID=9898
+G4WT10 > eventID=9794
+G4WT10 > eventID=9795
+G4WT0 > eventID=9599
+G4WT0 > eventID=9599
+G4WT10 > eventID=9797
+G4WT10 > eventID=9799
+G4WT3 > 
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+G4WT2 >  The run consists of 800 gamma of 8 MeV
+G4WT2 >  Cumulated dose per run, in scoring volume : 47.6501 picoGy  rms = 24.1549 picoGy 
+G4WT2 > ------------------------------------------------------------
+G4WT2 > 
+G4WT0 > 
+G4WT9 > 
+G4WT9 > --------------------End of Local Run------------------------
+G4WT9 >  The run consists of 800 gamma of 8 MeV
+G4WT9 >  Cumulated dose per run, in scoring volume : 50.7304 picoGy  rms = 25.5915 picoGy 
+G4WT9 > ------------------------------------------------------------
+G4WT9 > 
+G4WT10 > 
+G4WT10 > --------------------End of Local Run------------------------
+G4WT10 >  The run consists of 900 gamma of 8 MeV
+G4WT10 >  Cumulated dose per run, in scoring volume : 103.471 picoGy  rms = 41.8683 picoGy 
+G4WT10 > ------------------------------------------------------------
+G4WT10 > 
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 800 gamma of 8 MeV
+G4WT8 >  Cumulated dose per run, in scoring volume : 191.162 picoGy  rms = 69.5035 picoGy 
+G4WT8 > ------------------------------------------------------------
+G4WT8 > 
+G4WT4 > 
+G4WT4 > --------------------End of Local Run------------------------
+G4WT4 >  The run consists of 800 gamma of 8 MeV
+G4WT4 >  Cumulated dose per run, in scoring volume : 64.0423 picoGy  rms = 30.3548 picoGy 
+G4WT4 > ------------------------------------------------------------
+G4WT4 > 
+G4WT5 > 
+G4WT5 > --------------------End of Local Run------------------------
+G4WT5 >  The run consists of 800 gamma of 8 MeV
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 800 gamma of 8 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 62.4157 picoGy  rms = 34.6377 picoGy 
+G4WT5 >  Cumulated dose per run, in scoring volume : 61.4602 picoGy  rms = 26.6748 picoGy 
+G4WT5 > ------------------------------------------------------------
+G4WT5 > 
+G4WT11 > 
+G4WT11 > --------------------End of Local Run------------------------
+G4WT11 >  The run consists of 900 gamma of 8 MeV
+G4WT11 >  Cumulated dose per run, in scoring volume : 156.087 picoGy  rms = 64.4878 picoGy 
+G4WT11 > ------------------------------------------------------------
+G4WT11 > 
+G4WT1 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 800 gamma of 8 MeV
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 800 gamma of 8 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 91.722 picoGy  rms = 43.4948 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT6 > 
+G4WT6 > --------------------End of Local Run------------------------
+G4WT6 >  The run consists of 900 gamma of 8 MeV
+G4WT6 >  Cumulated dose per run, in scoring volume : 111.938 picoGy  rms = 43.7922 picoGy 
+G4WT6 > ------------------------------------------------------------
+G4WT6 > 
+G4WT7 > 
+G4WT3 >  Cumulated dose per run, in scoring volume : 51.7276 picoGy  rms = 29.321 picoGy 
+G4WT3 > ------------------------------------------------------------
+G4WT3 > 
+G4WT7 > --------------------End of Local Run------------------------
+G4WT7 >  The run consists of 900 gamma of 8 MeV
+G4WT7 >  Cumulated dose per run, in scoring volume : 141.106 picoGy  rms = 53.5008 picoGy 
+G4WT7 > ------------------------------------------------------------
+G4WT7 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 10000 
+ Cumulated dose per run, in scoring volume : 1.13351 nanoGy  rms = 149.573 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+Graphics systems deleted.
+Visualization Manager deleting...
+Deleting G4ThreadLocalSingletons for type G4GeometryTolerance ...
+Deleting G4ThreadLocalSingletons for type G4ProcessTable ...
+Deleting G4ThreadLocalSingletons for type G4PhysicsListHelper ...
+Deleting G4ThreadLocalSingletons for type G4AccumulableManager ...
+Deleting G4ThreadLocalSingletons for type G4LossTableManager ...
+Deleting G4ThreadLocalSingletons for type G4CrossSectionDataSetRegistry ...
+Deleting G4ThreadLocalSingletons for type G4HadronicInteractionRegistry ...
+Deleting G4ThreadLocalSingletons for type G4CascadeParameters ...
+Deleting G4ThreadLocalSingletons for type G4String ...
+Deleting G4ThreadLocalSingletons for type std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> > ...
+ThreadPool destroyed

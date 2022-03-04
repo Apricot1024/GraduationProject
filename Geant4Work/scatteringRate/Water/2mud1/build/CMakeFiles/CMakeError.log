@@ -1,0 +1,672 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb10mm/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_598c4/fast && /usr/bin/make  -f CMakeFiles/cmTC_598c4.dir/build.make CMakeFiles/cmTC_598c4.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb10mm/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_598c4.dir/src.c.o
+/usr/bin/x86_64-pc-linux-gnu-gcc-11.1.0 -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_598c4.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb10mm/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_598c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_598c4.dir/link.txt --verbose=1
+/usr/bin/x86_64-pc-linux-gnu-gcc-11.1.0 CMakeFiles/cmTC_598c4.dir/src.c.o -o cmTC_598c4 
+/usr/bin/ld: CMakeFiles/cmTC_598c4.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_598c4.dir/build.make:99：cmTC_598c4] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb10mm/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_598c4/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb5mm/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e1b6e/fast && /usr/bin/make  -f CMakeFiles/cmTC_e1b6e.dir/build.make CMakeFiles/cmTC_e1b6e.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb5mm/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e1b6e.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e1b6e.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb5mm/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e1b6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1b6e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_e1b6e.dir/src.c.o -o cmTC_e1b6e 
+/usr/bin/ld: CMakeFiles/cmTC_e1b6e.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_e1b6e.dir/build.make:99：cmTC_e1b6e] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb5mm/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_e1b6e/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_65033/fast && /usr/bin/make  -f CMakeFiles/cmTC_65033.dir/build.make CMakeFiles/cmTC_65033.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_65033.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_65033.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_65033
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65033.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_65033.dir/src.c.o -o cmTC_65033 
+/usr/bin/ld: CMakeFiles/cmTC_65033.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_65033.dir/build.make:99：cmTC_65033] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_65033/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9b5bb/fast && /usr/bin/make  -f CMakeFiles/cmTC_9b5bb.dir/build.make CMakeFiles/cmTC_9b5bb.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9b5bb.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9b5bb.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud0/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9b5bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b5bb.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_9b5bb.dir/src.c.o -o cmTC_9b5bb 
+/usr/bin/ld: CMakeFiles/cmTC_9b5bb.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_9b5bb.dir/build.make:99：cmTC_9b5bb] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud0/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_9b5bb/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7752d/fast && /usr/bin/make  -f CMakeFiles/cmTC_7752d.dir/build.make CMakeFiles/cmTC_7752d.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_7752d.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_7752d.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud0/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7752d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7752d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_7752d.dir/src.c.o -o cmTC_7752d 
+/usr/bin/ld: CMakeFiles/cmTC_7752d.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_7752d.dir/build.make:99：cmTC_7752d] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Pb/2mud0/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_7752d/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cfe06/fast && /usr/bin/make  -f CMakeFiles/cmTC_cfe06.dir/build.make CMakeFiles/cmTC_cfe06.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_cfe06.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cfe06.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cfe06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfe06.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_cfe06.dir/src.c.o -o cmTC_cfe06 
+/usr/bin/ld: CMakeFiles/cmTC_cfe06.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_cfe06.dir/build.make:99：cmTC_cfe06] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_cfe06/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3bc83/fast && /usr/bin/make  -f CMakeFiles/cmTC_3bc83.dir/build.make CMakeFiles/cmTC_3bc83.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3bc83.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3bc83.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3bc83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bc83.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_3bc83.dir/src.c.o -o cmTC_3bc83 
+/usr/bin/ld: CMakeFiles/cmTC_3bc83.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_3bc83.dir/build.make:99：cmTC_3bc83] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_3bc83/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c5314/fast && /usr/bin/make  -f CMakeFiles/cmTC_c5314.dir/build.make CMakeFiles/cmTC_c5314.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c5314.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c5314.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c5314
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5314.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_c5314.dir/src.c.o -o cmTC_c5314 
+/usr/bin/ld: CMakeFiles/cmTC_c5314.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_c5314.dir/build.make:99：cmTC_c5314] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud0/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_c5314/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3a4f8/fast && /usr/bin/make  -f CMakeFiles/cmTC_3a4f8.dir/build.make CMakeFiles/cmTC_3a4f8.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3a4f8.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3a4f8.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3a4f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a4f8.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_3a4f8.dir/src.c.o -o cmTC_3a4f8 
+/usr/bin/ld: CMakeFiles/cmTC_3a4f8.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_3a4f8.dir/build.make:99：cmTC_3a4f8] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_3a4f8/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_233f2/fast && /usr/bin/make  -f CMakeFiles/cmTC_233f2.dir/build.make CMakeFiles/cmTC_233f2.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_233f2.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_233f2.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_233f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_233f2.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_233f2.dir/src.c.o -o cmTC_233f2 
+/usr/bin/ld: CMakeFiles/cmTC_233f2.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_233f2.dir/build.make:99：cmTC_233f2] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_233f2/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8a231/fast && /usr/bin/make  -f CMakeFiles/cmTC_8a231.dir/build.make CMakeFiles/cmTC_8a231.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8a231.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8a231.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8a231
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a231.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_8a231.dir/src.c.o -o cmTC_8a231 
+/usr/bin/ld: CMakeFiles/cmTC_8a231.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_8a231.dir/build.make:99：cmTC_8a231] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_8a231/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_193bc/fast && /usr/bin/make  -f CMakeFiles/cmTC_193bc.dir/build.make CMakeFiles/cmTC_193bc.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_193bc.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_193bc.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_193bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_193bc.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_193bc.dir/src.c.o -o cmTC_193bc 
+/usr/bin/ld: CMakeFiles/cmTC_193bc.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_193bc.dir/build.make:99：cmTC_193bc] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_193bc/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8a0ac/fast && /usr/bin/make  -f CMakeFiles/cmTC_8a0ac.dir/build.make CMakeFiles/cmTC_8a0ac.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8a0ac.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8a0ac.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8a0ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a0ac.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_8a0ac.dir/src.c.o -o cmTC_8a0ac 
+/usr/bin/ld: CMakeFiles/cmTC_8a0ac.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_8a0ac.dir/build.make:99：cmTC_8a0ac] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_8a0ac/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa98f/fast && /usr/bin/make  -f CMakeFiles/cmTC_aa98f.dir/build.make CMakeFiles/cmTC_aa98f.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_aa98f.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_aa98f.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_aa98f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa98f.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_aa98f.dir/src.c.o -o cmTC_aa98f 
+/usr/bin/ld: CMakeFiles/cmTC_aa98f.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_aa98f.dir/build.make:99：cmTC_aa98f] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_aa98f/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3330c/fast && /usr/bin/make  -f CMakeFiles/cmTC_3330c.dir/build.make CMakeFiles/cmTC_3330c.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3330c.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3330c.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3330c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3330c.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_3330c.dir/src.c.o -o cmTC_3330c 
+/usr/bin/ld: CMakeFiles/cmTC_3330c.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_3330c.dir/build.make:99：cmTC_3330c] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_3330c/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fd210/fast && /usr/bin/make  -f CMakeFiles/cmTC_fd210.dir/build.make CMakeFiles/cmTC_fd210.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fd210.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_fd210.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fd210
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd210.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_fd210.dir/src.c.o -o cmTC_fd210 
+/usr/bin/ld: CMakeFiles/cmTC_fd210.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_fd210.dir/build.make:99：cmTC_fd210] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Water/2mud1/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_fd210/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

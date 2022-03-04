@@ -1,0 +1,42 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/apricot/Documents/GraduationProject/Geant4Work/Shape1SizeZ/Pb3mm/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a28d/fast && /usr/bin/make  -f CMakeFiles/cmTC_4a28d.dir/build.make CMakeFiles/cmTC_4a28d.dir/build
+make[1]: 进入目录“/home/apricot/Documents/GraduationProject/Geant4Work/Shape1SizeZ/Pb3mm/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4a28d.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4a28d.dir/src.c.o -c /home/apricot/Documents/GraduationProject/Geant4Work/Shape1SizeZ/Pb3mm/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4a28d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a28d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_4a28d.dir/src.c.o -o cmTC_4a28d 
+/usr/bin/ld: CMakeFiles/cmTC_4a28d.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: 错误：ld 返回 1
+make[1]: *** [CMakeFiles/cmTC_4a28d.dir/build.make:99：cmTC_4a28d] 错误 1
+make[1]: 离开目录“/home/apricot/Documents/GraduationProject/Geant4Work/Shape1SizeZ/Pb3mm/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_4a28d/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

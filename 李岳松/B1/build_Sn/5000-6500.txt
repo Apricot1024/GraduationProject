@@ -1,0 +1,80 @@
+ 
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle alpha
+#change momentumAmp
+/gun/momentumAmp 5100.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 5200.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 5300.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 5400.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 5500.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 5600.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 5700.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 5800.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 5900.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 6000.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 6100.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 6200.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 6300.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 6400.00 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 6500.00 GeV
+#launch 1000 particles
+/run/beamOn 1000

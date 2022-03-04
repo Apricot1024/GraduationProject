@@ -1,0 +1,15 @@
+
+# Initialize kernel
+/run/initialize
+
+#/control/verbose 2
+#/run/verbose 2
+#/event/verbose 0
+#/tracking/verbose 2
+
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 4 MeV
+#launch 10000 particles
+/run/beamOn 100000

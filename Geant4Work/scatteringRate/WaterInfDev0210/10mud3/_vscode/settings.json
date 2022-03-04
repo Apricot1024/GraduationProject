@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.icc": "cpp",
+        "mathd": "cpp",
+        "numbers": "cpp"
+    }
+}

@@ -1,0 +1,852 @@
+# Grace project file
+#
+@version 50125
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Tue Jan 11 13:48:51 2022"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 0, 0, 50, 80
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.150000, 0.850000
+@    title "Pb_SizeZ-D"
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "Energy/MeV"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 0
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 10
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 1
+@    xaxis  tick place both
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "D/nGy"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 0
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 20
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.25, 0.8
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type xy
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 1
+@    s0 symbol fill pattern 0
+@    s0 symbol linewidth 1.0
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 1.5
+@    s0 line color 1
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 1
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar place both
+@    s0 errorbar color 1
+@    s0 errorbar pattern 1
+@    s0 errorbar size 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 errorbar riser clip off
+@    s0 errorbar riser clip length 0.100000
+@    s0 comment "/home/apricot/Documents/毕设/Geant4Work/data/Shape1SizeZ/Pb1mm.dat"
+@    s0 legend  "1mm"
+@    s1 hidden false
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 1.000000
+@    s1 symbol color 2
+@    s1 symbol pattern 1
+@    s1 symbol fill color 2
+@    s1 symbol fill pattern 0
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 0
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 1
+@    s1 line linewidth 1.5
+@    s1 line color 2
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 1
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 0
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 2
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment "/home/apricot/Documents/毕设/Geant4Work/data/Shape1SizeZ/Pb10mm.dat"
+@    s1 legend  "10mm"
+@    s2 hidden false
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 1.000000
+@    s2 symbol color 3
+@    s2 symbol pattern 1
+@    s2 symbol fill color 3
+@    s2 symbol fill pattern 0
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 0
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 1
+@    s2 line linewidth 1.5
+@    s2 line color 3
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 1
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 0
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 3
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment "/home/apricot/Documents/毕设/Geant4Work/data/Shape1SizeZ/Pb20mm.dat"
+@    s2 legend  "20mm"
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 4
+@    s3 symbol pattern 1
+@    s3 symbol fill color 4
+@    s3 symbol fill pattern 0
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 0
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 1.5
+@    s3 line color 4
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 1
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 0
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 4
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment "/home/apricot/Documents/毕设/Geant4Work/data/Shape1SizeZ/Pb30mm.dat"
+@    s3 legend  "30mm"
+@    s4 hidden false
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 1.000000
+@    s4 symbol color 11
+@    s4 symbol pattern 1
+@    s4 symbol fill color 11
+@    s4 symbol fill pattern 0
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 0
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 1.5
+@    s4 line color 11
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 1
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 0
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 11
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment "/home/apricot/Documents/毕设/Geant4Work/data/Shape1SizeZ/Pb40mm.dat"
+@    s4 legend  "40mm"
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 1.000000
+@    s5 symbol color 6
+@    s5 symbol pattern 1
+@    s5 symbol fill color 6
+@    s5 symbol fill pattern 0
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 0
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 1
+@    s5 line linewidth 1.5
+@    s5 line color 6
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 1
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 0
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 6
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment "/home/apricot/Documents/毕设/Geant4Work/data/Shape1SizeZ/Pb50mm.dat"
+@    s5 legend  "50mm"
+@target G0.S0
+@type xy
+2 5.0722
+3 7.01892
+4 9.31853
+5 11.3338
+6 13.9033
+7 16.8159
+8 19.2831
+9 22.3657
+10 23.374
+11 25.2221
+12 28.3465
+13 31.9097
+14 33.0578
+15 36.0992
+16 35.5448
+17 37.6563
+18 38.7195
+19 40.5882
+20 44.7668
+21 43.9838
+22 45.5701
+23 47.0377
+24 50.3409
+25 49.7462
+26 50.6609
+27 54.7135
+28 54.8609
+29 55.9703
+30 54.8538
+31 56.3879
+32 57.2286
+33 58.7851
+34 59.6074
+35 60.7137
+36 62.5522
+37 61.9897
+38 63.0862
+39 63.4481
+40 64.658
+41 65.6911
+42 65.7997
+43 68.5583
+44 65.945
+45 67.3305
+46 69.0022
+47 68.7924
+48 69.4572
+49 71.6204
+50 71.7805
+&
+@target G0.S1
+@type xy
+2 3.01632
+3 4.70881
+4 5.91187
+5 7.52152
+6 9.05679
+7 10.4105
+8 11.8309
+9 12.7267
+10 14.8303
+11 16.344
+12 17.1661
+13 18.014
+14 19.4495
+15 19.4962
+16 21.2396
+17 21.6072
+18 23.9602
+19 22.4916
+20 23.4899
+21 24.0517
+22 25.4138
+23 26.1369
+24 27.4464
+25 26.3583
+26 27.4685
+27 27.0542
+28 27.957
+29 29.057
+30 29.9728
+31 29.9911
+32 29.4675
+33 31.1696
+34 30.6345
+35 31.2096
+36 32.1792
+37 34.0311
+38 35.0868
+39 33.5657
+40 35.8513
+41 35.0047
+42 37.5527
+43 36.3527
+44 38.5745
+45 37.0724
+46 38.9858
+47 38.631
+48 39.4627
+49 39.7624
+50 41.2895
+&
+@target G0.S2
+@type xy
+2 1.96534
+3 3.01365
+4 3.69978
+5 4.70375
+6 5.49075
+7 6.15057
+8 7.61121
+9 7.92112
+10 7.82896
+11 8.8867
+12 9.02277
+13 9.56963
+14 10.6892
+15 10.2852
+16 10.5976
+17 11.7071
+18 10.9089
+19 12.772
+20 11.556
+21 12.8341
+22 13.5447
+23 12.5954
+24 12.9156
+25 12.6986
+26 13.8407
+27 13.8211
+28 14.0024
+29 14.4051
+30 13.8989
+31 14.0584
+32 14.6355
+33 14.6137
+34 15.1906
+35 15.3457
+36 15.089
+37 16.4453
+38 15.4219
+39 16.3345
+40 15.9647
+41 17.503
+42 17.0827
+43 17.9747
+44 18.9462
+45 18.6208
+46 17.7818
+47 19.2623
+48 19.5943
+49 18.994
+50 19.5433
+&
+@target G0.S3
+@type xy
+2 1.15893
+3 1.92634
+4 2.52336
+5 3.04974
+6 3.47112
+7 3.65804
+8 4.32281
+9 4.5651
+10 5.09922
+11 5.22393
+12 5.64792
+13 5.00889
+14 5.27338
+15 5.45861
+16 5.45326
+17 6.68023
+18 6.04888
+19 6.70225
+20 6.4074
+21 5.77221
+22 6.55746
+23 6.59483
+24 6.68482
+25 7.13445
+26 7.58863
+27 6.55502
+28 6.80254
+29 7.12273
+30 7.19718
+31 7.42374
+32 7.26796
+33 7.31698
+34 7.76474
+35 7.54021
+36 7.40084
+37 7.71814
+38 8.11843
+39 7.33279
+40 8.16989
+41 8.41838
+42 8.49932
+43 8.29448
+44 9.01963
+45 8.93763
+46 9.43989
+47 8.95485
+48 8.6119
+49 9.85146
+50 9.34584
+&
+@target G0.S4
+@type xy
+2 0.786296
+3 1.0605
+4 1.40618
+5 1.79649
+6 2.00044
+7 2.32322
+8 2.37242
+9 2.51055
+10 3.0535
+11 2.78479
+12 2.906
+13 2.97149
+14 2.9215
+15 2.80102
+16 3.40564
+17 3.48629
+18 3.62376
+19 3.45711
+20 3.29262
+21 2.8609
+22 3.07452
+23 3.32146
+24 3.0776
+25 3.24304
+26 3.2345
+27 3.65706
+28 3.75901
+29 3.25287
+30 3.70125
+31 4.22076
+32 4.15699
+33 3.41496
+34 3.73385
+35 3.8408
+36 3.71313
+37 4.09625
+38 3.77896
+39 3.92584
+40 3.99241
+41 3.83894
+42 4.78075
+43 4.29751
+44 4.6556
+45 4.83868
+46 4.51457
+47 4.41908
+48 4.66004
+49 4.18281
+50 5.12542
+&
+@target G0.S5
+@type xy
+2 0.477352
+3 0.703471
+4 1.00361
+5 1.28226
+6 1.16432
+7 1.43273
+8 1.47555
+9 1.61121
+10 1.50879
+11 1.51992
+12 1.6298
+13 1.64908
+14 1.39683
+15 1.52815
+16 1.63405
+17 1.6077
+18 1.81518
+19 1.4905
+20 1.67494
+21 1.65611
+22 1.41968
+23 1.49366
+24 1.636
+25 1.5194
+26 1.63814
+27 1.65246
+28 1.92917
+29 2.09359
+30 1.61474
+31 1.637
+32 1.95024
+33 1.54281
+34 2.18938
+35 1.83981
+36 2.24282
+37 1.80337
+38 1.59262
+39 2.13606
+40 2.07588
+41 2.09269
+42 2.37094
+43 1.94158
+44 2.5024
+45 2.30675
+46 2.05386
+47 2.29371
+48 2.47954
+49 2.56745
+50 2.38621
+&

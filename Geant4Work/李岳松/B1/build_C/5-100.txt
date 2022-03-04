@@ -1,0 +1,104 @@
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle alpha
+#change momentumAmp
+/gun/momentumAmp 5 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 10 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 15 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 20 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 25 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 30 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 35 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 40 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 45 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 50 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 55 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 60 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 65 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 70 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 75 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 80 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 85 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 90 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 95 GeV
+#launch 1000 particles
+/run/beamOn 1000
+
+#change momentumAmp
+/gun/momentumAmp 100 GeV
+#launch 1000 particles
+/run/beamOn 1000

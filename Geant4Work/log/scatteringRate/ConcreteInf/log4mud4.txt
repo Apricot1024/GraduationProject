@@ -1,0 +1,5937 @@
+
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00 [MT]   (10-December-2021)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+<<< Reference Physics List QBBC 
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+  OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+  OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+  OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+  OpenInventorQt (OIQt, OI)
+  RayTracerX (RayTracerX)
+  TOOLSSG_QT_GLES (TSG_QT_GLES, TSG)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+
+==========================================================================================
+G4TaskRunManager :: Using G4ThreadPool...
+==========================================================================================
+
+Checking overlaps for volume Envelope:0 (G4Box) ... OK! 
+Checking overlaps for volume Shape1:0 (G4Box) ... OK! 
+Checking overlaps for volume Shape2:0 (G4Tubs) ... OK! 
+### HadronInelasticQBBC Construct Process:
+    Emin(FTFP)= 3 GeV; Emax(FTFP)= 100000 GeV
+    Emin(BERT)= 1 GeV; Emax(BERT)= 6 GeV; Emax(BERTpions)= 12 GeV;
+    Emin(BIC) = 0 GeV; Emax(BIC)= 1.5 GeV.
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+=======================================================================
+======                 Electromagnetic Physics Parameters      ========
+=======================================================================
+LPM effect enabled                                 1
+Enable creation and use of sampling tables         0
+Apply cuts on all EM processes                     0
+Use general process                                0
+Enable linear polarisation for gamma               0
+Enable sampling of quantum entanglement            0
+X-section factor for integral approach             0.8
+Min kinetic energy for tables                      100 eV 
+Max kinetic energy for tables                      100 TeV
+Number of bins per decade of a table               7
+Verbose level                                      1
+Verbose level for worker thread                    0
+Bremsstrahlung energy threshold above which 
+  primary e+- is added to the list of secondary    100 TeV
+Bremsstrahlung energy threshold above which primary
+  muon/hadron is added to the list of secondary    100 TeV
+Lowest triplet kinetic energy                      1 MeV
+Enable sampling of gamma linear polarisation       0
+5D gamma conversion model type                     0
+5D gamma conversion model on isolated ion          0
+Livermore data directory                           livermore
+=======================================================================
+======                 Ionisation Parameters                   ========
+=======================================================================
+Step function for e+-                              (0.2, 1 mm)
+Step function for muons/hadrons                    (0.2, 0.1 mm)
+Step function for light ions                       (0.2, 0.1 mm)
+Step function for general ions                     (0.2, 0.1 mm)
+Lowest e+e- kinetic energy                         1 keV
+Lowest muon/hadron kinetic energy                  1 keV
+Fluctuations of dE/dx are enabled                  1
+Use ICRU90 data                                    0
+Use built-in Birks satuaration                     0
+Build CSDA range enabled                           0
+Use cut as a final range enabled                   0
+Enable angular generator interface                 0
+Max kinetic energy for CSDA tables                 1 GeV
+Max kinetic energy for NIEL computation            0 eV 
+Linear loss limit                                  0.01
+Read data from file for e+e- pair production by mu 0
+=======================================================================
+======                 Multiple Scattering Parameters          ========
+=======================================================================
+Type of msc step limit algorithm for e+-           1
+Type of msc step limit algorithm for muons/hadrons 0
+Msc lateral displacement for e+- enabled           1
+Msc lateral displacement for muons and hadrons     0
+Urban msc model lateral displacement alg96         1
+Range factor for msc step limit for e+-            0.04
+Range factor for msc step limit for muons/hadrons  0.2
+Geometry factor for msc step limitation of e+-     2.5
+Safety factor for msc step limit for e+-           0.6
+Skin parameter for msc step limitation of e+-      1
+Lambda limit for msc step limit for e+-            1 mm
+Use Mott correction for e- scattering              0
+Factor used for dynamic computation of angular 
+  limit between single and multiple scattering     1
+Fixed angular limit between single 
+  and multiple scattering                          3.1416 rad
+Upper energy limit for e+- multiple scattering     100 MeV
+Type of electron single scattering model           0
+Type of nuclear form-factor                        1
+Screening factor                                   1
+=======================================================================
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina : Emin=    0 eV  Emax=  100 TeV
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+     BetheHeitlerLPM : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e-  XStype:4  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+CoulombScat:  for e- XStype:3 SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e+  XStype:4  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+annihil:  for e+ XStype:2 SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+ XStype:3 SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for proton  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for proton  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for proton  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for proton XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for GenericIon  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+ionIoni:  for GenericIon  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      Stopping Power data for 17 ion/material pairs
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+msc:  for alpha  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+ionIoni:  for alpha  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
+
+msc:  for anti_proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for anti_proton  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for anti_proton  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for anti_proton  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for anti_proton XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for kaon+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon+ XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for kaon-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon- XStype:3 SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+muIoni:  for mu+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu+ XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+muIoni:  for mu-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu- XStype:3 SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for pi+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi+ XStype:3 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for pi-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi- XStype:3 SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for B-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: B-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for D-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: D-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: ionElastic
+        Model:          NNDiffuseElastic: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: anti_lambdaInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:               GammaNPreco: 0 eV  ---> 200 MeV
+        Model:            BertiniCascade: 199 MeV ---> 6 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            GammaNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 12 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 12 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for sigma-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: sigma-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1
+Isomer production flag                              1
+Internal e- conversion flag                         1
+Store e- internal conversion data                   0
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+=======================================================================
+
+=========================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+
+==============================================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Creating 3162 tasks with 3162 events/task...
+==============================================================================================
+
+G4WT6 > EffectiveCountone1
+G4WT6 > EffectiveCountone2
+G4WT3 > EffectiveCountone3
+G4WT6 > EffectiveCountone4
+G4WT6 > EffectiveCountone5
+G4WT6 > EffectiveCountone6
+G4WT6 > EffectiveCountone7
+G4WT6 > EffectiveCountone8
+G4WT6 > EffectiveCountone9
+G4WT6 > EffectiveCountone10
+G4WT3 > EffectiveCountone11
+G4WT5 > EffectiveCountone12
+G4WT5 > EffectiveCountone13
+G4WT5 > EffectiveCountone14
+G4WT3 > EffectiveCountone15
+G4WT10 > EffectiveCountone16
+G4WT10 > EffectiveCountone17
+G4WT10 > EffectiveCountone18
+G4WT6 > EffectiveCountone19
+G4WT10 > EffectiveCountone20
+G4WT6 > EffectiveCountone21
+G4WT10 > EffectiveCountone22
+G4WT5 > EffectiveCountone23
+G4WT5 > EffectiveCountone24
+G4WT5 > EffectiveCountone25
+G4WT6 > EffectiveCountone26
+G4WT6 > EffectiveCountone27
+G4WT10 > EffectiveCountone28
+G4WT6 > EffectiveCountone29
+G4WT6 > EffectiveCountone30
+G4WT10 > EffectiveCountone31
+G4WT3 > EffectiveCountone32
+G4WT5 > EffectiveCountone33
+G4WT5 > EffectiveCountone34
+G4WT5 > EffectiveCountone35
+G4WT6 > EffectiveCountone36
+G4WT6 > EffectiveCountone37
+G4WT10 > EffectiveCountone38
+G4WT6 > EffectiveCountone39
+G4WT6 > EffectiveCountone40
+G4WT6 > EffectiveCountone41
+G4WT5 > EffectiveCountone42
+G4WT6 > EffectiveCountone43
+G4WT6 > EffectiveCountone44
+G4WT10 > EffectiveCountone45
+G4WT6 > EffectiveCountone46
+G4WT6 > EffectiveCountone47
+G4WT10 > EffectiveCountone48
+G4WT5 > EffectiveCountone49
+G4WT6 > EffectiveCountone50
+G4WT6 > EffectiveCountone51
+G4WT5 > EffectiveCountone52
+G4WT6 > EffectiveCountone53
+G4WT6 > EffectiveCountone54
+G4WT5 > EffectiveCountone55
+G4WT6 > EffectiveCountone56
+G4WT10 > EffectiveCountone57
+G4WT10 > EffectiveCountone58
+G4WT6 > EffectiveCountone59
+G4WT10 > EffectiveCountone60
+G4WT6 > EffectiveCountone61
+G4WT6 > EffectiveCountone62
+G4WT6 > EffectiveCountone63
+G4WT10 > EffectiveCountone64
+G4WT6 > EffectiveCountone65
+G4WT6 > EffectiveCountone66
+G4WT10 > EffectiveCountone67
+G4WT6 > EffectiveCountone68
+G4WT6 > EffectiveCountone69
+G4WT10 > EffectiveCountone70
+G4WT10 > EffectiveCountone71
+G4WT10 > EffectiveCountone72
+G4WT10 > EffectiveCountone73
+G4WT6 > EffectiveCountone74
+G4WT6 > EffectiveCountone75
+G4WT6 > EffectiveCountone76
+G4WT10 > EffectiveCountone77
+G4WT6 > EffectiveCountone78
+G4WT6 > EffectiveCountone79
+G4WT5 > EffectiveCountone80
+G4WT6 > EffectiveCountone81
+G4WT5 > EffectiveCountone82
+G4WT6 > EffectiveCountone83
+G4WT10 > EffectiveCountone84
+G4WT5 > EffectiveCountone85
+G4WT10 > EffectiveCountone86
+G4WT3 > EffectiveCountone87
+G4WT10 > EffectiveCountone88
+G4WT6 > EffectiveCountone89
+G4WT6 > EffectiveCountone90
+G4WT6 > EffectiveCountone91
+G4WT10 > EffectiveCountone92
+G4WT6 > EffectiveCountone93
+G4WT6 > EffectiveCountone94
+G4WT10 > EffectiveCountone95
+G4WT6 > EffectiveCountone96
+G4WT6 > EffectiveCountone97
+G4WT6 > EffectiveCountone98
+G4WT5 > EffectiveCountone99
+G4WT6 > EffectiveCountone100
+G4WT6 > EffectiveCountone101
+G4WT5 > EffectiveCountone102
+G4WT5 > EffectiveCountone103
+G4WT6 > EffectiveCountone104
+G4WT6 > EffectiveCountone105
+G4WT10 > EffectiveCountone106
+G4WT10 > EffectiveCountone107
+G4WT6 > EffectiveCountone108
+G4WT6 > EffectiveCountone109
+G4WT6 > EffectiveCountone110
+G4WT6 > EffectiveCountone111
+G4WT10 > EffectiveCountone112
+G4WT5 > EffectiveCountone113
+G4WT5 > EffectiveCountone114
+G4WT10 > EffectiveCountone115
+G4WT10 > EffectiveCountone116
+G4WT10 > EffectiveCountone117
+G4WT10 > EffectiveCountone118
+G4WT6 > EffectiveCountone119
+G4WT5 > EffectiveCountone120
+G4WT10 > EffectiveCountone121
+G4WT10 > EffectiveCountone122
+G4WT10 > EffectiveCountone123
+G4WT10 > EffectiveCountone124
+G4WT6 > EffectiveCountone125
+G4WT10 > EffectiveCountone126
+G4WT6 > EffectiveCountone127
+G4WT6 > EffectiveCountone128
+G4WT6 > EffectiveCountone129
+G4WT6 > EffectiveCountone130
+G4WT6 > EffectiveCountone131
+G4WT6 > EffectiveCountone132
+G4WT6 > EffectiveCountone133
+G4WT6 > EffectiveCountone134
+G4WT6 > EffectiveCountone135
+G4WT10 > EffectiveCountone136
+G4WT6 > EffectiveCountone137
+G4WT6 > EffectiveCountone138
+G4WT6 > EffectiveCountone139
+G4WT10 > EffectiveCountone140
+G4WT6 > EffectiveCountone141
+G4WT6 > EffectiveCountone142
+G4WT6 > EffectiveCountone143
+G4WT10 > EffectiveCountone144
+G4WT6 > EffectiveCountone145
+G4WT10 > EffectiveCountone146
+G4WT6 > EffectiveCountone147
+G4WT6 > EffectiveCountone148
+G4WT10 > EffectiveCountone149
+G4WT10 > EffectiveCountone150
+G4WT6 > EffectiveCountone151
+G4WT5 > EffectiveCountone152
+G4WT6 > EffectiveCountone153
+G4WT10 > EffectiveCountone154
+G4WT10 > EffectiveCountone155
+G4WT10 > EffectiveCountone156
+G4WT6 > EffectiveCountone157
+G4WT6 > EffectiveCountone158
+G4WT6 > EffectiveCountone159
+G4WT6 > EffectiveCountone160
+G4WT6 > EffectiveCountone161
+G4WT6 > EffectiveCountone162
+G4WT6 > EffectiveCountone163
+G4WT6 > EffectiveCountone164
+G4WT6 > EffectiveCountone165
+G4WT6 > EffectiveCountone166
+G4WT6 > EffectiveCountone167
+G4WT6 > EffectiveCountone168
+G4WT10 > EffectiveCountone169
+G4WT6 > EffectiveCountone170
+G4WT6 > EffectiveCountone171
+G4WT10 > EffectiveCountone172
+G4WT6 > EffectiveCountone173
+G4WT5 > EffectiveCountone174
+G4WT10 > EffectiveCountone175
+G4WT6 > EffectiveCountone176
+G4WT6 > EffectiveCountone177
+G4WT5 > EffectiveCountone178
+G4WT6 > EffectiveCountone179
+G4WT6 > EffectiveCountone180
+G4WT6 > EffectiveCountone181
+G4WT6 > EffectiveCountone182
+G4WT6 > EffectiveCountone183
+G4WT6 > EffectiveCountone184
+G4WT5 > EffectiveCountone185
+G4WT6 > EffectiveCountone186
+G4WT6 > EffectiveCountone187
+G4WT6 > EffectiveCountone188
+G4WT6 > EffectiveCountone189
+G4WT6 > EffectiveCountone190
+G4WT3 > EffectiveCountone191
+G4WT10 > EffectiveCountone192
+G4WT10 > EffectiveCountone193
+G4WT10 > EffectiveCountone194
+G4WT6 > EffectiveCountone195
+G4WT5 > EffectiveCountone196
+G4WT5 > EffectiveCountone197
+G4WT10 > EffectiveCountone198
+G4WT6 > EffectiveCountone199
+G4WT6 > EffectiveCountone200
+G4WT10 > EffectiveCountone201
+G4WT6 > EffectiveCountone202
+G4WT6 > EffectiveCountone203
+G4WT10 > EffectiveCountone204
+G4WT10 > EffectiveCountone205
+G4WT10 > EffectiveCountone206
+G4WT6 > EffectiveCountone207
+G4WT6 > EffectiveCountone208
+G4WT10 > EffectiveCountone209
+G4WT10 > EffectiveCountone210
+G4WT10 > EffectiveCountone211
+G4WT5 > EffectiveCountone212
+G4WT6 > EffectiveCountone213
+G4WT6 > EffectiveCountone214
+G4WT5 > EffectiveCountone215
+G4WT6 > EffectiveCountone216
+G4WT10 > EffectiveCountone217
+G4WT5 > EffectiveCountone218
+G4WT6 > EffectiveCountone219
+G4WT6 > EffectiveCountone220
+G4WT10 > EffectiveCountone221
+G4WT10 > EffectiveCountone222
+G4WT6 > EffectiveCountone223
+G4WT6 > EffectiveCountone224
+G4WT6 > EffectiveCountone225
+G4WT6 > EffectiveCountone226
+G4WT6 > EffectiveCountone227
+G4WT6 > EffectiveCountone228
+G4WT6 > EffectiveCountone229
+G4WT5 > EffectiveCountone230
+G4WT5 > EffectiveCountone231
+G4WT5 > EffectiveCountone232
+G4WT6 > EffectiveCountone233
+G4WT6 > EffectiveCountone234
+G4WT6 > EffectiveCountone235
+G4WT6 > EffectiveCountone236
+G4WT6 > EffectiveCountone237
+G4WT10 > EffectiveCountone238
+G4WT6 > EffectiveCountone239
+G4WT6 > EffectiveCountone240
+G4WT6 > EffectiveCountone241
+G4WT10 > EffectiveCountone242
+G4WT6 > EffectiveCountone243
+G4WT6 > EffectiveCountone244
+G4WT5 > EffectiveCountone245
+G4WT6 > EffectiveCountone246
+G4WT10 > EffectiveCountone247
+G4WT6 > EffectiveCountone248
+G4WT6 > EffectiveCountone249
+G4WT10 > EffectiveCountone250
+G4WT6 > EffectiveCountone251
+G4WT6 > EffectiveCountone252
+G4WT6 > EffectiveCountone253
+G4WT6 > EffectiveCountone254
+G4WT6 > EffectiveCountone255
+G4WT6 > EffectiveCountone256
+G4WT10 > EffectiveCountone257
+G4WT6 > EffectiveCountone258
+G4WT6 > EffectiveCountone259
+G4WT5 > EffectiveCountone260
+G4WT5 > EffectiveCountone261
+G4WT6 > EffectiveCountone262
+G4WT5 > EffectiveCountone263
+G4WT5 > EffectiveCountone264
+G4WT6 > EffectiveCountone265
+G4WT6 > EffectiveCountone266
+G4WT6 > EffectiveCountone267
+G4WT6 > EffectiveCountone268
+G4WT6 > EffectiveCountone269
+G4WT6 > EffectiveCountone270
+G4WT6 > EffectiveCountone271
+G4WT6 > EffectiveCountone272
+G4WT6 > EffectiveCountone273
+G4WT6 > EffectiveCountone274
+G4WT10 > EffectiveCountone275
+G4WT10 > EffectiveCountone276
+G4WT10 > EffectiveCountone277
+G4WT10 > EffectiveCountone278
+G4WT5 > EffectiveCountone279
+G4WT5 > EffectiveCountone280
+G4WT5 > EffectiveCountone281
+G4WT6 > EffectiveCountone282
+G4WT5 > EffectiveCountone283
+G4WT10 > EffectiveCountone284
+G4WT6 > EffectiveCountone285
+G4WT10 > EffectiveCountone286
+G4WT5 > EffectiveCountone287
+G4WT10 > EffectiveCountone288
+G4WT6 > EffectiveCountone289
+G4WT6 > EffectiveCountone290
+G4WT5 > EffectiveCountone291
+G4WT10 > EffectiveCountone292
+G4WT6 > EffectiveCountone293
+G4WT10 > EffectiveCountone294
+G4WT6 > EffectiveCountone295
+G4WT10 > EffectiveCountone296
+G4WT6 > EffectiveCountone297
+G4WT5 > EffectiveCountone298
+G4WT6 > EffectiveCountone299
+G4WT6 > EffectiveCountone300
+G4WT6 > EffectiveCountone301
+G4WT6 > EffectiveCountone302
+G4WT6 > EffectiveCountone303
+G4WT6 > EffectiveCountone304
+G4WT6 > EffectiveCountone305
+G4WT6 > EffectiveCountone306
+G4WT5 > EffectiveCountone307
+G4WT6 > EffectiveCountone308
+G4WT10 > EffectiveCountone309
+G4WT6 > EffectiveCountone310
+G4WT5 > EffectiveCountone311
+G4WT5 > EffectiveCountone312
+G4WT6 > EffectiveCountone313
+G4WT6 > EffectiveCountone314
+G4WT10 > EffectiveCountone315
+G4WT10 > EffectiveCountone316
+G4WT5 > EffectiveCountone317
+G4WT10 > EffectiveCountone318
+G4WT10 > EffectiveCountone319
+G4WT10 > EffectiveCountone320
+G4WT10 > EffectiveCountone321
+G4WT10 > EffectiveCountone322
+G4WT5 > EffectiveCountone323
+G4WT6 > EffectiveCountone324
+G4WT6 > EffectiveCountone325
+G4WT6 > EffectiveCountone326
+G4WT5 > EffectiveCountone327
+G4WT5 > EffectiveCountone328
+G4WT10 > EffectiveCountone329
+G4WT6 > EffectiveCountone330
+G4WT10 > EffectiveCountone331
+G4WT6 > EffectiveCountone332
+G4WT5 > EffectiveCountone333
+G4WT6 > EffectiveCountone334
+G4WT10 > EffectiveCountone335
+G4WT6 > EffectiveCountone336
+G4WT10 > EffectiveCountone337
+G4WT6 > EffectiveCountone338
+G4WT10 > EffectiveCountone339
+G4WT10 > EffectiveCountone340
+G4WT5 > EffectiveCountone341
+G4WT5 > EffectiveCountone342
+G4WT6 > EffectiveCountone343
+G4WT6 > EffectiveCountone344
+G4WT5 > EffectiveCountone345
+G4WT6 > EffectiveCountone346
+G4WT6 > EffectiveCountone347
+G4WT5 > EffectiveCountone348
+G4WT6 > EffectiveCountone349
+G4WT6 > EffectiveCountone350
+G4WT6 > EffectiveCountone351
+G4WT6 > EffectiveCountone352
+G4WT6 > EffectiveCountone353
+G4WT5 > EffectiveCountone354
+G4WT6 > EffectiveCountone355
+G4WT6 > EffectiveCountone356
+G4WT6 > EffectiveCountone357
+G4WT5 > EffectiveCountone358
+G4WT10 > EffectiveCountone359
+G4WT10 > EffectiveCountone360
+G4WT10 > EffectiveCountone361
+G4WT6 > EffectiveCountone362
+G4WT6 > EffectiveCountone363
+G4WT6 > EffectiveCountone364
+G4WT10 > EffectiveCountone365
+G4WT5 > EffectiveCountone366
+G4WT10 > EffectiveCountone367
+G4WT10 > EffectiveCountone368
+G4WT6 > EffectiveCountone369
+G4WT6 > EffectiveCountone370
+G4WT5 > EffectiveCountone371
+G4WT6 > EffectiveCountone372
+G4WT6 > EffectiveCountone373
+G4WT6 > EffectiveCountone374
+G4WT6 > EffectiveCountone375
+G4WT3 > EffectiveCountone376
+G4WT6 > EffectiveCountone377
+G4WT10 > EffectiveCountone378
+G4WT5 > EffectiveCountone379
+G4WT10 > EffectiveCountone380
+G4WT3 > EffectiveCountone381
+G4WT6 > EffectiveCountone382
+G4WT6 > EffectiveCountone383
+G4WT5 > EffectiveCountone384
+G4WT5 > EffectiveCountone385
+G4WT5 > EffectiveCountone386
+G4WT6 > EffectiveCountone387
+G4WT5 > EffectiveCountone388
+G4WT6 > EffectiveCountone389
+G4WT6 > EffectiveCountone390
+G4WT10 > EffectiveCountone391
+G4WT5 > EffectiveCountone392
+G4WT6 > EffectiveCountone393
+G4WT6 > EffectiveCountone394
+G4WT5 > EffectiveCountone395
+G4WT6 > EffectiveCountone396
+G4WT10 > EffectiveCountone397
+G4WT6 > EffectiveCountone398
+G4WT10 > EffectiveCountone399
+G4WT6 > EffectiveCountone400
+G4WT5 > EffectiveCountone401
+G4WT6 > EffectiveCountone402
+G4WT6 > EffectiveCountone403
+G4WT6 > EffectiveCountone404
+G4WT10 > EffectiveCountone405
+G4WT6 > EffectiveCountone406
+G4WT10 > EffectiveCountone407
+G4WT6 > EffectiveCountone408
+G4WT5 > EffectiveCountone409
+G4WT6 > EffectiveCountone410
+G4WT6 > EffectiveCountone411
+G4WT6 > EffectiveCountone412
+G4WT6 > EffectiveCountone413
+G4WT5 > EffectiveCountone414
+G4WT6 > EffectiveCountone415
+G4WT6 > EffectiveCountone416
+G4WT10 > EffectiveCountone417
+G4WT6 > EffectiveCountone418
+G4WT6 > EffectiveCountone419
+G4WT6 > EffectiveCountone420
+G4WT6 > EffectiveCountone421
+G4WT6 > EffectiveCountone422
+G4WT6 > EffectiveCountone423
+G4WT6 > EffectiveCountone424
+G4WT6 > EffectiveCountone425
+G4WT6 > EffectiveCountone426
+G4WT6 > EffectiveCountone427
+G4WT10 > EffectiveCountone428
+G4WT6 > EffectiveCountone429
+G4WT10 > EffectiveCountone430
+G4WT6 > EffectiveCountone431
+G4WT6 > EffectiveCountone432
+G4WT6 > EffectiveCountone433
+G4WT6 > EffectiveCountone434
+G4WT10 > EffectiveCountone435
+G4WT5 > EffectiveCountone436
+G4WT10 > EffectiveCountone437
+G4WT10 > EffectiveCountone438
+G4WT10 > EffectiveCountone439
+G4WT10 > EffectiveCountone440
+G4WT10 > EffectiveCountone441
+G4WT10 > EffectiveCountone442
+G4WT6 > EffectiveCountone443
+G4WT6 > EffectiveCountone444
+G4WT6 > EffectiveCountone445
+G4WT5 > EffectiveCountone446
+G4WT6 > EffectiveCountone447
+G4WT6 > EffectiveCountone448
+G4WT6 > EffectiveCountone449
+G4WT6 > EffectiveCountone450
+G4WT10 > EffectiveCountone451
+G4WT10 > EffectiveCountone452
+G4WT6 > EffectiveCountone453
+G4WT6 > EffectiveCountone454
+G4WT6 > EffectiveCountone455
+G4WT5 > EffectiveCountone456
+G4WT10 > EffectiveCountone457
+G4WT6 > EffectiveCountone458
+G4WT6 > EffectiveCountone459
+G4WT6 > EffectiveCountone460
+G4WT6 > EffectiveCountone461
+G4WT5 > EffectiveCountone462
+G4WT5 > EffectiveCountone463
+G4WT6 > EffectiveCountone464
+G4WT5 > EffectiveCountone465
+G4WT6 > EffectiveCountone466
+G4WT6 > EffectiveCountone467
+G4WT6 > EffectiveCountone468
+G4WT6 > EffectiveCountone469
+G4WT6 > EffectiveCountone470
+G4WT6 > EffectiveCountone471
+G4WT6 > EffectiveCountone472
+G4WT10 > EffectiveCountone473
+G4WT6 > EffectiveCountone474
+G4WT6 > EffectiveCountone475
+G4WT6 > EffectiveCountone476
+G4WT3 > EffectiveCountone477
+G4WT10 > EffectiveCountone478
+G4WT6 > EffectiveCountone479
+G4WT6 > EffectiveCountone480
+G4WT6 > EffectiveCountone481
+G4WT6 > EffectiveCountone482
+G4WT6 > EffectiveCountone483
+G4WT6 > EffectiveCountone484
+G4WT6 > EffectiveCountone485
+G4WT10 > EffectiveCountone486
+G4WT5 > EffectiveCountone487
+G4WT6 > EffectiveCountone488
+G4WT3 > EffectiveCountone489
+G4WT6 > EffectiveCountone490
+G4WT10 > EffectiveCountone491
+G4WT6 > EffectiveCountone492
+G4WT6 > EffectiveCountone493
+G4WT6 > EffectiveCountone494
+G4WT6 > EffectiveCountone495
+G4WT6 > EffectiveCountone496
+G4WT5 > EffectiveCountone497
+G4WT10 > EffectiveCountone498
+G4WT10 > EffectiveCountone499
+G4WT10 > EffectiveCountone500
+G4WT6 > EffectiveCountone501
+G4WT10 > EffectiveCountone502
+G4WT10 > EffectiveCountone503
+G4WT5 > EffectiveCountone504
+G4WT6 > EffectiveCountone505
+G4WT5 > EffectiveCountone506
+G4WT6 > EffectiveCountone507
+G4WT6 > EffectiveCountone508
+G4WT6 > EffectiveCountone509
+G4WT5 > EffectiveCountone510
+G4WT10 > EffectiveCountone511
+G4WT10 > EffectiveCountone512
+G4WT6 > EffectiveCountone513
+G4WT6 > EffectiveCountone514
+G4WT5 > EffectiveCountone515
+G4WT6 > EffectiveCountone516
+G4WT6 > EffectiveCountone517
+G4WT10 > EffectiveCountone518
+G4WT10 > EffectiveCountone519
+G4WT5 > EffectiveCountone520
+G4WT5 > EffectiveCountone521
+G4WT6 > EffectiveCountone522
+G4WT5 > EffectiveCountone523
+G4WT6 > EffectiveCountone524
+G4WT10 > EffectiveCountone525
+G4WT5 > EffectiveCountone526
+G4WT6 > EffectiveCountone527
+G4WT5 > EffectiveCountone528
+G4WT5 > EffectiveCountone529
+G4WT6 > EffectiveCountone530
+G4WT6 > EffectiveCountone531
+G4WT10 > EffectiveCountone532
+G4WT10 > EffectiveCountone533
+G4WT6 > EffectiveCountone534
+G4WT6 > EffectiveCountone535
+G4WT10 > EffectiveCountone536
+G4WT10 > EffectiveCountone537
+G4WT10 > EffectiveCountone538
+G4WT6 > EffectiveCountone539
+G4WT6 > EffectiveCountone540
+G4WT10 > EffectiveCountone541
+G4WT6 > EffectiveCountone542
+G4WT10 > EffectiveCountone543
+G4WT10 > EffectiveCountone544
+G4WT6 > EffectiveCountone545
+G4WT5 > EffectiveCountone546
+G4WT6 > EffectiveCountone547
+G4WT5 > EffectiveCountone548
+G4WT5 > EffectiveCountone549
+G4WT6 > EffectiveCountone550
+G4WT6 > EffectiveCountone551
+G4WT6 > EffectiveCountone552
+G4WT6 > EffectiveCountone553
+G4WT6 > EffectiveCountone554
+G4WT6 > EffectiveCountone555
+G4WT6 > EffectiveCountone556
+G4WT6 > EffectiveCountone557
+G4WT6 > EffectiveCountone558
+G4WT6 > EffectiveCountone559
+G4WT6 > EffectiveCountone560
+G4WT6 > EffectiveCountone561
+G4WT6 > EffectiveCountone562
+G4WT10 > EffectiveCountone563
+G4WT10 > EffectiveCountone564
+G4WT6 > EffectiveCountone565
+G4WT10 > EffectiveCountone566
+G4WT6 > EffectiveCountone567
+G4WT6 > EffectiveCountone568
+G4WT10 > EffectiveCountone569
+G4WT10 > EffectiveCountone570
+G4WT6 > EffectiveCountone571
+G4WT6 > EffectiveCountone572
+G4WT6 > EffectiveCountone573
+G4WT10 > EffectiveCountone574
+G4WT10 > EffectiveCountone575
+G4WT10 > EffectiveCountone576
+G4WT6 > EffectiveCountone577
+G4WT6 > EffectiveCountone578
+G4WT10 > EffectiveCountone579
+G4WT10 > EffectiveCountone580
+G4WT10 > EffectiveCountone581
+G4WT5 > EffectiveCountone582
+G4WT10 > EffectiveCountone583
+G4WT6 > EffectiveCountone584
+G4WT9 > EffectiveCountone585
+G4WT10 > EffectiveCountone586
+G4WT10 > EffectiveCountone587
+G4WT10 > EffectiveCountone588
+G4WT6 > EffectiveCountone589
+G4WT6 > EffectiveCountone590
+G4WT6 > EffectiveCountone591
+G4WT10 > EffectiveCountone592
+G4WT10 > EffectiveCountone593
+G4WT6 > EffectiveCountone594
+G4WT10 > EffectiveCountone595
+G4WT10 > EffectiveCountone596
+G4WT10 > EffectiveCountone597
+G4WT10 > EffectiveCountone598
+G4WT10 > EffectiveCountone599
+G4WT10 > EffectiveCountone600
+G4WT10 > EffectiveCountone601
+G4WT10 > EffectiveCountone602
+G4WT10 > EffectiveCountone603
+G4WT5 > EffectiveCountone604
+G4WT6 > EffectiveCountone605
+G4WT10 > EffectiveCountone606
+G4WT6 > EffectiveCountone607
+G4WT6 > EffectiveCountone608
+G4WT6 > EffectiveCountone609
+G4WT5 > EffectiveCountone610
+G4WT5 > EffectiveCountone611
+G4WT5 > EffectiveCountone612
+G4WT6 > EffectiveCountone613
+G4WT6 > EffectiveCountone614
+G4WT5 > EffectiveCountone615
+G4WT10 > EffectiveCountone616
+G4WT10 > EffectiveCountone617
+G4WT6 > EffectiveCountone618
+G4WT6 > EffectiveCountone619
+G4WT5 > EffectiveCountone620
+G4WT10 > EffectiveCountone621
+G4WT5 > EffectiveCountone622
+G4WT5 > EffectiveCountone623
+G4WT10 > EffectiveCountone624
+G4WT6 > EffectiveCountone625
+G4WT6 > EffectiveCountone626
+G4WT6 > EffectiveCountone627
+G4WT6 > EffectiveCountone628
+G4WT10 > EffectiveCountone629
+G4WT10 > EffectiveCountone630
+G4WT6 > EffectiveCountone631
+G4WT6 > EffectiveCountone632
+G4WT10 > EffectiveCountone633
+G4WT10 > EffectiveCountone634
+G4WT6 > EffectiveCountone635
+G4WT6 > EffectiveCountone636
+G4WT5 > EffectiveCountone637
+G4WT10 > EffectiveCountone638
+G4WT6 > EffectiveCountone639
+G4WT10 > EffectiveCountone640
+G4WT6 > EffectiveCountone641
+G4WT5 > EffectiveCountone642
+G4WT6 > EffectiveCountone643
+G4WT6 > EffectiveCountone644
+G4WT6 > EffectiveCountone645
+G4WT3 > EffectiveCountone646
+G4WT6 > EffectiveCountone647
+G4WT5 > EffectiveCountone648
+G4WT6 > EffectiveCountone649
+G4WT6 > EffectiveCountone650
+G4WT10 > EffectiveCountone651
+G4WT10 > EffectiveCountone652
+G4WT10 > EffectiveCountone653
+G4WT10 > EffectiveCountone654
+G4WT6 > EffectiveCountone655
+G4WT6 > EffectiveCountone656
+G4WT10 > EffectiveCountone657
+G4WT6 > EffectiveCountone658
+G4WT6 > EffectiveCountone659
+G4WT10 > EffectiveCountone660
+G4WT6 > EffectiveCountone661
+G4WT6 > EffectiveCountone662
+G4WT6 > EffectiveCountone663
+G4WT6 > EffectiveCountone664
+G4WT6 > EffectiveCountone665
+G4WT10 > EffectiveCountone666
+G4WT10 > EffectiveCountone667
+G4WT6 > EffectiveCountone668
+G4WT6 > EffectiveCountone669
+G4WT10 > EffectiveCountone670
+G4WT10 > EffectiveCountone671
+G4WT6 > EffectiveCountone672
+G4WT5 > EffectiveCountone673
+G4WT6 > EffectiveCountone674
+G4WT6 > EffectiveCountone675
+G4WT6 > EffectiveCountone676
+G4WT10 > EffectiveCountone677
+G4WT6 > EffectiveCountone678
+G4WT6 > EffectiveCountone679
+G4WT6 > EffectiveCountone680
+G4WT6 > EffectiveCountone681
+G4WT10 > EffectiveCountone682
+G4WT6 > EffectiveCountone683
+G4WT6 > EffectiveCountone684
+G4WT6 > EffectiveCountone685
+G4WT6 > EffectiveCountone686
+G4WT6 > EffectiveCountone687
+G4WT6 > EffectiveCountone688
+G4WT6 > EffectiveCountone689
+G4WT6 > EffectiveCountone690
+G4WT6 > EffectiveCountone691
+G4WT6 > EffectiveCountone692
+G4WT10 > EffectiveCountone693
+G4WT6 > EffectiveCountone694
+G4WT6 > EffectiveCountone695
+G4WT6 > EffectiveCountone696
+G4WT6 > EffectiveCountone697
+G4WT6 > EffectiveCountone698
+G4WT6 > EffectiveCountone699
+G4WT6 > EffectiveCountone700
+G4WT6 > EffectiveCountone701
+G4WT10 > EffectiveCountone702
+G4WT10 > EffectiveCountone703
+G4WT10 > EffectiveCountone704
+G4WT6 > EffectiveCountone705
+G4WT5 > EffectiveCountone706
+G4WT3 > EffectiveCountone707
+G4WT6 > EffectiveCountone708
+G4WT10 > EffectiveCountone709
+G4WT6 > EffectiveCountone710
+G4WT3 > EffectiveCountone711
+G4WT3 > EffectiveCountone712
+G4WT10 > EffectiveCountone713
+G4WT6 > EffectiveCountone714
+G4WT6 > EffectiveCountone715
+G4WT6 > EffectiveCountone716
+G4WT6 > EffectiveCountone717
+G4WT6 > EffectiveCountone718
+G4WT10 > EffectiveCountone719
+G4WT10 > EffectiveCountone720
+G4WT5 > EffectiveCountone721
+G4WT5 > EffectiveCountone722
+G4WT6 > EffectiveCountone723
+G4WT6 > EffectiveCountone724
+G4WT5 > EffectiveCountone725
+G4WT5 > EffectiveCountone726
+G4WT10 > EffectiveCountone727
+G4WT6 > EffectiveCountone728
+G4WT6 > EffectiveCountone729
+G4WT6 > EffectiveCountone730
+G4WT6 > EffectiveCountone731
+G4WT6 > EffectiveCountone732
+G4WT6 > EffectiveCountone733
+G4WT6 > EffectiveCountone734
+G4WT6 > EffectiveCountone735
+G4WT6 > EffectiveCountone736
+G4WT10 > EffectiveCountone737
+G4WT6 > EffectiveCountone738
+G4WT6 > EffectiveCountone739
+G4WT10 > EffectiveCountone740
+G4WT6 > EffectiveCountone741
+G4WT6 > EffectiveCountone742
+G4WT6 > EffectiveCountone743
+G4WT10 > EffectiveCountone744
+G4WT6 > EffectiveCountone745
+G4WT6 > EffectiveCountone746
+G4WT6 > EffectiveCountone747
+G4WT6 > EffectiveCountone748
+G4WT6 > EffectiveCountone749
+G4WT6 > EffectiveCountone750
+G4WT10 > EffectiveCountone751
+G4WT10 > EffectiveCountone752
+G4WT6 > EffectiveCountone753
+G4WT6 > EffectiveCountone754
+G4WT10 > EffectiveCountone755
+G4WT10 > EffectiveCountone756
+G4WT6 > EffectiveCountone757
+G4WT6 > EffectiveCountone758
+G4WT6 > EffectiveCountone759
+G4WT5 > EffectiveCountone760
+G4WT6 > EffectiveCountone761
+G4WT6 > EffectiveCountone762
+G4WT6 > EffectiveCountone763
+G4WT6 > EffectiveCountone764
+G4WT10 > EffectiveCountone765
+G4WT6 > EffectiveCountone766
+G4WT5 > EffectiveCountone767
+G4WT6 > EffectiveCountone768
+G4WT6 > EffectiveCountone769
+G4WT10 > EffectiveCountone770
+G4WT6 > EffectiveCountone771
+G4WT6 > EffectiveCountone772
+G4WT6 > EffectiveCountone773
+G4WT6 > EffectiveCountone774
+G4WT5 > EffectiveCountone775
+G4WT6 > EffectiveCountone776
+G4WT10 > EffectiveCountone777
+G4WT6 > EffectiveCountone778
+G4WT6 > EffectiveCountone779
+G4WT10 > EffectiveCountone780
+G4WT6 > EffectiveCountone781
+G4WT5 > EffectiveCountone782
+G4WT10 > EffectiveCountone783
+G4WT10 > EffectiveCountone784
+G4WT6 > EffectiveCountone785
+G4WT6 > EffectiveCountone786
+G4WT6 > EffectiveCountone787
+G4WT6 > EffectiveCountone788
+G4WT6 > EffectiveCountone789
+G4WT6 > EffectiveCountone790
+G4WT5 > EffectiveCountone791
+G4WT6 > EffectiveCountone792
+G4WT10 > EffectiveCountone793
+G4WT6 > EffectiveCountone794
+G4WT6 > EffectiveCountone795
+G4WT5 > EffectiveCountone796
+G4WT5 > EffectiveCountone797
+G4WT5 > EffectiveCountone798
+G4WT10 > EffectiveCountone799
+G4WT5 > EffectiveCountone800
+G4WT6 > EffectiveCountone801
+G4WT6 > EffectiveCountone802
+G4WT6 > EffectiveCountone803
+G4WT6 > EffectiveCountone804
+G4WT6 > EffectiveCountone805
+G4WT6 > EffectiveCountone806
+G4WT10 > EffectiveCountone807
+G4WT6 > EffectiveCountone808
+G4WT6 > EffectiveCountone809
+G4WT6 > EffectiveCountone810
+G4WT10 > EffectiveCountone811
+G4WT6 > EffectiveCountone812
+G4WT6 > EffectiveCountone813
+G4WT6 > EffectiveCountone814
+G4WT6 > EffectiveCountone815
+G4WT6 > EffectiveCountone816
+G4WT10 > EffectiveCountone817
+G4WT6 > EffectiveCountone818
+G4WT6 > EffectiveCountone819
+G4WT6 > EffectiveCountone820
+G4WT6 > EffectiveCountone821
+G4WT6 > EffectiveCountone822
+G4WT6 > EffectiveCountone823
+G4WT6 > EffectiveCountone824
+G4WT6 > EffectiveCountone825
+G4WT10 > EffectiveCountone826
+G4WT6 > EffectiveCountone827
+G4WT6 > EffectiveCountone828
+G4WT10 > EffectiveCountone829
+G4WT5 > EffectiveCountone830
+G4WT6 > EffectiveCountone831
+G4WT6 > EffectiveCountone832
+G4WT6 > EffectiveCountone833
+G4WT6 > EffectiveCountone834
+G4WT6 > EffectiveCountone835
+G4WT5 > EffectiveCountone836
+G4WT10 > EffectiveCountone837
+G4WT10 > EffectiveCountone838
+G4WT6 > EffectiveCountone839
+G4WT6 > EffectiveCountone840
+G4WT6 > EffectiveCountone841
+G4WT10 > EffectiveCountone842
+G4WT5 > EffectiveCountone843
+G4WT5 > EffectiveCountone844
+G4WT6 > EffectiveCountone845
+G4WT6 > EffectiveCountone846
+G4WT6 > EffectiveCountone847
+G4WT10 > EffectiveCountone848
+G4WT6 > EffectiveCountone849
+G4WT6 > EffectiveCountone850
+G4WT10 > EffectiveCountone851
+G4WT6 > EffectiveCountone852
+G4WT5 > EffectiveCountone853
+G4WT6 > EffectiveCountone854
+G4WT5 > EffectiveCountone855
+G4WT6 > EffectiveCountone856
+G4WT6 > EffectiveCountone857
+G4WT6 > EffectiveCountone858
+G4WT6 > EffectiveCountone859
+G4WT5 > EffectiveCountone860
+G4WT6 > EffectiveCountone861
+G4WT10 > EffectiveCountone862
+G4WT3 > EffectiveCountone863
+G4WT6 > EffectiveCountone864
+G4WT6 > EffectiveCountone865
+G4WT10 > EffectiveCountone866
+G4WT10 > EffectiveCountone867
+G4WT10 > EffectiveCountone868
+G4WT10 > EffectiveCountone869
+G4WT10 > EffectiveCountone870
+G4WT6 > EffectiveCountone871
+G4WT6 > EffectiveCountone872
+G4WT6 > EffectiveCountone873
+G4WT10 > EffectiveCountone874
+G4WT3 > EffectiveCountone875
+G4WT3 > EffectiveCountone876
+G4WT6 > EffectiveCountone877
+G4WT6 > EffectiveCountone878
+G4WT5 > EffectiveCountone879
+G4WT5 > EffectiveCountone880
+G4WT10 > EffectiveCountone881
+G4WT10 > EffectiveCountone882
+G4WT6 > EffectiveCountone883
+G4WT6 > EffectiveCountone884
+G4WT10 > EffectiveCountone885
+G4WT10 > EffectiveCountone886
+G4WT6 > EffectiveCountone887
+G4WT10 > EffectiveCountone888
+G4WT10 > EffectiveCountone889
+G4WT6 > EffectiveCountone890
+G4WT5 > EffectiveCountone891
+G4WT6 > EffectiveCountone892
+G4WT6 > EffectiveCountone893
+G4WT10 > EffectiveCountone894
+G4WT6 > EffectiveCountone895
+G4WT6 > EffectiveCountone896
+G4WT6 > EffectiveCountone897
+G4WT6 > EffectiveCountone898
+G4WT6 > EffectiveCountone899
+G4WT6 > EffectiveCountone900
+G4WT6 > EffectiveCountone901
+G4WT10 > EffectiveCountone902
+G4WT6 > EffectiveCountone903
+G4WT6 > EffectiveCountone904
+G4WT6 > EffectiveCountone905
+G4WT6 > EffectiveCountone906
+G4WT6 > EffectiveCountone907
+G4WT6 > EffectiveCountone908
+G4WT6 > EffectiveCountone909
+G4WT10 > EffectiveCountone910
+G4WT10 > EffectiveCountone911
+G4WT6 > EffectiveCountone912
+G4WT5 > EffectiveCountone913
+G4WT5 > EffectiveCountone914
+G4WT6 > EffectiveCountone915
+G4WT6 > EffectiveCountone916
+G4WT10 > EffectiveCountone917
+G4WT10 > EffectiveCountone918
+G4WT10 > EffectiveCountone919
+G4WT6 > EffectiveCountone920
+G4WT5 > EffectiveCountone921
+G4WT6 > EffectiveCountone922
+G4WT6 > EffectiveCountone923
+G4WT5 > EffectiveCountone924
+G4WT10 > EffectiveCountone925
+G4WT6 > EffectiveCountone926
+G4WT6 > EffectiveCountone927
+G4WT5 > EffectiveCountone928
+G4WT10 > EffectiveCountone929
+G4WT6 > EffectiveCountone930
+G4WT5 > EffectiveCountone931
+G4WT5 > EffectiveCountone932
+G4WT6 > EffectiveCountone933
+G4WT6 > EffectiveCountone934
+G4WT6 > EffectiveCountone935
+G4WT6 > EffectiveCountone936
+G4WT6 > EffectiveCountone937
+G4WT6 > EffectiveCountone938
+G4WT6 > EffectiveCountone939
+G4WT6 > EffectiveCountone940
+G4WT6 > EffectiveCountone941
+G4WT10 > EffectiveCountone942
+G4WT6 > EffectiveCountone943
+G4WT6 > EffectiveCountone944
+G4WT10 > EffectiveCountone945
+G4WT6 > EffectiveCountone946
+G4WT10 > EffectiveCountone947
+G4WT10 > EffectiveCountone948
+G4WT6 > EffectiveCountone949
+G4WT6 > EffectiveCountone950
+G4WT6 > EffectiveCountone951
+G4WT10 > EffectiveCountone952
+G4WT6 > EffectiveCountone953
+G4WT6 > EffectiveCountone954
+G4WT6 > EffectiveCountone955
+G4WT10 > EffectiveCountone956
+G4WT10 > EffectiveCountone957
+G4WT10 > EffectiveCountone958
+G4WT10 > EffectiveCountone959
+G4WT6 > EffectiveCountone960
+G4WT6 > EffectiveCountone961
+G4WT10 > EffectiveCountone962
+G4WT6 > EffectiveCountone963
+G4WT10 > EffectiveCountone964
+G4WT6 > EffectiveCountone965
+G4WT5 > EffectiveCountone966
+G4WT6 > EffectiveCountone967
+G4WT10 > EffectiveCountone968
+G4WT6 > EffectiveCountone969
+G4WT6 > EffectiveCountone970
+G4WT6 > EffectiveCountone971
+G4WT6 > EffectiveCountone972
+G4WT6 > EffectiveCountone973
+G4WT6 > EffectiveCountone974
+G4WT6 > EffectiveCountone975
+G4WT10 > EffectiveCountone976
+G4WT6 > EffectiveCountone977
+G4WT6 > EffectiveCountone978
+G4WT6 > EffectiveCountone979
+G4WT6 > EffectiveCountone980
+G4WT6 > EffectiveCountone981
+G4WT6 > EffectiveCountone982
+G4WT6 > EffectiveCountone983
+G4WT6 > EffectiveCountone984
+G4WT10 > EffectiveCountone985
+G4WT10 > EffectiveCountone986
+G4WT6 > EffectiveCountone987
+G4WT6 > EffectiveCountone988
+G4WT10 > EffectiveCountone989
+G4WT6 > EffectiveCountone990
+G4WT6 > EffectiveCountone991
+G4WT6 > EffectiveCountone992
+G4WT6 > EffectiveCountone993
+G4WT6 > EffectiveCountone994
+G4WT3 > EffectiveCountone995
+G4WT6 > EffectiveCountone996
+G4WT6 > EffectiveCountone997
+G4WT6 > EffectiveCountone998
+G4WT6 > EffectiveCountone999
+G4WT6 > EffectiveCountone1000
+G4WT6 > EffectiveCountone1001
+G4WT10 > EffectiveCountone1002
+G4WT10 > EffectiveCountone1003
+G4WT6 > EffectiveCountone1004
+G4WT6 > EffectiveCountone1005
+G4WT10 > EffectiveCountone1006
+G4WT5 > EffectiveCountone1007
+G4WT10 > EffectiveCountone1008
+G4WT6 > EffectiveCountone1009
+G4WT6 > EffectiveCountone1010
+G4WT6 > EffectiveCountone1011
+G4WT6 > EffectiveCountone1012
+G4WT6 > EffectiveCountone1013
+G4WT10 > EffectiveCountone1014
+G4WT6 > EffectiveCountone1015
+G4WT5 > EffectiveCountone1016
+G4WT6 > EffectiveCountone1017
+G4WT6 > EffectiveCountone1018
+G4WT10 > EffectiveCountone1019
+G4WT10 > EffectiveCountone1020
+G4WT10 > EffectiveCountone1021
+G4WT5 > EffectiveCountone1022
+G4WT6 > EffectiveCountone1023
+G4WT6 > EffectiveCountone1024
+G4WT6 > EffectiveCountone1025
+G4WT6 > EffectiveCountone1026
+G4WT10 > EffectiveCountone1027
+G4WT10 > EffectiveCountone1028
+G4WT10 > EffectiveCountone1029
+G4WT6 > EffectiveCountone1030
+G4WT10 > EffectiveCountone1031
+G4WT6 > EffectiveCountone1032
+G4WT6 > EffectiveCountone1033
+G4WT6 > EffectiveCountone1034
+G4WT5 > EffectiveCountone1035
+G4WT6 > EffectiveCountone1036
+G4WT5 > EffectiveCountone1037
+G4WT5 > EffectiveCountone1038
+G4WT10 > EffectiveCountone1039
+G4WT6 > EffectiveCountone1040
+G4WT6 > EffectiveCountone1041
+G4WT6 > EffectiveCountone1042
+G4WT6 > EffectiveCountone1043
+G4WT10 > EffectiveCountone1044
+G4WT6 > EffectiveCountone1045
+G4WT6 > EffectiveCountone1046
+G4WT6 > EffectiveCountone1047
+G4WT6 > EffectiveCountone1048
+G4WT6 > EffectiveCountone1049
+G4WT6 > EffectiveCountone1050
+G4WT6 > EffectiveCountone1051
+G4WT6 > EffectiveCountone1052
+G4WT10 > EffectiveCountone1053
+G4WT6 > EffectiveCountone1054
+G4WT10 > EffectiveCountone1055
+G4WT6 > EffectiveCountone1056
+G4WT6 > EffectiveCountone1057
+G4WT5 > EffectiveCountone1058
+G4WT6 > EffectiveCountone1059
+G4WT6 > EffectiveCountone1060
+G4WT6 > EffectiveCountone1061
+G4WT10 > EffectiveCountone1062
+G4WT6 > EffectiveCountone1063
+G4WT6 > EffectiveCountone1064
+G4WT6 > EffectiveCountone1065
+G4WT6 > EffectiveCountone1066
+G4WT5 > EffectiveCountone1067
+G4WT10 > EffectiveCountone1068
+G4WT10 > EffectiveCountone1069
+G4WT6 > EffectiveCountone1070
+G4WT5 > EffectiveCountone1071
+G4WT6 > EffectiveCountone1072
+G4WT6 > EffectiveCountone1073
+G4WT5 > EffectiveCountone1074
+G4WT5 > EffectiveCountone1075
+G4WT6 > EffectiveCountone1076
+G4WT6 > EffectiveCountone1077
+G4WT6 > EffectiveCountone1078
+G4WT10 > EffectiveCountone1079
+G4WT5 > EffectiveCountone1080
+G4WT5 > EffectiveCountone1081
+G4WT10 > EffectiveCountone1082
+G4WT6 > EffectiveCountone1083
+G4WT5 > EffectiveCountone1084
+G4WT5 > EffectiveCountone1085
+G4WT6 > EffectiveCountone1086
+G4WT6 > EffectiveCountone1087
+G4WT6 > EffectiveCountone1088
+G4WT5 > EffectiveCountone1089
+G4WT5 > EffectiveCountone1090
+G4WT6 > EffectiveCountone1091
+G4WT6 > EffectiveCountone1092
+G4WT6 > EffectiveCountone1093
+G4WT6 > EffectiveCountone1094
+G4WT6 > EffectiveCountone1095
+G4WT10 > EffectiveCountone1096
+G4WT6 > EffectiveCountone1097
+G4WT10 > EffectiveCountone1098
+G4WT6 > EffectiveCountone1099
+G4WT6 > EffectiveCountone1100
+G4WT10 > EffectiveCountone1101
+G4WT10 > EffectiveCountone1102
+G4WT5 > EffectiveCountone1103
+G4WT6 > EffectiveCountone1104
+G4WT6 > EffectiveCountone1105
+G4WT5 > EffectiveCountone1106
+G4WT6 > EffectiveCountone1107
+G4WT6 > EffectiveCountone1108
+G4WT10 > EffectiveCountone1109
+G4WT6 > EffectiveCountone1110
+G4WT10 > EffectiveCountone1111
+G4WT6 > EffectiveCountone1112
+G4WT10 > EffectiveCountone1113
+G4WT6 > EffectiveCountone1114
+G4WT6 > EffectiveCountone1115
+G4WT6 > EffectiveCountone1116
+G4WT6 > EffectiveCountone1117
+G4WT10 > EffectiveCountone1118
+G4WT6 > EffectiveCountone1119
+G4WT5 > EffectiveCountone1120
+G4WT6 > EffectiveCountone1121
+G4WT6 > EffectiveCountone1122
+G4WT6 > EffectiveCountone1123
+G4WT6 > EffectiveCountone1124
+G4WT6 > EffectiveCountone1125
+G4WT6 > EffectiveCountone1126
+G4WT6 > EffectiveCountone1127
+G4WT6 > EffectiveCountone1128
+G4WT5 > EffectiveCountone1129
+G4WT6 > EffectiveCountone1130
+G4WT6 > EffectiveCountone1131
+G4WT10 > EffectiveCountone1132
+G4WT6 > EffectiveCountone1133
+G4WT6 > EffectiveCountone1134
+G4WT6 > EffectiveCountone1135
+G4WT6 > EffectiveCountone1136
+G4WT6 > EffectiveCountone1137
+G4WT5 > EffectiveCountone1138
+G4WT6 > EffectiveCountone1139
+G4WT5 > EffectiveCountone1140
+G4WT10 > EffectiveCountone1141
+G4WT10 > EffectiveCountone1142
+G4WT10 > EffectiveCountone1143
+G4WT3 > EffectiveCountone1144
+G4WT6 > EffectiveCountone1145
+G4WT6 > EffectiveCountone1146
+G4WT6 > EffectiveCountone1147
+G4WT6 > EffectiveCountone1148
+G4WT6 > EffectiveCountone1149
+G4WT6 > EffectiveCountone1150
+G4WT5 > EffectiveCountone1151
+G4WT6 > EffectiveCountone1152
+G4WT10 > EffectiveCountone1153
+G4WT10 > EffectiveCountone1154
+G4WT10 > EffectiveCountone1155
+G4WT10 > EffectiveCountone1156
+G4WT6 > EffectiveCountone1157
+G4WT6 > EffectiveCountone1158
+G4WT3 > EffectiveCountone1159
+G4WT10 > EffectiveCountone1160
+G4WT10 > EffectiveCountone1161
+G4WT10 > EffectiveCountone1162
+G4WT3 > EffectiveCountone1163
+G4WT6 > EffectiveCountone1164
+G4WT6 > EffectiveCountone1165
+G4WT6 > EffectiveCountone1166
+G4WT6 > EffectiveCountone1167
+G4WT6 > EffectiveCountone1168
+G4WT6 > EffectiveCountone1169
+G4WT6 > EffectiveCountone1170
+G4WT6 > EffectiveCountone1171
+G4WT6 > EffectiveCountone1172
+G4WT6 > EffectiveCountone1173
+G4WT6 > EffectiveCountone1174
+G4WT6 > EffectiveCountone1175
+G4WT6 > EffectiveCountone1176
+G4WT6 > EffectiveCountone1177
+G4WT6 > EffectiveCountone1178
+G4WT5 > EffectiveCountone1179
+G4WT6 > EffectiveCountone1180
+G4WT6 > EffectiveCountone1181
+G4WT6 > EffectiveCountone1182
+G4WT6 > EffectiveCountone1183
+G4WT6 > EffectiveCountone1184
+G4WT10 > EffectiveCountone1185
+G4WT6 > EffectiveCountone1186
+G4WT10 > EffectiveCountone1187
+G4WT6 > EffectiveCountone1188
+G4WT6 > EffectiveCountone1189
+G4WT6 > EffectiveCountone1190
+G4WT6 > EffectiveCountone1191
+G4WT5 > EffectiveCountone1192
+G4WT5 > EffectiveCountone1193
+G4WT6 > EffectiveCountone1194
+G4WT6 > EffectiveCountone1195
+G4WT6 > EffectiveCountone1196
+G4WT6 > EffectiveCountone1197
+G4WT6 > EffectiveCountone1198
+G4WT6 > EffectiveCountone1199
+G4WT6 > EffectiveCountone1200
+G4WT6 > EffectiveCountone1201
+G4WT6 > EffectiveCountone1202
+G4WT6 > EffectiveCountone1203
+G4WT6 > EffectiveCountone1204
+G4WT6 > EffectiveCountone1205
+G4WT6 > EffectiveCountone1206
+G4WT6 > EffectiveCountone1207
+G4WT10 > EffectiveCountone1208
+G4WT3 > EffectiveCountone1209
+G4WT10 > EffectiveCountone1210
+G4WT6 > EffectiveCountone1211
+G4WT6 > EffectiveCountone1212
+G4WT6 > EffectiveCountone1213
+G4WT6 > EffectiveCountone1214
+G4WT5 > EffectiveCountone1215
+G4WT6 > EffectiveCountone1216
+G4WT6 > EffectiveCountone1217
+G4WT6 > EffectiveCountone1218
+G4WT6 > EffectiveCountone1219
+G4WT6 > EffectiveCountone1220
+G4WT10 > EffectiveCountone1221
+G4WT10 > EffectiveCountone1222
+G4WT6 > EffectiveCountone1223
+G4WT6 > EffectiveCountone1224
+G4WT5 > EffectiveCountone1225
+G4WT10 > EffectiveCountone1226
+G4WT6 > EffectiveCountone1227
+G4WT6 > EffectiveCountone1228
+G4WT6 > EffectiveCountone1229
+G4WT10 > EffectiveCountone1230
+G4WT10 > EffectiveCountone1231
+G4WT6 > EffectiveCountone1232
+G4WT10 > EffectiveCountone1233
+G4WT6 > EffectiveCountone1234
+G4WT6 > EffectiveCountone1235
+G4WT6 > EffectiveCountone1236
+G4WT6 > EffectiveCountone1237
+G4WT6 > EffectiveCountone1238
+G4WT6 > EffectiveCountone1239
+G4WT6 > EffectiveCountone1240
+G4WT10 > EffectiveCountone1241
+G4WT10 > EffectiveCountone1242
+G4WT10 > EffectiveCountone1243
+G4WT6 > EffectiveCountone1244
+G4WT6 > EffectiveCountone1245
+G4WT6 > EffectiveCountone1246
+G4WT10 > EffectiveCountone1247
+G4WT6 > EffectiveCountone1248
+G4WT6 > EffectiveCountone1249
+G4WT10 > EffectiveCountone1250
+G4WT10 > EffectiveCountone1251
+G4WT5 > EffectiveCountone1252
+G4WT10 > EffectiveCountone1253
+G4WT6 > EffectiveCountone1254
+G4WT6 > EffectiveCountone1255
+G4WT6 > EffectiveCountone1256
+G4WT6 > EffectiveCountone1257
+G4WT6 > EffectiveCountone1258
+G4WT6 > EffectiveCountone1259
+G4WT6 > EffectiveCountone1260
+G4WT6 > EffectiveCountone1261
+G4WT6 > EffectiveCountone1262
+G4WT6 > EffectiveCountone1263
+G4WT10 > EffectiveCountone1264
+G4WT6 > EffectiveCountone1265
+G4WT3 > EffectiveCountone1266
+G4WT6 > EffectiveCountone1267
+G4WT6 > EffectiveCountone1268
+G4WT6 > EffectiveCountone1269
+G4WT6 > EffectiveCountone1270
+G4WT10 > EffectiveCountone1271
+G4WT6 > EffectiveCountone1272
+G4WT6 > EffectiveCountone1273
+G4WT10 > EffectiveCountone1274
+G4WT6 > EffectiveCountone1275
+G4WT6 > EffectiveCountone1276
+G4WT10 > EffectiveCountone1277
+G4WT6 > EffectiveCountone1278
+G4WT6 > EffectiveCountone1279
+G4WT6 > EffectiveCountone1280
+G4WT10 > EffectiveCountone1281
+G4WT6 > EffectiveCountone1282
+G4WT6 > EffectiveCountone1283
+G4WT5 > EffectiveCountone1284
+G4WT6 > EffectiveCountone1285
+G4WT6 > EffectiveCountone1286
+G4WT10 > EffectiveCountone1287
+G4WT6 > EffectiveCountone1288
+G4WT6 > EffectiveCountone1289
+G4WT6 > EffectiveCountone1290
+G4WT6 > EffectiveCountone1291
+G4WT6 > EffectiveCountone1292
+G4WT6 > EffectiveCountone1293
+G4WT6 > EffectiveCountone1294
+G4WT6 > EffectiveCountone1295
+G4WT5 > EffectiveCountone1296
+G4WT10 > EffectiveCountone1297
+G4WT5 > EffectiveCountone1298
+G4WT6 > EffectiveCountone1299
+G4WT10 > EffectiveCountone1300
+G4WT5 > EffectiveCountone1301
+G4WT6 > EffectiveCountone1302
+G4WT6 > EffectiveCountone1303
+G4WT6 > EffectiveCountone1304
+G4WT6 > EffectiveCountone1305
+G4WT5 > EffectiveCountone1306
+G4WT6 > EffectiveCountone1307
+G4WT6 > EffectiveCountone1308
+G4WT6 > EffectiveCountone1309
+G4WT6 > EffectiveCountone1310
+G4WT6 > EffectiveCountone1311
+G4WT6 > EffectiveCountone1312
+G4WT6 > EffectiveCountone1313
+G4WT10 > EffectiveCountone1314
+G4WT6 > EffectiveCountone1315
+G4WT6 > EffectiveCountone1316
+G4WT6 > EffectiveCountone1317
+G4WT10 > EffectiveCountone1318
+G4WT6 > EffectiveCountone1319
+G4WT6 > EffectiveCountone1320
+G4WT6 > EffectiveCountone1321
+G4WT6 > EffectiveCountone1322
+G4WT6 > EffectiveCountone1323
+G4WT6 > EffectiveCountone1324
+G4WT6 > EffectiveCountone1325
+G4WT10 > EffectiveCountone1326
+G4WT6 > EffectiveCountone1327
+G4WT10 > EffectiveCountone1328
+G4WT10 > EffectiveCountone1329
+G4WT10 > EffectiveCountone1330
+G4WT5 > EffectiveCountone1331
+G4WT10 > EffectiveCountone1332
+G4WT6 > EffectiveCountone1333
+G4WT5 > EffectiveCountone1334
+G4WT6 > EffectiveCountone1335
+G4WT10 > EffectiveCountone1336
+G4WT6 > EffectiveCountone1337
+G4WT10 > EffectiveCountone1338
+G4WT10 > EffectiveCountone1339
+G4WT10 > EffectiveCountone1340
+G4WT5 > EffectiveCountone1341
+G4WT3 > EffectiveCountone1342
+G4WT6 > EffectiveCountone1343
+G4WT6 > EffectiveCountone1344
+G4WT6 > EffectiveCountone1345
+G4WT10 > EffectiveCountone1346
+G4WT6 > EffectiveCountone1347
+G4WT6 > EffectiveCountone1348
+G4WT6 > EffectiveCountone1349
+G4WT6 > EffectiveCountone1350
+G4WT10 > EffectiveCountone1351
+G4WT6 > EffectiveCountone1352
+G4WT6 > EffectiveCountone1353
+G4WT5 > EffectiveCountone1354
+G4WT6 > EffectiveCountone1355
+G4WT3 > EffectiveCountone1356
+G4WT6 > EffectiveCountone1357
+G4WT3 > EffectiveCountone1358
+G4WT5 > EffectiveCountone1359
+G4WT6 > EffectiveCountone1360
+G4WT6 > EffectiveCountone1361
+G4WT6 > EffectiveCountone1362
+G4WT6 > EffectiveCountone1363
+G4WT6 > EffectiveCountone1364
+G4WT6 > EffectiveCountone1365
+G4WT6 > EffectiveCountone1366
+G4WT10 > EffectiveCountone1367
+G4WT6 > EffectiveCountone1368
+G4WT6 > EffectiveCountone1369
+G4WT6 > EffectiveCountone1370
+G4WT5 > EffectiveCountone1371
+G4WT10 > EffectiveCountone1372
+G4WT5 > EffectiveCountone1373
+G4WT6 > EffectiveCountone1374
+G4WT6 > EffectiveCountone1375
+G4WT10 > EffectiveCountone1376
+G4WT10 > EffectiveCountone1377
+G4WT10 > EffectiveCountone1378
+G4WT6 > EffectiveCountone1379
+G4WT10 > EffectiveCountone1380
+G4WT5 > EffectiveCountone1381
+G4WT6 > EffectiveCountone1382
+G4WT6 > EffectiveCountone1383
+G4WT6 > EffectiveCountone1384
+G4WT6 > EffectiveCountone1385
+G4WT6 > EffectiveCountone1386
+G4WT6 > EffectiveCountone1387
+G4WT6 > EffectiveCountone1388
+G4WT3 > EffectiveCountone1389
+G4WT10 > EffectiveCountone1390
+G4WT5 > EffectiveCountone1391
+G4WT6 > EffectiveCountone1392
+G4WT6 > EffectiveCountone1393
+G4WT5 > EffectiveCountone1394
+G4WT10 > EffectiveCountone1395
+G4WT10 > EffectiveCountone1396
+G4WT10 > EffectiveCountone1397
+G4WT9 > EffectiveCountone1398
+G4WT6 > EffectiveCountone1399
+G4WT6 > EffectiveCountone1400
+G4WT6 > EffectiveCountone1401
+G4WT10 > EffectiveCountone1402
+G4WT6 > EffectiveCountone1403
+G4WT10 > EffectiveCountone1404
+G4WT10 > EffectiveCountone1405
+G4WT10 > EffectiveCountone1406
+G4WT5 > EffectiveCountone1407
+G4WT10 > EffectiveCountone1408
+G4WT6 > EffectiveCountone1409
+G4WT10 > EffectiveCountone1410
+G4WT10 > EffectiveCountone1411
+G4WT6 > EffectiveCountone1412
+G4WT5 > EffectiveCountone1413
+G4WT6 > EffectiveCountone1414
+G4WT6 > EffectiveCountone1415
+G4WT10 > EffectiveCountone1416
+G4WT6 > EffectiveCountone1417
+G4WT6 > EffectiveCountone1418
+G4WT10 > EffectiveCountone1419
+G4WT6 > EffectiveCountone1420
+G4WT3 > EffectiveCountone1421
+G4WT10 > EffectiveCountone1422
+G4WT6 > EffectiveCountone1423
+G4WT10 > EffectiveCountone1424
+G4WT6 > EffectiveCountone1425
+G4WT6 > EffectiveCountone1426
+G4WT6 > EffectiveCountone1427
+G4WT10 > EffectiveCountone1428
+G4WT10 > EffectiveCountone1429
+G4WT10 > EffectiveCountone1430
+G4WT10 > EffectiveCountone1431
+G4WT6 > EffectiveCountone1432
+G4WT6 > EffectiveCountone1433
+G4WT6 > EffectiveCountone1434
+G4WT6 > EffectiveCountone1435
+G4WT6 > EffectiveCountone1436
+G4WT6 > EffectiveCountone1437
+G4WT6 > EffectiveCountone1438
+G4WT6 > EffectiveCountone1439
+G4WT6 > EffectiveCountone1440
+G4WT10 > EffectiveCountone1441
+G4WT10 > EffectiveCountone1442
+G4WT10 > EffectiveCountone1443
+G4WT10 > EffectiveCountone1444
+G4WT10 > EffectiveCountone1445
+G4WT6 > EffectiveCountone1446
+G4WT6 > EffectiveCountone1447
+G4WT5 > EffectiveCountone1448
+G4WT6 > EffectiveCountone1449
+G4WT6 > EffectiveCountone1450
+G4WT6 > EffectiveCountone1451
+G4WT6 > EffectiveCountone1452
+G4WT3 > EffectiveCountone1453
+G4WT6 > EffectiveCountone1454
+G4WT10 > EffectiveCountone1455
+G4WT6 > EffectiveCountone1456
+G4WT10 > EffectiveCountone1457
+G4WT10 > EffectiveCountone1458
+G4WT10 > EffectiveCountone1459
+G4WT10 > EffectiveCountone1460
+G4WT6 > EffectiveCountone1461
+G4WT10 > EffectiveCountone1462
+G4WT10 > EffectiveCountone1463
+G4WT6 > EffectiveCountone1464
+G4WT6 > EffectiveCountone1465
+G4WT6 > EffectiveCountone1466
+G4WT6 > EffectiveCountone1467
+G4WT3 > EffectiveCountone1468
+G4WT6 > EffectiveCountone1469
+G4WT10 > EffectiveCountone1470
+G4WT5 > EffectiveCountone1471
+G4WT6 > EffectiveCountone1472
+G4WT6 > EffectiveCountone1473
+G4WT10 > EffectiveCountone1474
+G4WT6 > EffectiveCountone1475
+G4WT6 > EffectiveCountone1476
+G4WT6 > EffectiveCountone1477
+G4WT6 > EffectiveCountone1478
+G4WT6 > EffectiveCountone1479
+G4WT6 > EffectiveCountone1480
+G4WT10 > EffectiveCountone1481
+G4WT10 > EffectiveCountone1482
+G4WT6 > EffectiveCountone1483
+G4WT6 > EffectiveCountone1484
+G4WT6 > EffectiveCountone1485
+G4WT6 > EffectiveCountone1486
+G4WT6 > EffectiveCountone1487
+G4WT6 > EffectiveCountone1488
+G4WT5 > EffectiveCountone1489
+G4WT6 > EffectiveCountone1490
+G4WT6 > EffectiveCountone1491
+G4WT6 > EffectiveCountone1492
+G4WT10 > EffectiveCountone1493
+G4WT6 > EffectiveCountone1494
+G4WT6 > EffectiveCountone1495
+G4WT6 > EffectiveCountone1496
+G4WT6 > EffectiveCountone1497
+G4WT5 > EffectiveCountone1498
+G4WT10 > EffectiveCountone1499
+G4WT3 > EffectiveCountone1500
+G4WT3 > EffectiveCountone1501
+G4WT6 > EffectiveCountone1502
+G4WT5 > EffectiveCountone1503
+G4WT5 > EffectiveCountone1504
+G4WT6 > EffectiveCountone1505
+G4WT6 > EffectiveCountone1506
+G4WT10 > EffectiveCountone1507
+G4WT6 > EffectiveCountone1508
+G4WT6 > EffectiveCountone1509
+G4WT6 > EffectiveCountone1510
+G4WT6 > EffectiveCountone1511
+G4WT10 > EffectiveCountone1512
+G4WT10 > EffectiveCountone1513
+G4WT6 > EffectiveCountone1514
+G4WT6 > EffectiveCountone1515
+G4WT6 > EffectiveCountone1516
+G4WT6 > EffectiveCountone1517
+G4WT6 > EffectiveCountone1518
+G4WT6 > EffectiveCountone1519
+G4WT10 > EffectiveCountone1520
+G4WT6 > EffectiveCountone1521
+G4WT10 > EffectiveCountone1522
+G4WT10 > EffectiveCountone1523
+G4WT6 > EffectiveCountone1524
+G4WT6 > EffectiveCountone1525
+G4WT6 > EffectiveCountone1526
+G4WT6 > EffectiveCountone1527
+G4WT5 > EffectiveCountone1528
+G4WT5 > EffectiveCountone1529
+G4WT5 > EffectiveCountone1530
+G4WT10 > EffectiveCountone1531
+G4WT6 > EffectiveCountone1532
+G4WT5 > EffectiveCountone1533
+G4WT5 > EffectiveCountone1534
+G4WT6 > EffectiveCountone1535
+G4WT6 > EffectiveCountone1536
+G4WT10 > EffectiveCountone1537
+G4WT10 > EffectiveCountone1538
+G4WT5 > EffectiveCountone1539
+G4WT5 > EffectiveCountone1540
+G4WT5 > EffectiveCountone1541
+G4WT5 > EffectiveCountone1542
+G4WT6 > EffectiveCountone1543
+G4WT5 > EffectiveCountone1544
+G4WT6 > EffectiveCountone1545
+G4WT5 > EffectiveCountone1546
+G4WT6 > EffectiveCountone1547
+G4WT5 > EffectiveCountone1548
+G4WT10 > EffectiveCountone1549
+G4WT10 > EffectiveCountone1550
+G4WT6 > EffectiveCountone1551
+G4WT6 > EffectiveCountone1552
+G4WT6 > EffectiveCountone1553
+G4WT10 > EffectiveCountone1554
+G4WT5 > EffectiveCountone1555
+G4WT6 > EffectiveCountone1556
+G4WT10 > EffectiveCountone1557
+G4WT5 > EffectiveCountone1558
+G4WT6 > EffectiveCountone1559
+G4WT6 > EffectiveCountone1560
+G4WT6 > EffectiveCountone1561
+G4WT10 > EffectiveCountone1562
+G4WT6 > EffectiveCountone1563
+G4WT6 > EffectiveCountone1564
+G4WT6 > EffectiveCountone1565
+G4WT10 > EffectiveCountone1566
+G4WT10 > EffectiveCountone1567
+G4WT6 > EffectiveCountone1568
+G4WT10 > EffectiveCountone1569
+G4WT6 > EffectiveCountone1570
+G4WT10 > EffectiveCountone1571
+G4WT6 > EffectiveCountone1572
+G4WT6 > EffectiveCountone1573
+G4WT6 > EffectiveCountone1574
+G4WT6 > EffectiveCountone1575
+G4WT6 > EffectiveCountone1576
+G4WT6 > EffectiveCountone1577
+G4WT5 > EffectiveCountone1578
+G4WT6 > EffectiveCountone1579
+G4WT6 > EffectiveCountone1580
+G4WT6 > EffectiveCountone1581
+G4WT6 > EffectiveCountone1582
+G4WT5 > EffectiveCountone1583
+G4WT5 > EffectiveCountone1584
+G4WT5 > EffectiveCountone1585
+G4WT5 > EffectiveCountone1586
+G4WT6 > EffectiveCountone1587
+G4WT6 > EffectiveCountone1588
+G4WT6 > EffectiveCountone1589
+G4WT5 > EffectiveCountone1590
+G4WT5 > EffectiveCountone1591
+G4WT6 > EffectiveCountone1592
+G4WT10 > EffectiveCountone1593
+G4WT10 > EffectiveCountone1594
+G4WT10 > EffectiveCountone1595
+G4WT6 > EffectiveCountone1596
+G4WT5 > EffectiveCountone1597
+G4WT5 > EffectiveCountone1598
+G4WT5 > EffectiveCountone1599
+G4WT5 > EffectiveCountone1600
+G4WT6 > EffectiveCountone1601
+G4WT10 > EffectiveCountone1602
+G4WT6 > EffectiveCountone1603
+G4WT10 > EffectiveCountone1604
+G4WT6 > EffectiveCountone1605
+G4WT6 > EffectiveCountone1606
+G4WT6 > EffectiveCountone1607
+G4WT6 > EffectiveCountone1608
+G4WT5 > EffectiveCountone1609
+G4WT6 > EffectiveCountone1610
+G4WT6 > EffectiveCountone1611
+G4WT5 > EffectiveCountone1612
+G4WT6 > EffectiveCountone1613
+G4WT10 > EffectiveCountone1614
+G4WT10 > EffectiveCountone1615
+G4WT6 > EffectiveCountone1616
+G4WT6 > EffectiveCountone1617
+G4WT3 > EffectiveCountone1618
+G4WT6 > EffectiveCountone1619
+G4WT6 > EffectiveCountone1620
+G4WT6 > EffectiveCountone1621
+G4WT10 > EffectiveCountone1622
+G4WT6 > EffectiveCountone1623
+G4WT10 > EffectiveCountone1624
+G4WT10 > EffectiveCountone1625
+G4WT10 > EffectiveCountone1626
+G4WT6 > EffectiveCountone1627
+G4WT6 > EffectiveCountone1628
+G4WT6 > EffectiveCountone1629
+G4WT6 > EffectiveCountone1630
+G4WT6 > EffectiveCountone1631
+G4WT6 > EffectiveCountone1632
+G4WT10 > EffectiveCountone1633
+G4WT6 > EffectiveCountone1634
+G4WT6 > EffectiveCountone1635
+G4WT6 > EffectiveCountone1636
+G4WT5 > EffectiveCountone1637
+G4WT6 > EffectiveCountone1638
+G4WT6 > EffectiveCountone1639
+G4WT6 > EffectiveCountone1640
+G4WT6 > EffectiveCountone1641
+G4WT6 > EffectiveCountone1642
+G4WT6 > EffectiveCountone1643
+G4WT6 > EffectiveCountone1644
+G4WT6 > EffectiveCountone1645
+G4WT6 > EffectiveCountone1646
+G4WT6 > EffectiveCountone1647
+G4WT6 > EffectiveCountone1648
+G4WT6 > EffectiveCountone1649
+G4WT6 > EffectiveCountone1650
+G4WT5 > EffectiveCountone1651
+G4WT6 > EffectiveCountone1652
+G4WT6 > EffectiveCountone1653
+G4WT6 > EffectiveCountone1654
+G4WT6 > EffectiveCountone1655
+G4WT6 > EffectiveCountone1656
+G4WT10 > EffectiveCountone1657
+G4WT6 > EffectiveCountone1658
+G4WT6 > EffectiveCountone1659
+G4WT6 > EffectiveCountone1660
+G4WT6 > EffectiveCountone1661
+G4WT6 > EffectiveCountone1662
+G4WT6 > EffectiveCountone1663
+G4WT6 > EffectiveCountone1664
+G4WT6 > EffectiveCountone1665
+G4WT5 > EffectiveCountone1666
+G4WT6 > EffectiveCountone1667
+G4WT6 > EffectiveCountone1668
+G4WT6 > EffectiveCountone1669
+G4WT6 > EffectiveCountone1670
+G4WT6 > EffectiveCountone1671
+G4WT6 > EffectiveCountone1672
+G4WT6 > EffectiveCountone1673
+G4WT6 > EffectiveCountone1674
+G4WT6 > EffectiveCountone1675
+G4WT10 > EffectiveCountone1676
+G4WT5 > EffectiveCountone1677
+G4WT6 > EffectiveCountone1678
+G4WT5 > EffectiveCountone1679
+G4WT6 > EffectiveCountone1680
+G4WT10 > EffectiveCountone1681
+G4WT10 > EffectiveCountone1682
+G4WT6 > EffectiveCountone1683
+G4WT6 > EffectiveCountone1684
+G4WT5 > EffectiveCountone1685
+G4WT5 > EffectiveCountone1686
+G4WT6 > EffectiveCountone1687
+G4WT6 > EffectiveCountone1688
+G4WT6 > EffectiveCountone1689
+G4WT6 > EffectiveCountone1690
+G4WT6 > EffectiveCountone1691
+G4WT10 > EffectiveCountone1692
+G4WT10 > EffectiveCountone1693
+G4WT10 > EffectiveCountone1694
+G4WT6 > EffectiveCountone1695
+G4WT10 > EffectiveCountone1696
+G4WT5 > EffectiveCountone1697
+G4WT0 > EffectiveCountone1698
+G4WT10 > EffectiveCountone1699
+G4WT6 > EffectiveCountone1700
+G4WT10 > EffectiveCountone1701
+G4WT6 > EffectiveCountone1702
+G4WT10 > EffectiveCountone1703
+G4WT10 > EffectiveCountone1704
+G4WT10 > EffectiveCountone1705
+G4WT6 > EffectiveCountone1706
+G4WT6 > EffectiveCountone1707
+G4WT10 > EffectiveCountone1708
+G4WT6 > EffectiveCountone1709
+G4WT6 > EffectiveCountone1710
+G4WT6 > EffectiveCountone1711
+G4WT6 > EffectiveCountone1712
+G4WT6 > EffectiveCountone1713
+G4WT10 > EffectiveCountone1714
+G4WT10 > EffectiveCountone1715
+G4WT6 > EffectiveCountone1716
+G4WT10 > EffectiveCountone1717
+G4WT5 > EffectiveCountone1718
+G4WT10 > EffectiveCountone1719
+G4WT6 > EffectiveCountone1720
+G4WT6 > EffectiveCountone1721
+G4WT5 > EffectiveCountone1722
+G4WT10 > EffectiveCountone1723
+G4WT6 > EffectiveCountone1724
+G4WT5 > EffectiveCountone1725
+G4WT5 > EffectiveCountone1726
+G4WT6 > EffectiveCountone1727
+G4WT6 > EffectiveCountone1728
+G4WT6 > EffectiveCountone1729
+G4WT6 > EffectiveCountone1730
+G4WT10 > EffectiveCountone1731
+G4WT10 > EffectiveCountone1732
+G4WT10 > EffectiveCountone1733
+G4WT3 > EffectiveCountone1734
+G4WT3 > EffectiveCountone1735
+G4WT6 > EffectiveCountone1736
+G4WT6 > EffectiveCountone1737
+G4WT6 > EffectiveCountone1738
+G4WT6 > EffectiveCountone1739
+G4WT6 > EffectiveCountone1740
+G4WT10 > EffectiveCountone1741
+G4WT5 > EffectiveCountone1742
+G4WT10 > EffectiveCountone1743
+G4WT10 > EffectiveCountone1744
+G4WT10 > EffectiveCountone1745
+G4WT10 > EffectiveCountone1746
+G4WT5 > EffectiveCountone1747
+G4WT6 > EffectiveCountone1748
+G4WT6 > EffectiveCountone1749
+G4WT6 > EffectiveCountone1750
+G4WT6 > EffectiveCountone1751
+G4WT6 > EffectiveCountone1752
+G4WT5 > EffectiveCountone1753
+G4WT5 > EffectiveCountone1754
+G4WT5 > EffectiveCountone1755
+G4WT10 > EffectiveCountone1756
+G4WT6 > EffectiveCountone1757
+G4WT10 > EffectiveCountone1758
+G4WT10 > EffectiveCountone1759
+G4WT5 > EffectiveCountone1760
+G4WT6 > EffectiveCountone1761
+G4WT5 > EffectiveCountone1762
+G4WT6 > EffectiveCountone1763
+G4WT6 > EffectiveCountone1764
+G4WT6 > EffectiveCountone1765
+G4WT5 > EffectiveCountone1766
+G4WT5 > EffectiveCountone1767
+G4WT6 > EffectiveCountone1768
+G4WT6 > EffectiveCountone1769
+G4WT6 > EffectiveCountone1770
+G4WT5 > EffectiveCountone1771
+G4WT6 > EffectiveCountone1772
+G4WT6 > EffectiveCountone1773
+G4WT10 > EffectiveCountone1774
+G4WT6 > EffectiveCountone1775
+G4WT5 > EffectiveCountone1776
+G4WT10 > EffectiveCountone1777
+G4WT10 > EffectiveCountone1778
+G4WT5 > EffectiveCountone1779
+G4WT10 > EffectiveCountone1780
+G4WT6 > EffectiveCountone1781
+G4WT6 > EffectiveCountone1782
+G4WT6 > EffectiveCountone1783
+G4WT6 > EffectiveCountone1784
+G4WT6 > EffectiveCountone1785
+G4WT6 > EffectiveCountone1786
+G4WT10 > EffectiveCountone1787
+G4WT10 > EffectiveCountone1788
+G4WT5 > EffectiveCountone1789
+G4WT10 > EffectiveCountone1790
+G4WT6 > EffectiveCountone1791
+G4WT6 > EffectiveCountone1792
+G4WT6 > EffectiveCountone1793
+G4WT5 > EffectiveCountone1794
+G4WT5 > EffectiveCountone1795
+G4WT10 > EffectiveCountone1796
+G4WT5 > EffectiveCountone1797
+G4WT6 > EffectiveCountone1798
+G4WT6 > EffectiveCountone1799
+G4WT6 > EffectiveCountone1800
+G4WT6 > EffectiveCountone1801
+G4WT6 > EffectiveCountone1802
+G4WT6 > EffectiveCountone1803
+G4WT5 > EffectiveCountone1804
+G4WT6 > EffectiveCountone1805
+G4WT5 > EffectiveCountone1806
+G4WT6 > EffectiveCountone1807
+G4WT10 > EffectiveCountone1808
+G4WT3 > EffectiveCountone1809
+G4WT6 > EffectiveCountone1810
+G4WT6 > EffectiveCountone1811
+G4WT6 > EffectiveCountone1812
+G4WT6 > EffectiveCountone1813
+G4WT6 > EffectiveCountone1814
+G4WT10 > EffectiveCountone1815
+G4WT6 > EffectiveCountone1816
+G4WT6 > EffectiveCountone1817
+G4WT6 > EffectiveCountone1818
+G4WT6 > EffectiveCountone1819
+G4WT10 > EffectiveCountone1820
+G4WT10 > EffectiveCountone1821
+G4WT5 > EffectiveCountone1822
+G4WT10 > EffectiveCountone1823
+G4WT10 > EffectiveCountone1824
+G4WT10 > EffectiveCountone1825
+G4WT6 > EffectiveCountone1826
+G4WT6 > EffectiveCountone1827
+G4WT6 > EffectiveCountone1828
+G4WT10 > EffectiveCountone1829
+G4WT6 > EffectiveCountone1830
+G4WT6 > EffectiveCountone1831
+G4WT6 > EffectiveCountone1832
+G4WT6 > EffectiveCountone1833
+G4WT6 > EffectiveCountone1834
+G4WT6 > EffectiveCountone1835
+G4WT6 > EffectiveCountone1836
+G4WT6 > EffectiveCountone1837
+G4WT5 > EffectiveCountone1838
+G4WT5 > EffectiveCountone1839
+G4WT5 > EffectiveCountone1840
+G4WT6 > EffectiveCountone1841
+G4WT6 > EffectiveCountone1842
+G4WT6 > EffectiveCountone1843
+G4WT5 > EffectiveCountone1844
+G4WT5 > EffectiveCountone1845
+G4WT6 > EffectiveCountone1846
+G4WT6 > EffectiveCountone1847
+G4WT6 > EffectiveCountone1848
+G4WT10 > EffectiveCountone1849
+G4WT10 > EffectiveCountone1850
+G4WT6 > EffectiveCountone1851
+G4WT3 > EffectiveCountone1852
+G4WT5 > EffectiveCountone1853
+G4WT10 > EffectiveCountone1854
+G4WT6 > EffectiveCountone1855
+G4WT10 > EffectiveCountone1856
+G4WT10 > EffectiveCountone1857
+G4WT6 > EffectiveCountone1858
+G4WT6 > EffectiveCountone1859
+G4WT6 > EffectiveCountone1860
+G4WT6 > EffectiveCountone1861
+G4WT6 > EffectiveCountone1862
+G4WT5 > EffectiveCountone1863
+G4WT6 > EffectiveCountone1864
+G4WT6 > EffectiveCountone1865
+G4WT10 > EffectiveCountone1866
+G4WT5 > EffectiveCountone1867
+G4WT10 > EffectiveCountone1868
+G4WT6 > EffectiveCountone1869
+G4WT6 > EffectiveCountone1870
+G4WT6 > EffectiveCountone1871
+G4WT10 > EffectiveCountone1872
+G4WT5 > EffectiveCountone1873
+G4WT6 > EffectiveCountone1874
+G4WT5 > EffectiveCountone1875
+G4WT6 > EffectiveCountone1876
+G4WT6 > EffectiveCountone1877
+G4WT6 > EffectiveCountone1878
+G4WT10 > EffectiveCountone1879
+G4WT6 > EffectiveCountone1880
+G4WT6 > EffectiveCountone1881
+G4WT10 > EffectiveCountone1882
+G4WT10 > EffectiveCountone1883
+G4WT6 > EffectiveCountone1884
+G4WT6 > EffectiveCountone1885
+G4WT6 > EffectiveCountone1886
+G4WT6 > EffectiveCountone1887
+G4WT10 > EffectiveCountone1888
+G4WT10 > EffectiveCountone1889
+G4WT6 > EffectiveCountone1890
+G4WT10 > EffectiveCountone1891
+G4WT3 > EffectiveCountone1892
+G4WT6 > EffectiveCountone1893
+G4WT10 > EffectiveCountone1894
+G4WT6 > EffectiveCountone1895
+G4WT10 > EffectiveCountone1896
+G4WT6 > EffectiveCountone1897
+G4WT5 > EffectiveCountone1898
+G4WT3 > EffectiveCountone1899
+G4WT10 > EffectiveCountone1900
+G4WT10 > EffectiveCountone1901
+G4WT5 > EffectiveCountone1902
+G4WT6 > EffectiveCountone1903
+G4WT6 > EffectiveCountone1904
+G4WT6 > EffectiveCountone1905
+G4WT6 > EffectiveCountone1906
+G4WT5 > EffectiveCountone1907
+G4WT5 > EffectiveCountone1908
+G4WT6 > EffectiveCountone1909
+G4WT6 > EffectiveCountone1910
+G4WT10 > EffectiveCountone1911
+G4WT6 > EffectiveCountone1912
+G4WT6 > EffectiveCountone1913
+G4WT6 > EffectiveCountone1914
+G4WT6 > EffectiveCountone1915
+G4WT6 > EffectiveCountone1916
+G4WT6 > EffectiveCountone1917
+G4WT10 > EffectiveCountone1918
+G4WT10 > EffectiveCountone1919
+G4WT10 > EffectiveCountone1920
+G4WT10 > EffectiveCountone1921
+G4WT5 > EffectiveCountone1922
+G4WT6 > EffectiveCountone1923
+G4WT10 > EffectiveCountone1924
+G4WT6 > EffectiveCountone1925
+G4WT10 > EffectiveCountone1926
+G4WT5 > EffectiveCountone1927
+G4WT10 > EffectiveCountone1928
+G4WT6 > EffectiveCountone1929
+G4WT6 > EffectiveCountone1930
+G4WT6 > EffectiveCountone1931
+G4WT6 > EffectiveCountone1932
+G4WT6 > EffectiveCountone1933
+G4WT6 > EffectiveCountone1934
+G4WT6 > EffectiveCountone1935
+G4WT10 > EffectiveCountone1936
+G4WT6 > EffectiveCountone1937
+G4WT10 > EffectiveCountone1938
+G4WT6 > EffectiveCountone1939
+G4WT10 > EffectiveCountone1940
+G4WT10 > EffectiveCountone1941
+G4WT6 > EffectiveCountone1942
+G4WT6 > EffectiveCountone1943
+G4WT10 > EffectiveCountone1944
+G4WT10 > EffectiveCountone1945
+G4WT6 > EffectiveCountone1946
+G4WT10 > EffectiveCountone1947
+G4WT10 > EffectiveCountone1948
+G4WT10 > EffectiveCountone1949
+G4WT6 > EffectiveCountone1950
+G4WT6 > EffectiveCountone1951
+G4WT6 > EffectiveCountone1952
+G4WT6 > EffectiveCountone1953
+G4WT6 > EffectiveCountone1954
+G4WT6 > EffectiveCountone1955
+G4WT5 > EffectiveCountone1956
+G4WT6 > EffectiveCountone1957
+G4WT5 > EffectiveCountone1958
+G4WT10 > EffectiveCountone1959
+G4WT10 > EffectiveCountone1960
+G4WT6 > EffectiveCountone1961
+G4WT6 > EffectiveCountone1962
+G4WT5 > EffectiveCountone1963
+G4WT10 > EffectiveCountone1964
+G4WT6 > EffectiveCountone1965
+G4WT6 > EffectiveCountone1966
+G4WT5 > EffectiveCountone1967
+G4WT6 > EffectiveCountone1968
+G4WT6 > EffectiveCountone1969
+G4WT10 > EffectiveCountone1970
+G4WT6 > EffectiveCountone1971
+G4WT6 > EffectiveCountone1972
+G4WT6 > EffectiveCountone1973
+G4WT10 > EffectiveCountone1974
+G4WT10 > EffectiveCountone1975
+G4WT6 > EffectiveCountone1976
+G4WT5 > EffectiveCountone1977
+G4WT6 > EffectiveCountone1978
+G4WT6 > EffectiveCountone1979
+G4WT5 > EffectiveCountone1980
+G4WT6 > EffectiveCountone1981
+G4WT6 > EffectiveCountone1982
+G4WT10 > EffectiveCountone1983
+G4WT6 > EffectiveCountone1984
+G4WT5 > EffectiveCountone1985
+G4WT10 > EffectiveCountone1986
+G4WT6 > EffectiveCountone1987
+G4WT6 > EffectiveCountone1988
+G4WT6 > EffectiveCountone1989
+G4WT6 > EffectiveCountone1990
+G4WT6 > EffectiveCountone1991
+G4WT6 > EffectiveCountone1992
+G4WT6 > EffectiveCountone1993
+G4WT6 > EffectiveCountone1994
+G4WT10 > EffectiveCountone1995
+G4WT10 > EffectiveCountone1996
+G4WT10 > EffectiveCountone1997
+G4WT6 > EffectiveCountone1998
+G4WT6 > EffectiveCountone1999
+G4WT6 > EffectiveCountone2000
+G4WT6 > EffectiveCountone2001
+G4WT6 > EffectiveCountone2002
+G4WT6 > EffectiveCountone2003
+G4WT5 > EffectiveCountone2004
+G4WT5 > EffectiveCountone2005
+G4WT5 > EffectiveCountone2006
+G4WT10 > EffectiveCountone2007
+G4WT6 > EffectiveCountone2008
+G4WT6 > EffectiveCountone2009
+G4WT3 > EffectiveCountone2010
+G4WT10 > EffectiveCountone2011
+G4WT6 > EffectiveCountone2012
+G4WT6 > EffectiveCountone2013
+G4WT5 > EffectiveCountone2014
+G4WT6 > EffectiveCountone2015
+G4WT5 > EffectiveCountone2016
+G4WT5 > EffectiveCountone2017
+G4WT6 > EffectiveCountone2018
+G4WT10 > EffectiveCountone2019
+G4WT10 > EffectiveCountone2020
+G4WT10 > EffectiveCountone2021
+G4WT6 > EffectiveCountone2022
+G4WT6 > EffectiveCountone2023
+G4WT5 > EffectiveCountone2024
+G4WT5 > EffectiveCountone2025
+G4WT10 > EffectiveCountone2026
+G4WT6 > EffectiveCountone2027
+G4WT10 > EffectiveCountone2028
+G4WT6 > EffectiveCountone2029
+G4WT10 > EffectiveCountone2030
+G4WT6 > EffectiveCountone2031
+G4WT6 > EffectiveCountone2032
+G4WT6 > EffectiveCountone2033
+G4WT5 > EffectiveCountone2034
+G4WT5 > EffectiveCountone2035
+G4WT6 > EffectiveCountone2036
+G4WT5 > EffectiveCountone2037
+G4WT5 > EffectiveCountone2038
+G4WT5 > EffectiveCountone2039
+G4WT6 > EffectiveCountone2040
+G4WT6 > EffectiveCountone2041
+G4WT6 > EffectiveCountone2042
+G4WT6 > EffectiveCountone2043
+G4WT6 > EffectiveCountone2044
+G4WT6 > EffectiveCountone2045
+G4WT6 > EffectiveCountone2046
+G4WT6 > EffectiveCountone2047
+G4WT6 > EffectiveCountone2048
+G4WT10 > EffectiveCountone2049
+G4WT6 > EffectiveCountone2050
+G4WT10 > EffectiveCountone2051
+G4WT5 > EffectiveCountone2052
+G4WT10 > EffectiveCountone2053
+G4WT5 > EffectiveCountone2054
+G4WT5 > EffectiveCountone2055
+G4WT6 > EffectiveCountone2056
+G4WT6 > EffectiveCountone2057
+G4WT6 > EffectiveCountone2058
+G4WT6 > EffectiveCountone2059
+G4WT6 > EffectiveCountone2060
+G4WT6 > EffectiveCountone2061
+G4WT6 > EffectiveCountone2062
+G4WT6 > EffectiveCountone2063
+G4WT6 > EffectiveCountone2064
+G4WT6 > EffectiveCountone2065
+G4WT6 > EffectiveCountone2066
+G4WT5 > EffectiveCountone2067
+G4WT6 > EffectiveCountone2068
+G4WT10 > EffectiveCountone2069
+G4WT6 > EffectiveCountone2070
+G4WT5 > EffectiveCountone2071
+G4WT5 > EffectiveCountone2072
+G4WT6 > EffectiveCountone2073
+G4WT6 > EffectiveCountone2074
+G4WT6 > EffectiveCountone2075
+G4WT6 > EffectiveCountone2076
+G4WT6 > EffectiveCountone2077
+G4WT6 > EffectiveCountone2078
+G4WT6 > EffectiveCountone2079
+G4WT6 > EffectiveCountone2080
+G4WT6 > EffectiveCountone2081
+G4WT6 > EffectiveCountone2082
+G4WT6 > EffectiveCountone2083
+G4WT5 > EffectiveCountone2084
+G4WT6 > EffectiveCountone2085
+G4WT6 > EffectiveCountone2086
+G4WT6 > EffectiveCountone2087
+G4WT10 > EffectiveCountone2088
+G4WT6 > EffectiveCountone2089
+G4WT6 > EffectiveCountone2090
+G4WT6 > EffectiveCountone2091
+G4WT6 > EffectiveCountone2092
+G4WT6 > EffectiveCountone2093
+G4WT6 > EffectiveCountone2094
+G4WT6 > EffectiveCountone2095
+G4WT6 > EffectiveCountone2096
+G4WT10 > EffectiveCountone2097
+G4WT6 > EffectiveCountone2098
+G4WT10 > EffectiveCountone2099
+G4WT10 > EffectiveCountone2100
+G4WT5 > EffectiveCountone2101
+G4WT6 > EffectiveCountone2102
+G4WT10 > EffectiveCountone2103
+G4WT6 > EffectiveCountone2104
+G4WT5 > EffectiveCountone2105
+G4WT6 > EffectiveCountone2106
+G4WT6 > EffectiveCountone2107
+G4WT6 > EffectiveCountone2108
+G4WT5 > EffectiveCountone2109
+G4WT6 > EffectiveCountone2110
+G4WT6 > EffectiveCountone2111
+G4WT6 > EffectiveCountone2112
+G4WT6 > EffectiveCountone2113
+G4WT6 > EffectiveCountone2114
+G4WT6 > EffectiveCountone2115
+G4WT10 > EffectiveCountone2116
+G4WT6 > EffectiveCountone2117
+G4WT6 > EffectiveCountone2118
+G4WT5 > EffectiveCountone2119
+G4WT6 > EffectiveCountone2120
+G4WT6 > EffectiveCountone2121
+G4WT6 > EffectiveCountone2122
+G4WT5 > EffectiveCountone2123
+G4WT6 > EffectiveCountone2124
+G4WT6 > EffectiveCountone2125
+G4WT6 > EffectiveCountone2126
+G4WT5 > EffectiveCountone2127
+G4WT10 > EffectiveCountone2128
+G4WT10 > EffectiveCountone2129
+G4WT6 > EffectiveCountone2130
+G4WT6 > EffectiveCountone2131
+G4WT6 > EffectiveCountone2132
+G4WT6 > EffectiveCountone2133
+G4WT6 > EffectiveCountone2134
+G4WT6 > EffectiveCountone2135
+G4WT10 > EffectiveCountone2136
+G4WT10 > EffectiveCountone2137
+G4WT5 > EffectiveCountone2138
+G4WT6 > EffectiveCountone2139
+G4WT6 > EffectiveCountone2140
+G4WT6 > EffectiveCountone2141
+G4WT5 > EffectiveCountone2142
+G4WT6 > EffectiveCountone2143
+G4WT10 > EffectiveCountone2144
+G4WT5 > EffectiveCountone2145
+G4WT6 > EffectiveCountone2146
+G4WT6 > EffectiveCountone2147
+G4WT10 > EffectiveCountone2148
+G4WT10 > EffectiveCountone2149
+G4WT5 > EffectiveCountone2150
+G4WT10 > EffectiveCountone2151
+G4WT6 > EffectiveCountone2152
+G4WT6 > EffectiveCountone2153
+G4WT6 > EffectiveCountone2154
+G4WT10 > EffectiveCountone2155
+G4WT6 > EffectiveCountone2156
+G4WT10 > EffectiveCountone2157
+G4WT10 > EffectiveCountone2158
+G4WT10 > EffectiveCountone2159
+G4WT5 > EffectiveCountone2160
+G4WT5 > EffectiveCountone2161
+G4WT6 > EffectiveCountone2162
+G4WT5 > EffectiveCountone2163
+G4WT6 > EffectiveCountone2164
+G4WT6 > EffectiveCountone2165
+G4WT6 > EffectiveCountone2166
+G4WT6 > EffectiveCountone2167
+G4WT10 > EffectiveCountone2168
+G4WT6 > EffectiveCountone2169
+G4WT5 > EffectiveCountone2170
+G4WT6 > EffectiveCountone2171
+G4WT6 > EffectiveCountone2172
+G4WT6 > EffectiveCountone2173
+G4WT6 > EffectiveCountone2174
+G4WT6 > EffectiveCountone2175
+G4WT6 > EffectiveCountone2176
+G4WT6 > EffectiveCountone2177
+G4WT6 > EffectiveCountone2178
+G4WT5 > EffectiveCountone2179
+G4WT6 > EffectiveCountone2180
+G4WT6 > EffectiveCountone2181
+G4WT10 > EffectiveCountone2182
+G4WT5 > EffectiveCountone2183
+G4WT5 > EffectiveCountone2184
+G4WT5 > EffectiveCountone2185
+G4WT5 > EffectiveCountone2186
+G4WT6 > EffectiveCountone2187
+G4WT10 > EffectiveCountone2188
+G4WT6 > EffectiveCountone2189
+G4WT6 > EffectiveCountone2190
+G4WT6 > EffectiveCountone2191
+G4WT5 > EffectiveCountone2192
+G4WT6 > EffectiveCountone2193
+G4WT10 > EffectiveCountone2194
+G4WT3 > EffectiveCountone2195
+G4WT6 > EffectiveCountone2196
+G4WT6 > EffectiveCountone2197
+G4WT6 > EffectiveCountone2198
+G4WT10 > EffectiveCountone2199
+G4WT6 > EffectiveCountone2200
+G4WT6 > EffectiveCountone2201
+G4WT6 > EffectiveCountone2202
+G4WT6 > EffectiveCountone2203
+G4WT6 > EffectiveCountone2204
+G4WT6 > EffectiveCountone2205
+G4WT6 > EffectiveCountone2206
+G4WT6 > EffectiveCountone2207
+G4WT6 > EffectiveCountone2208
+G4WT6 > EffectiveCountone2209
+G4WT6 > EffectiveCountone2210
+G4WT6 > EffectiveCountone2211
+G4WT3 > EffectiveCountone2212
+G4WT6 > EffectiveCountone2213
+G4WT6 > EffectiveCountone2214
+G4WT5 > EffectiveCountone2215
+G4WT6 > EffectiveCountone2216
+G4WT3 > EffectiveCountone2217
+G4WT3 > EffectiveCountone2218
+G4WT3 > EffectiveCountone2219
+G4WT6 > EffectiveCountone2220
+G4WT6 > EffectiveCountone2221
+G4WT10 > EffectiveCountone2222
+G4WT10 > EffectiveCountone2223
+G4WT6 > EffectiveCountone2224
+G4WT6 > EffectiveCountone2225
+G4WT6 > EffectiveCountone2226
+G4WT6 > EffectiveCountone2227
+G4WT10 > EffectiveCountone2228
+G4WT10 > EffectiveCountone2229
+G4WT10 > EffectiveCountone2230
+G4WT6 > EffectiveCountone2231
+G4WT6 > EffectiveCountone2232
+G4WT10 > EffectiveCountone2233
+G4WT5 > EffectiveCountone2234
+G4WT6 > EffectiveCountone2235
+G4WT5 > EffectiveCountone2236
+G4WT6 > EffectiveCountone2237
+G4WT5 > EffectiveCountone2238
+G4WT10 > EffectiveCountone2239
+G4WT10 > EffectiveCountone2240
+G4WT6 > EffectiveCountone2241
+G4WT10 > EffectiveCountone2242
+G4WT10 > EffectiveCountone2243
+G4WT6 > EffectiveCountone2244
+G4WT6 > EffectiveCountone2245
+G4WT5 > EffectiveCountone2246
+G4WT6 > EffectiveCountone2247
+G4WT6 > EffectiveCountone2248
+G4WT5 > EffectiveCountone2249
+G4WT6 > EffectiveCountone2250
+G4WT6 > EffectiveCountone2251
+G4WT6 > EffectiveCountone2252
+G4WT10 > EffectiveCountone2253
+G4WT6 > EffectiveCountone2254
+G4WT6 > EffectiveCountone2255
+G4WT6 > EffectiveCountone2256
+G4WT10 > EffectiveCountone2257
+G4WT6 > EffectiveCountone2258
+G4WT6 > EffectiveCountone2259
+G4WT5 > EffectiveCountone2260
+G4WT5 > EffectiveCountone2261
+G4WT10 > EffectiveCountone2262
+G4WT6 > EffectiveCountone2263
+G4WT6 > EffectiveCountone2264
+G4WT6 > EffectiveCountone2265
+G4WT6 > EffectiveCountone2266
+G4WT6 > EffectiveCountone2267
+G4WT6 > EffectiveCountone2268
+G4WT10 > EffectiveCountone2269
+G4WT6 > EffectiveCountone2270
+G4WT10 > EffectiveCountone2271
+G4WT10 > EffectiveCountone2272
+G4WT6 > EffectiveCountone2273
+G4WT6 > EffectiveCountone2274
+G4WT6 > EffectiveCountone2275
+G4WT6 > EffectiveCountone2276
+G4WT5 > EffectiveCountone2277
+G4WT10 > EffectiveCountone2278
+G4WT10 > EffectiveCountone2279
+G4WT10 > EffectiveCountone2280
+G4WT5 > EffectiveCountone2281
+G4WT10 > EffectiveCountone2282
+G4WT6 > EffectiveCountone2283
+G4WT5 > EffectiveCountone2284
+G4WT6 > EffectiveCountone2285
+G4WT10 > EffectiveCountone2286
+G4WT6 > EffectiveCountone2287
+G4WT6 > EffectiveCountone2288
+G4WT10 > EffectiveCountone2289
+G4WT10 > EffectiveCountone2290
+G4WT6 > EffectiveCountone2291
+G4WT10 > EffectiveCountone2292
+G4WT6 > EffectiveCountone2293
+G4WT5 > EffectiveCountone2294
+G4WT6 > EffectiveCountone2295
+G4WT6 > EffectiveCountone2296
+G4WT6 > EffectiveCountone2297
+G4WT6 > EffectiveCountone2298
+G4WT6 > EffectiveCountone2299
+G4WT6 > EffectiveCountone2300
+G4WT6 > EffectiveCountone2301
+G4WT3 > EffectiveCountone2302
+G4WT10 > EffectiveCountone2303
+G4WT6 > EffectiveCountone2304
+G4WT10 > EffectiveCountone2305
+G4WT6 > EffectiveCountone2306
+G4WT10 > EffectiveCountone2307
+G4WT6 > EffectiveCountone2308
+G4WT6 > EffectiveCountone2309
+G4WT10 > EffectiveCountone2310
+G4WT10 > EffectiveCountone2311
+G4WT6 > EffectiveCountone2312
+G4WT6 > EffectiveCountone2313
+G4WT10 > EffectiveCountone2314
+G4WT6 > EffectiveCountone2315
+G4WT6 > EffectiveCountone2316
+G4WT6 > EffectiveCountone2317
+G4WT6 > EffectiveCountone2318
+G4WT6 > EffectiveCountone2319
+G4WT6 > EffectiveCountone2320
+G4WT10 > EffectiveCountone2321
+G4WT6 > EffectiveCountone2322
+G4WT6 > EffectiveCountone2323
+G4WT6 > EffectiveCountone2324
+G4WT6 > EffectiveCountone2325
+G4WT6 > EffectiveCountone2326
+G4WT5 > EffectiveCountone2327
+G4WT6 > EffectiveCountone2328
+G4WT5 > EffectiveCountone2329
+G4WT5 > EffectiveCountone2330
+G4WT5 > EffectiveCountone2331
+G4WT10 > EffectiveCountone2332
+G4WT10 > EffectiveCountone2333
+G4WT10 > EffectiveCountone2334
+G4WT10 > EffectiveCountone2335
+G4WT3 > EffectiveCountone2336
+G4WT6 > EffectiveCountone2337
+G4WT5 > EffectiveCountone2338
+G4WT5 > EffectiveCountone2339
+G4WT6 > EffectiveCountone2340
+G4WT6 > EffectiveCountone2341
+G4WT10 > EffectiveCountone2342
+G4WT5 > EffectiveCountone2343
+G4WT6 > EffectiveCountone2344
+G4WT6 > EffectiveCountone2345
+G4WT6 > EffectiveCountone2346
+G4WT6 > EffectiveCountone2347
+G4WT6 > EffectiveCountone2348
+G4WT6 > EffectiveCountone2349
+G4WT6 > EffectiveCountone2350
+G4WT6 > EffectiveCountone2351
+G4WT6 > EffectiveCountone2352
+G4WT6 > EffectiveCountone2353
+G4WT10 > EffectiveCountone2354
+G4WT6 > EffectiveCountone2355
+G4WT10 > EffectiveCountone2356
+G4WT10 > EffectiveCountone2357
+G4WT6 > EffectiveCountone2358
+G4WT10 > EffectiveCountone2359
+G4WT6 > EffectiveCountone2360
+G4WT10 > EffectiveCountone2361
+G4WT5 > EffectiveCountone2362
+G4WT6 > EffectiveCountone2363
+G4WT10 > EffectiveCountone2364
+G4WT6 > EffectiveCountone2365
+G4WT6 > EffectiveCountone2366
+G4WT6 > EffectiveCountone2367
+G4WT10 > EffectiveCountone2368
+G4WT6 > EffectiveCountone2369
+G4WT10 > EffectiveCountone2370
+G4WT6 > EffectiveCountone2371
+G4WT6 > EffectiveCountone2372
+G4WT10 > EffectiveCountone2373
+G4WT10 > EffectiveCountone2374
+G4WT6 > EffectiveCountone2375
+G4WT6 > EffectiveCountone2376
+G4WT10 > EffectiveCountone2377
+G4WT10 > EffectiveCountone2378
+G4WT6 > EffectiveCountone2379
+G4WT6 > EffectiveCountone2380
+G4WT6 > EffectiveCountone2381
+G4WT6 > EffectiveCountone2382
+G4WT6 > EffectiveCountone2383
+G4WT6 > EffectiveCountone2384
+G4WT6 > EffectiveCountone2385
+G4WT6 > EffectiveCountone2386
+G4WT5 > EffectiveCountone2387
+G4WT6 > EffectiveCountone2388
+G4WT6 > EffectiveCountone2389
+G4WT10 > EffectiveCountone2390
+G4WT10 > EffectiveCountone2391
+G4WT10 > EffectiveCountone2392
+G4WT10 > EffectiveCountone2393
+G4WT5 > EffectiveCountone2394
+G4WT10 > EffectiveCountone2395
+G4WT6 > EffectiveCountone2396
+G4WT10 > EffectiveCountone2397
+G4WT6 > EffectiveCountone2398
+G4WT6 > EffectiveCountone2399
+G4WT10 > EffectiveCountone2400
+G4WT5 > EffectiveCountone2401
+G4WT5 > EffectiveCountone2402
+G4WT10 > EffectiveCountone2403
+G4WT6 > EffectiveCountone2404
+G4WT6 > EffectiveCountone2405
+G4WT6 > EffectiveCountone2406
+G4WT10 > EffectiveCountone2407
+G4WT6 > EffectiveCountone2408
+G4WT10 > EffectiveCountone2409
+G4WT6 > EffectiveCountone2410
+G4WT6 > EffectiveCountone2411
+G4WT6 > EffectiveCountone2412
+G4WT6 > EffectiveCountone2413
+G4WT6 > EffectiveCountone2414
+G4WT6 > EffectiveCountone2415
+G4WT6 > EffectiveCountone2416
+G4WT6 > EffectiveCountone2417
+G4WT5 > EffectiveCountone2418
+G4WT6 > EffectiveCountone2419
+G4WT6 > EffectiveCountone2420
+G4WT10 > EffectiveCountone2421
+G4WT6 > EffectiveCountone2422
+G4WT6 > EffectiveCountone2423
+G4WT6 > EffectiveCountone2424
+G4WT6 > EffectiveCountone2425
+G4WT6 > EffectiveCountone2426
+G4WT5 > EffectiveCountone2427
+G4WT10 > EffectiveCountone2428
+G4WT6 > EffectiveCountone2429
+G4WT6 > EffectiveCountone2430
+G4WT6 > EffectiveCountone2431
+G4WT6 > EffectiveCountone2432
+G4WT10 > EffectiveCountone2433
+G4WT5 > EffectiveCountone2434
+G4WT10 > EffectiveCountone2435
+G4WT5 > EffectiveCountone2436
+G4WT5 > EffectiveCountone2437
+G4WT10 > EffectiveCountone2438
+G4WT10 > EffectiveCountone2439
+G4WT10 > EffectiveCountone2440
+G4WT10 > EffectiveCountone2441
+G4WT6 > EffectiveCountone2442
+G4WT5 > EffectiveCountone2443
+G4WT10 > EffectiveCountone2444
+G4WT5 > EffectiveCountone2445
+G4WT10 > EffectiveCountone2446
+G4WT6 > EffectiveCountone2447
+G4WT6 > EffectiveCountone2448
+G4WT6 > EffectiveCountone2449
+G4WT6 > EffectiveCountone2450
+G4WT5 > EffectiveCountone2451
+G4WT10 > EffectiveCountone2452
+G4WT10 > EffectiveCountone2453
+G4WT6 > EffectiveCountone2454
+G4WT6 > EffectiveCountone2455
+G4WT6 > EffectiveCountone2456
+G4WT6 > EffectiveCountone2457
+G4WT6 > EffectiveCountone2458
+G4WT6 > EffectiveCountone2459
+G4WT6 > EffectiveCountone2460
+G4WT5 > EffectiveCountone2461
+G4WT10 > EffectiveCountone2462
+G4WT6 > EffectiveCountone2463
+G4WT5 > EffectiveCountone2464
+G4WT5 > EffectiveCountone2465
+G4WT6 > EffectiveCountone2466
+G4WT6 > EffectiveCountone2467
+G4WT6 > EffectiveCountone2468
+G4WT6 > EffectiveCountone2469
+G4WT6 > EffectiveCountone2470
+G4WT6 > EffectiveCountone2471
+G4WT6 > EffectiveCountone2472
+G4WT6 > EffectiveCountone2473
+G4WT6 > EffectiveCountone2474
+G4WT6 > EffectiveCountone2475
+G4WT3 > EffectiveCountone2476
+G4WT6 > EffectiveCountone2477
+G4WT6 > EffectiveCountone2478
+G4WT6 > EffectiveCountone2479
+G4WT10 > EffectiveCountone2480
+G4WT10 > EffectiveCountone2481
+G4WT10 > EffectiveCountone2482
+G4WT10 > EffectiveCountone2483
+G4WT10 > EffectiveCountone2484
+G4WT10 > EffectiveCountone2485
+G4WT5 > EffectiveCountone2486
+G4WT6 > EffectiveCountone2487
+G4WT6 > EffectiveCountone2488
+G4WT6 > EffectiveCountone2489
+G4WT5 > EffectiveCountone2490
+G4WT6 > EffectiveCountone2491
+G4WT6 > EffectiveCountone2492
+G4WT6 > EffectiveCountone2493
+G4WT6 > EffectiveCountone2494
+G4WT6 > EffectiveCountone2495
+G4WT10 > EffectiveCountone2496
+G4WT10 > EffectiveCountone2497
+G4WT10 > EffectiveCountone2498
+G4WT6 > EffectiveCountone2499
+G4WT6 > EffectiveCountone2500
+G4WT5 > EffectiveCountone2501
+G4WT10 > EffectiveCountone2502
+G4WT5 > EffectiveCountone2503
+G4WT6 > EffectiveCountone2504
+G4WT6 > EffectiveCountone2505
+G4WT6 > EffectiveCountone2506
+G4WT6 > EffectiveCountone2507
+G4WT6 > EffectiveCountone2508
+G4WT6 > EffectiveCountone2509
+G4WT6 > EffectiveCountone2510
+G4WT6 > EffectiveCountone2511
+G4WT10 > EffectiveCountone2512
+G4WT5 > EffectiveCountone2513
+G4WT6 > EffectiveCountone2514
+G4WT6 > EffectiveCountone2515
+G4WT6 > EffectiveCountone2516
+G4WT5 > EffectiveCountone2517
+G4WT5 > EffectiveCountone2518
+G4WT5 > EffectiveCountone2519
+G4WT10 > EffectiveCountone2520
+G4WT10 > EffectiveCountone2521
+G4WT6 > EffectiveCountone2522
+G4WT6 > EffectiveCountone2523
+G4WT6 > EffectiveCountone2524
+G4WT6 > EffectiveCountone2525
+G4WT6 > EffectiveCountone2526
+G4WT6 > EffectiveCountone2527
+G4WT5 > EffectiveCountone2528
+G4WT6 > EffectiveCountone2529
+G4WT10 > EffectiveCountone2530
+G4WT10 > EffectiveCountone2531
+G4WT6 > EffectiveCountone2532
+G4WT6 > EffectiveCountone2533
+G4WT10 > EffectiveCountone2534
+G4WT10 > EffectiveCountone2535
+G4WT6 > EffectiveCountone2536
+G4WT6 > EffectiveCountone2537
+G4WT6 > EffectiveCountone2538
+G4WT6 > EffectiveCountone2539
+G4WT5 > EffectiveCountone2540
+G4WT5 > EffectiveCountone2541
+G4WT6 > EffectiveCountone2542
+G4WT10 > EffectiveCountone2543
+G4WT6 > EffectiveCountone2544
+G4WT6 > EffectiveCountone2545
+G4WT5 > EffectiveCountone2546
+G4WT5 > EffectiveCountone2547
+G4WT6 > EffectiveCountone2548
+G4WT6 > EffectiveCountone2549
+G4WT10 > EffectiveCountone2550
+G4WT10 > EffectiveCountone2551
+G4WT10 > EffectiveCountone2552
+G4WT10 > EffectiveCountone2553
+G4WT6 > EffectiveCountone2554
+G4WT6 > EffectiveCountone2555
+G4WT10 > EffectiveCountone2556
+G4WT6 > EffectiveCountone2557
+G4WT6 > EffectiveCountone2558
+G4WT5 > EffectiveCountone2559
+G4WT5 > EffectiveCountone2560
+G4WT5 > EffectiveCountone2561
+G4WT10 > EffectiveCountone2562
+G4WT6 > EffectiveCountone2563
+G4WT10 > EffectiveCountone2564
+G4WT10 > EffectiveCountone2565
+G4WT6 > EffectiveCountone2566
+G4WT10 > EffectiveCountone2567
+G4WT6 > EffectiveCountone2568
+G4WT6 > EffectiveCountone2569
+G4WT10 > EffectiveCountone2570
+G4WT6 > EffectiveCountone2571
+G4WT6 > EffectiveCountone2572
+G4WT6 > EffectiveCountone2573
+G4WT6 > EffectiveCountone2574
+G4WT6 > EffectiveCountone2575
+G4WT6 > EffectiveCountone2576
+G4WT6 > EffectiveCountone2577
+G4WT5 > EffectiveCountone2578
+G4WT6 > EffectiveCountone2579
+G4WT10 > EffectiveCountone2580
+G4WT5 > EffectiveCountone2581
+G4WT6 > EffectiveCountone2582
+G4WT6 > EffectiveCountone2583
+G4WT10 > EffectiveCountone2584
+G4WT6 > EffectiveCountone2585
+G4WT6 > EffectiveCountone2586
+G4WT6 > EffectiveCountone2587
+G4WT6 > EffectiveCountone2588
+G4WT6 > EffectiveCountone2589
+G4WT6 > EffectiveCountone2590
+G4WT6 > EffectiveCountone2591
+G4WT6 > EffectiveCountone2592
+G4WT6 > EffectiveCountone2593
+G4WT5 > EffectiveCountone2594
+G4WT5 > EffectiveCountone2595
+G4WT6 > EffectiveCountone2596
+G4WT6 > EffectiveCountone2597
+G4WT5 > EffectiveCountone2598
+G4WT10 > EffectiveCountone2599
+G4WT10 > EffectiveCountone2600
+G4WT5 > EffectiveCountone2601
+G4WT6 > EffectiveCountone2602
+G4WT6 > EffectiveCountone2603
+G4WT6 > EffectiveCountone2604
+G4WT6 > EffectiveCountone2605
+G4WT6 > EffectiveCountone2606
+G4WT10 > EffectiveCountone2607
+G4WT6 > EffectiveCountone2608
+G4WT6 > EffectiveCountone2609
+G4WT6 > EffectiveCountone2610
+G4WT10 > EffectiveCountone2611
+G4WT6 > EffectiveCountone2612
+G4WT6 > EffectiveCountone2613
+G4WT6 > EffectiveCountone2614
+G4WT6 > EffectiveCountone2615
+G4WT6 > EffectiveCountone2616
+G4WT5 > EffectiveCountone2617
+G4WT6 > EffectiveCountone2618
+G4WT6 > EffectiveCountone2619
+G4WT6 > EffectiveCountone2620
+G4WT10 > EffectiveCountone2621
+G4WT5 > EffectiveCountone2622
+G4WT5 > EffectiveCountone2623
+G4WT10 > EffectiveCountone2624
+G4WT6 > EffectiveCountone2625
+G4WT5 > EffectiveCountone2626
+G4WT6 > EffectiveCountone2627
+G4WT6 > EffectiveCountone2628
+G4WT10 > EffectiveCountone2629
+G4WT6 > EffectiveCountone2630
+G4WT10 > EffectiveCountone2631
+G4WT10 > EffectiveCountone2632
+G4WT6 > EffectiveCountone2633
+G4WT3 > EffectiveCountone2634
+G4WT6 > EffectiveCountone2635
+G4WT10 > EffectiveCountone2636
+G4WT6 > EffectiveCountone2637
+G4WT6 > EffectiveCountone2638
+G4WT6 > EffectiveCountone2639
+G4WT6 > EffectiveCountone2640
+G4WT6 > EffectiveCountone2641
+G4WT6 > EffectiveCountone2642
+G4WT10 > EffectiveCountone2643
+G4WT6 > EffectiveCountone2644
+G4WT6 > EffectiveCountone2645
+G4WT10 > EffectiveCountone2646
+G4WT10 > EffectiveCountone2647
+G4WT5 > EffectiveCountone2648
+G4WT9 > EffectiveCountone2649
+G4WT6 > EffectiveCountone2650
+G4WT6 > EffectiveCountone2651
+G4WT5 > EffectiveCountone2652
+G4WT6 > EffectiveCountone2653
+G4WT6 > EffectiveCountone2654
+G4WT6 > EffectiveCountone2655
+G4WT6 > EffectiveCountone2656
+G4WT5 > EffectiveCountone2657
+G4WT5 > EffectiveCountone2658
+G4WT6 > EffectiveCountone2659
+G4WT6 > EffectiveCountone2660
+G4WT6 > EffectiveCountone2661
+G4WT10 > EffectiveCountone2662
+G4WT6 > EffectiveCountone2663
+G4WT6 > EffectiveCountone2664
+G4WT6 > EffectiveCountone2665
+G4WT6 > EffectiveCountone2666
+G4WT6 > EffectiveCountone2667
+G4WT6 > EffectiveCountone2668
+G4WT6 > EffectiveCountone2669
+G4WT10 > EffectiveCountone2670
+G4WT10 > EffectiveCountone2671
+G4WT6 > EffectiveCountone2672
+G4WT6 > EffectiveCountone2673
+G4WT6 > EffectiveCountone2674
+G4WT6 > EffectiveCountone2675
+G4WT6 > EffectiveCountone2676
+G4WT6 > EffectiveCountone2677
+G4WT10 > EffectiveCountone2678
+G4WT10 > EffectiveCountone2679
+G4WT10 > EffectiveCountone2680
+G4WT6 > EffectiveCountone2681
+G4WT6 > EffectiveCountone2682
+G4WT6 > EffectiveCountone2683
+G4WT6 > EffectiveCountone2684
+G4WT5 > EffectiveCountone2685
+G4WT6 > EffectiveCountone2686
+G4WT6 > EffectiveCountone2687
+G4WT6 > EffectiveCountone2688
+G4WT10 > EffectiveCountone2689
+G4WT6 > EffectiveCountone2690
+G4WT10 > EffectiveCountone2691
+G4WT10 > EffectiveCountone2692
+G4WT10 > EffectiveCountone2693
+G4WT6 > EffectiveCountone2694
+G4WT10 > EffectiveCountone2695
+G4WT10 > EffectiveCountone2696
+G4WT10 > EffectiveCountone2697
+G4WT6 > EffectiveCountone2698
+G4WT5 > EffectiveCountone2699
+G4WT6 > EffectiveCountone2700
+G4WT3 > EffectiveCountone2701
+G4WT6 > EffectiveCountone2702
+G4WT6 > EffectiveCountone2703
+G4WT3 > EffectiveCountone2704
+G4WT6 > EffectiveCountone2705
+G4WT6 > EffectiveCountone2706
+G4WT6 > EffectiveCountone2707
+G4WT6 > EffectiveCountone2708
+G4WT6 > EffectiveCountone2709
+G4WT6 > EffectiveCountone2710
+G4WT6 > EffectiveCountone2711
+G4WT6 > EffectiveCountone2712
+G4WT10 > EffectiveCountone2713
+G4WT6 > EffectiveCountone2714
+G4WT5 > EffectiveCountone2715
+G4WT6 > EffectiveCountone2716
+G4WT6 > EffectiveCountone2717
+G4WT10 > EffectiveCountone2718
+G4WT10 > EffectiveCountone2719
+G4WT10 > EffectiveCountone2720
+G4WT6 > EffectiveCountone2721
+G4WT6 > EffectiveCountone2722
+G4WT5 > EffectiveCountone2723
+G4WT6 > EffectiveCountone2724
+G4WT10 > EffectiveCountone2725
+G4WT6 > EffectiveCountone2726
+G4WT5 > EffectiveCountone2727
+G4WT6 > EffectiveCountone2728
+G4WT6 > EffectiveCountone2729
+G4WT5 > EffectiveCountone2730
+G4WT5 > EffectiveCountone2731
+G4WT5 > EffectiveCountone2732
+G4WT10 > EffectiveCountone2733
+G4WT6 > EffectiveCountone2734
+G4WT10 > EffectiveCountone2735
+G4WT6 > EffectiveCountone2736
+G4WT6 > EffectiveCountone2737
+G4WT10 > EffectiveCountone2738
+G4WT6 > EffectiveCountone2739
+G4WT5 > EffectiveCountone2740
+G4WT5 > EffectiveCountone2741
+G4WT5 > EffectiveCountone2742
+G4WT6 > EffectiveCountone2743
+G4WT6 > EffectiveCountone2744
+G4WT10 > EffectiveCountone2745
+G4WT3 > EffectiveCountone2746
+G4WT3 > EffectiveCountone2747
+G4WT3 > EffectiveCountone2748
+G4WT3 > EffectiveCountone2749
+G4WT6 > EffectiveCountone2750
+G4WT6 > EffectiveCountone2751
+G4WT6 > EffectiveCountone2752
+G4WT6 > EffectiveCountone2753
+G4WT10 > EffectiveCountone2754
+G4WT10 > EffectiveCountone2755
+G4WT10 > EffectiveCountone2756
+G4WT6 > EffectiveCountone2757
+G4WT5 > EffectiveCountone2758
+G4WT5 > EffectiveCountone2759
+G4WT6 > EffectiveCountone2760
+G4WT6 > EffectiveCountone2761
+G4WT5 > EffectiveCountone2762
+G4WT6 > EffectiveCountone2763
+G4WT10 > EffectiveCountone2764
+G4WT10 > EffectiveCountone2765
+G4WT5 > EffectiveCountone2766
+G4WT6 > EffectiveCountone2767
+G4WT6 > EffectiveCountone2768
+G4WT3 > EffectiveCountone2769
+G4WT10 > EffectiveCountone2770
+G4WT6 > EffectiveCountone2771
+G4WT10 > EffectiveCountone2772
+G4WT5 > EffectiveCountone2773
+G4WT3 > EffectiveCountone2774
+G4WT10 > EffectiveCountone2775
+G4WT10 > EffectiveCountone2776
+G4WT10 > EffectiveCountone2777
+G4WT6 > EffectiveCountone2778
+G4WT10 > EffectiveCountone2779
+G4WT6 > EffectiveCountone2780
+G4WT6 > EffectiveCountone2781
+G4WT6 > EffectiveCountone2782
+G4WT5 > EffectiveCountone2783
+G4WT5 > EffectiveCountone2784
+G4WT6 > EffectiveCountone2785
+G4WT10 > EffectiveCountone2786
+G4WT6 > EffectiveCountone2787
+G4WT6 > EffectiveCountone2788
+G4WT10 > EffectiveCountone2789
+G4WT6 > EffectiveCountone2790
+G4WT6 > EffectiveCountone2791
+G4WT6 > EffectiveCountone2792
+G4WT6 > EffectiveCountone2793
+G4WT6 > EffectiveCountone2794
+G4WT6 > EffectiveCountone2795
+G4WT3 > EffectiveCountone2796
+G4WT5 > EffectiveCountone2797
+G4WT6 > EffectiveCountone2798
+G4WT10 > EffectiveCountone2799
+G4WT6 > EffectiveCountone2800
+G4WT6 > EffectiveCountone2801
+G4WT6 > EffectiveCountone2802
+G4WT6 > EffectiveCountone2803
+G4WT5 > EffectiveCountone2804
+G4WT5 > EffectiveCountone2805
+G4WT10 > EffectiveCountone2806
+G4WT6 > EffectiveCountone2807
+G4WT6 > EffectiveCountone2808
+G4WT6 > EffectiveCountone2809
+G4WT5 > EffectiveCountone2810
+G4WT6 > EffectiveCountone2811
+G4WT10 > EffectiveCountone2812
+G4WT6 > EffectiveCountone2813
+G4WT6 > EffectiveCountone2814
+G4WT6 > EffectiveCountone2815
+G4WT6 > EffectiveCountone2816
+G4WT10 > EffectiveCountone2817
+G4WT6 > EffectiveCountone2818
+G4WT6 > EffectiveCountone2819
+G4WT5 > EffectiveCountone2820
+G4WT6 > EffectiveCountone2821
+G4WT10 > EffectiveCountone2822
+G4WT6 > EffectiveCountone2823
+G4WT6 > EffectiveCountone2824
+G4WT10 > EffectiveCountone2825
+G4WT6 > EffectiveCountone2826
+G4WT3 > EffectiveCountone2827
+G4WT6 > EffectiveCountone2828
+G4WT6 > EffectiveCountone2829
+G4WT10 > EffectiveCountone2830
+G4WT6 > EffectiveCountone2831
+G4WT6 > EffectiveCountone2832
+G4WT5 > EffectiveCountone2833
+G4WT6 > EffectiveCountone2834
+G4WT6 > EffectiveCountone2835
+G4WT6 > EffectiveCountone2836
+G4WT5 > EffectiveCountone2837
+G4WT10 > EffectiveCountone2838
+G4WT6 > EffectiveCountone2839
+G4WT6 > EffectiveCountone2840
+G4WT6 > EffectiveCountone2841
+G4WT6 > EffectiveCountone2842
+G4WT6 > EffectiveCountone2843
+G4WT6 > EffectiveCountone2844
+G4WT6 > EffectiveCountone2845
+G4WT6 > EffectiveCountone2846
+G4WT6 > EffectiveCountone2847
+G4WT6 > EffectiveCountone2848
+G4WT6 > EffectiveCountone2849
+G4WT5 > EffectiveCountone2850
+G4WT6 > EffectiveCountone2851
+G4WT5 > EffectiveCountone2852
+G4WT5 > EffectiveCountone2853
+G4WT5 > EffectiveCountone2854
+G4WT6 > EffectiveCountone2855
+G4WT6 > EffectiveCountone2856
+G4WT6 > EffectiveCountone2857
+G4WT10 > EffectiveCountone2858
+G4WT6 > EffectiveCountone2859
+G4WT6 > EffectiveCountone2860
+G4WT6 > EffectiveCountone2861
+G4WT6 > EffectiveCountone2862
+G4WT6 > EffectiveCountone2863
+G4WT6 > EffectiveCountone2864
+G4WT6 > EffectiveCountone2865
+G4WT10 > EffectiveCountone2866
+G4WT6 > EffectiveCountone2867
+G4WT6 > EffectiveCountone2868
+G4WT10 > EffectiveCountone2869
+G4WT6 > EffectiveCountone2870
+G4WT6 > EffectiveCountone2871
+G4WT10 > EffectiveCountone2872
+G4WT6 > EffectiveCountone2873
+G4WT10 > EffectiveCountone2874
+G4WT6 > EffectiveCountone2875
+G4WT6 > EffectiveCountone2876
+G4WT6 > EffectiveCountone2877
+G4WT6 > EffectiveCountone2878
+G4WT6 > EffectiveCountone2879
+G4WT5 > EffectiveCountone2880
+G4WT6 > EffectiveCountone2881
+G4WT10 > EffectiveCountone2882
+G4WT10 > EffectiveCountone2883
+G4WT10 > EffectiveCountone2884
+G4WT5 > EffectiveCountone2885
+G4WT6 > EffectiveCountone2886
+G4WT5 > EffectiveCountone2887
+G4WT6 > EffectiveCountone2888
+G4WT6 > EffectiveCountone2889
+G4WT6 > EffectiveCountone2890
+G4WT6 > EffectiveCountone2891
+G4WT5 > EffectiveCountone2892
+G4WT6 > EffectiveCountone2893
+G4WT5 > EffectiveCountone2894
+G4WT10 > EffectiveCountone2895
+G4WT6 > EffectiveCountone2896
+G4WT6 > EffectiveCountone2897
+G4WT5 > EffectiveCountone2898
+G4WT6 > EffectiveCountone2899
+G4WT6 > EffectiveCountone2900
+G4WT6 > EffectiveCountone2901
+G4WT6 > EffectiveCountone2902
+G4WT6 > EffectiveCountone2903
+G4WT6 > EffectiveCountone2904
+G4WT10 > EffectiveCountone2905
+G4WT10 > EffectiveCountone2906
+G4WT10 > EffectiveCountone2907
+G4WT10 > EffectiveCountone2908
+G4WT5 > EffectiveCountone2909
+G4WT10 > EffectiveCountone2910
+G4WT10 > EffectiveCountone2911
+G4WT6 > EffectiveCountone2912
+G4WT6 > EffectiveCountone2913
+G4WT6 > EffectiveCountone2914
+G4WT6 > EffectiveCountone2915
+G4WT6 > EffectiveCountone2916
+G4WT10 > EffectiveCountone2917
+G4WT6 > EffectiveCountone2918
+G4WT6 > EffectiveCountone2919
+G4WT6 > EffectiveCountone2920
+G4WT6 > EffectiveCountone2921
+G4WT6 > EffectiveCountone2922
+G4WT6 > EffectiveCountone2923
+G4WT6 > EffectiveCountone2924
+G4WT10 > EffectiveCountone2925
+G4WT10 > EffectiveCountone2926
+G4WT6 > EffectiveCountone2927
+G4WT6 > EffectiveCountone2928
+G4WT6 > EffectiveCountone2929
+G4WT6 > EffectiveCountone2930
+G4WT6 > EffectiveCountone2931
+G4WT5 > EffectiveCountone2932
+G4WT6 > EffectiveCountone2933
+G4WT6 > EffectiveCountone2934
+G4WT3 > EffectiveCountone2935
+G4WT10 > EffectiveCountone2936
+G4WT6 > EffectiveCountone2937
+G4WT5 > EffectiveCountone2938
+G4WT6 > EffectiveCountone2939
+G4WT10 > EffectiveCountone2940
+G4WT6 > EffectiveCountone2941
+G4WT6 > EffectiveCountone2942
+G4WT5 > EffectiveCountone2943
+G4WT10 > EffectiveCountone2944
+G4WT6 > EffectiveCountone2945
+G4WT6 > EffectiveCountone2946
+G4WT6 > EffectiveCountone2947
+G4WT6 > EffectiveCountone2948
+G4WT5 > EffectiveCountone2949
+G4WT5 > EffectiveCountone2950
+G4WT10 > EffectiveCountone2951
+G4WT10 > EffectiveCountone2952
+G4WT6 > EffectiveCountone2953
+G4WT6 > EffectiveCountone2954
+G4WT6 > EffectiveCountone2955
+G4WT6 > EffectiveCountone2956
+G4WT10 > EffectiveCountone2957
+G4WT10 > EffectiveCountone2958
+G4WT6 > EffectiveCountone2959
+G4WT10 > EffectiveCountone2960
+G4WT5 > EffectiveCountone2961
+G4WT6 > EffectiveCountone2962
+G4WT6 > EffectiveCountone2963
+G4WT6 > EffectiveCountone2964
+G4WT5 > EffectiveCountone2965
+G4WT10 > EffectiveCountone2966
+G4WT10 > EffectiveCountone2967
+G4WT10 > EffectiveCountone2968
+G4WT6 > EffectiveCountone2969
+G4WT10 > EffectiveCountone2970
+G4WT6 > EffectiveCountone2971
+G4WT6 > EffectiveCountone2972
+G4WT6 > EffectiveCountone2973
+G4WT6 > EffectiveCountone2974
+G4WT5 > EffectiveCountone2975
+G4WT10 > EffectiveCountone2976
+G4WT6 > EffectiveCountone2977
+G4WT6 > EffectiveCountone2978
+G4WT6 > EffectiveCountone2979
+G4WT6 > EffectiveCountone2980
+G4WT10 > EffectiveCountone2981
+G4WT10 > EffectiveCountone2982
+G4WT6 > EffectiveCountone2983
+G4WT5 > EffectiveCountone2984
+G4WT10 > EffectiveCountone2985
+G4WT10 > EffectiveCountone2986
+G4WT5 > EffectiveCountone2987
+G4WT10 > EffectiveCountone2988
+G4WT10 > EffectiveCountone2989
+G4WT10 > EffectiveCountone2990
+G4WT10 > EffectiveCountone2991
+G4WT6 > EffectiveCountone2992
+G4WT6 > EffectiveCountone2993
+G4WT6 > EffectiveCountone2994
+G4WT6 > EffectiveCountone2995
+G4WT3 > EffectiveCountone2996
+G4WT6 > EffectiveCountone2997
+G4WT5 > EffectiveCountone2998
+G4WT5 > EffectiveCountone2999
+G4WT5 > EffectiveCountone3000
+G4WT6 > EffectiveCountone3001
+G4WT10 > EffectiveCountone3002
+G4WT6 > EffectiveCountone3003
+G4WT5 > EffectiveCountone3004
+G4WT6 > EffectiveCountone3005
+G4WT10 > EffectiveCountone3006
+G4WT10 > EffectiveCountone3007
+G4WT5 > EffectiveCountone3008
+G4WT6 > EffectiveCountone3009
+G4WT6 > EffectiveCountone3010
+G4WT6 > EffectiveCountone3011
+G4WT6 > EffectiveCountone3012
+G4WT6 > EffectiveCountone3013
+G4WT6 > EffectiveCountone3014
+G4WT10 > EffectiveCountone3015
+G4WT6 > EffectiveCountone3016
+G4WT6 > EffectiveCountone3017
+G4WT6 > EffectiveCountone3018
+G4WT10 > EffectiveCountone3019
+G4WT6 > EffectiveCountone3020
+G4WT6 > EffectiveCountone3021
+G4WT6 > EffectiveCountone3022
+G4WT5 > EffectiveCountone3023
+G4WT6 > EffectiveCountone3024
+G4WT6 > EffectiveCountone3025
+G4WT6 > EffectiveCountone3026
+G4WT6 > EffectiveCountone3027
+G4WT6 > EffectiveCountone3028
+G4WT6 > EffectiveCountone3029
+G4WT6 > EffectiveCountone3030
+G4WT6 > EffectiveCountone3031
+G4WT10 > EffectiveCountone3032
+G4WT6 > EffectiveCountone3033
+G4WT6 > EffectiveCountone3034
+G4WT10 > EffectiveCountone3035
+G4WT6 > EffectiveCountone3036
+G4WT10 > EffectiveCountone3037
+G4WT6 > EffectiveCountone3038
+G4WT6 > EffectiveCountone3039
+G4WT10 > EffectiveCountone3040
+G4WT6 > EffectiveCountone3041
+G4WT10 > EffectiveCountone3042
+G4WT6 > EffectiveCountone3043
+G4WT6 > EffectiveCountone3044
+G4WT6 > EffectiveCountone3045
+G4WT6 > EffectiveCountone3046
+G4WT6 > EffectiveCountone3047
+G4WT6 > EffectiveCountone3048
+G4WT6 > EffectiveCountone3049
+G4WT6 > EffectiveCountone3050
+G4WT5 > EffectiveCountone3051
+G4WT6 > EffectiveCountone3052
+G4WT5 > EffectiveCountone3053
+G4WT6 > EffectiveCountone3054
+G4WT5 > EffectiveCountone3055
+G4WT6 > EffectiveCountone3056
+G4WT6 > EffectiveCountone3057
+G4WT6 > EffectiveCountone3058
+G4WT10 > EffectiveCountone3059
+G4WT10 > EffectiveCountone3060
+G4WT6 > EffectiveCountone3061
+G4WT6 > EffectiveCountone3062
+G4WT6 > EffectiveCountone3063
+G4WT6 > EffectiveCountone3064
+G4WT3 > EffectiveCountone3065
+G4WT6 > EffectiveCountone3066
+G4WT5 > EffectiveCountone3067
+G4WT5 > EffectiveCountone3068
+G4WT6 > EffectiveCountone3069
+G4WT6 > EffectiveCountone3070
+G4WT10 > EffectiveCountone3071
+G4WT5 > EffectiveCountone3072
+G4WT10 > EffectiveCountone3073
+G4WT6 > EffectiveCountone3074
+G4WT6 > EffectiveCountone3075
+G4WT6 > EffectiveCountone3076
+G4WT6 > EffectiveCountone3077
+G4WT10 > EffectiveCountone3078
+G4WT6 > EffectiveCountone3079
+G4WT10 > EffectiveCountone3080
+G4WT6 > EffectiveCountone3081
+G4WT6 > EffectiveCountone3082
+G4WT6 > EffectiveCountone3083
+G4WT6 > EffectiveCountone3084
+G4WT6 > EffectiveCountone3085
+G4WT10 > EffectiveCountone3086
+G4WT6 > EffectiveCountone3087
+G4WT6 > EffectiveCountone3088
+G4WT6 > EffectiveCountone3089
+G4WT6 > EffectiveCountone3090
+G4WT10 > EffectiveCountone3091
+G4WT6 > EffectiveCountone3092
+G4WT6 > EffectiveCountone3093
+G4WT6 > EffectiveCountone3094
+G4WT6 > EffectiveCountone3095
+G4WT6 > EffectiveCountone3096
+G4WT6 > EffectiveCountone3097
+G4WT6 > EffectiveCountone3098
+G4WT6 > EffectiveCountone3099
+G4WT6 > EffectiveCountone3100
+G4WT6 > EffectiveCountone3101
+G4WT10 > EffectiveCountone3102
+G4WT6 > EffectiveCountone3103
+G4WT10 > EffectiveCountone3104
+G4WT6 > EffectiveCountone3105
+G4WT6 > EffectiveCountone3106
+G4WT6 > EffectiveCountone3107
+G4WT6 > EffectiveCountone3108
+G4WT6 > EffectiveCountone3109
+G4WT6 > EffectiveCountone3110
+G4WT3 > EffectiveCountone3111
+G4WT10 > EffectiveCountone3112
+G4WT6 > EffectiveCountone3113
+G4WT6 > EffectiveCountone3114
+G4WT10 > EffectiveCountone3115
+G4WT5 > EffectiveCountone3116
+G4WT6 > EffectiveCountone3117
+G4WT6 > EffectiveCountone3118
+G4WT6 > EffectiveCountone3119
+G4WT6 > EffectiveCountone3120
+G4WT6 > EffectiveCountone3121
+G4WT6 > EffectiveCountone3122
+G4WT6 > EffectiveCountone3123
+G4WT10 > EffectiveCountone3124
+G4WT5 > EffectiveCountone3125
+G4WT5 > EffectiveCountone3126
+G4WT10 > EffectiveCountone3127
+G4WT10 > EffectiveCountone3128
+G4WT6 > EffectiveCountone3129
+G4WT5 > EffectiveCountone3130
+G4WT5 > EffectiveCountone3131
+G4WT6 > EffectiveCountone3132
+G4WT6 > EffectiveCountone3133
+G4WT6 > EffectiveCountone3134
+G4WT6 > EffectiveCountone3135
+G4WT6 > EffectiveCountone3136
+G4WT10 > EffectiveCountone3137
+G4WT6 > EffectiveCountone3138
+G4WT6 > EffectiveCountone3139
+G4WT10 > EffectiveCountone3140
+G4WT6 > EffectiveCountone3141
+G4WT6 > EffectiveCountone3142
+G4WT6 > EffectiveCountone3143
+G4WT6 > EffectiveCountone3144
+G4WT5 > EffectiveCountone3145
+G4WT6 > EffectiveCountone3146
+G4WT10 > EffectiveCountone3147
+G4WT6 > EffectiveCountone3148
+G4WT6 > EffectiveCountone3149
+G4WT6 > EffectiveCountone3150
+G4WT5 > EffectiveCountone3151
+G4WT10 > EffectiveCountone3152
+G4WT6 > EffectiveCountone3153
+G4WT10 > EffectiveCountone3154
+G4WT10 > EffectiveCountone3155
+G4WT6 > EffectiveCountone3156
+G4WT6 > EffectiveCountone3157
+G4WT6 > EffectiveCountone3158
+G4WT3 > EffectiveCountone3159
+G4WT5 > EffectiveCountone3160
+G4WT6 > EffectiveCountone3161
+G4WT6 > EffectiveCountone3162
+G4WT5 > EffectiveCountone3163
+G4WT6 > EffectiveCountone3164
+G4WT6 > EffectiveCountone3165
+G4WT5 > EffectiveCountone3166
+G4WT5 > EffectiveCountone3167
+G4WT5 > EffectiveCountone3168
+G4WT6 > EffectiveCountone3169
+G4WT5 > EffectiveCountone3170
+G4WT5 > EffectiveCountone3171
+G4WT5 > EffectiveCountone3172
+G4WT5 > EffectiveCountone3173
+G4WT5 > EffectiveCountone3174
+G4WT5 > EffectiveCountone3175
+G4WT6 > EffectiveCountone3176
+G4WT10 > EffectiveCountone3177
+G4WT10 > EffectiveCountone3178
+G4WT6 > EffectiveCountone3179
+G4WT6 > EffectiveCountone3180
+G4WT10 > EffectiveCountone3181
+G4WT6 > EffectiveCountone3182
+G4WT10 > EffectiveCountone3183
+G4WT10 > EffectiveCountone3184
+G4WT10 > EffectiveCountone3185
+G4WT6 > EffectiveCountone3186
+G4WT6 > EffectiveCountone3187
+G4WT6 > EffectiveCountone3188
+G4WT6 > EffectiveCountone3189
+G4WT5 > EffectiveCountone3190
+G4WT6 > EffectiveCountone3191
+G4WT6 > EffectiveCountone3192
+G4WT6 > EffectiveCountone3193
+G4WT10 > EffectiveCountone3194
+G4WT5 > EffectiveCountone3195
+G4WT6 > EffectiveCountone3196
+G4WT6 > EffectiveCountone3197
+G4WT6 > EffectiveCountone3198
+G4WT6 > EffectiveCountone3199
+G4WT6 > EffectiveCountone3200
+G4WT10 > EffectiveCountone3201
+G4WT6 > EffectiveCountone3202
+G4WT10 > EffectiveCountone3203
+G4WT10 > EffectiveCountone3204
+G4WT10 > EffectiveCountone3205
+G4WT6 > EffectiveCountone3206
+G4WT6 > EffectiveCountone3207
+G4WT6 > EffectiveCountone3208
+G4WT6 > EffectiveCountone3209
+G4WT6 > EffectiveCountone3210
+G4WT6 > EffectiveCountone3211
+G4WT6 > EffectiveCountone3212
+G4WT6 > EffectiveCountone3213
+G4WT6 > EffectiveCountone3214
+G4WT6 > EffectiveCountone3215
+G4WT6 > EffectiveCountone3216
+G4WT6 > EffectiveCountone3217
+G4WT6 > EffectiveCountone3218
+G4WT10 > EffectiveCountone3219
+G4WT6 > EffectiveCountone3220
+G4WT6 > EffectiveCountone3221
+G4WT6 > EffectiveCountone3222
+G4WT5 > EffectiveCountone3223
+G4WT6 > EffectiveCountone3224
+G4WT6 > EffectiveCountone3225
+G4WT6 > EffectiveCountone3226
+G4WT6 > EffectiveCountone3227
+G4WT6 > EffectiveCountone3228
+G4WT6 > EffectiveCountone3229
+G4WT6 > EffectiveCountone3230
+G4WT6 > EffectiveCountone3231
+G4WT10 > EffectiveCountone3232
+G4WT10 > EffectiveCountone3233
+G4WT6 > EffectiveCountone3234
+G4WT10 > EffectiveCountone3235
+G4WT6 > EffectiveCountone3236
+G4WT10 > EffectiveCountone3237
+G4WT6 > EffectiveCountone3238
+G4WT6 > EffectiveCountone3239
+G4WT6 > EffectiveCountone3240
+G4WT6 > EffectiveCountone3241
+G4WT5 > EffectiveCountone3242
+G4WT5 > EffectiveCountone3243
+G4WT6 > EffectiveCountone3244
+G4WT6 > EffectiveCountone3245
+G4WT6 > EffectiveCountone3246
+G4WT5 > EffectiveCountone3247
+G4WT6 > EffectiveCountone3248
+G4WT6 > EffectiveCountone3249
+G4WT10 > EffectiveCountone3250
+G4WT6 > EffectiveCountone3251
+G4WT6 > EffectiveCountone3252
+G4WT6 > EffectiveCountone3253
+G4WT6 > EffectiveCountone3254
+G4WT10 > EffectiveCountone3255
+G4WT6 > EffectiveCountone3256
+G4WT6 > EffectiveCountone3257
+G4WT6 > EffectiveCountone3258
+G4WT6 > EffectiveCountone3259
+G4WT6 > EffectiveCountone3260
+G4WT6 > EffectiveCountone3261
+G4WT10 > EffectiveCountone3262
+G4WT10 > EffectiveCountone3263
+G4WT6 > EffectiveCountone3264
+G4WT6 > EffectiveCountone3265
+G4WT6 > EffectiveCountone3266
+G4WT6 > EffectiveCountone3267
+G4WT10 > EffectiveCountone3268
+G4WT6 > EffectiveCountone3269
+G4WT6 > EffectiveCountone3270
+G4WT10 > EffectiveCountone3271
+G4WT5 > EffectiveCountone3272
+G4WT6 > EffectiveCountone3273
+G4WT10 > EffectiveCountone3274
+G4WT6 > EffectiveCountone3275
+G4WT6 > EffectiveCountone3276
+G4WT5 > EffectiveCountone3277
+G4WT5 > EffectiveCountone3278
+G4WT5 > EffectiveCountone3279
+G4WT5 > EffectiveCountone3280
+G4WT10 > EffectiveCountone3281
+G4WT6 > EffectiveCountone3282
+G4WT6 > EffectiveCountone3283
+G4WT10 > EffectiveCountone3284
+G4WT6 > EffectiveCountone3285
+G4WT6 > EffectiveCountone3286
+G4WT6 > EffectiveCountone3287
+G4WT10 > EffectiveCountone3288
+G4WT6 > EffectiveCountone3289
+G4WT6 > EffectiveCountone3290
+G4WT10 > EffectiveCountone3291
+G4WT10 > EffectiveCountone3292
+G4WT10 > EffectiveCountone3293
+G4WT10 > EffectiveCountone3294
+G4WT6 > EffectiveCountone3295
+G4WT6 > EffectiveCountone3296
+G4WT6 > EffectiveCountone3297
+G4WT6 > EffectiveCountone3298
+G4WT5 > EffectiveCountone3299
+G4WT6 > EffectiveCountone3300
+G4WT6 > EffectiveCountone3301
+G4WT6 > EffectiveCountone3302
+G4WT6 > EffectiveCountone3303
+G4WT6 > EffectiveCountone3304
+G4WT6 > EffectiveCountone3305
+G4WT10 > EffectiveCountone3306
+G4WT6 > EffectiveCountone3307
+G4WT10 > EffectiveCountone3308
+G4WT3 > EffectiveCountone3309
+G4WT3 > EffectiveCountone3310
+G4WT5 > EffectiveCountone3311
+G4WT10 > EffectiveCountone3312
+G4WT6 > EffectiveCountone3313
+G4WT10 > EffectiveCountone3314
+G4WT10 > EffectiveCountone3315
+G4WT10 > EffectiveCountone3316
+G4WT10 > EffectiveCountone3317
+G4WT3 > EffectiveCountone3318
+G4WT6 > EffectiveCountone3319
+G4WT6 > EffectiveCountone3320
+G4WT5 > EffectiveCountone3321
+G4WT6 > EffectiveCountone3322
+G4WT6 > EffectiveCountone3323
+G4WT6 > EffectiveCountone3324
+G4WT5 > EffectiveCountone3325
+G4WT6 > EffectiveCountone3326
+G4WT10 > EffectiveCountone3327
+G4WT6 > EffectiveCountone3328
+G4WT5 > EffectiveCountone3329
+G4WT6 > EffectiveCountone3330
+G4WT6 > EffectiveCountone3331
+G4WT6 > EffectiveCountone3332
+G4WT10 > EffectiveCountone3333
+G4WT10 > EffectiveCountone3334
+G4WT6 > EffectiveCountone3335
+G4WT6 > EffectiveCountone3336
+G4WT5 > EffectiveCountone3337
+G4WT6 > EffectiveCountone3338
+G4WT6 > EffectiveCountone3339
+G4WT5 > EffectiveCountone3340
+G4WT6 > EffectiveCountone3341
+G4WT6 > EffectiveCountone3342
+G4WT5 > EffectiveCountone3343
+G4WT10 > EffectiveCountone3344
+G4WT10 > EffectiveCountone3345
+G4WT6 > EffectiveCountone3346
+G4WT10 > EffectiveCountone3347
+G4WT10 > EffectiveCountone3348
+G4WT10 > EffectiveCountone3349
+G4WT5 > EffectiveCountone3350
+G4WT5 > EffectiveCountone3351
+G4WT6 > EffectiveCountone3352
+G4WT6 > EffectiveCountone3353
+G4WT6 > EffectiveCountone3354
+G4WT5 > EffectiveCountone3355
+G4WT10 > EffectiveCountone3356
+G4WT10 > EffectiveCountone3357
+G4WT6 > EffectiveCountone3358
+G4WT10 > EffectiveCountone3359
+G4WT6 > EffectiveCountone3360
+G4WT6 > EffectiveCountone3361
+G4WT5 > EffectiveCountone3362
+G4WT6 > EffectiveCountone3363
+G4WT6 > EffectiveCountone3364
+G4WT6 > EffectiveCountone3365
+G4WT6 > EffectiveCountone3366
+G4WT6 > EffectiveCountone3367
+G4WT5 > EffectiveCountone3368
+G4WT6 > EffectiveCountone3369
+G4WT6 > EffectiveCountone3370
+G4WT6 > EffectiveCountone3371
+G4WT6 > EffectiveCountone3372
+G4WT6 > EffectiveCountone3373
+G4WT5 > EffectiveCountone3374
+G4WT5 > EffectiveCountone3375
+G4WT10 > EffectiveCountone3376
+G4WT6 > EffectiveCountone3377
+G4WT6 > EffectiveCountone3378
+G4WT6 > EffectiveCountone3379
+G4WT6 > EffectiveCountone3380
+G4WT6 > EffectiveCountone3381
+G4WT6 > EffectiveCountone3382
+G4WT5 > EffectiveCountone3383
+G4WT10 > EffectiveCountone3384
+G4WT10 > EffectiveCountone3385
+G4WT6 > EffectiveCountone3386
+G4WT6 > EffectiveCountone3387
+G4WT6 > EffectiveCountone3388
+G4WT6 > EffectiveCountone3389
+G4WT6 > EffectiveCountone3390
+G4WT6 > EffectiveCountone3391
+G4WT5 > EffectiveCountone3392
+G4WT6 > EffectiveCountone3393
+G4WT6 > EffectiveCountone3394
+G4WT6 > EffectiveCountone3395
+G4WT6 > EffectiveCountone3396
+G4WT10 > EffectiveCountone3397
+G4WT6 > EffectiveCountone3398
+G4WT6 > EffectiveCountone3399
+G4WT10 > EffectiveCountone3400
+G4WT5 > EffectiveCountone3401
+G4WT6 > EffectiveCountone3402
+G4WT5 > EffectiveCountone3403
+G4WT5 > EffectiveCountone3404
+G4WT6 > EffectiveCountone3405
+G4WT5 > EffectiveCountone3406
+G4WT6 > EffectiveCountone3407
+G4WT10 > EffectiveCountone3408
+G4WT6 > EffectiveCountone3409
+G4WT6 > EffectiveCountone3410
+G4WT6 > EffectiveCountone3411
+G4WT6 > EffectiveCountone3412
+G4WT6 > EffectiveCountone3413
+G4WT5 > EffectiveCountone3414
+G4WT5 > EffectiveCountone3415
+G4WT6 > EffectiveCountone3416
+G4WT6 > EffectiveCountone3417
+G4WT6 > EffectiveCountone3418
+G4WT5 > EffectiveCountone3419
+G4WT5 > EffectiveCountone3420
+G4WT6 > EffectiveCountone3421
+G4WT6 > EffectiveCountone3422
+G4WT6 > EffectiveCountone3423
+G4WT10 > EffectiveCountone3424
+G4WT6 > EffectiveCountone3425
+G4WT10 > EffectiveCountone3426
+G4WT6 > EffectiveCountone3427
+G4WT10 > EffectiveCountone3428
+G4WT6 > EffectiveCountone3429
+G4WT6 > EffectiveCountone3430
+G4WT6 > EffectiveCountone3431
+G4WT6 > EffectiveCountone3432
+G4WT5 > EffectiveCountone3433
+G4WT6 > EffectiveCountone3434
+G4WT6 > EffectiveCountone3435
+G4WT6 > EffectiveCountone3436
+G4WT6 > EffectiveCountone3437
+G4WT10 > EffectiveCountone3438
+G4WT6 > EffectiveCountone3439
+G4WT6 > EffectiveCountone3440
+G4WT3 > EffectiveCountone3441
+G4WT6 > EffectiveCountone3442
+G4WT6 > EffectiveCountone3443
+G4WT6 > EffectiveCountone3444
+G4WT6 > EffectiveCountone3445
+G4WT6 > EffectiveCountone3446
+G4WT10 > EffectiveCountone3447
+G4WT10 > EffectiveCountone3448
+G4WT5 > EffectiveCountone3449
+G4WT6 > EffectiveCountone3450
+G4WT3 > EffectiveCountone3451
+G4WT6 > EffectiveCountone3452
+G4WT10 > EffectiveCountone3453
+G4WT10 > EffectiveCountone3454
+G4WT10 > EffectiveCountone3455
+G4WT6 > EffectiveCountone3456
+G4WT6 > EffectiveCountone3457
+G4WT6 > EffectiveCountone3458
+G4WT6 > EffectiveCountone3459
+G4WT6 > EffectiveCountone3460
+G4WT6 > EffectiveCountone3461
+G4WT6 > EffectiveCountone3462
+G4WT6 > EffectiveCountone3463
+G4WT6 > EffectiveCountone3464
+G4WT6 > EffectiveCountone3465
+G4WT6 > EffectiveCountone3466
+G4WT6 > EffectiveCountone3467
+G4WT6 > EffectiveCountone3468
+G4WT6 > EffectiveCountone3469
+G4WT6 > EffectiveCountone3470
+G4WT6 > EffectiveCountone3471
+G4WT6 > EffectiveCountone3472
+G4WT6 > EffectiveCountone3473
+G4WT6 > EffectiveCountone3474
+G4WT5 > EffectiveCountone3475
+G4WT3 > EffectiveCountone3476
+G4WT6 > EffectiveCountone3477
+G4WT6 > EffectiveCountone3478
+G4WT5 > EffectiveCountone3479
+G4WT5 > EffectiveCountone3480
+G4WT6 > EffectiveCountone3481
+G4WT6 > EffectiveCountone3482
+G4WT6 > EffectiveCountone3483
+G4WT6 > EffectiveCountone3484
+G4WT5 > EffectiveCountone3485
+G4WT6 > EffectiveCountone3486
+G4WT5 > EffectiveCountone3487
+G4WT10 > EffectiveCountone3488
+G4WT10 > EffectiveCountone3489
+G4WT6 > EffectiveCountone3490
+G4WT5 > EffectiveCountone3491
+G4WT6 > EffectiveCountone3492
+G4WT6 > EffectiveCountone3493
+G4WT6 > EffectiveCountone3494
+G4WT6 > EffectiveCountone3495
+G4WT6 > EffectiveCountone3496
+G4WT5 > EffectiveCountone3497
+G4WT3 > EffectiveCountone3498
+G4WT10 > EffectiveCountone3499
+G4WT6 > EffectiveCountone3500
+G4WT10 > EffectiveCountone3501
+G4WT10 > EffectiveCountone3502
+G4WT6 > EffectiveCountone3503
+G4WT6 > EffectiveCountone3504
+G4WT6 > EffectiveCountone3505
+G4WT10 > EffectiveCountone3506
+G4WT10 > EffectiveCountone3507
+G4WT10 > EffectiveCountone3508
+G4WT6 > EffectiveCountone3509
+G4WT6 > EffectiveCountone3510
+G4WT10 > EffectiveCountone3511
+G4WT6 > EffectiveCountone3512
+G4WT6 > EffectiveCountone3513
+G4WT6 > EffectiveCountone3514
+G4WT6 > EffectiveCountone3515
+G4WT6 > EffectiveCountone3516
+G4WT6 > EffectiveCountone3517
+G4WT6 > EffectiveCountone3518
+G4WT5 > EffectiveCountone3519
+G4WT6 > EffectiveCountone3520
+G4WT10 > EffectiveCountone3521
+G4WT6 > EffectiveCountone3522
+G4WT6 > EffectiveCountone3523
+G4WT6 > EffectiveCountone3524
+G4WT6 > EffectiveCountone3525
+G4WT6 > EffectiveCountone3526
+G4WT6 > EffectiveCountone3527
+G4WT6 > EffectiveCountone3528
+G4WT10 > EffectiveCountone3529
+G4WT10 > EffectiveCountone3530
+G4WT6 > EffectiveCountone3531
+G4WT6 > EffectiveCountone3532
+G4WT6 > EffectiveCountone3533
+G4WT10 > EffectiveCountone3534
+G4WT10 > EffectiveCountone3535
+G4WT3 > EffectiveCountone3536
+G4WT3 > EffectiveCountone3537
+G4WT6 > EffectiveCountone3538
+G4WT6 > EffectiveCountone3539
+G4WT6 > EffectiveCountone3540
+G4WT5 > EffectiveCountone3541
+G4WT5 > EffectiveCountone3542
+G4WT5 > EffectiveCountone3543
+G4WT5 > EffectiveCountone3544
+G4WT5 > EffectiveCountone3545
+G4WT5 > EffectiveCountone3546
+G4WT10 > EffectiveCountone3547
+G4WT6 > EffectiveCountone3548
+G4WT6 > EffectiveCountone3549
+G4WT6 > EffectiveCountone3550
+G4WT6 > EffectiveCountone3551
+G4WT10 > EffectiveCountone3552
+G4WT6 > EffectiveCountone3553
+G4WT10 > EffectiveCountone3554
+G4WT6 > EffectiveCountone3555
+G4WT6 > EffectiveCountone3556
+G4WT6 > EffectiveCountone3557
+G4WT10 > EffectiveCountone3558
+G4WT6 > EffectiveCountone3559
+G4WT6 > EffectiveCountone3560
+G4WT6 > EffectiveCountone3561
+G4WT6 > EffectiveCountone3562
+G4WT10 > EffectiveCountone3563
+G4WT6 > EffectiveCountone3564
+G4WT5 > EffectiveCountone3565
+G4WT6 > EffectiveCountone3566
+G4WT10 > EffectiveCountone3567
+G4WT10 > EffectiveCountone3568
+G4WT6 > EffectiveCountone3569
+G4WT6 > EffectiveCountone3570
+G4WT6 > EffectiveCountone3571
+G4WT6 > EffectiveCountone3572
+G4WT10 > EffectiveCountone3573
+G4WT5 > EffectiveCountone3574
+G4WT6 > EffectiveCountone3575
+G4WT6 > EffectiveCountone3576
+G4WT10 > EffectiveCountone3577
+G4WT10 > EffectiveCountone3578
+G4WT10 > EffectiveCountone3579
+G4WT6 > EffectiveCountone3580
+G4WT10 > EffectiveCountone3581
+G4WT10 > EffectiveCountone3582
+G4WT10 > EffectiveCountone3583
+G4WT6 > EffectiveCountone3584
+G4WT6 > EffectiveCountone3585
+G4WT6 > EffectiveCountone3586
+G4WT6 > EffectiveCountone3587
+G4WT6 > EffectiveCountone3588
+G4WT10 > EffectiveCountone3589
+G4WT10 > EffectiveCountone3590
+G4WT10 > EffectiveCountone3591
+G4WT5 > EffectiveCountone3592
+G4WT5 > EffectiveCountone3593
+G4WT5 > EffectiveCountone3594
+G4WT3 > EffectiveCountone3595
+G4WT3 > EffectiveCountone3596
+G4WT6 > EffectiveCountone3597
+G4WT6 > EffectiveCountone3598
+G4WT10 > EffectiveCountone3599
+G4WT6 > EffectiveCountone3600
+G4WT6 > EffectiveCountone3601
+G4WT6 > EffectiveCountone3602
+G4WT10 > EffectiveCountone3603
+G4WT6 > EffectiveCountone3604
+G4WT6 > EffectiveCountone3605
+G4WT10 > EffectiveCountone3606
+G4WT6 > EffectiveCountone3607
+G4WT6 > EffectiveCountone3608
+G4WT5 > EffectiveCountone3609
+G4WT10 > EffectiveCountone3610
+G4WT10 > EffectiveCountone3611
+G4WT6 > EffectiveCountone3612
+G4WT6 > EffectiveCountone3613
+G4WT10 > EffectiveCountone3614
+G4WT5 > EffectiveCountone3615
+G4WT6 > EffectiveCountone3616
+G4WT6 > EffectiveCountone3617
+G4WT6 > EffectiveCountone3618
+G4WT6 > EffectiveCountone3619
+G4WT6 > EffectiveCountone3620
+G4WT5 > EffectiveCountone3621
+G4WT5 > EffectiveCountone3622
+G4WT6 > EffectiveCountone3623
+G4WT6 > EffectiveCountone3624
+G4WT5 > EffectiveCountone3625
+G4WT6 > EffectiveCountone3626
+G4WT10 > EffectiveCountone3627
+G4WT6 > EffectiveCountone3628
+G4WT6 > EffectiveCountone3629
+G4WT6 > EffectiveCountone3630
+G4WT6 > EffectiveCountone3631
+G4WT10 > EffectiveCountone3632
+G4WT6 > EffectiveCountone3633
+G4WT10 > EffectiveCountone3634
+G4WT10 > EffectiveCountone3635
+G4WT10 > EffectiveCountone3636
+G4WT5 > EffectiveCountone3637
+G4WT5 > EffectiveCountone3638
+G4WT5 > EffectiveCountone3639
+G4WT10 > EffectiveCountone3640
+G4WT10 > EffectiveCountone3641
+G4WT6 > EffectiveCountone3642
+G4WT6 > EffectiveCountone3643
+G4WT10 > EffectiveCountone3644
+G4WT10 > EffectiveCountone3645
+G4WT10 > EffectiveCountone3646
+G4WT10 > EffectiveCountone3647
+G4WT6 > EffectiveCountone3648
+G4WT6 > EffectiveCountone3649
+G4WT6 > EffectiveCountone3650
+G4WT6 > EffectiveCountone3651
+G4WT5 > EffectiveCountone3652
+G4WT6 > EffectiveCountone3653
+G4WT6 > EffectiveCountone3654
+G4WT5 > EffectiveCountone3655
+G4WT6 > EffectiveCountone3656
+G4WT5 > EffectiveCountone3657
+G4WT6 > EffectiveCountone3658
+G4WT3 > EffectiveCountone3659
+G4WT6 > EffectiveCountone3660
+G4WT6 > EffectiveCountone3661
+G4WT6 > EffectiveCountone3662
+G4WT5 > EffectiveCountone3663
+G4WT5 > EffectiveCountone3664
+G4WT10 > EffectiveCountone3665
+G4WT6 > EffectiveCountone3666
+G4WT6 > EffectiveCountone3667
+G4WT10 > EffectiveCountone3668
+G4WT6 > EffectiveCountone3669
+G4WT6 > EffectiveCountone3670
+G4WT6 > EffectiveCountone3671
+G4WT6 > EffectiveCountone3672
+G4WT10 > EffectiveCountone3673
+G4WT6 > EffectiveCountone3674
+G4WT10 > EffectiveCountone3675
+G4WT6 > EffectiveCountone3676
+G4WT6 > EffectiveCountone3677
+G4WT10 > EffectiveCountone3678
+G4WT10 > EffectiveCountone3679
+G4WT6 > EffectiveCountone3680
+G4WT5 > EffectiveCountone3681
+G4WT6 > EffectiveCountone3682
+G4WT10 > EffectiveCountone3683
+G4WT6 > EffectiveCountone3684
+G4WT6 > EffectiveCountone3685
+G4WT6 > EffectiveCountone3686
+G4WT5 > EffectiveCountone3687
+G4WT5 > EffectiveCountone3688
+G4WT5 > EffectiveCountone3689
+G4WT5 > EffectiveCountone3690
+G4WT6 > EffectiveCountone3691
+G4WT6 > EffectiveCountone3692
+G4WT6 > EffectiveCountone3693
+G4WT6 > EffectiveCountone3694
+G4WT6 > EffectiveCountone3695
+G4WT6 > EffectiveCountone3696
+G4WT6 > EffectiveCountone3697
+G4WT6 > EffectiveCountone3698
+G4WT6 > EffectiveCountone3699
+G4WT6 > EffectiveCountone3700
+G4WT5 > EffectiveCountone3701
+G4WT6 > EffectiveCountone3702
+G4WT10 > EffectiveCountone3703
+G4WT6 > EffectiveCountone3704
+G4WT6 > EffectiveCountone3705
+G4WT6 > EffectiveCountone3706
+G4WT6 > EffectiveCountone3707
+G4WT6 > EffectiveCountone3708
+G4WT10 > EffectiveCountone3709
+G4WT6 > EffectiveCountone3710
+G4WT10 > EffectiveCountone3711
+G4WT5 > EffectiveCountone3712
+G4WT10 > EffectiveCountone3713
+G4WT10 > EffectiveCountone3714
+G4WT10 > EffectiveCountone3715
+G4WT6 > EffectiveCountone3716
+G4WT6 > EffectiveCountone3717
+G4WT5 > EffectiveCountone3718
+G4WT6 > EffectiveCountone3719
+G4WT6 > EffectiveCountone3720
+G4WT10 > EffectiveCountone3721
+G4WT10 > EffectiveCountone3722
+G4WT6 > EffectiveCountone3723
+G4WT10 > EffectiveCountone3724
+G4WT6 > EffectiveCountone3725
+G4WT6 > EffectiveCountone3726
+G4WT10 > EffectiveCountone3727
+G4WT5 > EffectiveCountone3728
+G4WT10 > EffectiveCountone3729
+G4WT5 > EffectiveCountone3730
+G4WT5 > EffectiveCountone3731
+G4WT6 > EffectiveCountone3732
+G4WT6 > EffectiveCountone3733
+G4WT10 > EffectiveCountone3734
+G4WT10 > EffectiveCountone3735
+G4WT6 > EffectiveCountone3736
+G4WT6 > EffectiveCountone3737
+G4WT5 > EffectiveCountone3738
+G4WT6 > EffectiveCountone3739
+G4WT10 > EffectiveCountone3740
+G4WT10 > EffectiveCountone3741
+G4WT6 > EffectiveCountone3742
+G4WT6 > EffectiveCountone3743
+G4WT6 > EffectiveCountone3744
+G4WT6 > EffectiveCountone3745
+G4WT5 > EffectiveCountone3746
+G4WT5 > EffectiveCountone3747
+G4WT6 > EffectiveCountone3748
+G4WT6 > EffectiveCountone3749
+G4WT6 > EffectiveCountone3750
+G4WT6 > EffectiveCountone3751
+G4WT5 > EffectiveCountone3752
+G4WT6 > EffectiveCountone3753
+G4WT5 > EffectiveCountone3754
+G4WT10 > EffectiveCountone3755
+G4WT10 > EffectiveCountone3756
+G4WT5 > EffectiveCountone3757
+G4WT5 > EffectiveCountone3758
+G4WT6 > EffectiveCountone3759
+G4WT10 > EffectiveCountone3760
+G4WT6 > EffectiveCountone3761
+G4WT6 > EffectiveCountone3762
+G4WT6 > EffectiveCountone3763
+G4WT5 > EffectiveCountone3764
+G4WT6 > EffectiveCountone3765
+G4WT6 > EffectiveCountone3766
+G4WT10 > EffectiveCountone3767
+G4WT10 > EffectiveCountone3768
+G4WT6 > EffectiveCountone3769
+G4WT5 > EffectiveCountone3770
+G4WT5 > EffectiveCountone3771
+G4WT6 > EffectiveCountone3772
+G4WT6 > EffectiveCountone3773
+G4WT6 > EffectiveCountone3774
+G4WT6 > EffectiveCountone3775
+G4WT6 > EffectiveCountone3776
+G4WT5 > EffectiveCountone3777
+G4WT5 > EffectiveCountone3778
+G4WT6 > EffectiveCountone3779
+G4WT10 > EffectiveCountone3780
+G4WT10 > EffectiveCountone3781
+G4WT6 > EffectiveCountone3782
+G4WT6 > EffectiveCountone3783
+G4WT6 > EffectiveCountone3784
+G4WT5 > EffectiveCountone3785
+G4WT6 > EffectiveCountone3786
+G4WT6 > EffectiveCountone3787
+G4WT10 > EffectiveCountone3788
+G4WT6 > EffectiveCountone3789
+G4WT6 > EffectiveCountone3790
+G4WT5 > EffectiveCountone3791
+G4WT10 > EffectiveCountone3792
+G4WT10 > EffectiveCountone3793
+G4WT10 > EffectiveCountone3794
+G4WT10 > EffectiveCountone3795
+G4WT6 > EffectiveCountone3796
+G4WT6 > EffectiveCountone3797
+G4WT6 > EffectiveCountone3798
+G4WT5 > EffectiveCountone3799
+G4WT5 > EffectiveCountone3800
+G4WT6 > EffectiveCountone3801
+G4WT6 > EffectiveCountone3802
+G4WT6 > EffectiveCountone3803
+G4WT6 > EffectiveCountone3804
+G4WT5 > EffectiveCountone3805
+G4WT5 > EffectiveCountone3806
+G4WT6 > EffectiveCountone3807
+G4WT6 > EffectiveCountone3808
+G4WT6 > EffectiveCountone3809
+G4WT6 > EffectiveCountone3810
+G4WT6 > EffectiveCountone3811
+G4WT10 > EffectiveCountone3812
+G4WT6 > EffectiveCountone3813
+G4WT10 > EffectiveCountone3814
+G4WT10 > EffectiveCountone3815
+G4WT10 > EffectiveCountone3816
+G4WT10 > EffectiveCountone3817
+G4WT6 > EffectiveCountone3818
+G4WT10 > EffectiveCountone3819
+G4WT6 > EffectiveCountone3820
+G4WT6 > EffectiveCountone3821
+G4WT10 > EffectiveCountone3822
+G4WT10 > EffectiveCountone3823
+G4WT10 > EffectiveCountone3824
+G4WT6 > EffectiveCountone3825
+G4WT6 > EffectiveCountone3826
+G4WT6 > EffectiveCountone3827
+G4WT6 > EffectiveCountone3828
+G4WT6 > EffectiveCountone3829
+G4WT6 > EffectiveCountone3830
+G4WT6 > EffectiveCountone3831
+G4WT5 > EffectiveCountone3832
+G4WT10 > EffectiveCountone3833
+G4WT10 > EffectiveCountone3834
+G4WT10 > EffectiveCountone3835
+G4WT10 > EffectiveCountone3836
+G4WT10 > EffectiveCountone3837
+G4WT10 > EffectiveCountone3838
+G4WT6 > EffectiveCountone3839
+G4WT6 > EffectiveCountone3840
+G4WT6 > EffectiveCountone3841
+G4WT10 > EffectiveCountone3842
+G4WT6 > EffectiveCountone3843
+G4WT6 > EffectiveCountone3844
+G4WT5 > EffectiveCountone3845
+G4WT6 > EffectiveCountone3846
+G4WT10 > EffectiveCountone3847
+G4WT10 > EffectiveCountone3848
+G4WT10 > EffectiveCountone3849
+G4WT6 > EffectiveCountone3850
+G4WT6 > EffectiveCountone3851
+G4WT6 > EffectiveCountone3852
+G4WT6 > EffectiveCountone3853
+G4WT6 > EffectiveCountone3854
+G4WT6 > EffectiveCountone3855
+G4WT10 > EffectiveCountone3856
+G4WT6 > EffectiveCountone3857
+G4WT6 > EffectiveCountone3858
+G4WT5 > EffectiveCountone3859
+G4WT6 > EffectiveCountone3860
+G4WT10 > EffectiveCountone3861
+G4WT6 > EffectiveCountone3862
+G4WT10 > EffectiveCountone3863
+G4WT6 > EffectiveCountone3864
+G4WT6 > EffectiveCountone3865
+G4WT10 > EffectiveCountone3866
+G4WT6 > EffectiveCountone3867
+G4WT6 > EffectiveCountone3868
+G4WT6 > EffectiveCountone3869
+G4WT6 > EffectiveCountone3870
+G4WT6 > EffectiveCountone3871
+G4WT6 > EffectiveCountone3872
+G4WT5 > EffectiveCountone3873
+G4WT6 > EffectiveCountone3874
+G4WT6 > EffectiveCountone3875
+G4WT6 > EffectiveCountone3876
+G4WT10 > EffectiveCountone3877
+G4WT10 > EffectiveCountone3878
+G4WT6 > EffectiveCountone3879
+G4WT6 > EffectiveCountone3880
+G4WT6 > EffectiveCountone3881
+G4WT10 > EffectiveCountone3882
+G4WT5 > EffectiveCountone3883
+G4WT6 > EffectiveCountone3884
+G4WT6 > EffectiveCountone3885
+G4WT5 > EffectiveCountone3886
+G4WT5 > EffectiveCountone3887
+G4WT5 > EffectiveCountone3888
+G4WT6 > EffectiveCountone3889
+G4WT10 > EffectiveCountone3890
+G4WT10 > EffectiveCountone3891
+G4WT6 > EffectiveCountone3892
+G4WT5 > EffectiveCountone3893
+G4WT6 > EffectiveCountone3894
+G4WT6 > EffectiveCountone3895
+G4WT10 > EffectiveCountone3896
+G4WT6 > EffectiveCountone3897
+G4WT10 > EffectiveCountone3898
+G4WT10 > EffectiveCountone3899
+G4WT10 > EffectiveCountone3900
+G4WT10 > EffectiveCountone3901
+G4WT6 > EffectiveCountone3902
+G4WT6 > EffectiveCountone3903
+G4WT6 > EffectiveCountone3904
+G4WT6 > EffectiveCountone3905
+G4WT10 > EffectiveCountone3906
+G4WT6 > EffectiveCountone3907
+G4WT6 > EffectiveCountone3908
+G4WT6 > EffectiveCountone3909
+G4WT10 > EffectiveCountone3910
+G4WT6 > EffectiveCountone3911
+G4WT6 > EffectiveCountone3912
+G4WT6 > EffectiveCountone3913
+G4WT6 > EffectiveCountone3914
+G4WT6 > EffectiveCountone3915
+G4WT3 > EffectiveCountone3916
+G4WT6 > EffectiveCountone3917
+G4WT10 > EffectiveCountone3918
+G4WT5 > EffectiveCountone3919
+G4WT5 > EffectiveCountone3920
+G4WT6 > EffectiveCountone3921
+G4WT6 > EffectiveCountone3922
+G4WT5 > EffectiveCountone3923
+G4WT5 > EffectiveCountone3924
+G4WT6 > EffectiveCountone3925
+G4WT6 > EffectiveCountone3926
+G4WT10 > EffectiveCountone3927
+G4WT6 > EffectiveCountone3928
+G4WT6 > EffectiveCountone3929
+G4WT5 > EffectiveCountone3930
+G4WT3 > EffectiveCountone3931
+G4WT3 > EffectiveCountone3932
+G4WT6 > EffectiveCountone3933
+G4WT5 > EffectiveCountone3934
+G4WT5 > EffectiveCountone3935
+G4WT10 > EffectiveCountone3936
+G4WT6 > EffectiveCountone3937
+G4WT5 > EffectiveCountone3938
+G4WT6 > EffectiveCountone3939
+G4WT10 > EffectiveCountone3940
+G4WT10 > EffectiveCountone3941
+G4WT6 > EffectiveCountone3942
+G4WT6 > EffectiveCountone3943
+G4WT6 > EffectiveCountone3944
+G4WT6 > EffectiveCountone3945
+G4WT6 > EffectiveCountone3946
+G4WT5 > EffectiveCountone3947
+G4WT10 > EffectiveCountone3948
+G4WT6 > EffectiveCountone3949
+G4WT10 > EffectiveCountone3950
+G4WT10 > EffectiveCountone3951
+G4WT6 > EffectiveCountone3952
+G4WT6 > EffectiveCountone3953
+G4WT5 > EffectiveCountone3954
+G4WT6 > EffectiveCountone3955
+G4WT3 > EffectiveCountone3956
+G4WT6 > EffectiveCountone3957
+G4WT6 > EffectiveCountone3958
+G4WT6 > EffectiveCountone3959
+G4WT6 > EffectiveCountone3960
+G4WT6 > EffectiveCountone3961
+G4WT6 > EffectiveCountone3962
+G4WT6 > EffectiveCountone3963
+G4WT6 > EffectiveCountone3964
+G4WT6 > EffectiveCountone3965
+G4WT5 > EffectiveCountone3966
+G4WT5 > EffectiveCountone3967
+G4WT10 > EffectiveCountone3968
+G4WT10 > EffectiveCountone3969
+G4WT10 > EffectiveCountone3970
+G4WT6 > EffectiveCountone3971
+G4WT6 > EffectiveCountone3972
+G4WT10 > EffectiveCountone3973
+G4WT6 > EffectiveCountone3974
+G4WT10 > EffectiveCountone3975
+G4WT5 > EffectiveCountone3976
+G4WT5 > EffectiveCountone3977
+G4WT6 > EffectiveCountone3978
+G4WT6 > EffectiveCountone3979
+G4WT6 > EffectiveCountone3980
+G4WT6 > EffectiveCountone3981
+G4WT6 > EffectiveCountone3982
+G4WT6 > EffectiveCountone3983
+G4WT6 > EffectiveCountone3984
+G4WT6 > EffectiveCountone3985
+G4WT6 > EffectiveCountone3986
+G4WT6 > EffectiveCountone3987
+G4WT5 > EffectiveCountone3988
+G4WT10 > EffectiveCountone3989
+G4WT6 > EffectiveCountone3990
+G4WT6 > EffectiveCountone3991
+G4WT6 > EffectiveCountone3992
+G4WT6 > EffectiveCountone3993
+G4WT5 > EffectiveCountone3994
+G4WT5 > EffectiveCountone3995
+G4WT10 > EffectiveCountone3996
+G4WT5 > EffectiveCountone3997
+G4WT6 > EffectiveCountone3998
+G4WT6 > EffectiveCountone3999
+G4WT6 > EffectiveCountone4000
+G4WT6 > EffectiveCountone4001
+G4WT6 > EffectiveCountone4002
+G4WT10 > EffectiveCountone4003
+G4WT6 > EffectiveCountone4004
+G4WT6 > EffectiveCountone4005
+G4WT6 > EffectiveCountone4006
+G4WT6 > EffectiveCountone4007
+G4WT5 > EffectiveCountone4008
+G4WT6 > EffectiveCountone4009
+G4WT10 > EffectiveCountone4010
+G4WT5 > EffectiveCountone4011
+G4WT6 > EffectiveCountone4012
+G4WT6 > EffectiveCountone4013
+G4WT6 > EffectiveCountone4014
+G4WT6 > EffectiveCountone4015
+G4WT6 > EffectiveCountone4016
+G4WT5 > EffectiveCountone4017
+G4WT6 > EffectiveCountone4018
+G4WT6 > EffectiveCountone4019
+G4WT6 > EffectiveCountone4020
+G4WT6 > EffectiveCountone4021
+G4WT5 > EffectiveCountone4022
+G4WT6 > EffectiveCountone4023
+G4WT6 > EffectiveCountone4024
+G4WT6 > EffectiveCountone4025
+G4WT6 > EffectiveCountone4026
+G4WT6 > EffectiveCountone4027
+G4WT6 > EffectiveCountone4028
+G4WT5 > EffectiveCountone4029
+G4WT10 > EffectiveCountone4030
+G4WT5 > EffectiveCountone4031
+G4WT6 > EffectiveCountone4032
+G4WT6 > EffectiveCountone4033
+G4WT6 > EffectiveCountone4034
+G4WT5 > EffectiveCountone4035
+G4WT10 > EffectiveCountone4036
+G4WT5 > EffectiveCountone4037
+G4WT10 > EffectiveCountone4038
+G4WT5 > EffectiveCountone4039
+G4WT6 > EffectiveCountone4040
+G4WT10 > EffectiveCountone4041
+G4WT6 > EffectiveCountone4042
+G4WT6 > EffectiveCountone4043
+G4WT5 > EffectiveCountone4044
+G4WT5 > EffectiveCountone4045
+G4WT6 > EffectiveCountone4046
+G4WT6 > EffectiveCountone4047
+G4WT10 > EffectiveCountone4048
+G4WT6 > EffectiveCountone4049
+G4WT6 > EffectiveCountone4050
+G4WT6 > EffectiveCountone4051
+G4WT6 > EffectiveCountone4052
+G4WT6 > EffectiveCountone4053
+G4WT10 > EffectiveCountone4054
+G4WT6 > EffectiveCountone4055
+G4WT10 > EffectiveCountone4056
+G4WT10 > EffectiveCountone4057
+G4WT6 > EffectiveCountone4058
+G4WT6 > EffectiveCountone4059
+G4WT6 > EffectiveCountone4060
+G4WT5 > EffectiveCountone4061
+G4WT6 > EffectiveCountone4062
+G4WT6 > EffectiveCountone4063
+G4WT10 > EffectiveCountone4064
+G4WT6 > EffectiveCountone4065
+G4WT6 > EffectiveCountone4066
+G4WT10 > EffectiveCountone4067
+G4WT6 > EffectiveCountone4068
+G4WT6 > EffectiveCountone4069
+G4WT10 > EffectiveCountone4070
+G4WT10 > EffectiveCountone4071
+G4WT5 > EffectiveCountone4072
+G4WT6 > EffectiveCountone4073
+G4WT6 > EffectiveCountone4074
+G4WT6 > EffectiveCountone4075
+G4WT6 > EffectiveCountone4076
+G4WT6 > EffectiveCountone4077
+G4WT6 > EffectiveCountone4078
+G4WT5 > EffectiveCountone4079
+G4WT6 > EffectiveCountone4080
+G4WT10 > EffectiveCountone4081
+G4WT6 > EffectiveCountone4082
+G4WT10 > EffectiveCountone4083
+G4WT6 > EffectiveCountone4084
+G4WT6 > EffectiveCountone4085
+G4WT6 > EffectiveCountone4086
+G4WT6 > EffectiveCountone4087
+G4WT6 > EffectiveCountone4088
+G4WT6 > EffectiveCountone4089
+G4WT10 > EffectiveCountone4090
+G4WT10 > EffectiveCountone4091
+G4WT5 > EffectiveCountone4092
+G4WT5 > EffectiveCountone4093
+G4WT6 > EffectiveCountone4094
+G4WT6 > EffectiveCountone4095
+G4WT6 > EffectiveCountone4096
+G4WT5 > EffectiveCountone4097
+G4WT6 > EffectiveCountone4098
+G4WT5 > EffectiveCountone4099
+G4WT10 > EffectiveCountone4100
+G4WT6 > EffectiveCountone4101
+G4WT6 > EffectiveCountone4102
+G4WT6 > EffectiveCountone4103
+G4WT6 > EffectiveCountone4104
+G4WT6 > EffectiveCountone4105
+G4WT10 > EffectiveCountone4106
+G4WT6 > EffectiveCountone4107
+G4WT6 > EffectiveCountone4108
+G4WT6 > EffectiveCountone4109
+G4WT6 > EffectiveCountone4110
+G4WT6 > EffectiveCountone4111
+G4WT6 > EffectiveCountone4112
+G4WT6 > EffectiveCountone4113
+G4WT10 > EffectiveCountone4114
+G4WT10 > EffectiveCountone4115
+G4WT6 > EffectiveCountone4116
+G4WT6 > EffectiveCountone4117
+G4WT6 > EffectiveCountone4118
+G4WT5 > EffectiveCountone4119
+G4WT5 > EffectiveCountone4120
+G4WT5 > EffectiveCountone4121
+G4WT6 > EffectiveCountone4122
+G4WT10 > EffectiveCountone4123
+G4WT6 > EffectiveCountone4124
+G4WT6 > EffectiveCountone4125
+G4WT6 > EffectiveCountone4126
+G4WT6 > EffectiveCountone4127
+G4WT5 > EffectiveCountone4128
+G4WT6 > EffectiveCountone4129
+G4WT10 > EffectiveCountone4130
+G4WT6 > EffectiveCountone4131
+G4WT10 > EffectiveCountone4132
+G4WT9 > EffectiveCountone4133
+G4WT6 > EffectiveCountone4134
+G4WT6 > EffectiveCountone4135
+G4WT6 > EffectiveCountone4136
+G4WT6 > EffectiveCountone4137
+G4WT5 > EffectiveCountone4138
+G4WT6 > EffectiveCountone4139
+G4WT6 > EffectiveCountone4140
+G4WT6 > EffectiveCountone4141
+G4WT5 > EffectiveCountone4142
+G4WT10 > EffectiveCountone4143
+G4WT6 > EffectiveCountone4144
+G4WT10 > EffectiveCountone4145
+G4WT10 > EffectiveCountone4146
+G4WT6 > EffectiveCountone4147
+G4WT6 > EffectiveCountone4148
+G4WT6 > EffectiveCountone4149
+G4WT6 > EffectiveCountone4150
+G4WT6 > EffectiveCountone4151
+G4WT5 > EffectiveCountone4152
+G4WT6 > EffectiveCountone4153
+G4WT6 > EffectiveCountone4154
+G4WT5 > EffectiveCountone4155
+G4WT5 > EffectiveCountone4156
+G4WT5 > EffectiveCountone4157
+G4WT6 > EffectiveCountone4158
+G4WT10 > EffectiveCountone4159
+G4WT6 > EffectiveCountone4160
+G4WT6 > EffectiveCountone4161
+G4WT5 > EffectiveCountone4162
+G4WT6 > EffectiveCountone4163
+G4WT6 > EffectiveCountone4164
+G4WT10 > EffectiveCountone4165
+G4WT6 > EffectiveCountone4166
+G4WT6 > EffectiveCountone4167
+G4WT6 > EffectiveCountone4168
+G4WT6 > EffectiveCountone4169
+G4WT6 > EffectiveCountone4170
+G4WT6 > EffectiveCountone4171
+G4WT6 > EffectiveCountone4172
+G4WT10 > EffectiveCountone4173
+G4WT6 > EffectiveCountone4174
+G4WT6 > EffectiveCountone4175
+G4WT6 > EffectiveCountone4176
+G4WT6 > EffectiveCountone4177
+G4WT6 > EffectiveCountone4178
+G4WT5 > EffectiveCountone4179
+G4WT5 > EffectiveCountone4180
+G4WT6 > EffectiveCountone4181
+G4WT6 > EffectiveCountone4182
+G4WT5 > EffectiveCountone4183
+G4WT6 > EffectiveCountone4184
+G4WT6 > EffectiveCountone4185
+G4WT6 > EffectiveCountone4186
+G4WT6 > EffectiveCountone4187
+G4WT5 > EffectiveCountone4188
+G4WT6 > EffectiveCountone4189
+G4WT10 > EffectiveCountone4190
+G4WT10 > EffectiveCountone4191
+G4WT6 > EffectiveCountone4192
+G4WT6 > EffectiveCountone4193
+G4WT6 > EffectiveCountone4194
+G4WT6 > EffectiveCountone4195
+G4WT6 > EffectiveCountone4196
+G4WT6 > EffectiveCountone4197
+G4WT6 > EffectiveCountone4198
+G4WT5 > EffectiveCountone4199
+G4WT5 > EffectiveCountone4200
+G4WT10 > EffectiveCountone4201
+G4WT5 > EffectiveCountone4202
+G4WT6 > EffectiveCountone4203
+G4WT6 > EffectiveCountone4204
+G4WT6 > EffectiveCountone4205
+G4WT6 > EffectiveCountone4206
+G4WT6 > EffectiveCountone4207
+G4WT6 > EffectiveCountone4208
+G4WT6 > EffectiveCountone4209
+G4WT6 > EffectiveCountone4210
+G4WT6 > EffectiveCountone4211
+G4WT5 > EffectiveCountone4212
+G4WT6 > EffectiveCountone4213
+G4WT3 > EffectiveCountone4214
+G4WT6 > EffectiveCountone4215
+G4WT10 > EffectiveCountone4216
+G4WT10 > EffectiveCountone4217
+G4WT10 > EffectiveCountone4218
+G4WT5 > EffectiveCountone4219
+G4WT10 > EffectiveCountone4220
+G4WT6 > EffectiveCountone4221
+G4WT6 > EffectiveCountone4222
+G4WT6 > EffectiveCountone4223
+G4WT5 > EffectiveCountone4224
+G4WT6 > EffectiveCountone4225
+G4WT6 > EffectiveCountone4226
+G4WT6 > EffectiveCountone4227
+G4WT10 > EffectiveCountone4228
+G4WT6 > EffectiveCountone4229
+G4WT5 > EffectiveCountone4230
+G4WT5 > EffectiveCountone4231
+G4WT6 > EffectiveCountone4232
+G4WT6 > EffectiveCountone4233
+G4WT10 > EffectiveCountone4234
+G4WT10 > EffectiveCountone4235
+G4WT10 > EffectiveCountone4236
+G4WT10 > EffectiveCountone4237
+G4WT6 > EffectiveCountone4238
+G4WT10 > EffectiveCountone4239
+G4WT10 > EffectiveCountone4240
+G4WT10 > EffectiveCountone4241
+G4WT10 > EffectiveCountone4242
+G4WT6 > EffectiveCountone4243
+G4WT6 > EffectiveCountone4244
+G4WT6 > EffectiveCountone4245
+G4WT6 > EffectiveCountone4246
+G4WT6 > EffectiveCountone4247
+G4WT6 > EffectiveCountone4248
+G4WT6 > EffectiveCountone4249
+G4WT10 > EffectiveCountone4250
+G4WT6 > EffectiveCountone4251
+G4WT10 > EffectiveCountone4252
+G4WT5 > EffectiveCountone4253
+G4WT6 > EffectiveCountone4254
+G4WT6 > EffectiveCountone4255
+G4WT6 > EffectiveCountone4256
+G4WT10 > EffectiveCountone4257
+G4WT10 > EffectiveCountone4258
+G4WT10 > EffectiveCountone4259
+G4WT6 > EffectiveCountone4260
+G4WT6 > EffectiveCountone4261
+G4WT6 > EffectiveCountone4262
+G4WT6 > EffectiveCountone4263
+G4WT6 > EffectiveCountone4264
+G4WT6 > EffectiveCountone4265
+G4WT6 > EffectiveCountone4266
+G4WT10 > EffectiveCountone4267
+G4WT6 > EffectiveCountone4268
+G4WT5 > EffectiveCountone4269
+G4WT5 > EffectiveCountone4270
+G4WT5 > EffectiveCountone4271
+G4WT6 > EffectiveCountone4272
+G4WT6 > EffectiveCountone4273
+G4WT6 > EffectiveCountone4274
+G4WT6 > EffectiveCountone4275
+G4WT6 > EffectiveCountone4276
+G4WT6 > EffectiveCountone4277
+G4WT6 > EffectiveCountone4278
+G4WT6 > EffectiveCountone4279
+G4WT6 > EffectiveCountone4280
+G4WT5 > EffectiveCountone4281
+G4WT10 > EffectiveCountone4282
+G4WT10 > EffectiveCountone4283
+G4WT5 > EffectiveCountone4284
+G4WT6 > EffectiveCountone4285
+G4WT6 > EffectiveCountone4286
+G4WT10 > EffectiveCountone4287
+G4WT10 > EffectiveCountone4288
+G4WT6 > EffectiveCountone4289
+G4WT10 > EffectiveCountone4290
+G4WT10 > EffectiveCountone4291
+G4WT6 > EffectiveCountone4292
+G4WT6 > EffectiveCountone4293
+G4WT6 > EffectiveCountone4294
+G4WT6 > EffectiveCountone4295
+G4WT6 > EffectiveCountone4296
+G4WT6 > EffectiveCountone4297
+G4WT6 > EffectiveCountone4298
+G4WT6 > EffectiveCountone4299
+G4WT6 > EffectiveCountone4300
+G4WT6 > EffectiveCountone4301
+G4WT10 > EffectiveCountone4302
+G4WT10 > EffectiveCountone4303
+G4WT6 > EffectiveCountone4304
+G4WT6 > EffectiveCountone4305
+G4WT6 > EffectiveCountone4306
+G4WT6 > EffectiveCountone4307
+G4WT6 > EffectiveCountone4308
+G4WT6 > EffectiveCountone4309
+G4WT6 > EffectiveCountone4310
+G4WT6 > EffectiveCountone4311
+G4WT6 > EffectiveCountone4312
+G4WT10 > EffectiveCountone4313
+G4WT5 > EffectiveCountone4314
+G4WT6 > EffectiveCountone4315
+G4WT5 > EffectiveCountone4316
+G4WT6 > EffectiveCountone4317
+G4WT5 > EffectiveCountone4318
+G4WT6 > EffectiveCountone4319
+G4WT5 > EffectiveCountone4320
+G4WT6 > EffectiveCountone4321
+G4WT6 > EffectiveCountone4322
+G4WT6 > EffectiveCountone4323
+G4WT6 > EffectiveCountone4324
+G4WT6 > EffectiveCountone4325
+G4WT6 > EffectiveCountone4326
+G4WT5 > EffectiveCountone4327
+G4WT6 > EffectiveCountone4328
+G4WT10 > EffectiveCountone4329
+G4WT6 > EffectiveCountone4330
+G4WT6 > EffectiveCountone4331
+G4WT6 > EffectiveCountone4332
+G4WT10 > EffectiveCountone4333
+G4WT6 > EffectiveCountone4334
+G4WT6 > EffectiveCountone4335
+G4WT10 > EffectiveCountone4336
+G4WT6 > EffectiveCountone4337
+G4WT6 > EffectiveCountone4338
+G4WT10 > EffectiveCountone4339
+G4WT6 > EffectiveCountone4340
+G4WT6 > EffectiveCountone4341
+G4WT6 > EffectiveCountone4342
+G4WT6 > EffectiveCountone4343
+G4WT10 > EffectiveCountone4344
+G4WT10 > EffectiveCountone4345
+G4WT10 > EffectiveCountone4346
+G4WT6 > EffectiveCountone4347
+G4WT6 > EffectiveCountone4348
+G4WT6 > EffectiveCountone4349
+G4WT6 > EffectiveCountone4350
+G4WT6 > EffectiveCountone4351
+G4WT6 > EffectiveCountone4352
+G4WT10 > EffectiveCountone4353
+G4WT6 > EffectiveCountone4354
+G4WT5 > EffectiveCountone4355
+G4WT6 > EffectiveCountone4356
+G4WT6 > EffectiveCountone4357
+G4WT6 > EffectiveCountone4358
+G4WT6 > EffectiveCountone4359
+G4WT6 > EffectiveCountone4360
+G4WT6 > EffectiveCountone4361
+G4WT6 > EffectiveCountone4362
+G4WT6 > EffectiveCountone4363
+G4WT6 > EffectiveCountone4364
+G4WT10 > EffectiveCountone4365
+G4WT6 > EffectiveCountone4366
+G4WT6 > EffectiveCountone4367
+G4WT5 > EffectiveCountone4368
+G4WT10 > EffectiveCountone4369
+G4WT10 > EffectiveCountone4370
+G4WT10 > EffectiveCountone4371
+G4WT6 > EffectiveCountone4372
+G4WT6 > EffectiveCountone4373
+G4WT5 > EffectiveCountone4374
+G4WT6 > EffectiveCountone4375
+G4WT6 > EffectiveCountone4376
+G4WT5 > EffectiveCountone4377
+G4WT10 > EffectiveCountone4378
+G4WT5 > EffectiveCountone4379
+G4WT10 > EffectiveCountone4380
+G4WT6 > EffectiveCountone4381
+G4WT6 > EffectiveCountone4382
+G4WT6 > EffectiveCountone4383
+G4WT6 > EffectiveCountone4384
+G4WT6 > EffectiveCountone4385
+G4WT5 > EffectiveCountone4386
+G4WT10 > EffectiveCountone4387
+G4WT6 > EffectiveCountone4388
+G4WT6 > EffectiveCountone4389
+G4WT10 > EffectiveCountone4390
+G4WT5 > EffectiveCountone4391
+G4WT6 > EffectiveCountone4392
+G4WT6 > EffectiveCountone4393
+G4WT10 > EffectiveCountone4394
+G4WT10 > EffectiveCountone4395
+G4WT10 > EffectiveCountone4396
+G4WT6 > EffectiveCountone4397
+G4WT10 > EffectiveCountone4398
+G4WT6 > EffectiveCountone4399
+G4WT10 > EffectiveCountone4400
+G4WT6 > EffectiveCountone4401
+G4WT6 > EffectiveCountone4402
+G4WT6 > EffectiveCountone4403
+G4WT6 > EffectiveCountone4404
+G4WT6 > EffectiveCountone4405
+G4WT6 > EffectiveCountone4406
+G4WT6 > EffectiveCountone4407
+G4WT6 > EffectiveCountone4408
+G4WT6 > EffectiveCountone4409
+G4WT6 > EffectiveCountone4410
+G4WT6 > EffectiveCountone4411
+G4WT6 > EffectiveCountone4412
+G4WT3 > EffectiveCountone4413
+G4WT10 > EffectiveCountone4414
+G4WT10 > EffectiveCountone4415
+G4WT6 > EffectiveCountone4416
+G4WT10 > EffectiveCountone4417
+G4WT6 > EffectiveCountone4418
+G4WT6 > EffectiveCountone4419
+G4WT10 > EffectiveCountone4420
+G4WT6 > EffectiveCountone4421
+G4WT6 > EffectiveCountone4422
+G4WT6 > EffectiveCountone4423
+G4WT5 > EffectiveCountone4424
+G4WT6 > EffectiveCountone4425
+G4WT6 > EffectiveCountone4426
+G4WT6 > EffectiveCountone4427
+G4WT6 > EffectiveCountone4428
+G4WT6 > EffectiveCountone4429
+G4WT6 > EffectiveCountone4430
+G4WT10 > EffectiveCountone4431
+G4WT10 > EffectiveCountone4432
+G4WT10 > EffectiveCountone4433
+G4WT10 > EffectiveCountone4434
+G4WT10 > EffectiveCountone4435
+G4WT5 > EffectiveCountone4436
+G4WT6 > EffectiveCountone4437
+G4WT6 > EffectiveCountone4438
+G4WT5 > EffectiveCountone4439
+G4WT10 > EffectiveCountone4440
+G4WT6 > EffectiveCountone4441
+G4WT6 > EffectiveCountone4442
+G4WT6 > EffectiveCountone4443
+G4WT6 > EffectiveCountone4444
+G4WT6 > EffectiveCountone4445
+G4WT6 > EffectiveCountone4446
+G4WT6 > EffectiveCountone4447
+G4WT10 > EffectiveCountone4448
+G4WT6 > EffectiveCountone4449
+G4WT6 > EffectiveCountone4450
+G4WT6 > EffectiveCountone4451
+G4WT6 > EffectiveCountone4452
+G4WT6 > EffectiveCountone4453
+G4WT6 > EffectiveCountone4454
+G4WT6 > EffectiveCountone4455
+G4WT5 > EffectiveCountone4456
+G4WT5 > EffectiveCountone4457
+G4WT10 > EffectiveCountone4458
+G4WT6 > EffectiveCountone4459
+G4WT10 > EffectiveCountone4460
+G4WT10 > EffectiveCountone4461
+G4WT10 > EffectiveCountone4462
+G4WT10 > EffectiveCountone4463
+G4WT6 > EffectiveCountone4464
+G4WT6 > EffectiveCountone4465
+G4WT5 > EffectiveCountone4466
+G4WT10 > EffectiveCountone4467
+G4WT10 > EffectiveCountone4468
+G4WT10 > EffectiveCountone4469
+G4WT5 > EffectiveCountone4470
+G4WT5 > EffectiveCountone4471
+G4WT6 > EffectiveCountone4472
+G4WT6 > EffectiveCountone4473
+G4WT10 > EffectiveCountone4474
+G4WT10 > EffectiveCountone4475
+G4WT6 > EffectiveCountone4476
+G4WT10 > EffectiveCountone4477
+G4WT10 > EffectiveCountone4478
+G4WT10 > EffectiveCountone4479
+G4WT10 > EffectiveCountone4480
+G4WT6 > EffectiveCountone4481
+G4WT10 > EffectiveCountone4482
+G4WT10 > EffectiveCountone4483
+G4WT10 > EffectiveCountone4484
+G4WT10 > EffectiveCountone4485
+G4WT6 > EffectiveCountone4486
+G4WT6 > EffectiveCountone4487
+G4WT10 > EffectiveCountone4488
+G4WT5 > EffectiveCountone4489
+G4WT10 > EffectiveCountone4490
+G4WT10 > EffectiveCountone4491
+G4WT10 > EffectiveCountone4492
+G4WT6 > EffectiveCountone4493
+G4WT10 > EffectiveCountone4494
+G4WT6 > EffectiveCountone4495
+G4WT10 > EffectiveCountone4496
+G4WT6 > EffectiveCountone4497
+G4WT10 > EffectiveCountone4498
+G4WT10 > EffectiveCountone4499
+G4WT6 > EffectiveCountone4500
+G4WT6 > EffectiveCountone4501
+G4WT10 > EffectiveCountone4502
+G4WT10 > EffectiveCountone4503
+G4WT10 > EffectiveCountone4504
+G4WT5 > EffectiveCountone4505
+G4WT6 > EffectiveCountone4506
+G4WT6 > EffectiveCountone4507
+G4WT5 > EffectiveCountone4508
+G4WT6 > EffectiveCountone4509
+G4WT10 > EffectiveCountone4510
+G4WT10 > EffectiveCountone4511
+G4WT6 > EffectiveCountone4512
+G4WT6 > EffectiveCountone4513
+G4WT6 > EffectiveCountone4514
+G4WT6 > EffectiveCountone4515
+G4WT6 > EffectiveCountone4516
+G4WT6 > EffectiveCountone4517
+G4WT5 > EffectiveCountone4518
+G4WT5 > EffectiveCountone4519
+G4WT6 > EffectiveCountone4520
+G4WT6 > EffectiveCountone4521
+G4WT10 > EffectiveCountone4522
+G4WT6 > EffectiveCountone4523
+G4WT6 > EffectiveCountone4524
+G4WT6 > EffectiveCountone4525
+G4WT6 > EffectiveCountone4526
+G4WT6 > EffectiveCountone4527
+G4WT6 > EffectiveCountone4528
+G4WT6 > EffectiveCountone4529
+G4WT10 > EffectiveCountone4530
+G4WT6 > EffectiveCountone4531
+G4WT6 > EffectiveCountone4532
+G4WT6 > EffectiveCountone4533
+G4WT5 > EffectiveCountone4534
+G4WT6 > EffectiveCountone4535
+G4WT10 > EffectiveCountone4536
+G4WT5 > EffectiveCountone4537
+G4WT6 > EffectiveCountone4538
+G4WT6 > EffectiveCountone4539
+G4WT6 > EffectiveCountone4540
+G4WT6 > EffectiveCountone4541
+G4WT6 > EffectiveCountone4542
+G4WT5 > EffectiveCountone4543
+G4WT6 > EffectiveCountone4544
+G4WT6 > EffectiveCountone4545
+G4WT6 > EffectiveCountone4546
+G4WT6 > EffectiveCountone4547
+G4WT5 > EffectiveCountone4548
+G4WT5 > EffectiveCountone4549
+G4WT6 > EffectiveCountone4550
+G4WT6 > EffectiveCountone4551
+G4WT6 > EffectiveCountone4552
+G4WT6 > EffectiveCountone4553
+G4WT6 > EffectiveCountone4554
+G4WT6 > EffectiveCountone4555
+G4WT6 > EffectiveCountone4556
+G4WT10 > EffectiveCountone4557
+G4WT6 > EffectiveCountone4558
+G4WT6 > EffectiveCountone4559
+G4WT5 > EffectiveCountone4560
+G4WT6 > EffectiveCountone4561
+G4WT6 > EffectiveCountone4562
+G4WT6 > EffectiveCountone4563
+G4WT10 > EffectiveCountone4564
+G4WT10 > EffectiveCountone4565
+G4WT6 > EffectiveCountone4566
+G4WT6 > EffectiveCountone4567
+G4WT10 > EffectiveCountone4568
+G4WT5 > EffectiveCountone4569
+G4WT5 > EffectiveCountone4570
+G4WT6 > EffectiveCountone4571
+G4WT6 > EffectiveCountone4572
+G4WT6 > EffectiveCountone4573
+G4WT6 > EffectiveCountone4574
+G4WT6 > EffectiveCountone4575
+G4WT6 > EffectiveCountone4576
+G4WT6 > EffectiveCountone4577
+G4WT6 > EffectiveCountone4578
+G4WT6 > EffectiveCountone4579
+G4WT6 > EffectiveCountone4580
+G4WT6 > EffectiveCountone4581
+G4WT5 > EffectiveCountone4582
+G4WT10 > EffectiveCountone4583
+G4WT6 > EffectiveCountone4584
+G4WT6 > EffectiveCountone4585
+G4WT10 > EffectiveCountone4586
+G4WT5 > EffectiveCountone4587
+G4WT6 > EffectiveCountone4588
+G4WT5 > EffectiveCountone4589
+G4WT10 > EffectiveCountone4590
+G4WT6 > EffectiveCountone4591
+G4WT10 > EffectiveCountone4592
+G4WT6 > EffectiveCountone4593
+G4WT5 > EffectiveCountone4594
+G4WT6 > EffectiveCountone4595
+G4WT6 > EffectiveCountone4596
+G4WT5 > EffectiveCountone4597
+G4WT6 > EffectiveCountone4598
+G4WT6 > EffectiveCountone4599
+G4WT6 > EffectiveCountone4600
+G4WT6 > EffectiveCountone4601
+G4WT6 > EffectiveCountone4602
+G4WT6 > EffectiveCountone4603
+G4WT5 > EffectiveCountone4604
+G4WT10 > EffectiveCountone4605
+G4WT6 > EffectiveCountone4606
+G4WT6 > EffectiveCountone4607
+G4WT6 > EffectiveCountone4608
+G4WT10 > EffectiveCountone4609
+G4WT6 > EffectiveCountone4610
+G4WT5 > EffectiveCountone4611
+G4WT10 > EffectiveCountone4612
+G4WT5 > EffectiveCountone4613
+G4WT10 > EffectiveCountone4614
+G4WT6 > EffectiveCountone4615
+G4WT6 > EffectiveCountone4616
+G4WT6 > EffectiveCountone4617
+G4WT6 > EffectiveCountone4618
+G4WT6 > EffectiveCountone4619
+G4WT6 > EffectiveCountone4620
+G4WT6 > EffectiveCountone4621
+G4WT6 > EffectiveCountone4622
+G4WT6 > EffectiveCountone4623
+G4WT6 > EffectiveCountone4624
+G4WT6 > EffectiveCountone4625
+G4WT10 > EffectiveCountone4626
+G4WT6 > EffectiveCountone4627
+G4WT6 > EffectiveCountone4628
+G4WT6 > EffectiveCountone4629
+G4WT6 > EffectiveCountone4630
+G4WT10 > EffectiveCountone4631
+G4WT10 > EffectiveCountone4632
+G4WT10 > EffectiveCountone4633
+G4WT3 > EffectiveCountone4634
+G4WT3 > EffectiveCountone4635
+G4WT5 > EffectiveCountone4636
+G4WT6 > EffectiveCountone4637
+G4WT5 > EffectiveCountone4638
+G4WT10 > EffectiveCountone4639
+G4WT5 > EffectiveCountone4640
+G4WT6 > EffectiveCountone4641
+G4WT10 > EffectiveCountone4642
+G4WT10 > EffectiveCountone4643
+G4WT6 > EffectiveCountone4644
+G4WT6 > EffectiveCountone4645
+G4WT6 > EffectiveCountone4646
+G4WT6 > EffectiveCountone4647
+G4WT6 > EffectiveCountone4648
+G4WT6 > EffectiveCountone4649
+G4WT6 > EffectiveCountone4650
+G4WT6 > EffectiveCountone4651
+G4WT6 > EffectiveCountone4652
+G4WT6 > EffectiveCountone4653
+G4WT6 > EffectiveCountone4654
+G4WT6 > EffectiveCountone4655
+G4WT6 > EffectiveCountone4656
+G4WT6 > EffectiveCountone4657
+G4WT5 > EffectiveCountone4658
+G4WT6 > EffectiveCountone4659
+G4WT6 > EffectiveCountone4660
+G4WT6 > EffectiveCountone4661
+G4WT6 > EffectiveCountone4662
+G4WT5 > EffectiveCountone4663
+G4WT5 > EffectiveCountone4664
+G4WT6 > EffectiveCountone4665
+G4WT6 > EffectiveCountone4666
+G4WT6 > EffectiveCountone4667
+G4WT6 > EffectiveCountone4668
+G4WT6 > EffectiveCountone4669
+G4WT6 > EffectiveCountone4670
+G4WT6 > EffectiveCountone4671
+G4WT6 > EffectiveCountone4672
+G4WT6 > EffectiveCountone4673
+G4WT10 > EffectiveCountone4674
+G4WT6 > EffectiveCountone4675
+G4WT6 > EffectiveCountone4676
+G4WT6 > EffectiveCountone4677
+G4WT6 > EffectiveCountone4678
+G4WT10 > EffectiveCountone4679
+G4WT6 > EffectiveCountone4680
+G4WT6 > EffectiveCountone4681
+G4WT6 > EffectiveCountone4682
+G4WT10 > EffectiveCountone4683
+G4WT6 > EffectiveCountone4684
+G4WT6 > EffectiveCountone4685
+G4WT6 > EffectiveCountone4686
+G4WT10 > EffectiveCountone4687
+G4WT10 > EffectiveCountone4688
+G4WT10 > EffectiveCountone4689
+G4WT6 > EffectiveCountone4690
+G4WT3 > EffectiveCountone4691
+G4WT6 > EffectiveCountone4692
+G4WT6 > EffectiveCountone4693
+G4WT6 > EffectiveCountone4694
+G4WT5 > EffectiveCountone4695
+G4WT10 > EffectiveCountone4696
+G4WT6 > EffectiveCountone4697
+G4WT10 > EffectiveCountone4698
+G4WT6 > EffectiveCountone4699
+G4WT6 > EffectiveCountone4700
+G4WT6 > EffectiveCountone4701
+G4WT6 > EffectiveCountone4702
+G4WT10 > EffectiveCountone4703
+G4WT6 > EffectiveCountone4704
+G4WT10 > EffectiveCountone4705
+G4WT6 > EffectiveCountone4706
+G4WT5 > EffectiveCountone4707
+G4WT6 > EffectiveCountone4708
+G4WT6 > EffectiveCountone4709
+G4WT10 > EffectiveCountone4710
+G4WT5 > EffectiveCountone4711
+G4WT6 > EffectiveCountone4712
+G4WT10 > EffectiveCountone4713
+G4WT6 > EffectiveCountone4714
+G4WT10 > EffectiveCountone4715
+G4WT10 > EffectiveCountone4716
+G4WT6 > EffectiveCountone4717
+G4WT6 > EffectiveCountone4718
+G4WT6 > EffectiveCountone4719
+G4WT6 > EffectiveCountone4720
+G4WT10 > EffectiveCountone4721
+G4WT6 > EffectiveCountone4722
+G4WT6 > EffectiveCountone4723
+G4WT6 > EffectiveCountone4724
+G4WT6 > EffectiveCountone4725
+G4WT6 > EffectiveCountone4726
+G4WT6 > EffectiveCountone4727
+G4WT6 > EffectiveCountone4728
+G4WT6 > EffectiveCountone4729
+G4WT6 > EffectiveCountone4730
+G4WT6 > EffectiveCountone4731
+G4WT6 > EffectiveCountone4732
+G4WT10 > EffectiveCountone4733
+G4WT6 > EffectiveCountone4734
+G4WT5 > EffectiveCountone4735
+G4WT6 > EffectiveCountone4736
+G4WT6 > EffectiveCountone4737
+G4WT6 > EffectiveCountone4738
+G4WT10 > EffectiveCountone4739
+G4WT5 > EffectiveCountone4740
+G4WT6 > EffectiveCountone4741
+G4WT6 > EffectiveCountone4742
+G4WT10 > EffectiveCountone4743
+G4WT10 > EffectiveCountone4744
+G4WT6 > EffectiveCountone4745
+G4WT6 > EffectiveCountone4746
+G4WT6 > EffectiveCountone4747
+G4WT10 > EffectiveCountone4748
+G4WT6 > EffectiveCountone4749
+G4WT6 > EffectiveCountone4750
+G4WT6 > EffectiveCountone4751
+G4WT10 > EffectiveCountone4752
+G4WT6 > EffectiveCountone4753
+G4WT6 > EffectiveCountone4754
+G4WT6 > EffectiveCountone4755
+G4WT10 > EffectiveCountone4756
+G4WT6 > EffectiveCountone4757
+G4WT6 > EffectiveCountone4758
+G4WT10 > EffectiveCountone4759
+G4WT6 > EffectiveCountone4760
+G4WT6 > EffectiveCountone4761
+G4WT6 > EffectiveCountone4762
+G4WT10 > EffectiveCountone4763
+G4WT5 > EffectiveCountone4764
+G4WT6 > EffectiveCountone4765
+G4WT6 > EffectiveCountone4766
+G4WT6 > EffectiveCountone4767
+G4WT10 > EffectiveCountone4768
+G4WT10 > EffectiveCountone4769
+G4WT10 > EffectiveCountone4770
+G4WT10 > EffectiveCountone4771
+G4WT10 > EffectiveCountone4772
+G4WT6 > EffectiveCountone4773
+G4WT6 > EffectiveCountone4774
+G4WT6 > EffectiveCountone4775
+G4WT5 > EffectiveCountone4776
+G4WT6 > EffectiveCountone4777
+G4WT6 > EffectiveCountone4778
+G4WT5 > EffectiveCountone4779
+G4WT10 > EffectiveCountone4780
+G4WT6 > EffectiveCountone4781
+G4WT6 > EffectiveCountone4782
+G4WT6 > EffectiveCountone4783
+G4WT5 > EffectiveCountone4784
+G4WT5 > EffectiveCountone4785
+G4WT5 > EffectiveCountone4786
+G4WT6 > EffectiveCountone4787
+G4WT6 > EffectiveCountone4788
+G4WT6 > EffectiveCountone4789
+G4WT6 > EffectiveCountone4790
+G4WT6 > EffectiveCountone4791
+G4WT6 > EffectiveCountone4792
+G4WT6 > EffectiveCountone4793
+G4WT5 > EffectiveCountone4794
+G4WT6 > EffectiveCountone4795
+G4WT6 > EffectiveCountone4796
+G4WT6 > EffectiveCountone4797
+G4WT6 > EffectiveCountone4798
+G4WT5 > EffectiveCountone4799
+G4WT10 > EffectiveCountone4800
+G4WT6 > EffectiveCountone4801
+G4WT6 > EffectiveCountone4802
+G4WT6 > EffectiveCountone4803
+G4WT6 > EffectiveCountone4804
+G4WT10 > EffectiveCountone4805
+G4WT6 > EffectiveCountone4806
+G4WT6 > EffectiveCountone4807
+G4WT10 > EffectiveCountone4808
+G4WT3 > EffectiveCountone4809
+G4WT3 > EffectiveCountone4810
+G4WT6 > EffectiveCountone4811
+G4WT10 > EffectiveCountone4812
+G4WT6 > EffectiveCountone4813
+G4WT6 > EffectiveCountone4814
+G4WT6 > EffectiveCountone4815
+G4WT6 > EffectiveCountone4816
+G4WT6 > EffectiveCountone4817
+G4WT6 > EffectiveCountone4818
+G4WT6 > EffectiveCountone4819
+G4WT6 > EffectiveCountone4820
+G4WT10 > EffectiveCountone4821
+G4WT6 > EffectiveCountone4822
+G4WT6 > EffectiveCountone4823
+G4WT6 > EffectiveCountone4824
+G4WT6 > EffectiveCountone4825
+G4WT10 > EffectiveCountone4826
+G4WT5 > EffectiveCountone4827
+G4WT6 > EffectiveCountone4828
+G4WT6 > EffectiveCountone4829
+G4WT10 > EffectiveCountone4830
+G4WT6 > EffectiveCountone4831
+G4WT6 > EffectiveCountone4832
+G4WT5 > EffectiveCountone4833
+G4WT6 > EffectiveCountone4834
+G4WT6 > EffectiveCountone4835
+G4WT6 > EffectiveCountone4836
+G4WT6 > EffectiveCountone4837
+G4WT6 > EffectiveCountone4838
+G4WT6 > EffectiveCountone4839
+G4WT6 > EffectiveCountone4840
+G4WT6 > EffectiveCountone4841
+G4WT6 > EffectiveCountone4842
+G4WT6 > EffectiveCountone4843
+G4WT5 > EffectiveCountone4844
+G4WT5 > EffectiveCountone4845
+G4WT6 > EffectiveCountone4846
+G4WT6 > EffectiveCountone4847
+G4WT6 > EffectiveCountone4848
+G4WT10 > EffectiveCountone4849
+G4WT5 > EffectiveCountone4850
+G4WT5 > EffectiveCountone4851
+G4WT6 > EffectiveCountone4852
+G4WT6 > EffectiveCountone4853
+G4WT6 > EffectiveCountone4854
+G4WT5 > EffectiveCountone4855
+G4WT10 > EffectiveCountone4856
+G4WT6 > EffectiveCountone4857
+G4WT6 > EffectiveCountone4858
+G4WT6 > EffectiveCountone4859
+G4WT6 > EffectiveCountone4860
+G4WT6 > EffectiveCountone4861
+G4WT6 > EffectiveCountone4862
+G4WT6 > EffectiveCountone4863
+G4WT5 > EffectiveCountone4864
+G4WT6 > EffectiveCountone4865
+G4WT6 > EffectiveCountone4866
+G4WT6 > EffectiveCountone4867
+G4WT6 > EffectiveCountone4868
+G4WT6 > EffectiveCountone4869
+G4WT10 > EffectiveCountone4870
+G4WT6 > EffectiveCountone4871
+G4WT5 > EffectiveCountone4872
+G4WT6 > EffectiveCountone4873
+G4WT6 > EffectiveCountone4874
+G4WT6 > EffectiveCountone4875
+G4WT6 > EffectiveCountone4876
+G4WT6 > EffectiveCountone4877
+G4WT6 > EffectiveCountone4878
+G4WT6 > EffectiveCountone4879
+G4WT10 > EffectiveCountone4880
+G4WT6 > EffectiveCountone4881
+G4WT10 > EffectiveCountone4882
+G4WT6 > EffectiveCountone4883
+G4WT6 > EffectiveCountone4884
+G4WT5 > EffectiveCountone4885
+G4WT6 > EffectiveCountone4886
+G4WT6 > EffectiveCountone4887
+G4WT6 > EffectiveCountone4888
+G4WT6 > EffectiveCountone4889
+G4WT6 > EffectiveCountone4890
+G4WT6 > EffectiveCountone4891
+G4WT6 > EffectiveCountone4892
+G4WT6 > EffectiveCountone4893
+G4WT6 > EffectiveCountone4894
+G4WT6 > EffectiveCountone4895
+G4WT6 > EffectiveCountone4896
+G4WT6 > EffectiveCountone4897
+G4WT6 > EffectiveCountone4898
+G4WT6 > EffectiveCountone4899
+G4WT6 > EffectiveCountone4900
+G4WT10 > EffectiveCountone4901
+G4WT10 > EffectiveCountone4902
+G4WT6 > EffectiveCountone4903
+G4WT6 > EffectiveCountone4904
+G4WT10 > EffectiveCountone4905
+G4WT6 > EffectiveCountone4906
+G4WT6 > EffectiveCountone4907
+G4WT5 > EffectiveCountone4908
+G4WT6 > EffectiveCountone4909
+G4WT10 > EffectiveCountone4910
+G4WT6 > EffectiveCountone4911
+G4WT6 > EffectiveCountone4912
+G4WT6 > EffectiveCountone4913
+G4WT6 > EffectiveCountone4914
+G4WT6 > EffectiveCountone4915
+G4WT10 > EffectiveCountone4916
+G4WT6 > EffectiveCountone4917
+G4WT6 > EffectiveCountone4918
+G4WT6 > EffectiveCountone4919
+G4WT6 > EffectiveCountone4920
+G4WT6 > EffectiveCountone4921
+G4WT10 > EffectiveCountone4922
+G4WT10 > EffectiveCountone4923
+G4WT10 > EffectiveCountone4924
+G4WT6 > EffectiveCountone4925
+G4WT6 > EffectiveCountone4926
+G4WT6 > EffectiveCountone4927
+G4WT6 > EffectiveCountone4928
+G4WT6 > EffectiveCountone4929
+G4WT6 > EffectiveCountone4930
+G4WT6 > EffectiveCountone4931
+G4WT10 > EffectiveCountone4932
+G4WT10 > EffectiveCountone4933
+G4WT6 > EffectiveCountone4934
+G4WT5 > EffectiveCountone4935
+G4WT6 > EffectiveCountone4936
+G4WT6 > EffectiveCountone4937
+G4WT6 > EffectiveCountone4938
+G4WT6 > EffectiveCountone4939
+G4WT6 > EffectiveCountone4940
+G4WT6 > EffectiveCountone4941
+G4WT6 > EffectiveCountone4942
+G4WT6 > EffectiveCountone4943
+G4WT6 > EffectiveCountone4944
+G4WT6 > EffectiveCountone4945
+G4WT6 > EffectiveCountone4946
+G4WT6 > EffectiveCountone4947
+G4WT6 > EffectiveCountone4948
+G4WT6 > EffectiveCountone4949
+G4WT6 > EffectiveCountone4950
+G4WT5 > EffectiveCountone4951
+G4WT6 > EffectiveCountone4952
+G4WT10 > EffectiveCountone4953
+G4WT10 > EffectiveCountone4954
+G4WT10 > EffectiveCountone4955
+G4WT5 > EffectiveCountone4956
+G4WT3 > EffectiveCountone4957
+G4WT10 > 
+G4WT1 > 
+G4WT9 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT9 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 844254 gamma of 4 MeV
+G4WT4 > 
+G4WT11 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT5 > 
+G4WT3 > 
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 830200 gamma of 4 MeV
+G4WT8 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT8 > ------------------------------------------------------------
+G4WT8 > 
+G4WT9 >  The run consists of 825282 gamma of 4 MeV
+G4WT9 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT9 > ------------------------------------------------------------
+G4WT9 > 
+G4WT10 > --------------------End of Local Run------------------------
+G4WT4 > --------------------End of Local Run------------------------
+G4WT4 >  The run consists of 828444 gamma of 4 MeV
+G4WT4 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT4 > ------------------------------------------------------------
+G4WT4 > 
+G4WT6 > 
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+G4WT2 >  The run consists of 831606 gamma of 4 MeV
+G4WT2 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT2 > ------------------------------------------------------------
+G4WT2 > 
+G4WT6 > --------------------End of Local Run------------------------
+G4WT6 >  The run consists of 828444 gamma of 4 MeV
+G4WT6 >  Cumulated dose per run, in scoring volume : 1.88284 nanoGy  rms = 810.153 picoGy 
+G4WT6 > ------------------------------------------------------------
+G4WT6 > 
+G4WT10 >  The run consists of 815796 gamma of 4 MeV
+G4WT10 >  Cumulated dose per run, in scoring volume : 215.618 picoGy  rms = 105.621 picoGy 
+G4WT10 > ------------------------------------------------------------
+G4WT10 > 
+G4WT11 > --------------------End of Local Run------------------------
+G4WT11 >  The run consists of 837930 gamma of 4 MeV
+G4WT11 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT11 > ------------------------------------------------------------
+G4WT11 > 
+G4WT0 >  The run consists of 841092 gamma of 4 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT5 > --------------------End of Local Run------------------------
+G4WT5 >  The run consists of 825282 gamma of 4 MeV
+G4WT5 >  Cumulated dose per run, in scoring volume : 21.2162 picoGy  rms = 21.2162 picoGy 
+G4WT5 > ------------------------------------------------------------
+G4WT5 > 
+G4WT7 > 
+G4WT7 > --------------------End of Local Run------------------------
+G4WT7 >  The run consists of 847416 gamma of 4 MeV
+G4WT7 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT7 > ------------------------------------------------------------
+G4WT7 > 
+G4WT1 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 844254 gamma of 4 MeV
+G4WT3 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT3 > ------------------------------------------------------------
+G4WT3 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 10000000 
+ Cumulated dose per run, in scoring volume : 2.11967 nanoGy  rms = 817.287 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+Graphics systems deleted.
+Visualization Manager deleting...
+Deleting G4ThreadLocalSingletons for type G4GeometryTolerance ...
+Deleting G4ThreadLocalSingletons for type G4ProcessTable ...
+Deleting G4ThreadLocalSingletons for type G4PhysicsListHelper ...
+Deleting G4ThreadLocalSingletons for type G4AccumulableManager ...
+Deleting G4ThreadLocalSingletons for type G4LossTableManager ...
+Deleting G4ThreadLocalSingletons for type G4CrossSectionDataSetRegistry ...
+Deleting G4ThreadLocalSingletons for type G4HadronicInteractionRegistry ...
+Deleting G4ThreadLocalSingletons for type G4CascadeParameters ...
+ThreadPool destroyed

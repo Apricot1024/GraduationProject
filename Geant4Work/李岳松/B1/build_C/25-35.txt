@@ -1,0 +1,1009 @@
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle alpha
+#change momentumAmp
+/gun/momentumAmp 25.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 25.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 26.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 27.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 28.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 29.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 30.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 31.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 32.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 33.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.00 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.05 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.10 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.15 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.20 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.25 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.30 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.35 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.40 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.45 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.50 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.55 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.60 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.65 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.70 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.75 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.80 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.85 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.90 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 34.95 GeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change momentumAmp
+/gun/momentumAmp 35.00 GeV
+#launch 10000 particles
+/run/beamOn 10000

@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-3c1a82f48f8d60de5ec8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "B1",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "B1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-B1-Release-79ef2dedf26889687e30.json",
+					"name" : "B1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "exampleB1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exampleB1-Release-c89236a9fb932024aafe.json",
+					"name" : "exampleB1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/apricot/Documents/GraduationProject/Geant4Work/backupsrc/B1/build",
+		"source" : "/home/apricot/Documents/GraduationProject/Geant4Work/backupsrc/B1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

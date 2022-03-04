@@ -1,0 +1,360 @@
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 0.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 1.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 1.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 2.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 2.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 3.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 3.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 4.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 4.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 5.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 5.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 6.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 6.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 7.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 7.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 8.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 8.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 9.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 9.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 10.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 10.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 11.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 11.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 12.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 12.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 13.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 13.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 14.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 14.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 15.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 15.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 16.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 16.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 17.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 17.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 18.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 18.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 19.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 19.50 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 20.00 MeV
+#launch 10000 particles
+/run/beamOn 10000

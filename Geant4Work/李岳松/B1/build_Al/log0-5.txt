@@ -1,0 +1,3529 @@
+
+**************************************************************
+ Geant4 version Name: geant4-10-07-patch-01 [MT]   (5-February-2021)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+<<< Reference Physics List QBBC 
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+  OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+  OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+  OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+  OpenInventorQt (OIQt, OI)
+  RayTracerX (RayTracerX)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+Checking overlaps for volume Envelope (G4Box) ... OK! 
+Checking overlaps for volume Shape1 (G4Box) ... OK! 
+### HadronInelasticQBBC Construct Process:
+    Emin(FTFP)= 3 GeV; Emax(FTFP)= 100000 GeV
+    Emin(BERT)= 1 GeV; Emax(BERT)= 6 GeV; Emax(BERTpions)= 12 GeV;
+    Emin(BIC) = 0 GeV; Emax(BIC)= 1.5 GeV.
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina : Emin=    0 eV  Emax=  100 TeV
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+     BetheHeitlerLPM : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+              StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llimit=1
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+              StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llimit=1
+
+eIoni:  for e-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+CoulombScat:  for e-, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+              StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llimit=1
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+              StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llimit=1
+
+eIoni:  for e+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+annihil:  for e+, integral:1  SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+hIoni:  for proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for GenericIon  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+ionIoni:  for GenericIon  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      Stopping Power data for 17 ion/material pairs
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+msc:  for alpha  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+ionIoni:  for alpha  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
+
+msc:  for anti_proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+hIoni:  for anti_proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for anti_proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for anti_proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for anti_proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+hIoni:  for kaon+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+hIoni:  for kaon-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+muIoni:  for mu+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+muIoni:  for mu-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+hIoni:  for pi+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llimit=1
+
+hIoni:  for pi-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for B-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: B-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for D-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: D-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: ionElastic
+        Model:          NNDiffuseElastic: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: anti_lambdaInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:               GammaNPreco: 0 eV  ---> 200 MeV
+        Model:            BertiniCascade: 199 MeV ---> 6 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            PhotoNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 12 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 12 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for sigma-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: sigma-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1000
+Isomer production flag                              1
+Internal e- conversion flag                         1
+Store e- internal conversion data                   0
+Electron internal conversion ID                     2
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+=======================================================================
+
+=======================================================================
+--> G4MTRunManager::CreateAndStartWorkers() --> Initializing workers...
+=======================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.006GeV
+G4WT0 >  is now defined in terms Momentum: 0GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.006GeV
+G4WT1 >  is now defined in terms Momentum: 0GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 0 eV 
+G4WT1 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 0 eV 
+G4WT0 >  Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 0 picoGy  rms = 0 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 335.341 keV
+G4WT1 >  Cumulated dose per run, in scoring volume : 30.7306 nanoGy  rms = 0 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 335.341 keV
+G4WT0 >  Cumulated dose per run, in scoring volume : 31.4771 nanoGy  rms = 0 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 62.2077 nanoGy  rms = 0 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.000335341GeV
+G4WT1 >  is now defined in terms Momentum: 0.1GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.000335341GeV
+G4WT0 >  is now defined in terms Momentum: 0.1GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.34118 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 122.906 nanoGy  rms = 0.000370038 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.34118 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 125.891 nanoGy  rms = 0.000380464 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 248.797 nanoGy  rms = 0.000538057 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.00134118GeV
+G4WT1 >  is now defined in terms Momentum: 0.15GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.00134118GeV
+G4WT0 >  is now defined in terms Momentum: 0.15GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 3.01699 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 202.919 nanoGy  rms = 540.146 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 3.01699 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 207.977 nanoGy  rms = 505.097 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 410.896 nanoGy  rms = 739.525 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.00301699GeV
+G4WT0 >  is now defined in terms Momentum: 0.2GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.00301699GeV
+G4WT1 >  is now defined in terms Momentum: 0.2GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 5.36184 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 125.393 nanoGy  rms = 146.092 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 5.36184 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 128.232 nanoGy  rms = 151.407 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 253.625 nanoGy  rms = 210.496 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.00536184GeV
+G4WT0 >  is now defined in terms Momentum: 0.25GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.00536184GeV
+G4WT1 >  is now defined in terms Momentum: 0.25GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 8.3745 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 87.9183 nanoGy  rms = 126.978 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 8.3745 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 90.3025 nanoGy  rms = 118.812 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 178.221 nanoGy  rms = 174.07 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0083745GeV
+G4WT1 >  is now defined in terms Momentum: 0.3GeV/c
+G4WT0 >  was defined in terms of KineticEnergy: 0.0083745GeV
+G4WT0 >  is now defined in terms Momentum: 0.3GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 12.0533 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 66.7201 nanoGy  rms = 122.586 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 12.0533 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 68.422 nanoGy  rms = 123.734 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 135.142 nanoGy  rms = 174.195 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0120533GeV
+G4WT0 >  was defined in terms of KineticEnergy: 0.0120533GeV
+G4WT0 >  is now defined in terms Momentum: 0.35GeV/c
+G4WT1 >  is now defined in terms Momentum: 0.35GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 16.3964 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 52.7322 nanoGy  rms = 122.382 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 16.3964 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 54.2703 nanoGy  rms = 114.738 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 107.003 nanoGy  rms = 167.948 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0163964GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0163964GeV
+G4WT0 >  is now defined in terms Momentum: 0.4GeV/c
+G4WT1 >  is now defined in terms Momentum: 0.4GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 21.4014 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 42.9204 nanoGy  rms = 112.258 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 21.4014 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 43.9996 nanoGy  rms = 118.107 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 86.92 nanoGy  rms = 162.949 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0214014GeV
+G4WT0 >  is now defined in terms Momentum: 0.45GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0214014GeV
+G4WT1 >  is now defined in terms Momentum: 0.45GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 27.0656 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 35.9276 nanoGy  rms = 122.444 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 27.0656 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 36.6134 nanoGy  rms = 118.671 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 72.541 nanoGy  rms = 170.614 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0270656GeV
+G4WT1 >  is now defined in terms Momentum: 0.5GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0270656GeV
+G4WT0 >  is now defined in terms Momentum: 0.5GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 33.3861 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 30.3313 nanoGy  rms = 116.451 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 33.3861 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 30.9362 nanoGy  rms = 113.312 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 61.2676 nanoGy  rms = 162.534 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0333861GeV
+G4WT0 >  is now defined in terms Momentum: 0.55GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0333861GeV
+G4WT1 >  is now defined in terms Momentum: 0.55GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 40.3596 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 26.2076 nanoGy  rms = 118.955 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 40.3596 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 26.8519 nanoGy  rms = 120.821 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 53.0595 nanoGy  rms = 169.553 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0403596GeV
+G4WT0 >  is now defined in terms Momentum: 0.6GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0403596GeV
+G4WT1 >  is now defined in terms Momentum: 0.6GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 47.9825 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 22.8988 nanoGy  rms = 128.696 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 47.9825 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 23.32 nanoGy  rms = 115.116 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 46.2188 nanoGy  rms = 172.72 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0479825GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0479825GeV
+G4WT0 >  is now defined in terms Momentum: 0.65GeV/c
+G4WT1 >  is now defined in terms Momentum: 0.65GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 56.2508 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 19.8862 nanoGy  rms = 113.042 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 56.2508 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 20.3264 nanoGy  rms = 115.987 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 40.2126 nanoGy  rms = 161.967 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0562508GeV
+G4WT0 >  is now defined in terms Momentum: 0.7GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0562508GeV
+G4WT1 >  is now defined in terms Momentum: 0.7GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 65.1603 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 17.6571 nanoGy  rms = 116.648 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 65.1603 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 18.4008 nanoGy  rms = 116.039 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 36.0579 nanoGy  rms = 164.829 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0651603GeV
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0651603GeV
+G4WT1 >  is now defined in terms Momentum: 0.75GeV/c
+G4WT0 >  is now defined in terms Momentum: 0.75GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 74.7065 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 16.1646 nanoGy  rms = 121.232 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 74.7065 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 16.3409 nanoGy  rms = 118.787 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 32.5054 nanoGy  rms = 169.862 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0747065GeV
+G4WT1 >  is now defined in terms Momentum: 0.8GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0747065GeV
+G4WT0 >  is now defined in terms Momentum: 0.8GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 84.8847 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 14.5369 nanoGy  rms = 97.9658 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 84.8847 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 15.0828 nanoGy  rms = 97.536 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 29.6198 nanoGy  rms = 138.372 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0848847GeV
+G4WT0 >  is now defined in terms Momentum: 0.85GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0848847GeV
+G4WT1 >  is now defined in terms Momentum: 0.85GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 95.6897 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 13.3801 nanoGy  rms = 99.7504 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 95.6897 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 13.5883 nanoGy  rms = 97.9457 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 26.9684 nanoGy  rms = 139.846 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.0956897GeV
+G4WT0 >  is now defined in terms Momentum: 0.9GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.0956897GeV
+G4WT1 >  is now defined in terms Momentum: 0.9GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 107.116 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 12.165 nanoGy  rms = 87.6 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 107.116 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 12.4921 nanoGy  rms = 98.3642 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 24.6571 nanoGy  rms = 131.72 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.107116GeV
+G4WT0 >  is now defined in terms Momentum: 0.95GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.107116GeV
+G4WT1 >  is now defined in terms Momentum: 0.95GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 119.159 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 11.1899 nanoGy  rms = 89.025 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 119.159 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 11.4102 nanoGy  rms = 90.9472 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 22.6001 nanoGy  rms = 127.277 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.119159GeV
+G4WT1 >  is now defined in terms Momentum: 1GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.119159GeV
+G4WT0 >  is now defined in terms Momentum: 1GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 131.812 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 10.3843 nanoGy  rms = 100.249 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 131.812 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 10.6534 nanoGy  rms = 105.541 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 21.0378 nanoGy  rms = 145.565 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.131812GeV
+G4WT1 >  is now defined in terms Momentum: 1.05GeV/c
+G4WT0 >  was defined in terms of KineticEnergy: 0.131812GeV
+G4WT0 >  is now defined in terms Momentum: 1.05GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 145.069 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 9.7771 nanoGy  rms = 102.768 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 145.069 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 9.86631 nanoGy  rms = 92.9216 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 19.6434 nanoGy  rms = 138.626 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.145069GeV
+G4WT0 >  is now defined in terms Momentum: 1.1GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.145069GeV
+G4WT1 >  is now defined in terms Momentum: 1.1GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 158.924 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 8.96701 nanoGy  rms = 97.1811 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 158.924 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 9.06142 nanoGy  rms = 90.681 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 18.0284 nanoGy  rms = 132.974 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.158924GeV
+G4WT1 >  is now defined in terms Momentum: 1.15GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.158924GeV
+G4WT0 >  is now defined in terms Momentum: 1.15GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 173.371 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 8.4431 nanoGy  rms = 103.078 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 173.371 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 8.55248 nanoGy  rms = 99.9876 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 16.9956 nanoGy  rms = 143.637 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.173371GeV
+G4WT0 >  is now defined in terms Momentum: 1.2GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.173371GeV
+G4WT1 >  is now defined in terms Momentum: 1.2GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 188.404 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 7.83935 nanoGy  rms = 102.996 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 188.404 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 8.26087 nanoGy  rms = 105.124 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 16.1002 nanoGy  rms = 147.348 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.188404GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.188404GeV
+G4WT0 >  is now defined in terms Momentum: 1.25GeV/c
+G4WT1 >  is now defined in terms Momentum: 1.25GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 204.014 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 7.35159 nanoGy  rms = 97.7604 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 204.014 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 7.51827 nanoGy  rms = 92.6073 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 14.8699 nanoGy  rms = 134.66 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.204014GeV
+G4WT0 >  is now defined in terms Momentum: 1.3GeV/c
+G4WT1 >  was defined in terms of KineticEnergy: 0.204014GeV
+G4WT1 >  is now defined in terms Momentum: 1.3GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 220.197 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 6.84464 nanoGy  rms = 90.6285 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 220.197 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 7.25538 nanoGy  rms = 113.875 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 14.1 nanoGy  rms = 145.737 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.220197GeV
+G4WT0 >  is now defined in terms Momentum: 1.35GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.220197GeV
+G4WT1 >  is now defined in terms Momentum: 1.35GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 236.944 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 6.51701 nanoGy  rms = 100.981 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 236.944 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 6.6611 nanoGy  rms = 102.61 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 13.1781 nanoGy  rms = 143.966 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.236944GeV
+G4WT1 >  is now defined in terms Momentum: 1.4GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.236944GeV
+G4WT0 >  is now defined in terms Momentum: 1.4GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 254.248 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 6.05439 nanoGy  rms = 84.682 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 254.248 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 6.45264 nanoGy  rms = 104.368 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 12.507 nanoGy  rms = 134.63 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.254248GeV
+G4WT0 >  is now defined in terms Momentum: 1.45GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.254248GeV
+G4WT1 >  is now defined in terms Momentum: 1.45GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 272.103 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 5.7917 nanoGy  rms = 95.0864 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 272.103 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 6.11187 nanoGy  rms = 98.8007 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 11.9036 nanoGy  rms = 137.239 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.272103GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.272103GeV
+G4WT0 >  is now defined in terms Momentum: 1.5GeV/c
+G4WT1 >  is now defined in terms Momentum: 1.5GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 290.5 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 5.62273 nanoGy  rms = 107.937 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 290.5 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 5.8548 nanoGy  rms = 102.718 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 11.4775 nanoGy  rms = 149.031 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.2905GeV
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.2905GeV
+G4WT1 >  is now defined in terms Momentum: 1.55GeV/c
+G4WT0 >  is now defined in terms Momentum: 1.55GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 309.433 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 5.52417 nanoGy  rms = 108.455 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 309.433 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 5.39875 nanoGy  rms = 91.9561 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 10.9229 nanoGy  rms = 142.423 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.309433GeV
+G4WT0 >  is now defined in terms Momentum: 1.6GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.309433GeV
+G4WT1 >  is now defined in terms Momentum: 1.6GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 328.894 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 5.33554 nanoGy  rms = 119.821 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 328.894 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 5.4095 nanoGy  rms = 109.988 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 10.745 nanoGy  rms = 162.657 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.328894GeV
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.328894GeV
+G4WT1 >  is now defined in terms Momentum: 1.65GeV/c
+G4WT0 >  is now defined in terms Momentum: 1.65GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 348.876 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 5.18411 nanoGy  rms = 117.082 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 348.876 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 4.73507 nanoGy  rms = 87.9987 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 9.91918 nanoGy  rms = 146.836 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.348876GeV
+G4WT1 >  is now defined in terms Momentum: 1.7GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.348876GeV
+G4WT0 >  is now defined in terms Momentum: 1.7GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 369.37 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 4.99905 nanoGy  rms = 122.252 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 369.37 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 4.88761 nanoGy  rms = 103.871 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 9.88666 nanoGy  rms = 160.586 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.36937GeV
+G4WT1 >  is now defined in terms Momentum: 1.75GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.36937GeV
+G4WT0 >  is now defined in terms Momentum: 1.75GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 390.37 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 4.46 nanoGy  rms = 106.929 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 390.37 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 4.67305 nanoGy  rms = 99.218 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 9.13304 nanoGy  rms = 145.907 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.39037GeV
+G4WT1 >  is now defined in terms Momentum: 1.8GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.39037GeV
+G4WT0 >  is now defined in terms Momentum: 1.8GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 411.867 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 4.42024 nanoGy  rms = 116.185 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 411.867 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 4.44796 nanoGy  rms = 101.843 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 8.86819 nanoGy  rms = 154.522 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.411867GeV
+G4WT0 >  is now defined in terms Momentum: 1.85GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.411867GeV
+G4WT1 >  is now defined in terms Momentum: 1.85GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 433.853 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 4.09883 nanoGy  rms = 87.2044 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 433.853 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 4.32323 nanoGy  rms = 124.315 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 8.42206 nanoGy  rms = 151.902 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.433853GeV
+G4WT1 >  is now defined in terms Momentum: 1.9GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.433853GeV
+G4WT0 >  is now defined in terms Momentum: 1.9GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 456.322 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 4.0152 nanoGy  rms = 97.9177 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 456.322 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 4.0853 nanoGy  rms = 95.0973 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 8.1005 nanoGy  rms = 136.499 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.456322GeV
+G4WT0 >  is now defined in terms Momentum: 1.95GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.456322GeV
+G4WT1 >  is now defined in terms Momentum: 1.95GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 479.265 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 4.05313 nanoGy  rms = 119.83 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 479.265 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.91639 nanoGy  rms = 101.406 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 7.96952 nanoGy  rms = 157.151 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.479265GeV
+G4WT0 >  is now defined in terms Momentum: 2GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.479265GeV
+G4WT1 >  is now defined in terms Momentum: 2GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 502.675 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.60367 nanoGy  rms = 85.8899 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 502.675 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 3.79927 nanoGy  rms = 89.8801 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 7.40293 nanoGy  rms = 124.366 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.502675GeV
+G4WT0 >  is now defined in terms Momentum: 2.05GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.502675GeV
+G4WT1 >  is now defined in terms Momentum: 2.05GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 526.543 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 3.59541 nanoGy  rms = 89.9338 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 526.543 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.98241 nanoGy  rms = 135.568 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 7.57783 nanoGy  rms = 162.955 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.526543GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.526543GeV
+G4WT0 >  is now defined in terms Momentum: 2.1GeV/c
+G4WT1 >  is now defined in terms Momentum: 2.1GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 550.863 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.49621 nanoGy  rms = 90.4363 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 550.863 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 3.72642 nanoGy  rms = 128.149 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 7.22262 nanoGy  rms = 156.912 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.550863GeV
+G4WT1 >  is now defined in terms Momentum: 2.15GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.550863GeV
+G4WT0 >  is now defined in terms Momentum: 2.15GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 575.626 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.44421 nanoGy  rms = 120.894 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 575.626 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 3.45991 nanoGy  rms = 88.8344 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 6.90412 nanoGy  rms = 150.038 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.575626GeV
+G4WT1 >  is now defined in terms Momentum: 2.2GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.575626GeV
+G4WT0 >  is now defined in terms Momentum: 2.2GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 600.826 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 3.38773 nanoGy  rms = 119.968 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 600.826 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.44892 nanoGy  rms = 114.044 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 6.83665 nanoGy  rms = 165.526 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.600826GeV
+G4WT0 >  is now defined in terms Momentum: 2.25GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.600826GeV
+G4WT1 >  is now defined in terms Momentum: 2.25GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 626.453 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.24717 nanoGy  rms = 107.787 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 626.453 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 3.25301 nanoGy  rms = 112.617 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 6.50018 nanoGy  rms = 155.903 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.626453GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.626453GeV
+G4WT0 >  is now defined in terms Momentum: 2.3GeV/c
+G4WT1 >  is now defined in terms Momentum: 2.3GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 652.502 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 3.00748 nanoGy  rms = 76.3623 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 652.502 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.2065 nanoGy  rms = 114.745 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 6.21398 nanoGy  rms = 137.888 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.652502GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.652502GeV
+G4WT0 >  is now defined in terms Momentum: 2.35GeV/c
+G4WT1 >  is now defined in terms Momentum: 2.35GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 678.963 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.90331 nanoGy  rms = 78.7647 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 678.963 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.044 nanoGy  rms = 93.5394 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.94731 nanoGy  rms = 122.304 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.678963GeV
+G4WT0 >  is now defined in terms Momentum: 2.4GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.678963GeV
+G4WT1 >  is now defined in terms Momentum: 2.4GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 705.831 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.88264 nanoGy  rms = 89.454 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 705.831 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.00793 nanoGy  rms = 109.541 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.89057 nanoGy  rms = 141.437 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.705831GeV
+G4WT1 >  is now defined in terms Momentum: 2.45GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.705831GeV
+G4WT0 >  is now defined in terms Momentum: 2.45GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 733.098 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.94415 nanoGy  rms = 124.09 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 733.098 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.94913 nanoGy  rms = 108.568 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.89328 nanoGy  rms = 164.893 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.733098GeV
+G4WT0 >  is now defined in terms Momentum: 2.5GeV/c
+G4WT1 >  was defined in terms of KineticEnergy: 0.733098GeV
+G4WT1 >  is now defined in terms Momentum: 2.5GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 760.756 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.93405 nanoGy  rms = 108.095 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 760.756 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.83906 nanoGy  rms = 109.235 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.77311 nanoGy  rms = 153.765 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.760756GeV
+G4WT0 >  is now defined in terms Momentum: 2.55GeV/c
+G4WT1 >  was defined in terms of KineticEnergy: 0.760756GeV
+G4WT1 >  is now defined in terms Momentum: 2.55GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 788.798 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.74928 nanoGy  rms = 115.759 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 788.798 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.68062 nanoGy  rms = 87.8102 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.4299 nanoGy  rms = 145.296 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.788798GeV
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.788798GeV
+G4WT1 >  is now defined in terms Momentum: 2.6GeV/c
+G4WT0 >  is now defined in terms Momentum: 2.6GeV/c
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT0 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 817.217 MeV
+G4WT0 >  The run consists of 506 alpha of 817.217 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.91793 nanoGy  rms = 137.274 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.85757 nanoGy  rms = 117.433 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.7755 nanoGy  rms = 180.697 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT1 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.817217GeV
+G4WT0 >  is now defined in terms Momentum: 2.65GeV/c
+G4WT1 >  was defined in terms of KineticEnergy: 0.817217GeV
+G4WT1 >  is now defined in terms Momentum: 2.65GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 846.006 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.66525 nanoGy  rms = 103.473 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 846.006 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.56024 nanoGy  rms = 90.5469 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.22549 nanoGy  rms = 137.599 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.846006GeV
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.846006GeV
+G4WT1 >  is now defined in terms Momentum: 2.7GeV/c
+G4WT0 >  is now defined in terms Momentum: 2.7GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 875.159 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.67477 nanoGy  rms = 116.423 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 875.159 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.6639 nanoGy  rms = 111.487 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.33867 nanoGy  rms = 161.211 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.875159GeV
+G4WT0 >  is now defined in terms Momentum: 2.75GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.875159GeV
+G4WT1 >  is now defined in terms Momentum: 2.75GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 904.667 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.55476 nanoGy  rms = 101.564 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 904.667 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.61019 nanoGy  rms = 93.8469 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.16495 nanoGy  rms = 138.285 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.904667GeV
+G4WT0 >  is now defined in terms Momentum: 2.8GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.904667GeV
+G4WT1 >  is now defined in terms Momentum: 2.8GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 934.526 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.38967 nanoGy  rms = 84.7811 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 934.526 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.66891 nanoGy  rms = 141.574 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 5.05858 nanoGy  rms = 165.163 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.934526GeV
+G4WT1 >  is now defined in terms Momentum: 2.85GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.934526GeV
+G4WT0 >  is now defined in terms Momentum: 2.85GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 964.727 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.32738 nanoGy  rms = 72.5519 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 964.727 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.52967 nanoGy  rms = 113.423 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.85705 nanoGy  rms = 134.72 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.964727GeV
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.964727GeV
+G4WT1 >  is now defined in terms Momentum: 2.9GeV/c
+G4WT0 >  is now defined in terms Momentum: 2.9GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 995.264 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.16252 nanoGy  rms = 46.1618 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 995.264 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.39359 nanoGy  rms = 87.5886 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.5561 nanoGy  rms = 99.1655 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 0.995264GeV
+G4WT1 >  is now defined in terms Momentum: 2.95GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 0.995264GeV
+G4WT0 >  is now defined in terms Momentum: 2.95GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.02613 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.42866 nanoGy  rms = 115.016 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.02613 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.45049 nanoGy  rms = 130.322 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.87915 nanoGy  rms = 173.821 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.02613GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.02613GeV
+G4WT0 >  is now defined in terms Momentum: 3GeV/c
+G4WT1 >  is now defined in terms Momentum: 3GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.05732 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.26684 nanoGy  rms = 82.7419 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.05732 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.35737 nanoGy  rms = 86.8664 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.62421 nanoGy  rms = 119.972 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.05732GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.05732GeV
+G4WT0 >  is now defined in terms Momentum: 3.05GeV/c
+G4WT1 >  is now defined in terms Momentum: 3.05GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.08883 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.31898 nanoGy  rms = 118.453 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.08883 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.25711 nanoGy  rms = 103.152 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.57609 nanoGy  rms = 157.072 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.08883GeV
+G4WT1 >  is now defined in terms Momentum: 3.1GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.08883GeV
+G4WT0 >  is now defined in terms Momentum: 3.1GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.12065 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.27472 nanoGy  rms = 116.537 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.12065 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.33844 nanoGy  rms = 119.166 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.61316 nanoGy  rms = 166.678 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.12065GeV
+G4WT0 >  is now defined in terms Momentum: 3.15GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.12065GeV
+G4WT1 >  is now defined in terms Momentum: 3.15GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.15277 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.17281 nanoGy  rms = 91.4036 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.15277 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.21048 nanoGy  rms = 120.086 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.38329 nanoGy  rms = 150.916 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.15277GeV
+G4WT0 >  is now defined in terms Momentum: 3.2GeV/c
+G4WT1 >  was defined in terms of KineticEnergy: 1.15277GeV
+G4WT1 >  is now defined in terms Momentum: 3.2GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 472 alpha of 1.18519 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.94234 nanoGy  rms = 1.98746 nanoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 528 alpha of 1.18519 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.27696 nanoGy  rms = 102.008 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 6.2193 nanoGy  rms = 1.9911 nanoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.18519GeV
+G4WT1 >  is now defined in terms Momentum: 3.25GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.18519GeV
+G4WT0 >  is now defined in terms Momentum: 3.25GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.21791 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.06144 nanoGy  rms = 92.2603 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.21791 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.32513 nanoGy  rms = 132.681 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.38657 nanoGy  rms = 161.743 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.21791GeV
+G4WT1 >  is now defined in terms Momentum: 3.3GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.21791GeV
+G4WT0 >  is now defined in terms Momentum: 3.3GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.25091 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.13271 nanoGy  rms = 119.6 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.25091 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.052 nanoGy  rms = 76.5542 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.1847 nanoGy  rms = 142.063 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.25091GeV
+G4WT1 >  is now defined in terms Momentum: 3.35GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.25091GeV
+G4WT0 >  is now defined in terms Momentum: 3.35GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.28419 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.98675 nanoGy  rms = 89.0069 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.28419 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.99447 nanoGy  rms = 72.8615 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.98122 nanoGy  rms = 115.033 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.28419GeV
+G4WT0 >  is now defined in terms Momentum: 3.4GeV/c
+G4WT1 >  was defined in terms of KineticEnergy: 1.28419GeV
+G4WT1 >  is now defined in terms Momentum: 3.4GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.31775 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.07831 nanoGy  rms = 91.0922 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.31775 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.89534 nanoGy  rms = 58.1408 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.97365 nanoGy  rms = 108.311 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.31775GeV
+G4WT0 >  is now defined in terms Momentum: 3.45GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.31775GeV
+G4WT1 >  is now defined in terms Momentum: 3.45GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.35158 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.0588 nanoGy  rms = 92.1141 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.35158 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 2.0029 nanoGy  rms = 104.308 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.0617 nanoGy  rms = 139.198 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.35158GeV
+G4WT1 >  is now defined in terms Momentum: 3.5GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.35158GeV
+G4WT0 >  is now defined in terms Momentum: 3.5GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.38568 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.96376 nanoGy  rms = 101.447 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.38568 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.97285 nanoGy  rms = 97.262 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.93661 nanoGy  rms = 140.545 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.38568GeV
+G4WT1 >  is now defined in terms Momentum: 3.55GeV/c
+G4WT0 >  was defined in terms of KineticEnergy: 1.38568GeV
+G4WT0 >  is now defined in terms Momentum: 3.55GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.42003 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.05084 nanoGy  rms = 145.307 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.42003 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.9941 nanoGy  rms = 94.5413 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 4.04494 nanoGy  rms = 173.387 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.42003GeV
+G4WT0 >  is now defined in terms Momentum: 3.6GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.42003GeV
+G4WT1 >  is now defined in terms Momentum: 3.6GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.45464 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.99095 nanoGy  rms = 102.284 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.45464 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.80752 nanoGy  rms = 53.6734 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.79847 nanoGy  rms = 115.738 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.45464GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT1 >  is now defined in terms Momentum: 3.65GeV/c
+G4WT0 >  was defined in terms of KineticEnergy: 1.45464GeV
+G4WT0 >  is now defined in terms Momentum: 3.65GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.4895 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.83477 nanoGy  rms = 60.5428 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.4895 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.9974 nanoGy  rms = 108.906 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.83217 nanoGy  rms = 124.658 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.4895GeV
+G4WT0 >  is now defined in terms Momentum: 3.7GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.4895GeV
+G4WT1 >  is now defined in terms Momentum: 3.7GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.52461 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.79732 nanoGy  rms = 75.1785 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.52461 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 2.00169 nanoGy  rms = 119.749 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.79901 nanoGy  rms = 141.481 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.52461GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.52461GeV
+G4WT0 >  is now defined in terms Momentum: 3.75GeV/c
+G4WT1 >  is now defined in terms Momentum: 3.75GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.55995 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.72253 nanoGy  rms = 51.9441 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.55995 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.73846 nanoGy  rms = 51.0364 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.46099 nanoGy  rms = 72.8256 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.55995GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT1 >  is now defined in terms Momentum: 3.8GeV/c
+G4WT0 >  was defined in terms of KineticEnergy: 1.55995GeV
+G4WT0 >  is now defined in terms Momentum: 3.8GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.59553 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.83709 nanoGy  rms = 87.4265 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.59553 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.89831 nanoGy  rms = 112.664 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.7354 nanoGy  rms = 142.607 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.59553GeV
+G4WT1 >  is now defined in terms Momentum: 3.85GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.59553GeV
+G4WT0 >  is now defined in terms Momentum: 3.85GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.63134 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.88968 nanoGy  rms = 95.9591 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.63134 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.7758 nanoGy  rms = 59.4716 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.66547 nanoGy  rms = 113.004 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.63134GeV
+G4WT0 >  is now defined in terms Momentum: 3.9GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.63134GeV
+G4WT1 >  is now defined in terms Momentum: 3.9GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.66737 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.7639 nanoGy  rms = 108.41 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.66737 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.80215 nanoGy  rms = 90.9586 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.56605 nanoGy  rms = 141.514 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.66737GeV
+G4WT0 >  is now defined in terms Momentum: 3.95GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.66737GeV
+G4WT1 >  is now defined in terms Momentum: 3.95GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.70363 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.76219 nanoGy  rms = 97.023 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.70363 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.83754 nanoGy  rms = 100.644 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.59973 nanoGy  rms = 139.799 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.70363GeV
+G4WT0 >  is now defined in terms Momentum: 4GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.70363GeV
+G4WT1 >  is now defined in terms Momentum: 4GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.7401 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.61917 nanoGy  rms = 52.0449 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.7401 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.75735 nanoGy  rms = 74.7192 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.37651 nanoGy  rms = 91.1107 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.7401GeV
+G4WT0 >  is now defined in terms Momentum: 4.05GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.7401GeV
+G4WT1 >  is now defined in terms Momentum: 4.05GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.77679 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.82252 nanoGy  rms = 127.337 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.77679 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.88187 nanoGy  rms = 114.666 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.70439 nanoGy  rms = 171.357 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.77679GeV
+G4WT0 >  is now defined in terms Momentum: 4.1GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.77679GeV
+G4WT1 >  is now defined in terms Momentum: 4.1GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 1.81368 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.63073 nanoGy  rms = 53.625 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 1.81368 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.80716 nanoGy  rms = 113.738 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.43789 nanoGy  rms = 125.818 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.81368GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.81368GeV
+G4WT0 >  is now defined in terms Momentum: 4.15GeV/c
+G4WT1 >  is now defined in terms Momentum: 4.15GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 484 alpha of 1.85078 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.71869 nanoGy  rms = 102.251 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 516 alpha of 1.85078 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.63257 nanoGy  rms = 46.1904 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.35126 nanoGy  rms = 112.367 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.85078GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT1 >  is now defined in terms Momentum: 4.2GeV/c
+G4WT0 >  was defined in terms of KineticEnergy: 1.85078GeV
+G4WT0 >  is now defined in terms Momentum: 4.2GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.88808 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.64103 nanoGy  rms = 75.6942 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.88808 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.73425 nanoGy  rms = 90.4149 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.37529 nanoGy  rms = 117.929 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.88808GeV
+G4WT1 >  is now defined in terms Momentum: 4.25GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.88808GeV
+G4WT0 >  is now defined in terms Momentum: 4.25GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.92557 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.71014 nanoGy  rms = 78.6104 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.92557 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.75388 nanoGy  rms = 100.148 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.46402 nanoGy  rms = 127.315 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.92557GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.92557GeV
+G4WT0 >  is now defined in terms Momentum: 4.3GeV/c
+G4WT1 >  is now defined in terms Momentum: 4.3GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 1.96326 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.65362 nanoGy  rms = 74.4925 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 1.96326 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.75553 nanoGy  rms = 68.586 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.40915 nanoGy  rms = 101.276 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 1.96326GeV
+G4WT1 >  is now defined in terms Momentum: 4.35GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 1.96326GeV
+G4WT0 >  is now defined in terms Momentum: 4.35GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 2.00113 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.73484 nanoGy  rms = 88.8718 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 2.00113 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.64539 nanoGy  rms = 61.3078 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.38022 nanoGy  rms = 108.045 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.00113GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.00113GeV
+G4WT0 >  is now defined in terms Momentum: 4.4GeV/c
+G4WT1 >  is now defined in terms Momentum: 4.4GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 2.03919 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.92581 nanoGy  rms = 138.971 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 2.03919 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.64301 nanoGy  rms = 80.9402 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.56882 nanoGy  rms = 161.153 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.03919GeV
+G4WT1 >  is now defined in terms Momentum: 4.45GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.03919GeV
+G4WT0 >  is now defined in terms Momentum: 4.45GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 2.07743 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.63107 nanoGy  rms = 91.513 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 2.07743 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.64169 nanoGy  rms = 97.4674 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.27277 nanoGy  rms = 133.699 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.07743GeV
+G4WT0 >  is now defined in terms Momentum: 4.5GeV/c
+G4WT1 >  was defined in terms of KineticEnergy: 2.07743GeV
+G4WT1 >  is now defined in terms Momentum: 4.5GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 2.11585 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.5896 nanoGy  rms = 78.5156 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 2.11585 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.48857 nanoGy  rms = 41.4788 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.07817 nanoGy  rms = 88.9058 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.11585GeV
+G4WT1 >  is now defined in terms Momentum: 4.55GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.11585GeV
+G4WT0 >  is now defined in terms Momentum: 4.55GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 2.15445 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.63252 nanoGy  rms = 104.777 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 2.15445 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.75137 nanoGy  rms = 250.253 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.38389 nanoGy  rms = 271.349 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.15445GeV
+G4WT1 >  is now defined in terms Momentum: 4.6GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.15445GeV
+G4WT0 >  is now defined in terms Momentum: 4.6GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 2.19321 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.52876 nanoGy  rms = 58.3471 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 2.19321 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.57136 nanoGy  rms = 72.8237 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.10012 nanoGy  rms = 93.3151 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.19321GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.19321GeV
+G4WT0 >  is now defined in terms Momentum: 4.65GeV/c
+G4WT1 >  is now defined in terms Momentum: 4.65GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 2.23214 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.48524 nanoGy  rms = 66.0857 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 2.23214 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.47781 nanoGy  rms = 45.6349 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 2.96304 nanoGy  rms = 80.3225 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.23214GeV
+G4WT0 >  is now defined in terms Momentum: 4.7GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.23214GeV
+G4WT1 >  is now defined in terms Momentum: 4.7GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 2.27123 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.51006 nanoGy  rms = 65.6781 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 2.27123 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.51642 nanoGy  rms = 59.987 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.02649 nanoGy  rms = 88.9548 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.27123GeV
+G4WT1 >  is now defined in terms Momentum: 4.75GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.27123GeV
+G4WT0 >  is now defined in terms Momentum: 4.75GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 2.31049 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.51588 nanoGy  rms = 70.992 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 2.31049 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.63004 nanoGy  rms = 122.544 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.14592 nanoGy  rms = 141.643 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.31049GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT1 >  is now defined in terms Momentum: 4.8GeV/c
+G4WT0 >  was defined in terms of KineticEnergy: 2.31049GeV
+G4WT0 >  is now defined in terms Momentum: 4.8GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 2.3499 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.47182 nanoGy  rms = 55.0432 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 2.3499 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.52955 nanoGy  rms = 56.4806 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.00137 nanoGy  rms = 78.8688 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.3499GeV
+G4WT1 >  is now defined in terms Momentum: 4.85GeV/c
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.3499GeV
+G4WT0 >  is now defined in terms Momentum: 4.85GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 2.38947 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.60427 nanoGy  rms = 105.478 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 2.38947 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.56041 nanoGy  rms = 98.1249 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.16468 nanoGy  rms = 144.086 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.38947GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.38947GeV
+G4WT1 >  is now defined in terms Momentum: 4.9GeV/c
+G4WT0 >  is now defined in terms Momentum: 4.9GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 2.42919 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.59113 nanoGy  rms = 77.6883 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 2.42919 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.47819 nanoGy  rms = 51.1864 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.06932 nanoGy  rms = 93.1555 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.42919GeV
+G4WT0 >  is now defined in terms Momentum: 4.95GeV/c
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.42919GeV
+G4WT1 >  is now defined in terms Momentum: 4.95GeV/c
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 494 alpha of 2.46906 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.42778 nanoGy  rms = 51.0744 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 506 alpha of 2.46906 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.47408 nanoGy  rms = 47.0838 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 2.90187 nanoGy  rms = 69.4666 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+G4WT1 > G4ParticleGun::alpha
+G4WT1 >  was defined in terms of KineticEnergy: 2.46906GeV
+G4WT0 > G4ParticleGun::alpha
+G4WT0 >  was defined in terms of KineticEnergy: 2.46906GeV
+G4WT0 >  is now defined in terms Momentum: 5GeV/c
+G4WT1 >  is now defined in terms Momentum: 5GeV/c
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 494 alpha of 2.50907 GeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 1.66197 nanoGy  rms = 120.745 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 506 alpha of 2.50907 GeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 1.58019 nanoGy  rms = 79.8076 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT1 > 
+
+--------------------End of Global Run-----------------------
+ The run consists of 1000 
+ Cumulated dose per run, in scoring volume : 3.24216 nanoGy  rms = 144.787 picoGy 
+------------------------------------------------------------
+
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+Graphics systems deleted.
+Visualization Manager deleting...

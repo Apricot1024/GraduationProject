@@ -1,0 +1,653 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "exampleB1"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/usr/lib64/Geant4-11.0.0/UseGeant4.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 40,
+				"parent" : 5
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -pthread -ftls-model=global-dynamic -std=c++17  -O3 -DNDEBUG -fno-trapping-math -ftree-vectorize -fno-math-errno -O3 -DNDEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-pthread"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "G4LIB_BUILD_DLL"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4UI_USE_QT"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4UI_USE_TCSH"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4UI_USE_XM"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_OI"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_OIQT"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_OPENGL"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_OPENGLQT"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_OPENGLX"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_OPENGLXM"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_RAYTRACERX"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_TOOLSSG"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "G4VIS_USE_TOOLSSG_QT_GLES"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_PRINTSUPPORT_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/WaterInf/10mud5/include"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/usr/include/Geant4"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/qt"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtGui"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtCore"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/lib/qt/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtOpenGL"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtWidgets"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtPrintSupport"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"id" : "exampleB1::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -pthread -ftls-model=global-dynamic -std=c++17  -O3 -DNDEBUG -fno-trapping-math -ftree-vectorize -fno-math-errno -O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4Tree.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4FR.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4GMocren.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4visHepRep.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4RayTracer.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4VRML.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4OpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4OpenInventor.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4ToolsSG.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4vis_management.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4modeling.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4interfaces.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4persistency.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4error_propagation.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4readout.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4physicslists.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4tasking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4parmodels.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4gl2ps.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libSoQt.so.1.6.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libCoin.so.4.0.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libOpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libGLX.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libSM.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libICE.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libX11.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXext.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXi.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXmu.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXext.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXm.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXt.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libICE.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libSM.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libX11.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libGL.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5OpenGL.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5PrintSupport.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5Widgets.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5Gui.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5Core.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libxerces-c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4run.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4event.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4tracking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4processes.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4analysis.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4tools.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libz.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libexpat.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4digits_hits.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4track.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4particles.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4geometry.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4materials.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4graphics_reps.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4intercoms.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4global.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libG4clhep.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libG4ptl.so.0.0.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-pthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "exampleB1",
+	"nameOnDisk" : "exampleB1",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "exampleB1.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1ActionInitialization.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1DetectorConstruction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1EventAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1PrimaryGeneratorAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1RunAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1SteppingAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1ActionInitialization.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1DetectorConstruction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1EventAction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1PrimaryGeneratorAction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1RunAction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1SteppingAction.hh",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,249 @@
+
+# Initialize kernel
+/run/initialize
+#/change particle
+/gun/particle gamma
+#change energy
+/gun/energy 2.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 3.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 4.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 5.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 6.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 7.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 8.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 9.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 10.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 11.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 12.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 13.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 14.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 15.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 16.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 17.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 18.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 19.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 20.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 21.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 22.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 23.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 24.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 25.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 26.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 27.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 28.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 29.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 30.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 31.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 32.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 33.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 34.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 35.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 36.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 37.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 38.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 39.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 40.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 41.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 42.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 43.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 44.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 45.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 46.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 47.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 48.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 49.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
+
+#change energy
+/gun/energy 50.00 MeV
+#launch 10000 particles
+/run/beamOn 10000
