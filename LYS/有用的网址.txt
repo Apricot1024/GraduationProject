@@ -1,0 +1,8 @@
+STAR程序—计算阻止本领与射程
+https://physics.nist.gov/PhysRefData/Star/Text/ESTAR.html
+https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html
+https://physics.nist.gov/PhysRefData/Star/Text/ASTAR.html
+PDG官网
+https://pdg.lbl.gov/
+GEANT4讨论区
+https://geant4-forum.web.cern.ch/
