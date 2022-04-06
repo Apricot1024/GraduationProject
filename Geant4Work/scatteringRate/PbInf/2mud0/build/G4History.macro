@@ -63,3 +63,6 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+/vis/set/touchable World 0 Envelope 0 Shape1 0
+/gun/energy 8 MeV
+/run/beamOn 10000

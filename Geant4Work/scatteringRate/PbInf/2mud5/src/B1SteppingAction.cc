@@ -50,12 +50,15 @@ B1SteppingAction::~B1SteppingAction()
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-G4int i = 0;
-G4int j = 0;
-int eventIDflag[10000] = {10000001};
-G4int eventIDmax = 0;
-G4int flagcode = 0;
-G4int outputcode = 10;
+G4int i = 0;//排除电子对效应影响的总粒子数
+G4int j = 0;//未经散射的粒子数
+G4int c = 0;//由于电子对效应的粒子数
+int eventIDflag[950000] = {950001};  //重复计数排除数组
+int eventIDconvflag[950000] = {950001};  // 对发生电子对效应的粒子进行统计
+// G4int eventIDmax = 0;
+G4int flagcodeRP = 0;
+G4int flagcodeConv = 0;
+G4int outputcode = 10; //是否输出判断
 
 void B1SteppingAction::UserSteppingAction(const G4Step* step)
 {
@@ -79,9 +82,10 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
   G4VPhysicalVolume* nextpv=aTrack->GetNextVolume();
   G4int eventID = (G4EventManager::GetEventManager())->GetConstCurrentEvent()->GetEventID();
   G4String PostProcessName = step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
-  if (PostProcessName == "conv")
+  if (PostProcessName == "conv") //conv表示电子对效应
   {
     eventIDflag[eventID] = eventID;
+    eventIDconvflag[eventID] = eventID;
   }
   
   if (nextpv!=NULL)
@@ -95,20 +99,31 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
       {
         j = j + 1;
       }
-      for (int k = 0; k < 10000; k++)
+      for (int k = 0; k < 950000; k++)
       {
         if (eventID == eventIDflag[k])
         {
-          flagcode = 1;
+          flagcodeRP = 1;
+          break;
+        }
+      }
+
+
+      //若该粒子的event发生过电子对效应，则将flagcodeConv标为1.
+      for (int k = 0; k < 950000; k++)
+      {
+        if (eventID == eventIDconvflag[k])
+        {
+          flagcodeConv = 1;
           break;
         }
       }
       
       
 
-      if (flagcode == 1)
+      if (flagcodeRP == 1)
       {
-        flagcode = 0;
+        flagcodeRP = 0;
       }else{
         eventIDflag[eventID] = eventID;
         if (particleName == "gamma")
@@ -116,13 +131,27 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
           i = i + 1;
         }
       }
+
+      //若该粒子的event发生过电子对效应(flagcodeConv==1),则计数c
+      if (flagcodeConv == 1)
+      {
+        if (particleName == "gamma")
+        {
+          c = c + 1;
+        }
+        flagcodeConv = 0;
+      }
+      
       
     }
-    if ((eventID == 9999) & (outputcode == 10))
+
+
+    if ((eventID == 949999) & (outputcode == 10))
     {
-      outputcode = eventID;
-      G4cout<<"EffectiveCountone:"<< i <<G4endl;
-      G4cout<<"EffectiveCounttwo:"<< j <<G4endl;
+      outputcode = eventID; //使eventID最大时只输出一次，不重复输出。
+      G4cout<<"EffectiveCountallnoconv:"<< i <<G4endl;
+      G4cout<<"EffectiveCountnoscattering:"<< j <<G4endl;
+      G4cout<<"EffectiveCountconv:"<< c <<G4endl;
     }
   }
 

@@ -3,7 +3,7 @@
 #mkdir build
 #cd build/
 mud=(2 2 2 2 2 2 4 4 4 4 4 4 7 7 7 7 7 7 10 10 10 10 10 10 15 15 15 15 15 15)
-for ((i=6; i<=35; i++)); do
+for ((i=6; i<=29; i++)); do
 #cmake ..
 #make
 #cp ~/Documents/GraduationProject/Geant4Doc/rundemo1.mac ./

@@ -1,4 +1,5 @@
 # 本py脚本用于自动改写B1DetectorConstruction.cc中屏蔽板的厚度
+particleNum = 950000
 i = 6
 mud = [2,2,2,2,2,2,4,4,4,4,4,4,7,7,7,7,7,7,10,10,10,10,10,10,15,15,15,15,15,15]
 hou = [10.91768611,
@@ -34,6 +35,7 @@ hou = [10.91768611,
 ]
 enerNum = [0,1,2,3,4,5]
 energy = [0.5,1,2,3,4,8]
+
 while i <= 35:
     j = i % 6
     f = open('/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf/{}mud{}/src/B1DetectorConstruction.cc'.format(mud[i-6],enerNum[j]), 'r', encoding='utf-8')
@@ -53,7 +55,7 @@ while i <= 35:
         new1.append(line)
     f1.close()
     new1[13]='/gun/energy {} MeV\n'.format(energy[j])
-    new1[15]='/run/beamOn 10000\n'
+    new1[15]='/run/beamOn {}\n'.format(particleNum)
     f1 = open('/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf/{}mud{}/build/rundemo.mac'.format(mud[i-6],enerNum[j]), 'w', encoding='utf-8')
     for n in new1:
         f1.write(n)
@@ -75,10 +77,12 @@ while i <= 35:
     for line in f4:
         new4.append(line)
     f4.close()
-    new4[54]='int eventIDflag[10000] = {10000001};\n'
-    new4[93]='      if (E == {})\n'.format(energy[j])
-    new4[97]='      for (int k = 0; k < 10000; k++)\n'
-    new4[120]='    if ((eventID == 9999) & (outputcode == 10))\n'
+    new4[55]='int eventIDflag[{}] = {{{}}};  //重复计数排除数组\n'.format(particleNum,particleNum+1)
+    new4[56]='int eventIDconvflag[{}] = {{{}}};  // 对发生电子对效应的粒子进行统计\n'.format(particleNum,particleNum+1)
+    new4[97]='      if (E == {})\n'.format(energy[j])
+    new4[101]='      for (int k = 0; k < {}; k++)\n'.format(particleNum)
+    new4[112]='      for (int k = 0; k < {}; k++)\n'.format(particleNum)
+    new4[148]='    if ((eventID == {}) & (outputcode == 10))\n'.format(particleNum-1)
     f4 = open('/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf/{}mud{}/src/B1SteppingAction.cc'.format(mud[i-6],enerNum[j]), 'w', encoding='utf-8')
     for n in new4:
         f4.write(n)
