@@ -63,13 +63,3 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/vis/set/touchable World 0 Envelope 0
-/vis/set/touchable World 0 Envelope 0 Shape1 0
-/vis/set/touchable World 0 Envelope 0 Shape1 0 Shape2 0
-/vis/set/touchable World 0 Envelope 0 Shape1 0 Shape2 0
-/vis/set/touchable World 0 Envelope 0 Shape1 0
-/run/beamOn 100
-/run/beamOn 100
-/run/beamOn 1000
-/run/beamOn 1000
-/run/beamOn 1000
