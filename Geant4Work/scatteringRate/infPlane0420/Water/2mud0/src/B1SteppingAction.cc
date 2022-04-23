@@ -92,7 +92,7 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
     {
       G4double E=aTrack->GetKineticEnergy();
       G4String particleName =  step->GetTrack()->GetDefinition()->GetParticleName();
-      if (E == 8)
+      if (E == 0.5)
       {
         j = j + 1;
       }

@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o: \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/WaterInf0418/2mud0/src/B1SteppingAction.cc \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0420/Water/2mud0/src/B1SteppingAction.cc \
  /usr/include/stdc-predef.h \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/WaterInf0418/2mud0/include/B1SteppingAction.hh \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0420/Water/2mud0/include/B1SteppingAction.hh \
  /usr/include/Geant4/G4UserSteppingAction.hh \
  /usr/include/Geant4/globals.hh /usr/include/Geant4/G4ios.hh \
  /usr/include/Geant4/G4Types.hh /usr/include/Geant4/G4GlobalConfig.hh \
@@ -214,9 +214,9 @@ CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o: \
  /usr/include/c++/11.2.0/bits/parse_numbers.h \
  /usr/include/c++/11.2.0/bits/std_mutex.h \
  /usr/include/c++/11.2.0/bits/unique_lock.h \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/WaterInf0418/2mud0/include/B1EventAction.hh \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0420/Water/2mud0/include/B1EventAction.hh \
  /usr/include/Geant4/G4UserEventAction.hh \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/WaterInf0418/2mud0/include/B1DetectorConstruction.hh \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0420/Water/2mud0/include/B1DetectorConstruction.hh \
  /usr/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/include/Geant4/globals.hh /usr/include/Geant4/G4Step.hh \
  /usr/include/c++/11.2.0/stdlib.h /usr/include/Geant4/G4ThreeVector.hh \

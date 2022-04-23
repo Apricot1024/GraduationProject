@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o: \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/infPlanePb0417/2mud0/src/B1DetectorConstruction.cc \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/infPlane0420/Pb/2mud0/src/B1DetectorConstruction.cc \
  /usr/include/stdc-predef.h \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/infPlanePb0417/2mud0/include/B1DetectorConstruction.hh \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/infPlane0420/Pb/2mud0/include/B1DetectorConstruction.hh \
  /usr/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/include/c++/11.2.0/vector \
  /usr/include/c++/11.2.0/bits/stl_algobase.h \

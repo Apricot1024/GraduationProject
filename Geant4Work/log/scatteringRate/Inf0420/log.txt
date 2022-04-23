@@ -1,0 +1,630 @@
+Water2mud0
+G4WT1 > EffectiveCountallnoconv:2239242
+G4WT1 > EffectiveCountnoscattering:362802
+G4WT1 > EffectiveCountconv:0
+
+
+
+Water2mud1
+G4WT2 > EffectiveCountallnoconv:2028063
+G4WT2 > EffectiveCountnoscattering:360331
+G4WT2 > EffectiveCountconv:0
+
+
+
+Water2mud2
+G4WT11 > EffectiveCountallnoconv:1698974
+G4WT11 > EffectiveCountnoscattering:366320
+G4WT11 > EffectiveCountconv:33404
+
+
+
+Water2mud3
+G4WT7 > EffectiveCountallnoconv:1482451
+G4WT7 > EffectiveCountnoscattering:368565
+G4WT7 > EffectiveCountconv:98131
+
+
+
+Water2mud4
+G4WT7 > EffectiveCountallnoconv:1336633
+G4WT7 > EffectiveCountnoscattering:369334
+G4WT7 > EffectiveCountconv:154107
+
+
+
+Water2mud5
+G4WT5 > EffectiveCountallnoconv:1054559
+G4WT5 > EffectiveCountnoscattering:369004
+G4WT5 > EffectiveCountconv:310794
+
+
+
+Water4mud0
+G4WT5 > EffectiveCountallnoconv:927391
+G4WT5 > EffectiveCountnoscattering:49307
+G4WT5 > EffectiveCountconv:0
+
+
+
+Water4mud1
+G4WT4 > EffectiveCountallnoconv:668194
+G4WT4 > EffectiveCountnoscattering:48590
+G4WT4 > EffectiveCountconv:0
+
+
+
+Water4mud2
+G4WT3 > EffectiveCountallnoconv:445034
+G4WT3 > EffectiveCountnoscattering:49745
+G4WT3 > EffectiveCountconv:6378
+
+
+
+Water4mud3
+G4WT8 > EffectiveCountallnoconv:352447
+G4WT8 > EffectiveCountnoscattering:50557
+G4WT8 > EffectiveCountconv:15537
+
+
+
+Water4mud4
+G4WT5 > EffectiveCountallnoconv:301607
+G4WT5 > EffectiveCountnoscattering:50865
+G4WT5 > EffectiveCountconv:23188
+
+
+
+Water4mud5
+G4WT7 > EffectiveCountallnoconv:216525
+G4WT7 > EffectiveCountnoscattering:50567
+G4WT7 > EffectiveCountconv:49393
+
+
+
+Water7mud0
+G4WT0 > EffectiveCountallnoconv:127426
+G4WT0 > EffectiveCountnoscattering:2442
+G4WT0 > EffectiveCountconv:0
+
+
+
+Water7mud1
+G4WT0 > EffectiveCountallnoconv:71695
+G4WT0 > EffectiveCountnoscattering:2396
+G4WT0 > EffectiveCountconv:0
+
+
+
+Water7mud2
+G4WT11 > EffectiveCountallnoconv:39914
+G4WT11 > EffectiveCountnoscattering:2459
+G4WT11 > EffectiveCountconv:354
+
+
+
+Water7mud3
+G4WT5 > EffectiveCountallnoconv:29498
+G4WT5 > EffectiveCountnoscattering:2569
+G4WT5 > EffectiveCountconv:906
+
+
+
+Water7mud4
+G4WT1 > EffectiveCountallnoconv:24227
+G4WT1 > EffectiveCountnoscattering:2571
+G4WT1 > EffectiveCountconv:1520
+
+
+
+Water7mud5
+G4WT5 > EffectiveCountallnoconv:16196
+G4WT5 > EffectiveCountnoscattering:2550
+G4WT5 > EffectiveCountconv:3218
+
+
+
+Water10mud0
+G4WT7 > EffectiveCountallnoconv:12625
+G4WT7 > EffectiveCountnoscattering:113
+G4WT7 > EffectiveCountconv:0
+
+
+
+Water10mud1
+G4WT6 > EffectiveCountallnoconv:5724
+G4WT6 > EffectiveCountnoscattering:106
+G4WT6 > EffectiveCountconv:0
+
+
+
+Water10mud2
+G4WT6 > EffectiveCountallnoconv:2941
+G4WT6 > EffectiveCountnoscattering:130
+G4WT6 > EffectiveCountconv:19
+
+
+
+Water10mud3
+G4WT8 > EffectiveCountallnoconv:2062
+G4WT8 > EffectiveCountnoscattering:138
+G4WT8 > EffectiveCountconv:62
+
+
+
+Water10mud4
+G4WT2 > EffectiveCountallnoconv:1668
+G4WT2 > EffectiveCountnoscattering:132
+G4WT2 > EffectiveCountconv:104
+
+
+
+Water10mud5
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+
+
+
+Water15mud0
+G4WT9 > EffectiveCountallnoconv:197
+G4WT9 > EffectiveCountnoscattering:0
+G4WT9 > EffectiveCountconv:0
+
+
+
+Water15mud1
+G4WT6 > EffectiveCountallnoconv:67
+G4WT6 > EffectiveCountnoscattering:0
+G4WT6 > EffectiveCountconv:0
+
+
+
+Water15mud2
+G4WT11 > EffectiveCountallnoconv:30
+G4WT11 > EffectiveCountnoscattering:1
+G4WT11 > EffectiveCountconv:0
+
+
+
+Water15mud3
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+
+
+
+Water15mud4
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+
+
+
+Water15mud5
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+
+
+
+Concrete2mud0
+G4WT1 > EffectiveCountallnoconv:1949976
+G4WT1 > EffectiveCountnoscattering:405433
+G4WT1 > EffectiveCountconv:0
+
+
+
+Concrete2mud1
+G4WT8 > EffectiveCountallnoconv:1810067
+G4WT8 > EffectiveCountnoscattering:401569
+G4WT8 > EffectiveCountconv:0
+
+
+
+Concrete2mud2
+G4WT4 > EffectiveCountallnoconv:1569765
+G4WT4 > EffectiveCountnoscattering:406273
+G4WT4 > EffectiveCountconv:39742
+
+
+
+Concrete2mud3
+G4WT7 > EffectiveCountallnoconv:1408446
+G4WT7 > EffectiveCountnoscattering:407881
+G4WT7 > EffectiveCountconv:114462
+
+
+
+Concrete2mud4
+G4WT0 > EffectiveCountallnoconv:1294866
+G4WT0 > EffectiveCountnoscattering:406766
+G4WT0 > EffectiveCountconv:182090
+
+
+
+Concrete2mud5
+G4WT3 > EffectiveCountallnoconv:1052223
+G4WT3 > EffectiveCountnoscattering:399047
+G4WT3 > EffectiveCountconv:387541
+
+
+
+Concrete4mud0
+G4WT5 > EffectiveCountallnoconv:721153
+G4WT5 > EffectiveCountnoscattering:61721
+G4WT5 > EffectiveCountconv:0
+
+
+
+Concrete4mud1
+G4WT6 > EffectiveCountallnoconv:586539
+G4WT6 > EffectiveCountnoscattering:60432
+G4WT6 > EffectiveCountconv:0
+
+
+
+Concrete4mud2
+G4WT4 > EffectiveCountallnoconv:438267
+G4WT4 > EffectiveCountnoscattering:61599
+G4WT4 > EffectiveCountconv:7940
+
+
+
+Concrete4mud3
+G4WT4 > EffectiveCountallnoconv:365433
+G4WT4 > EffectiveCountnoscattering:62026
+G4WT4 > EffectiveCountconv:19878
+
+
+
+Concrete4mud4
+G4WT4 > EffectiveCountallnoconv:321153
+G4WT4 > EffectiveCountnoscattering:61615
+G4WT4 > EffectiveCountconv:30404
+
+
+
+Concrete4mud5
+G4WT5 > EffectiveCountallnoconv:237824
+G4WT5 > EffectiveCountnoscattering:59422
+G4WT5 > EffectiveCountconv:66663
+
+
+
+Concrete7mud0
+G4WT3 > EffectiveCountallnoconv:100883
+G4WT3 > EffectiveCountnoscattering:3661
+G4WT3 > EffectiveCountconv:0
+
+
+
+Concrete7mud1
+G4WT3 > EffectiveCountallnoconv:70269
+G4WT3 > EffectiveCountnoscattering:3526
+G4WT3 > EffectiveCountconv:0
+
+
+
+Concrete7mud2
+G4WT5 > EffectiveCountallnoconv:45788
+G4WT5 > EffectiveCountnoscattering:3604
+G4WT5 > EffectiveCountconv:516
+
+
+
+Concrete7mud3
+G4WT10 > EffectiveCountallnoconv:35723
+G4WT10 > EffectiveCountnoscattering:3607
+G4WT10 > EffectiveCountconv:1400
+
+
+
+Concrete7mud4
+G4WT10 > EffectiveCountallnoconv:30285
+G4WT10 > EffectiveCountnoscattering:3538
+G4WT10 > EffectiveCountconv:2225
+
+
+
+Concrete7mud5
+G4WT9 > EffectiveCountallnoconv:20512
+G4WT9 > EffectiveCountnoscattering:3374
+G4WT9 > EffectiveCountconv:5022
+
+
+
+Concrete10mud0
+G4WT1 > EffectiveCountallnoconv:10973
+G4WT1 > EffectiveCountnoscattering:200
+G4WT1 > EffectiveCountconv:0
+
+
+
+Concrete10mud1
+G4WT2 > EffectiveCountallnoconv:6534
+G4WT2 > EffectiveCountnoscattering:189
+G4WT2 > EffectiveCountconv:0
+
+
+
+Concrete10mud2
+G4WT10 > EffectiveCountallnoconv:3885
+G4WT10 > EffectiveCountnoscattering:225
+G4WT10 > EffectiveCountconv:16
+
+
+
+Concrete10mud3
+G4WT10 > EffectiveCountallnoconv:2941
+G4WT10 > EffectiveCountnoscattering:223
+G4WT10 > EffectiveCountconv:104
+
+
+
+Concrete10mud4
+G4WT1 > EffectiveCountallnoconv:2491
+G4WT1 > EffectiveCountnoscattering:218
+G4WT1 > EffectiveCountconv:153
+
+
+
+Concrete10mud5
+G4WT5 > EffectiveCountallnoconv:1511
+G4WT5 > EffectiveCountnoscattering:184
+G4WT5 > EffectiveCountconv:314
+
+
+
+Concrete15mud0
+G4WT11 > EffectiveCountallnoconv:221
+G4WT11 > EffectiveCountnoscattering:4
+G4WT11 > EffectiveCountconv:0
+
+
+
+Concrete15mud1
+G4WT8 > EffectiveCountallnoconv:103
+G4WT8 > EffectiveCountnoscattering:2
+G4WT8 > EffectiveCountconv:0
+
+
+
+Concrete15mud2
+G4WT2 > EffectiveCountallnoconv:60
+G4WT2 > EffectiveCountnoscattering:2
+G4WT2 > EffectiveCountconv:0
+
+
+
+Concrete15mud3
+G4WT5 > EffectiveCountallnoconv:43
+G4WT5 > EffectiveCountnoscattering:0
+G4WT5 > EffectiveCountconv:0
+
+
+
+Concrete15mud4
+G4WT8 > EffectiveCountallnoconv:26
+G4WT8 > EffectiveCountnoscattering:1
+G4WT8 > EffectiveCountconv:0
+
+
+
+Concrete15mud5
+G4WT11 > EffectiveCountallnoconv:13
+G4WT11 > EffectiveCountnoscattering:2
+G4WT11 > EffectiveCountconv:2
+
+
+
+Pb2mud0
+G4WT8 > EffectiveCountallnoconv:569258
+G4WT8 > EffectiveCountnoscattering:414584
+G4WT8 > EffectiveCountconv:0
+
+
+
+Pb2mud1
+G4WT1 > EffectiveCountallnoconv:687583
+G4WT1 > EffectiveCountnoscattering:386750
+G4WT1 > EffectiveCountconv:0
+
+
+
+Pb2mud2
+G4WT6 > EffectiveCountallnoconv:762729
+G4WT6 > EffectiveCountnoscattering:375332
+G4WT6 > EffectiveCountconv:27919
+
+
+
+Pb2mud3
+G4WT8 > EffectiveCountallnoconv:755430
+G4WT8 > EffectiveCountnoscattering:372408
+G4WT8 > EffectiveCountconv:69037
+
+
+
+Pb2mud4
+G4WT3 > EffectiveCountallnoconv:729089
+G4WT3 > EffectiveCountnoscattering:366402
+G4WT3 > EffectiveCountconv:118171
+
+
+
+Pb2mud5
+G4WT1 > EffectiveCountallnoconv:652968
+G4WT1 > EffectiveCountnoscattering:353292
+G4WT1 > EffectiveCountconv:511850
+
+
+
+Pb4mud0
+G4WT6 > EffectiveCountallnoconv:101457
+G4WT6 > EffectiveCountnoscattering:63700
+G4WT6 > EffectiveCountconv:0
+
+
+
+Pb4mud1
+G4WT0 > EffectiveCountallnoconv:131932
+G4WT0 > EffectiveCountnoscattering:55902
+G4WT0 > EffectiveCountconv:0
+
+
+
+Pb4mud2
+G4WT0 > EffectiveCountallnoconv:157502
+G4WT0 > EffectiveCountnoscattering:52759
+G4WT0 > EffectiveCountconv:4303
+
+
+
+Pb4mud3
+G4WT4 > EffectiveCountallnoconv:160789
+G4WT4 > EffectiveCountnoscattering:51747
+G4WT4 > EffectiveCountconv:11286
+
+
+
+Pb4mud4
+G4WT5 > EffectiveCountallnoconv:155728
+G4WT5 > EffectiveCountnoscattering:49980
+G4WT5 > EffectiveCountconv:19863
+
+
+
+Pb4mud5
+G4WT1 > EffectiveCountallnoconv:146380
+G4WT1 > EffectiveCountnoscattering:46733
+G4WT1 > EffectiveCountconv:109490
+
+
+
+Pb7mud0
+G4WT9 > EffectiveCountallnoconv:6979
+G4WT9 > EffectiveCountnoscattering:3745
+G4WT9 > EffectiveCountconv:0
+
+
+
+Pb7mud1
+G4WT10 > EffectiveCountallnoconv:9481
+G4WT10 > EffectiveCountnoscattering:3011
+G4WT10 > EffectiveCountconv:0
+
+
+
+Pb7mud2
+G4WT2 > EffectiveCountallnoconv:12301
+G4WT2 > EffectiveCountnoscattering:2732
+G4WT2 > EffectiveCountconv:263
+
+
+
+Pb7mud3
+G4WT4 > EffectiveCountallnoconv:13270
+G4WT4 > EffectiveCountnoscattering:2673
+G4WT4 > EffectiveCountconv:790
+
+
+
+Pb7mud4
+G4WT9 > EffectiveCountallnoconv:13241
+G4WT9 > EffectiveCountnoscattering:2433
+G4WT9 > EffectiveCountconv:1402
+
+
+
+Pb7mud5
+G4WT9 > EffectiveCountallnoconv:14377
+G4WT9 > EffectiveCountnoscattering:2183
+G4WT9 > EffectiveCountconv:9505
+
+
+
+Pb10mud0
+G4WT9 > EffectiveCountallnoconv:460
+G4WT9 > EffectiveCountnoscattering:206
+G4WT9 > EffectiveCountconv:0
+
+
+
+Pb10mud1
+G4WT6 > EffectiveCountallnoconv:673
+G4WT6 > EffectiveCountnoscattering:186
+G4WT6 > EffectiveCountconv:0
+
+
+
+Pb10mud2
+G4WT1 > EffectiveCountallnoconv:895
+G4WT1 > EffectiveCountnoscattering:149
+G4WT1 > EffectiveCountconv:11
+
+
+
+Pb10mud3
+G4WT11 > EffectiveCountallnoconv:1000
+G4WT11 > EffectiveCountnoscattering:121
+G4WT11 > EffectiveCountconv:46
+
+
+
+Pb10mud4
+G4WT6 > EffectiveCountallnoconv:985
+G4WT6 > EffectiveCountnoscattering:117
+G4WT6 > EffectiveCountconv:100
+
+
+
+Pb10mud5
+G4WT1 > EffectiveCountallnoconv:1398
+G4WT1 > EffectiveCountnoscattering:107
+G4WT1 > EffectiveCountconv:839
+
+
+
+Pb15mud0
+G4WT11 > EffectiveCountallnoconv:0
+G4WT11 > EffectiveCountnoscattering:0
+G4WT11 > EffectiveCountconv:0
+
+
+
+Pb15mud1
+G4WT8 > EffectiveCountallnoconv:3
+G4WT8 > EffectiveCountnoscattering:1
+G4WT8 > EffectiveCountconv:0
+
+
+
+Pb15mud2
+G4WT7 > EffectiveCountallnoconv:12
+G4WT7 > EffectiveCountnoscattering:0
+G4WT7 > EffectiveCountconv:0
+
+
+
+Pb15mud3
+G4WT1 > EffectiveCountallnoconv:6
+G4WT1 > EffectiveCountnoscattering:1
+G4WT1 > EffectiveCountconv:0
+
+
+
+Pb15mud4
+G4WT2 > EffectiveCountallnoconv:13
+G4WT2 > EffectiveCountnoscattering:0
+G4WT2 > EffectiveCountconv:1
+
+
+
+Pb15mud5
+G4WT5 > EffectiveCountallnoconv:23
+G4WT5 > EffectiveCountnoscattering:0
+G4WT5 > EffectiveCountconv:11
+
+
+

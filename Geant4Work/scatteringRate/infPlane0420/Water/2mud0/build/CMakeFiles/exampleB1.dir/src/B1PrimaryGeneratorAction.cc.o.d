@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o: \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/infPlaneWater0419/2mud0/src/B1PrimaryGeneratorAction.cc \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/infPlane0420/Water/2mud0/src/B1PrimaryGeneratorAction.cc \
  /usr/include/stdc-predef.h \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/infPlaneWater0419/2mud0/include/B1PrimaryGeneratorAction.hh \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/infPlane0420/Water/2mud0/include/B1PrimaryGeneratorAction.hh \
  /usr/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /usr/include/Geant4/G4ParticleGun.hh /usr/include/Geant4/globals.hh \
  /usr/include/Geant4/G4ios.hh /usr/include/Geant4/G4Types.hh \
