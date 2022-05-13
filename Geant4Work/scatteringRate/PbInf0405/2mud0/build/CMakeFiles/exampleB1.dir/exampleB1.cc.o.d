@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/exampleB1.cc.o: \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf/2mud0/exampleB1.cc \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf0405/2mud0/exampleB1.cc \
  /usr/include/stdc-predef.h \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf/2mud0/include/B1DetectorConstruction.hh \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf0405/2mud0/include/B1DetectorConstruction.hh \
  /usr/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/include/c++/11.2.0/vector \
  /usr/include/c++/11.2.0/bits/stl_algobase.h \
@@ -217,7 +217,7 @@ CMakeFiles/exampleB1.dir/exampleB1.cc.o: \
  /usr/include/c++/11.2.0/bits/std_mutex.h \
  /usr/include/c++/11.2.0/bits/unique_lock.h \
  /usr/include/Geant4/globals.hh \
- /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf/2mud0/include/B1ActionInitialization.hh \
+ /home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/PbInf0405/2mud0/include/B1ActionInitialization.hh \
  /usr/include/Geant4/G4VUserActionInitialization.hh \
  /usr/include/Geant4/G4RunManagerFactory.hh \
  /usr/include/Geant4/G4RunManager.hh /usr/include/c++/11.2.0/list \

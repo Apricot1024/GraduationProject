@@ -53,8 +53,8 @@ B1SteppingAction::~B1SteppingAction()
 G4int i = 0;//排除电子对效应影响的总粒子数
 G4int j = 0;//未经散射的粒子数
 G4int c = 0;//由于电子对效应的粒子数
-int eventIDflag[1000000] = {10000001};  //重复计数排除数组
-int eventIDconvflag[1000000] = {10000001};  // 对发生电子对效应的粒子进行统计
+int eventIDflag[10000] = {100001};  //重复计数排除数组
+int eventIDconvflag[10000] = {100001};  // 对发生电子对效应的粒子进行统计
 // G4int eventIDmax = 0;
 G4int flagcodeRP = 0;
 G4int flagcodeConv = 0;
@@ -98,8 +98,9 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
       if (E == 0.5)
       {
         j = j + 1;
+        G4cout<<"count111"<<G4endl;
       }
-      for (int k = 0; k < 1000000; k++)
+      for (int k = 0; k < 10000; k++)
       {
         if (eventID == eventIDflag[k])
         {
@@ -110,7 +111,7 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
 
 
       //若该粒子的event发生过电子对效应，则将flagcodeConv标为1.
-      for (int k = 0; k < 1000000; k++)
+      for (int k = 0; k < 10000; k++)
       {
         if (eventID == eventIDconvflag[k])
         {
@@ -129,6 +130,10 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
         if (particleName == "gamma")
         {
           i = i + 1;
+          if (E == 0.5)
+          {
+            G4cout<<"count222"<<G4endl;
+          }
         }
       }
 
@@ -146,7 +151,7 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
     }
 
 
-    if ((eventID == 999999) & (outputcode == 10))
+    if ((eventID == 9999) & (outputcode == 10))
     {
       outputcode = eventID; //使eventID最大时只输出一次，不重复输出。
       G4cout<<"EffectiveCountallnoconv:"<< i <<G4endl;

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.icc": "cpp",
+        "mathd": "cpp",
+        "numbers": "cpp",
+        "visible_action": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp"
+    }
+}

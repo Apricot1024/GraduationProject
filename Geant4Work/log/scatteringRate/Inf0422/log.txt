@@ -1,0 +1,900 @@
+Water2mud0
+G4WT11 > EffectivetotalNum:2240231
+G4WT11 > EffectivenoCoNum:362982
+G4WT11 > EffectivenoComptNum:363282
+G4WT11 > EffectivenoComptnRaylNum:361664
+G4WT11 > EffectivephotNum:2684
+G4WT11 > EffectiveconvNum:0
+G4WT11 > EffectivecomptNum:3077066
+G4WT11 > EffectiveRaylNum:439690
+
+Water2mud1
+G4WT7 > EffectivetotalNum:2024717
+G4WT7 > EffectivenoCoNum:360114
+G4WT7 > EffectivenoComptNum:360374
+G4WT7 > EffectivenoComptnRaylNum:359914
+G4WT7 > EffectivephotNum:11519
+G4WT7 > EffectiveconvNum:0
+G4WT7 > EffectivecomptNum:2720871
+G4WT7 > EffectiveRaylNum:383172
+
+Water2mud2
+G4WT5 > EffectivetotalNum:1709373
+G4WT5 > EffectivenoCoNum:365862
+G4WT5 > EffectivenoComptNum:367420
+G4WT5 > EffectivenoComptnRaylNum:367283
+G4WT5 > EffectivephotNum:52412
+G4WT5 > EffectiveconvNum:32995
+G4WT5 > EffectivecomptNum:2192359
+G4WT5 > EffectiveRaylNum:316851
+
+Water2mud3
+G4WT8 > EffectivetotalNum:1521794
+G4WT8 > EffectivenoCoNum:368098
+G4WT8 > EffectivenoComptNum:371698
+G4WT8 > EffectivenoComptnRaylNum:371593
+G4WT8 > EffectivephotNum:109326
+G4WT8 > EffectiveconvNum:97191
+G4WT8 > EffectivecomptNum:1892929
+G4WT8 > EffectiveRaylNum:287705
+
+Water2mud4
+G4WT8 > EffectivetotalNum:1400961
+G4WT8 > EffectivenoCoNum:369532
+G4WT8 > EffectivenoComptNum:374998
+G4WT8 > EffectivenoComptnRaylNum:374952
+G4WT8 > EffectivephotNum:161886
+G4WT8 > EffectiveconvNum:154490
+G4WT8 > EffectivecomptNum:1712695
+G4WT8 > EffectiveRaylNum:279714
+
+Water2mud5
+G4WT7 > EffectivetotalNum:1170009
+G4WT7 > EffectivenoCoNum:368504
+G4WT7 > EffectivenoComptNum:380464
+G4WT7 > EffectivenoComptnRaylNum:380440
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:311899
+G4WT7 > EffectivecomptNum:1420646
+G4WT7 > EffectiveRaylNum:317064
+
+Water4mud0
+G4WT4 > EffectivetotalNum:927799
+G4WT4 > EffectivenoCoNum:49301
+G4WT4 > EffectivenoComptNum:49310
+G4WT4 > EffectivenoComptnRaylNum:48895
+G4WT4 > EffectivephotNum:0
+G4WT4 > EffectiveconvNum:0
+G4WT4 > EffectivecomptNum:1413717
+G4WT4 > EffectiveRaylNum:304832
+
+Water4mud1
+G4WT1 > EffectivetotalNum:669260
+G4WT1 > EffectivenoCoNum:48670
+G4WT1 > EffectivenoComptNum:48680
+G4WT1 > EffectivenoComptnRaylNum:48544
+G4WT1 > EffectivephotNum:0
+G4WT1 > EffectiveconvNum:0
+G4WT1 > EffectivecomptNum:1009762
+G4WT1 > EffectiveRaylNum:185305
+
+Water4mud2
+G4WT1 > EffectivetotalNum:448130
+G4WT1 > EffectivenoCoNum:49777
+G4WT1 > EffectivenoComptNum:49917
+G4WT1 > EffectivenoComptnRaylNum:49852
+G4WT1 > EffectivephotNum:0
+G4WT1 > EffectiveconvNum:6318
+G4WT1 > EffectivecomptNum:647041
+G4WT1 > EffectiveRaylNum:99669
+
+Water4mud3
+G4WT8 > EffectivetotalNum:358688
+G4WT8 > EffectivenoCoNum:50513
+G4WT8 > EffectivenoComptNum:50925
+G4WT8 > EffectivenoComptnRaylNum:50891
+G4WT8 > EffectivephotNum:0
+G4WT8 > EffectiveconvNum:15452
+G4WT8 > EffectivecomptNum:499564
+G4WT8 > EffectiveRaylNum:72696
+
+Water4mud4
+G4WT1 > EffectivetotalNum:311274
+G4WT1 > EffectivenoCoNum:50903
+G4WT1 > EffectivenoComptNum:51605
+G4WT1 > EffectivenoComptnRaylNum:51584
+G4WT1 > EffectivephotNum:0
+G4WT1 > EffectiveconvNum:23296
+G4WT1 > EffectivecomptNum:422607
+G4WT1 > EffectiveRaylNum:61812
+
+Water4mud5
+G4WT6 > EffectivetotalNum:234116
+G4WT6 > EffectivenoCoNum:50577
+G4WT6 > EffectivenoComptNum:52136
+G4WT6 > EffectivenoComptnRaylNum:52121
+G4WT6 > EffectivephotNum:0
+G4WT6 > EffectiveconvNum:49532
+G4WT6 > EffectivecomptNum:310267
+G4WT6 > EffectiveRaylNum:59274
+
+Water7mud0
+G4WT9 > EffectivetotalNum:127716
+G4WT9 > EffectivenoCoNum:2446
+G4WT9 > EffectivenoComptNum:2446
+G4WT9 > EffectivenoComptnRaylNum:2410
+G4WT9 > EffectivephotNum:0
+G4WT9 > EffectiveconvNum:0
+G4WT9 > EffectivecomptNum:201051
+G4WT9 > EffectiveRaylNum:53669
+
+Water7mud1
+G4WT11 > EffectivetotalNum:71654
+G4WT11 > EffectivenoCoNum:2397
+G4WT11 > EffectivenoComptNum:2397
+G4WT11 > EffectivenoComptnRaylNum:2385
+G4WT11 > EffectivephotNum:0
+G4WT11 > EffectiveconvNum:0
+G4WT11 > EffectivecomptNum:113527
+G4WT11 > EffectiveRaylNum:22687
+
+Water7mud2
+G4WT8 > EffectivetotalNum:40170
+G4WT8 > EffectivenoCoNum:2458
+G4WT8 > EffectivenoComptNum:2464
+G4WT8 > EffectivenoComptnRaylNum:2462
+G4WT8 > EffectivephotNum:0
+G4WT8 > EffectiveconvNum:349
+G4WT8 > EffectivecomptNum:61728
+G4WT8 > EffectiveRaylNum:9417
+
+Water7mud3
+G4WT3 > EffectivetotalNum:29868
+G4WT3 > EffectivenoCoNum:2568
+G4WT3 > EffectivenoComptNum:2596
+G4WT3 > EffectivenoComptnRaylNum:2594
+G4WT3 > EffectivephotNum:0
+G4WT3 > EffectiveconvNum:924
+G4WT3 > EffectivecomptNum:44216
+G4WT3 > EffectiveRaylNum:6199
+
+Water7mud4
+G4WT7 > EffectivetotalNum:24758
+G4WT7 > EffectivenoCoNum:2568
+G4WT7 > EffectivenoComptNum:2602
+G4WT7 > EffectivenoComptnRaylNum:2599
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:1431
+G4WT7 > EffectivecomptNum:35408
+G4WT7 > EffectiveRaylNum:4721
+
+Water7mud5
+G4WT9 > EffectivetotalNum:17375
+G4WT9 > EffectivenoCoNum:2548
+G4WT9 > EffectivenoComptNum:2612
+G4WT9 > EffectivenoComptnRaylNum:2610
+G4WT9 > EffectivephotNum:0
+G4WT9 > EffectiveconvNum:3326
+G4WT9 > EffectivecomptNum:24447
+G4WT9 > EffectiveRaylNum:4130
+
+Water10mud0
+G4WT8 > EffectivetotalNum:12784
+G4WT8 > EffectivenoCoNum:113
+G4WT8 > EffectivenoComptNum:113
+G4WT8 > EffectivenoComptnRaylNum:107
+G4WT8 > EffectivephotNum:0
+G4WT8 > EffectiveconvNum:0
+G4WT8 > EffectivecomptNum:20407
+G4WT8 > EffectiveRaylNum:6037
+
+Water10mud1
+G4WT1 > EffectivetotalNum:5913
+G4WT1 > EffectivenoCoNum:106
+G4WT1 > EffectivenoComptNum:106
+G4WT1 > EffectivenoComptnRaylNum:105
+G4WT1 > EffectivephotNum:0
+G4WT1 > EffectiveconvNum:0
+G4WT1 > EffectivecomptNum:9462
+G4WT1 > EffectiveRaylNum:1981
+
+Water10mud2
+G4WT11 > EffectivetotalNum:2938
+G4WT11 > EffectivenoCoNum:130
+G4WT11 > EffectivenoComptNum:130
+G4WT11 > EffectivenoComptnRaylNum:130
+G4WT11 > EffectivephotNum:0
+G4WT11 > EffectiveconvNum:26
+G4WT11 > EffectivecomptNum:4638
+G4WT11 > EffectiveRaylNum:743
+
+Water10mud3
+G4WT5 > EffectivetotalNum:2063
+G4WT5 > EffectivenoCoNum:138
+G4WT5 > EffectivenoComptNum:139
+G4WT5 > EffectivenoComptnRaylNum:139
+G4WT5 > EffectivephotNum:0
+G4WT5 > EffectiveconvNum:43
+G4WT5 > EffectivecomptNum:3096
+G4WT5 > EffectiveRaylNum:494
+
+Water10mud4
+G4WT3 > EffectivetotalNum:1709
+G4WT3 > EffectivenoCoNum:132
+G4WT3 > EffectivenoComptNum:132
+G4WT3 > EffectivenoComptnRaylNum:132
+G4WT3 > EffectivephotNum:0
+G4WT3 > EffectiveconvNum:94
+G4WT3 > EffectivecomptNum:2590
+G4WT3 > EffectiveRaylNum:380
+
+Water10mud5
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+
+==============================================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Creating 1732 tasks with 1732 events/task...
+
+Water15mud0
+G4WT1 > EffectivetotalNum:205
+G4WT1 > EffectivenoCoNum:0
+G4WT1 > EffectivenoComptNum:0
+G4WT1 > EffectivenoComptnRaylNum:0
+G4WT1 > EffectivephotNum:0
+G4WT1 > EffectiveconvNum:0
+G4WT1 > EffectivecomptNum:332
+G4WT1 > EffectiveRaylNum:98
+
+Water15mud1
+G4WT3 > EffectivetotalNum:71
+G4WT3 > EffectivenoCoNum:0
+G4WT3 > EffectivenoComptNum:0
+G4WT3 > EffectivenoComptnRaylNum:0
+G4WT3 > EffectivephotNum:0
+G4WT3 > EffectiveconvNum:0
+G4WT3 > EffectivecomptNum:105
+G4WT3 > EffectiveRaylNum:16
+
+Water15mud2
+G4WT3 > EffectivetotalNum:32
+G4WT3 > EffectivenoCoNum:1
+G4WT3 > EffectivenoComptNum:1
+G4WT3 > EffectivenoComptnRaylNum:1
+G4WT3 > EffectivephotNum:0
+G4WT3 > EffectiveconvNum:0
+G4WT3 > EffectivecomptNum:40
+G4WT3 > EffectiveRaylNum:4
+
+Water15mud3
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+
+==============================================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Creating 1732 tasks with 1732 events/task...
+
+Water15mud4
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+
+==============================================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Creating 1732 tasks with 1732 events/task...
+
+Water15mud5
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+
+==============================================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Creating 1732 tasks with 1732 events/task...
+
+Concrete2mud0
+G4WT1 > EffectivetotalNum:1950132
+G4WT1 > EffectivenoCoNum:405690
+G4WT1 > EffectivenoComptNum:406081
+G4WT1 > EffectivenoComptnRaylNum:402044
+G4WT1 > EffectivephotNum:0
+G4WT1 > EffectiveconvNum:0
+G4WT1 > EffectivecomptNum:2164035
+G4WT1 > EffectiveRaylNum:255392
+
+Concrete2mud1
+G4WT6 > EffectivetotalNum:1809705
+G4WT6 > EffectivenoCoNum:401774
+G4WT6 > EffectivenoComptNum:402216
+G4WT6 > EffectivenoComptnRaylNum:400881
+G4WT6 > EffectivephotNum:0
+G4WT6 > EffectiveconvNum:0
+G4WT6 > EffectivecomptNum:1979817
+G4WT6 > EffectiveRaylNum:206849
+
+Concrete2mud2
+G4WT4 > EffectivetotalNum:1589266
+G4WT4 > EffectivenoCoNum:406252
+G4WT4 > EffectivenoComptNum:409134
+G4WT4 > EffectivenoComptnRaylNum:408658
+G4WT4 > EffectivephotNum:0
+G4WT4 > EffectiveconvNum:39559
+G4WT4 > EffectivecomptNum:1669281
+G4WT4 > EffectiveRaylNum:169506
+
+Concrete2mud3
+G4WT0 > EffectivetotalNum:1463847
+G4WT0 > EffectivenoCoNum:407037
+G4WT0 > EffectivenoComptNum:413679
+G4WT0 > EffectivenoComptnRaylNum:413406
+G4WT0 > EffectivephotNum:0
+G4WT0 > EffectiveconvNum:115202
+G4WT0 > EffectivecomptNum:1512037
+G4WT0 > EffectiveRaylNum:168081
+
+Concrete2mud4
+G4WT9 > EffectivetotalNum:1385508
+G4WT9 > EffectivenoCoNum:406770
+G4WT9 > EffectivenoComptNum:416874
+G4WT9 > EffectivenoComptnRaylNum:416672
+G4WT9 > EffectivephotNum:0
+G4WT9 > EffectiveconvNum:180822
+G4WT9 > EffectivecomptNum:1422126
+G4WT9 > EffectiveRaylNum:177600
+
+Concrete2mud5
+G4WT11 > EffectivetotalNum:1225666
+G4WT11 > EffectivenoCoNum:398464
+G4WT11 > EffectivenoComptNum:419800
+G4WT11 > EffectivenoComptnRaylNum:419618
+G4WT11 > EffectivephotNum:0
+G4WT11 > EffectiveconvNum:387275
+G4WT11 > EffectivecomptNum:1313973
+G4WT11 > EffectiveRaylNum:254823
+
+Concrete4mud0
+G4WT8 > EffectivetotalNum:721029
+G4WT8 > EffectivenoCoNum:61665
+G4WT8 > EffectivenoComptNum:61674
+G4WT8 > EffectivenoComptnRaylNum:60458
+G4WT8 > EffectivephotNum:0
+G4WT8 > EffectiveconvNum:0
+G4WT8 > EffectivecomptNum:914877
+G4WT8 > EffectiveRaylNum:153190
+
+Concrete4mud1
+G4WT4 > EffectivetotalNum:586632
+G4WT4 > EffectivenoCoNum:60419
+G4WT4 > EffectivenoComptNum:60437
+G4WT4 > EffectivenoComptnRaylNum:60027
+G4WT4 > EffectivephotNum:0
+G4WT4 > EffectiveconvNum:0
+G4WT4 > EffectivecomptNum:738779
+G4WT4 > EffectiveRaylNum:96635
+
+Concrete4mud2
+G4WT2 > EffectivetotalNum:443177
+G4WT2 > EffectivenoCoNum:61637
+G4WT2 > EffectivenoComptNum:61961
+G4WT2 > EffectivenoComptnRaylNum:61804
+G4WT2 > EffectivephotNum:0
+G4WT2 > EffectiveconvNum:8290
+G4WT2 > EffectivecomptNum:536024
+G4WT2 > EffectiveRaylNum:57076
+
+Concrete4mud3
+G4WT4 > EffectivetotalNum:375296
+G4WT4 > EffectivenoCoNum:61972
+G4WT4 > EffectivenoComptNum:62778
+G4WT4 > EffectivenoComptnRaylNum:62666
+G4WT4 > EffectivephotNum:0
+G4WT4 > EffectiveconvNum:19544
+G4WT4 > EffectivecomptNum:441996
+G4WT4 > EffectiveRaylNum:45669
+
+Concrete4mud4
+G4WT0 > EffectivetotalNum:335356
+G4WT0 > EffectivenoCoNum:61557
+G4WT0 > EffectivenoComptNum:62884
+G4WT0 > EffectivenoComptnRaylNum:62805
+G4WT0 > EffectivephotNum:0
+G4WT0 > EffectiveconvNum:30426
+G4WT0 > EffectivecomptNum:388773
+G4WT0 > EffectiveRaylNum:42488
+
+Concrete4mud5
+G4WT7 > EffectivetotalNum:266810
+G4WT7 > EffectivenoCoNum:59427
+G4WT7 > EffectivenoComptNum:62468
+G4WT7 > EffectivenoComptnRaylNum:62419
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:66796
+G4WT7 > EffectivecomptNum:313006
+G4WT7 > EffectiveRaylNum:50885
+
+Concrete7mud0
+G4WT0 > EffectivetotalNum:101071
+G4WT0 > EffectivenoCoNum:3669
+G4WT0 > EffectivenoComptNum:3669
+G4WT0 > EffectivenoComptnRaylNum:3550
+G4WT0 > EffectivephotNum:0
+G4WT0 > EffectiveconvNum:0
+G4WT0 > EffectivecomptNum:135198
+G4WT0 > EffectiveRaylNum:28186
+
+Concrete7mud1
+G4WT8 > EffectivetotalNum:70203
+G4WT8 > EffectivenoCoNum:3528
+G4WT8 > EffectivenoComptNum:3528
+G4WT8 > EffectivenoComptnRaylNum:3487
+G4WT8 > EffectivephotNum:0
+G4WT8 > EffectiveconvNum:0
+G4WT8 > EffectivecomptNum:94006
+G4WT8 > EffectiveRaylNum:13976
+
+Concrete7mud2
+G4WT7 > EffectivetotalNum:45970
+G4WT7 > EffectivenoCoNum:3601
+G4WT7 > EffectivenoComptNum:3612
+G4WT7 > EffectivenoComptnRaylNum:3595
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:511
+G4WT7 > EffectivecomptNum:59436
+G4WT7 > EffectiveRaylNum:6334
+
+Concrete7mud3
+G4WT2 > EffectivetotalNum:36558
+G4WT2 > EffectivenoCoNum:3603
+G4WT2 > EffectivenoComptNum:3651
+G4WT2 > EffectivenoComptnRaylNum:3637
+G4WT2 > EffectivephotNum:0
+G4WT2 > EffectiveconvNum:1424
+G4WT2 > EffectivecomptNum:46087
+G4WT2 > EffectiveRaylNum:4506
+
+Concrete7mud4
+G4WT2 > EffectivetotalNum:31208
+G4WT2 > EffectivenoCoNum:3534
+G4WT2 > EffectivenoComptNum:3611
+G4WT2 > EffectivenoComptnRaylNum:3603
+G4WT2 > EffectivephotNum:0
+G4WT2 > EffectiveconvNum:2243
+G4WT2 > EffectivecomptNum:38933
+G4WT2 > EffectiveRaylNum:3865
+
+Concrete7mud5
+G4WT3 > EffectivetotalNum:22642
+G4WT3 > EffectivenoCoNum:3372
+G4WT3 > EffectivenoComptNum:3538
+G4WT3 > EffectivenoComptnRaylNum:3535
+G4WT3 > EffectivephotNum:0
+G4WT3 > EffectiveconvNum:5096
+G4WT3 > EffectivecomptNum:28531
+G4WT3 > EffectiveRaylNum:4123
+
+Concrete10mud0
+G4WT8 > EffectivetotalNum:11022
+G4WT8 > EffectivenoCoNum:200
+G4WT8 > EffectivenoComptNum:200
+G4WT8 > EffectivenoComptnRaylNum:178
+G4WT8 > EffectivephotNum:0
+G4WT8 > EffectiveconvNum:0
+G4WT8 > EffectivecomptNum:15090
+G4WT8 > EffectiveRaylNum:3796
+
+Concrete10mud1
+G4WT7 > EffectivetotalNum:6631
+G4WT7 > EffectivenoCoNum:189
+G4WT7 > EffectivenoComptNum:189
+G4WT7 > EffectivenoComptnRaylNum:183
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:0
+G4WT7 > EffectivecomptNum:9160
+G4WT7 > EffectiveRaylNum:1457
+
+Concrete10mud2
+G4WT6 > EffectivetotalNum:3979
+G4WT6 > EffectivenoCoNum:225
+G4WT6 > EffectivenoComptNum:227
+G4WT6 > EffectivenoComptnRaylNum:225
+G4WT6 > EffectivephotNum:0
+G4WT6 > EffectiveconvNum:32
+G4WT6 > EffectivecomptNum:5340
+G4WT6 > EffectiveRaylNum:552
+
+Concrete10mud3
+G4WT4 > EffectivetotalNum:2975
+G4WT4 > EffectivenoCoNum:223
+G4WT4 > EffectivenoComptNum:227
+G4WT4 > EffectivenoComptnRaylNum:226
+G4WT4 > EffectivephotNum:0
+G4WT4 > EffectiveconvNum:105
+G4WT4 > EffectivecomptNum:3875
+G4WT4 > EffectiveRaylNum:397
+
+Concrete10mud4
+G4WT4 > EffectivetotalNum:2529
+G4WT4 > EffectivenoCoNum:218
+G4WT4 > EffectivenoComptNum:219
+G4WT4 > EffectivenoComptnRaylNum:219
+G4WT4 > EffectivephotNum:0
+G4WT4 > EffectiveconvNum:155
+G4WT4 > EffectivecomptNum:3319
+G4WT4 > EffectiveRaylNum:324
+
+Concrete10mud5
+G4WT7 > EffectivetotalNum:1667
+G4WT7 > EffectivenoCoNum:184
+G4WT7 > EffectivenoComptNum:196
+G4WT7 > EffectivenoComptnRaylNum:196
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:324
+G4WT7 > EffectivecomptNum:2089
+G4WT7 > EffectiveRaylNum:270
+
+Concrete15mud0
+G4WT7 > EffectivetotalNum:221
+G4WT7 > EffectivenoCoNum:4
+G4WT7 > EffectivenoComptNum:4
+G4WT7 > EffectivenoComptnRaylNum:3
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:0
+G4WT7 > EffectivecomptNum:313
+G4WT7 > EffectiveRaylNum:79
+
+Concrete15mud1
+G4WT5 > EffectivetotalNum:110
+G4WT5 > EffectivenoCoNum:2
+G4WT5 > EffectivenoComptNum:2
+G4WT5 > EffectivenoComptnRaylNum:2
+G4WT5 > EffectivephotNum:0
+G4WT5 > EffectiveconvNum:0
+G4WT5 > EffectivecomptNum:159
+G4WT5 > EffectiveRaylNum:21
+
+Concrete15mud2
+G4WT11 > EffectivetotalNum:66
+G4WT11 > EffectivenoCoNum:2
+G4WT11 > EffectivenoComptNum:2
+G4WT11 > EffectivenoComptnRaylNum:2
+G4WT11 > EffectivephotNum:0
+G4WT11 > EffectiveconvNum:0
+G4WT11 > EffectivecomptNum:108
+G4WT11 > EffectiveRaylNum:23
+
+Concrete15mud3
+G4WT7 > EffectivetotalNum:39
+G4WT7 > EffectivenoCoNum:0
+G4WT7 > EffectivenoComptNum:0
+G4WT7 > EffectivenoComptnRaylNum:0
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:0
+G4WT7 > EffectivecomptNum:62
+G4WT7 > EffectiveRaylNum:9
+
+Concrete15mud4
+G4WT5 > EffectivetotalNum:28
+G4WT5 > EffectivenoCoNum:1
+G4WT5 > EffectivenoComptNum:1
+G4WT5 > EffectivenoComptnRaylNum:1
+G4WT5 > EffectivephotNum:0
+G4WT5 > EffectiveconvNum:0
+G4WT5 > EffectivecomptNum:36
+G4WT5 > EffectiveRaylNum:7
+
+Concrete15mud5
+G4WT9 > EffectivetotalNum:21
+G4WT9 > EffectivenoCoNum:2
+G4WT9 > EffectivenoComptNum:2
+G4WT9 > EffectivenoComptnRaylNum:2
+G4WT9 > EffectivephotNum:0
+G4WT9 > EffectiveconvNum:3
+G4WT9 > EffectivecomptNum:27
+G4WT9 > EffectiveRaylNum:4
+
+Pb2mud0
+G4WT5 > EffectivetotalNum:569379
+G4WT5 > EffectivenoCoNum:414667
+G4WT5 > EffectivenoComptNum:415920
+G4WT5 > EffectivenoComptnRaylNum:366562
+G4WT5 > EffectivephotNum:1307
+G4WT5 > EffectiveconvNum:0
+G4WT5 > EffectivecomptNum:159511
+G4WT5 > EffectiveRaylNum:73121
+
+Pb2mud1
+G4WT1 > EffectivetotalNum:687294
+G4WT1 > EffectivenoCoNum:386563
+G4WT1 > EffectivenoComptNum:388667
+G4WT1 > EffectivenoComptnRaylNum:360726
+G4WT1 > EffectivephotNum:4839
+G4WT1 > EffectiveconvNum:0
+G4WT1 > EffectivecomptNum:308351
+G4WT1 > EffectiveRaylNum:61934
+
+Pb2mud2
+G4WT9 > EffectivetotalNum:782195
+G4WT9 > EffectivenoCoNum:375631
+G4WT9 > EffectivenoComptNum:392074
+G4WT9 > EffectivenoComptnRaylNum:379496
+G4WT9 > EffectivephotNum:32122
+G4WT9 > EffectiveconvNum:27735
+G4WT9 > EffectivecomptNum:412949
+G4WT9 > EffectiveRaylNum:43622
+
+Pb2mud3
+G4WT10 > EffectivetotalNum:801273
+G4WT10 > EffectivenoCoNum:372514
+G4WT10 > EffectivenoComptNum:406566
+G4WT10 > EffectivenoComptnRaylNum:397703
+G4WT10 > EffectivephotNum:74527
+G4WT10 > EffectiveconvNum:68899
+G4WT10 > EffectivecomptNum:436856
+G4WT10 > EffectiveRaylNum:39732
+
+Pb2mud4
+G4WT1 > EffectivetotalNum:807397
+G4WT1 > EffectivenoCoNum:366073
+G4WT1 > EffectivenoComptNum:417922
+G4WT1 > EffectivenoComptnRaylNum:409576
+G4WT1 > EffectivephotNum:129817
+G4WT1 > EffectiveconvNum:118534
+G4WT1 > EffectivecomptNum:453947
+G4WT1 > EffectiveRaylNum:45999
+
+Pb2mud5
+G4WT2 > EffectivetotalNum:1007356
+G4WT2 > EffectivenoCoNum:353023
+G4WT2 > EffectivenoComptNum:492553
+G4WT2 > EffectivenoComptnRaylNum:475024
+G4WT2 > EffectivephotNum:545971
+G4WT2 > EffectiveconvNum:511854
+G4WT2 > EffectivecomptNum:728546
+G4WT2 > EffectiveRaylNum:154436
+
+Pb4mud0
+G4WT2 > EffectivetotalNum:101478
+G4WT2 > EffectivenoCoNum:63713
+G4WT2 > EffectivenoComptNum:63857
+G4WT2 > EffectivenoComptnRaylNum:49795
+G4WT2 > EffectivephotNum:228
+G4WT2 > EffectiveconvNum:0
+G4WT2 > EffectivecomptNum:38751
+G4WT2 > EffectiveRaylNum:23933
+
+Pb4mud1
+G4WT3 > EffectivetotalNum:132107
+G4WT3 > EffectivenoCoNum:55980
+G4WT3 > EffectivenoComptNum:56244
+G4WT3 > EffectivenoComptnRaylNum:48601
+G4WT3 > EffectivephotNum:927
+G4WT3 > EffectiveconvNum:0
+G4WT3 > EffectivecomptNum:77897
+G4WT3 > EffectiveRaylNum:22038
+
+Pb4mud2
+G4WT1 > EffectivetotalNum:160285
+G4WT1 > EffectivenoCoNum:52751
+G4WT1 > EffectivenoComptNum:54845
+G4WT1 > EffectivenoComptnRaylNum:51547
+G4WT1 > EffectivephotNum:5596
+G4WT1 > EffectiveconvNum:4377
+G4WT1 > EffectivecomptNum:109971
+G4WT1 > EffectiveRaylNum:15195
+
+Pb4mud3
+G4WT10 > EffectivetotalNum:167851
+G4WT10 > EffectivenoCoNum:51750
+G4WT10 > EffectivenoComptNum:56160
+G4WT10 > EffectivenoComptnRaylNum:54233
+G4WT10 > EffectivephotNum:13554
+G4WT10 > EffectiveconvNum:11246
+G4WT10 > EffectivecomptNum:119713
+G4WT10 > EffectiveRaylNum:12331
+
+Pb4mud4
+G4WT10 > EffectivetotalNum:168663
+G4WT10 > EffectivenoCoNum:49960
+G4WT10 > EffectivenoComptNum:56995
+G4WT10 > EffectivenoComptnRaylNum:55427
+G4WT10 > EffectivephotNum:24089
+G4WT10 > EffectiveconvNum:19866
+G4WT10 > EffectivecomptNum:123205
+G4WT10 > EffectiveRaylNum:12282
+
+Pb4mud5
+G4WT5 > EffectivetotalNum:231937
+G4WT5 > EffectivenoCoNum:46770
+G4WT5 > EffectivenoComptNum:68174
+G4WT5 > EffectivenoComptnRaylNum:65378
+G4WT5 > EffectivephotNum:127745
+G4WT5 > EffectiveconvNum:109724
+G4WT5 > EffectivecomptNum:197326
+G4WT5 > EffectiveRaylNum:38484
+
+Pb7mud0
+G4WT10 > EffectivetotalNum:7005
+G4WT10 > EffectivenoCoNum:3755
+G4WT10 > EffectivenoComptNum:3765
+G4WT10 > EffectivenoComptnRaylNum:2463
+G4WT10 > EffectivephotNum:20
+G4WT10 > EffectiveconvNum:0
+G4WT10 > EffectivecomptNum:3314
+G4WT10 > EffectiveRaylNum:2531
+
+Pb7mud1
+G4WT7 > EffectivetotalNum:9481
+G4WT7 > EffectivenoCoNum:3010
+G4WT7 > EffectivenoComptNum:3025
+G4WT7 > EffectivenoComptnRaylNum:2386
+G4WT7 > EffectivephotNum:66
+G4WT7 > EffectiveconvNum:0
+G4WT7 > EffectivecomptNum:6615
+G4WT7 > EffectiveRaylNum:2465
+
+Pb7mud2
+G4WT11 > EffectivetotalNum:12485
+G4WT11 > EffectivenoCoNum:2728
+G4WT11 > EffectivenoComptNum:2833
+G4WT11 > EffectivenoComptnRaylNum:2545
+G4WT11 > EffectivephotNum:353
+G4WT11 > EffectiveconvNum:271
+G4WT11 > EffectivecomptNum:9966
+G4WT11 > EffectiveRaylNum:1891
+
+Pb7mud3
+G4WT7 > EffectivetotalNum:13748
+G4WT7 > EffectivenoCoNum:2671
+G4WT7 > EffectivenoComptNum:2917
+G4WT7 > EffectivenoComptnRaylNum:2776
+G4WT7 > EffectivephotNum:986
+G4WT7 > EffectiveconvNum:805
+G4WT7 > EffectivecomptNum:11485
+G4WT7 > EffectiveRaylNum:1438
+
+Pb7mud4
+G4WT5 > EffectivetotalNum:14150
+G4WT5 > EffectivenoCoNum:2432
+G4WT5 > EffectivenoComptNum:2804
+G4WT5 > EffectivenoComptnRaylNum:2694
+G4WT5 > EffectivephotNum:1813
+G4WT5 > EffectiveconvNum:1391
+G4WT5 > EffectivecomptNum:12214
+G4WT5 > EffectiveRaylNum:1360
+
+Pb7mud5
+G4WT1 > EffectivetotalNum:22398
+G4WT1 > EffectivenoCoNum:2186
+G4WT1 > EffectivenoComptNum:3543
+G4WT1 > EffectivenoComptnRaylNum:3364
+G4WT1 > EffectivephotNum:11744
+G4WT1 > EffectiveconvNum:9606
+G4WT1 > EffectivecomptNum:21074
+G4WT1 > EffectiveRaylNum:3916
+
+Pb10mud0
+G4WT2 > EffectivetotalNum:462
+G4WT2 > EffectivenoCoNum:206
+G4WT2 > EffectivenoComptNum:206
+G4WT2 > EffectivenoComptnRaylNum:124
+G4WT2 > EffectivephotNum:1
+G4WT2 > EffectiveconvNum:0
+G4WT2 > EffectivecomptNum:262
+G4WT2 > EffectiveRaylNum:222
+
+Pb10mud1
+G4WT7 > EffectivetotalNum:672
+G4WT7 > EffectivenoCoNum:186
+G4WT7 > EffectivenoComptNum:186
+G4WT7 > EffectivenoComptnRaylNum:136
+G4WT7 > EffectivephotNum:3
+G4WT7 > EffectiveconvNum:0
+G4WT7 > EffectivecomptNum:496
+G4WT7 > EffectiveRaylNum:215
+
+Pb10mud2
+G4WT6 > EffectivetotalNum:892
+G4WT6 > EffectivenoCoNum:149
+G4WT6 > EffectivenoComptNum:153
+G4WT6 > EffectivenoComptnRaylNum:127
+G4WT6 > EffectivephotNum:23
+G4WT6 > EffectiveconvNum:11
+G4WT6 > EffectivecomptNum:764
+G4WT6 > EffectiveRaylNum:188
+
+Pb10mud3
+G4WT6 > EffectivetotalNum:1030
+G4WT6 > EffectivenoCoNum:121
+G4WT6 > EffectivenoComptNum:130
+G4WT6 > EffectivenoComptnRaylNum:113
+G4WT6 > EffectivephotNum:76
+G4WT6 > EffectiveconvNum:50
+G4WT6 > EffectivecomptNum:941
+G4WT6 > EffectiveRaylNum:149
+
+Pb10mud4
+G4WT1 > EffectivetotalNum:1063
+G4WT1 > EffectivenoCoNum:117
+G4WT1 > EffectivenoComptNum:139
+G4WT1 > EffectivenoComptnRaylNum:132
+G4WT1 > EffectivephotNum:119
+G4WT1 > EffectiveconvNum:111
+G4WT1 > EffectivecomptNum:982
+G4WT1 > EffectiveRaylNum:107
+
+Pb10mud5
+G4WT0 > EffectivetotalNum:2116
+G4WT0 > EffectivenoCoNum:107
+G4WT0 > EffectivenoComptNum:196
+G4WT0 > EffectivenoComptnRaylNum:179
+G4WT0 > EffectivephotNum:1091
+G4WT0 > EffectiveconvNum:877
+G4WT0 > EffectivecomptNum:2127
+G4WT0 > EffectiveRaylNum:399
+
+Pb15mud0
+G4WT9 > EffectivetotalNum:0
+G4WT9 > EffectivenoCoNum:0
+G4WT9 > EffectivenoComptNum:0
+G4WT9 > EffectivenoComptnRaylNum:0
+G4WT9 > EffectivephotNum:0
+G4WT9 > EffectiveconvNum:0
+G4WT9 > EffectivecomptNum:0
+G4WT9 > EffectiveRaylNum:0
+
+Pb15mud1
+G4WT1 > EffectivetotalNum:3
+G4WT1 > EffectivenoCoNum:1
+G4WT1 > EffectivenoComptNum:1
+G4WT1 > EffectivenoComptnRaylNum:0
+G4WT1 > EffectivephotNum:0
+G4WT1 > EffectiveconvNum:0
+G4WT1 > EffectivecomptNum:2
+G4WT1 > EffectiveRaylNum:1
+
+Pb15mud2
+G4WT1 > EffectivetotalNum:12
+G4WT1 > EffectivenoCoNum:0
+G4WT1 > EffectivenoComptNum:0
+G4WT1 > EffectivenoComptnRaylNum:0
+G4WT1 > EffectivephotNum:0
+G4WT1 > EffectiveconvNum:0
+G4WT1 > EffectivecomptNum:12
+G4WT1 > EffectiveRaylNum:3
+
+Pb15mud3
+G4WT11 > EffectivetotalNum:7
+G4WT11 > EffectivenoCoNum:1
+G4WT11 > EffectivenoComptNum:1
+G4WT11 > EffectivenoComptnRaylNum:1
+G4WT11 > EffectivephotNum:0
+G4WT11 > EffectiveconvNum:1
+G4WT11 > EffectivecomptNum:6
+G4WT11 > EffectiveRaylNum:1
+
+Pb15mud4
+G4WT7 > EffectivetotalNum:12
+G4WT7 > EffectivenoCoNum:0
+G4WT7 > EffectivenoComptNum:0
+G4WT7 > EffectivenoComptnRaylNum:0
+G4WT7 > EffectivephotNum:0
+G4WT7 > EffectiveconvNum:0
+G4WT7 > EffectivecomptNum:12
+G4WT7 > EffectiveRaylNum:1
+
+Pb15mud5
+G4WT4 > EffectivetotalNum:30
+G4WT4 > EffectivenoCoNum:0
+G4WT4 > EffectivenoComptNum:1
+G4WT4 > EffectivenoComptnRaylNum:1
+G4WT4 > EffectivephotNum:12
+G4WT4 > EffectiveconvNum:11
+G4WT4 > EffectivecomptNum:31
+G4WT4 > EffectiveRaylNum:6
+

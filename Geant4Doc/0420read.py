@@ -7,16 +7,14 @@ enerNum = [0,1,2,3,4,5]
 i = 6
 while i <= 35:
     j = i % 6
-    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0420/Water/log{}mud{}.txt'.format(mud[i-6],enerNum[j]), 'r', encoding='utf-8')
+    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0506/Water/log{}mud{}.txt'.format(mud[i-6],enerNum[j]), 'r', encoding='utf-8')
     new=[]
     for line in f:
         new.append(line)
     f.close()
-    new[886]='\n'
-    new[887]='\n'
     new[888]='\n'
 
-    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0420/log.txt', 'a', encoding='utf-8')
+    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0506/log.txt', 'a', encoding='utf-8')
     f.write('Water{}mud{}\n'.format(mud[i-6],enerNum[j]))
     for n in range(883,889):
         f.write(new[n])
@@ -27,16 +25,14 @@ while i <= 35:
 i = 6
 while i <= 35:
     j = i % 6
-    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0420/Concrete/log{}mud{}.txt'.format(mud[i-6],enerNum[j]), 'r', encoding='utf-8')
+    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0506/Concrete/log{}mud{}.txt'.format(mud[i-6],enerNum[j]), 'r', encoding='utf-8')
     new=[]
     for line in f:
         new.append(line)
     f.close()
-    new[886]='\n'
-    new[887]='\n'
     new[888]='\n'
 
-    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0420/log.txt', 'a', encoding='utf-8')
+    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0506/log.txt', 'a', encoding='utf-8')
     f.write('Concrete{}mud{}\n'.format(mud[i-6],enerNum[j]))
     for n in range(883,889):
         f.write(new[n])
@@ -47,16 +43,14 @@ while i <= 35:
 i = 6
 while i <= 35:
     j = i % 6
-    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0420/Pb/log{}mud{}.txt'.format(mud[i-6],enerNum[j]), 'r', encoding='utf-8')
+    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0506/Pb/log{}mud{}.txt'.format(mud[i-6],enerNum[j]), 'r', encoding='utf-8')
     new=[]
     for line in f:
         new.append(line)
     f.close()
-    new[886]='\n'
-    new[887]='\n'
     new[888]='\n'
 
-    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0420/log.txt', 'a', encoding='utf-8')
+    f = open('/home/apricot/Documents/GraduationProject/Geant4Work/log/scatteringRate/Inf0506/log.txt', 'a', encoding='utf-8')
     f.write('Pb{}mud{}\n'.format(mud[i-6],enerNum[j]))
     for n in range(883,889):
         f.write(new[n])

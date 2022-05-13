@@ -80,7 +80,7 @@ G4VPhysicalVolume* B1DetectorConstruction::Construct()
   // Envelope parameters
   //
   G4double env_sizeXY = 3*m, env_sizeZ = 4*m;
-  G4Material* env_mat = nist->FindOrBuildMaterial("G4_AIR");
+  G4Material* env_mat = nist->FindOrBuildMaterial("Galactic");
    
   // Option to switch on/off checking of volumes overlaps
   //
@@ -91,7 +91,7 @@ G4VPhysicalVolume* B1DetectorConstruction::Construct()
   //
   G4double world_sizeXY = 1.2*env_sizeXY;
   G4double world_sizeZ  = 1.2*env_sizeZ;
-  G4Material* world_mat = nist->FindOrBuildMaterial("G4_AIR");
+  G4Material* world_mat = nist->FindOrBuildMaterial("Galactic");
   
   G4Box* solidWorld =    
     new G4Box("World",                       //its name

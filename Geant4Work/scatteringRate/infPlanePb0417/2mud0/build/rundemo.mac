@@ -13,5 +13,5 @@
 /gun/particle gamma
 /gun/energy 0.5 MeV
 #
-/run/beamOn 3000000
+/run/beamOn 1000
 # 

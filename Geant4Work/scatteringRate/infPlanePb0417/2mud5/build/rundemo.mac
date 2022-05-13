@@ -1,12 +1,12 @@
 #
-# /run/numberOfThreads 1
+ /run/numberOfThreads 1 # 线程数
 # Initialize kernel
 /run/initialize
 
 #/control/verbose 0
 #/run/verbose 0
 #/event/verbose 0
-#/tracking/verbose 1
+#/tracking/verbose 1 # 输出信息
 # 
 # gamma 6 MeV to the direction (0.,0.,1.)
 #

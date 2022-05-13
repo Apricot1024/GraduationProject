@@ -1,0 +1,8 @@
+/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0508/Fe/4mud0/build/CMakeFiles/exampleB1.dir
+/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0508/Fe/4mud0/build/CMakeFiles/B1.dir
+/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0508/Fe/4mud0/build/CMakeFiles/edit_cache.dir
+/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0508/Fe/4mud0/build/CMakeFiles/rebuild_cache.dir
+/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0508/Fe/4mud0/build/CMakeFiles/list_install_components.dir
+/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0508/Fe/4mud0/build/CMakeFiles/install.dir
+/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0508/Fe/4mud0/build/CMakeFiles/install/local.dir
+/home/apricot/Documents/GraduationProject/Geant4Work/scatteringRate/Inf0508/Fe/4mud0/build/CMakeFiles/install/strip.dir

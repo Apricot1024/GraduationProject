@@ -53,8 +53,8 @@ B1SteppingAction::~B1SteppingAction()
 G4int i = 0;//排除电子对效应影响的总粒子数
 G4int j = 0;//未经散射的粒子数
 G4int c = 0;//由于电子对效应的粒子数
-int eventIDflag[3000000] = {3000001};  //重复计数排除数组
-int eventIDconvflag[3000000] = {3000001};  // 对发生电子对效应的粒子进行统计
+int eventIDflag[10000] = {3000001};  //重复计数排除数组
+int eventIDconvflag[10000] = {3000001};  // 对发生电子对效应的粒子进行统计
 G4int outputcode = 10; //是否输出判断
 
 void B1SteppingAction::UserSteppingAction(const G4Step* step)
@@ -88,13 +88,14 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
   if (nextpv!=NULL)
   {
     G4String nextvolumename = nextpv->GetName();
-    if((nextvolumename=="Shape2")&&(eventID>=300000))
+    if((nextvolumename=="Shape2"))
     {
       G4double E=aTrack->GetKineticEnergy();
       G4String particleName =  step->GetTrack()->GetDefinition()->GetParticleName();
       if (E == 8)
       {
         j = j + 1;
+        G4cout<<"count111"<<G4endl;
       }
 
 
@@ -107,6 +108,10 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
         if (particleName == "gamma")
         {
           i = i + 1;
+          if (E == 8)
+          {
+            G4cout<<"count222"<<G4endl;
+          }
         }
       }
       
