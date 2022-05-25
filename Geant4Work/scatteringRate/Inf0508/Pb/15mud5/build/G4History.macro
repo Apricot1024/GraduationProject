@@ -63,10 +63,26 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+/vis/viewer/set/style s
+/vis/viewer/refresh
+/vis/viewer/set/hiddenEdge 1
+/vis/viewer/refresh
+/vis/viewer/set/style s
+/vis/viewer/refresh
+/vis/viewer/set/hiddenEdge 0
+/vis/viewer/refresh
+/vis/viewer/set/style s
+/vis/viewer/refresh
+/vis/viewer/set/hiddenEdge 0
+/vis/viewer/refresh
+/vis/viewer/set/style s
+/vis/viewer/refresh
+/vis/viewer/set/hiddenEdge 1
+/vis/viewer/refresh
+/vis/set/touchable World 0 Envelope 0 Shape1 0
 /vis/set/touchable World 0 Envelope 0 Shape1 0
 /vis/set/touchable World 0 Envelope 0 Shape1 0
 /vis/set/touchable World 0 Envelope 0 Shape1 0
 /vis/set/touchable World 0 Envelope 0 Shape1 0 Shape2 0
 /vis/set/touchable World 0 Envelope 0 Shape1 0 Shape2 0
 /vis/set/touchable World 0 Envelope 0 Shape1 0
-/run/beamOn 1000

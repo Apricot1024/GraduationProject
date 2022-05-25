@@ -104,7 +104,7 @@ void B1PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   
   G4double x0 = 0; //概率
   G4double y0 = 0;
-  G4double z0 = -0.9 * envSizeZ;
+  G4double z0 = -envSizeZ;
   
   fParticleGun->SetParticlePosition(G4ThreeVector(x0,y0,z0));
 

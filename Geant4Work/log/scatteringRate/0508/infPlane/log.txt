@@ -1,0 +1,1120 @@
+Al2mud0
+G4WT10 > EffectiveCountall:10048178
+G4WT10 > EffectiveCountnoscattering:3604191
+G4WT10 > countEall=96023.4
+G4WT10 > countEnoco=55313.4
+G4WT6 > 
+
+Al2mud1
+G4WT3 > EffectiveCountall:9977823
+G4WT3 > EffectiveCountnoscattering:3596668
+G4WT3 > countEall=169002
+G4WT3 > countEnoco=103647
+G4WT2 > 
+
+Al2mud2
+G4WT9 > EffectiveCountall:9706913
+G4WT9 > EffectiveCountnoscattering:3637598
+G4WT9 > countEall=261040
+G4WT9 > countEnoco=170662
+G4WT8 > 
+
+Al2mud3
+G4WT9 > EffectiveCountall:9675979
+G4WT9 > EffectiveCountnoscattering:3656414
+G4WT9 > countEall=335431
+G4WT9 > countEnoco=228444
+G4WT10 > 
+
+Al2mud4
+G4WT0 > EffectiveCountall:9773033
+G4WT0 > EffectiveCountnoscattering:3663621
+G4WT0 > countEall=380614
+G4WT0 > countEnoco=278900
+G4WT10 > 
+
+Al2mud6
+G4WT5 > EffectiveCountall:10148602
+G4WT5 > EffectiveCountnoscattering:3664317
+G4WT5 > countEall=483135
+G4WT5 > countEnoco=351946
+G4WT2 > 
+
+Al2mud8
+G4WT7 > EffectiveCountall:10695590
+G4WT7 > EffectiveCountnoscattering:3668387
+G4WT7 > countEall=602667
+G4WT7 > countEnoco=456843
+G4WT10 > 
+
+Al4mud0
+G4WT5 > EffectiveCountall:6200648
+G4WT5 > EffectiveCountnoscattering:1331508
+G4WT5 > countEall=51078.3
+G4WT5 > countEnoco=19775.2
+G4WT5 > 
+
+Al4mud1
+G4WT0 > EffectiveCountall:6072508
+G4WT0 > EffectiveCountnoscattering:1319955
+G4WT0 > countEall=85528.7
+G4WT0 > countEnoco=36535.8
+G4WT2 > 
+
+Al4mud2
+G4WT10 > EffectiveCountall:5690260
+G4WT10 > EffectiveCountnoscattering:1340745
+G4WT10 > countEall=131435
+G4WT10 > countEnoco=62861.7
+G4WT9 > 
+
+Al4mud3
+G4WT8 > EffectiveCountall:5492157
+G4WT8 > EffectiveCountnoscattering:1353631
+G4WT8 > countEall=164834
+G4WT8 > countEnoco=84375.4
+G4WT5 > 
+
+Al4mud4
+G4WT10 > EffectiveCountall:5383701
+G4WT10 > EffectiveCountnoscattering:1355451
+G4WT10 > countEall=192328
+G4WT10 > countEnoco=102640
+G4WT9 > 
+
+Al4mud6
+G4WT6 > EffectiveCountall:5367739
+G4WT6 > EffectiveCountnoscattering:1357630
+G4WT6 > countEall=231260
+G4WT6 > countEnoco=135457
+G4WT3 > 
+
+Al4mud8
+G4WT6 > EffectiveCountall:5500310
+G4WT6 > EffectiveCountnoscattering:1358223
+G4WT6 > countEall=276609
+G4WT6 > countEnoco=167840
+G4WT4 > 
+
+Al7mud0
+G4WT11 > EffectiveCountall:2465409
+G4WT11 > EffectiveCountnoscattering:298668
+G4WT11 > countEall=17392.4
+G4WT11 > countEnoco=4429.83
+G4WT1 > 
+
+Al7mud1
+G4WT6 > EffectiveCountall:2321966
+G4WT6 > EffectiveCountnoscattering:292981
+G4WT6 > countEall=28134.7
+G4WT6 > countEnoco=8157.35
+G4WT2 > 
+
+Al7mud2
+G4WT11 > EffectiveCountall:2047288
+G4WT11 > EffectiveCountnoscattering:300746
+G4WT11 > countEall=41927.5
+G4WT11 > countEnoco=14098.3
+G4WT9 > 
+
+Al7mud3
+G4WT8 > EffectiveCountall:1894679
+G4WT8 > EffectiveCountnoscattering:304834
+G4WT8 > countEall=51203.2
+G4WT8 > countEnoco=18807.1
+G4WT4 > 
+
+Al7mud4
+G4WT3 > EffectiveCountall:1799292
+G4WT3 > EffectiveCountnoscattering:305472
+G4WT3 > countEall=57762.1
+G4WT3 > countEnoco=22834.8
+G4WT5 > 
+
+Al7mud6
+G4WT6 > EffectiveCountall:1715540
+G4WT6 > EffectiveCountnoscattering:305919
+G4WT6 > countEall=68927.9
+G4WT6 > countEnoco=30322.1
+G4WT3 > 
+
+Al7mud8
+G4WT0 > EffectiveCountall:1708714
+G4WT0 > EffectiveCountnoscattering:305085
+G4WT0 > countEall=79013.6
+G4WT0 > countEnoco=37075
+G4WT6 > 
+
+Al10mud0
+G4WT2 > EffectiveCountall:862666
+G4WT2 > EffectiveCountnoscattering:66832
+G4WT2 > countEall=5593.12
+G4WT2 > countEnoco=991.233
+G4WT6 > 
+
+Al10mud1
+G4WT2 > EffectiveCountall:774091
+G4WT2 > EffectiveCountnoscattering:64823
+G4WT2 > countEall=8609.87
+G4WT2 > countEnoco=1806.44
+G4WT4 > 
+
+Al10mud2
+G4WT7 > EffectiveCountall:645265
+G4WT7 > EffectiveCountnoscattering:67094
+G4WT7 > countEall=12289
+G4WT7 > countEnoco=3145.44
+G4WT10 > 
+
+Al10mud3
+G4WT1 > EffectiveCountall:580228
+G4WT1 > EffectiveCountnoscattering:68397
+G4WT1 > countEall=14650.9
+G4WT1 > countEnoco=4223.26
+G4WT9 > 
+
+Al10mud4
+G4WT8 > EffectiveCountall:539726
+G4WT8 > EffectiveCountnoscattering:68684
+G4WT8 > countEall=16377.8
+G4WT8 > countEnoco=5134.31
+G4WT6 > 
+
+Al10mud6
+G4WT10 > EffectiveCountall:500072
+G4WT10 > EffectiveCountnoscattering:68831
+G4WT10 > countEall=19110.5
+G4WT10 > countEnoco=6798.58
+G4WT5 > 
+
+Al10mud8
+G4WT3 > EffectiveCountall:488057
+G4WT3 > EffectiveCountnoscattering:68517
+G4WT3 > countEall=21532.8
+G4WT3 > countEnoco=8362.57
+G4WT1 > 
+
+Al15mud0
+G4WT1 > EffectiveCountall:127988
+G4WT1 > EffectiveCountnoscattering:5522
+G4WT1 > countEall=757.318
+G4WT1 > countEnoco=81.8959
+G4WT10 > 
+
+Al15mud1
+G4WT2 > EffectiveCountall:105641
+G4WT2 > EffectiveCountnoscattering:5260
+G4WT2 > countEall=1070.16
+G4WT2 > countEnoco=146.709
+G4WT6 > 
+
+Al15mud2
+G4WT7 > EffectiveCountall:81606
+G4WT7 > EffectiveCountnoscattering:5430
+G4WT7 > countEall=1439.27
+G4WT7 > countEnoco=254.68
+G4WT9 > 
+
+Al15mud3
+G4WT11 > EffectiveCountall:70425
+G4WT11 > EffectiveCountnoscattering:5619
+G4WT11 > countEall=1670.81
+G4WT11 > countEnoco=346.733
+G4WT5 > 
+
+Al15mud4
+G4WT10 > EffectiveCountall:63907
+G4WT10 > EffectiveCountnoscattering:5567
+G4WT10 > countEall=1826.59
+G4WT10 > countEnoco=416.404
+G4WT6 > 
+
+Al15mud6
+G4WT5 > EffectiveCountall:57280
+G4WT5 > EffectiveCountnoscattering:5680
+G4WT5 > countEall=2084.11
+G4WT5 > countEnoco=561.282
+G4WT5 > 
+
+Al15mud8
+G4WT1 > EffectiveCountall:54950
+G4WT1 > EffectiveCountnoscattering:5539
+G4WT1 > countEall=2292.3
+G4WT1 > countEnoco=675.785
+G4WT11 > 
+
+Fe2mud0
+G4WT2 > EffectiveCountall:7569410
+G4WT2 > EffectiveCountnoscattering:3651933
+G4WT2 > countEall=89996.3
+G4WT2 > countEnoco=56067.4
+G4WT3 > 
+
+Fe2mud1
+G4WT10 > EffectiveCountall:7867589
+G4WT10 > EffectiveCountnoscattering:3612377
+G4WT10 > countEall=165254
+G4WT10 > countEnoco=104127
+G4WT2 > 
+
+Fe2mud2
+G4WT4 > EffectiveCountall:8074198
+G4WT4 > EffectiveCountnoscattering:3720221
+G4WT4 > countEall=263070
+G4WT4 > countEnoco=174537
+G4WT3 > 
+
+Fe2mud3
+G4WT11 > EffectiveCountall:8179026
+G4WT11 > EffectiveCountnoscattering:3651890
+G4WT11 > countEall=332767
+G4WT11 > countEnoco=228182
+G4WT0 > 
+
+Fe2mud4
+G4WT6 > EffectiveCountall:8435436
+G4WT6 > EffectiveCountnoscattering:3657441
+G4WT6 > countEall=376790
+G4WT6 > countEnoco=278578
+G4WT0 > 
+
+Fe2mud6
+G4WT10 > EffectiveCountall:9118795
+G4WT10 > EffectiveCountnoscattering:3666161
+G4WT10 > countEall=478148
+G4WT10 > countEnoco=352117
+G4WT2 > 
+
+Fe2mud8
+G4WT4 > EffectiveCountall:9984007
+G4WT4 > EffectiveCountnoscattering:3670408
+G4WT4 > countEall=598392
+G4WT4 > countEnoco=457189
+G4WT3 > 
+
+Fe4mud0
+G4WT5 > EffectiveCountall:4160515
+G4WT5 > EffectiveCountnoscattering:1366750
+G4WT5 > countEall=45180.5
+G4WT5 > countEnoco=20326
+G4WT2 > 
+
+Fe4mud1
+G4WT9 > EffectiveCountall:4388973
+G4WT9 > EffectiveCountnoscattering:1329824
+G4WT9 > countEall=80805.9
+G4WT9 > countEnoco=36805.9
+G4WT0 > 
+
+Fe4mud2
+G4WT4 > EffectiveCountall:4527573
+G4WT4 > EffectiveCountnoscattering:1401697
+G4WT4 > countEall=132839
+G4WT4 > countEnoco=65734.9
+G4WT2 > 
+
+Fe4mud3
+G4WT6 > EffectiveCountall:4420886
+G4WT6 > EffectiveCountnoscattering:1350078
+G4WT6 > countEall=162312
+G4WT6 > countEnoco=84160.3
+G4WT5 > 
+
+Fe4mud4
+G4WT7 > EffectiveCountall:4481911
+G4WT7 > EffectiveCountnoscattering:1355371
+G4WT7 > countEall=190129
+G4WT7 > countEnoco=102628
+G4WT4 > 
+
+Fe4mud6
+G4WT2 > EffectiveCountall:4715387
+G4WT2 > EffectiveCountnoscattering:1358038
+G4WT2 > countEall=229639
+G4WT2 > countEnoco=135515
+G4WT10 > 
+
+Fe4mud8
+G4WT2 > EffectiveCountall:5121611
+G4WT2 > EffectiveCountnoscattering:1358803
+G4WT2 > countEall=277326
+G4WT2 > countEnoco=167912
+G4WT4 > 
+
+Fe7mud0
+G4WT9 > EffectiveCountall:1467030
+G4WT9 > EffectiveCountnoscattering:312459
+G4WT9 > countEall=14636.8
+G4WT9 > countEnoco=4631.83
+G4WT3 > 
+
+Fe7mud1
+G4WT4 > EffectiveCountall:1550012
+G4WT4 > EffectiveCountnoscattering:296957
+G4WT4 > countEall=25916.5
+G4WT4 > countEnoco=8269.88
+G4WT1 > 
+
+Fe7mud2
+G4WT4 > EffectiveCountall:1608268
+G4WT4 > EffectiveCountnoscattering:325387
+G4WT4 > countEall=42949.4
+G4WT4 > countEnoco=15253.3
+G4WT11 > 
+
+Fe7mud3
+G4WT7 > EffectiveCountall:1484934
+G4WT7 > EffectiveCountnoscattering:303490
+G4WT7 > countEall=49838.5
+G4WT7 > countEnoco=18724.6
+G4WT4 > 
+
+Fe7mud4
+G4WT9 > EffectiveCountall:1473894
+G4WT9 > EffectiveCountnoscattering:305029
+G4WT9 > countEall=56671.9
+G4WT9 > countEnoco=22803.3
+G4WT2 > 
+
+Fe7mud6
+G4WT9 > EffectiveCountall:1506415
+G4WT9 > EffectiveCountnoscattering:305131
+G4WT9 > countEall=68320.4
+G4WT9 > countEnoco=30242.6
+G4WT2 > 
+
+Fe7mud8
+G4WT10 > EffectiveCountall:1612791
+G4WT10 > EffectiveCountnoscattering:306019
+G4WT10 > countEall=80084.6
+G4WT10 > countEnoco=37189.8
+G4WT6 > 
+
+Fe10mud0
+G4WT5 > EffectiveCountall:471861
+G4WT5 > EffectiveCountnoscattering:71242
+G4WT5 > countEall=4513.01
+G4WT5 > countEnoco=1056.52
+G4WT6 > 
+
+Fe10mud1
+G4WT6 > EffectiveCountall:491852
+G4WT6 > EffectiveCountnoscattering:66056
+G4WT6 > countEall=7773.7
+G4WT6 > countEnoco=1840.73
+G4WT4 > 
+
+Fe10mud2
+G4WT11 > EffectiveCountall:511917
+G4WT11 > EffectiveCountnoscattering:75059
+G4WT11 > countEall=12947.9
+G4WT11 > countEnoco=3518.85
+G4WT10 > 
+
+Fe10mud3
+G4WT0 > EffectiveCountall:450892
+G4WT0 > EffectiveCountnoscattering:68081
+G4WT0 > countEall=14330
+G4WT0 > countEnoco=4203.7
+G4WT2 > 
+
+Fe10mud4
+G4WT5 > EffectiveCountall:441627
+G4WT5 > EffectiveCountnoscattering:68609
+G4WT5 > countEall=16234.1
+G4WT5 > countEnoco=5128.86
+G4WT8 > 
+
+Fe10mud6
+G4WT2 > EffectiveCountall:443076
+G4WT2 > EffectiveCountnoscattering:68522
+G4WT2 > countEall=19184.2
+G4WT2 > countEnoco=6768.11
+G4WT7 > 
+
+Fe10mud8
+G4WT6 > EffectiveCountall:471237
+G4WT6 > EffectiveCountnoscattering:68592
+G4WT6 > countEall=22246.8
+G4WT6 > countEnoco=8371.73
+G4WT0 > 
+
+Fe15mud0
+G4WT9 > EffectiveCountall:63410
+G4WT9 > EffectiveCountnoscattering:6035
+G4WT9 > countEall=577.394
+G4WT9 > countEnoco=89.5045
+G4WT7 > 
+
+Fe15mud1
+G4WT11 > EffectiveCountall:63233
+G4WT11 > EffectiveCountnoscattering:5407
+G4WT11 > countEall=943.485
+G4WT11 > countEnoco=150.81
+G4WT10 > 
+
+Fe15mud2
+G4WT3 > EffectiveCountall:66698
+G4WT3 > EffectiveCountnoscattering:6445
+G4WT3 > countEall=1594.17
+G4WT3 > countEnoco=302.289
+G4WT3 > 
+
+Fe15mud3
+G4WT0 > EffectiveCountall:54815
+G4WT0 > EffectiveCountnoscattering:5493
+G4WT0 > countEall=1648.73
+G4WT0 > countEnoco=338.958
+G4WT0 > 
+
+Fe15mud4
+G4WT10 > EffectiveCountall:53511
+G4WT10 > EffectiveCountnoscattering:5686
+G4WT10 > countEall=1864.71
+G4WT10 > countEnoco=425.305
+G4WT3 > 
+
+Fe15mud6
+G4WT11 > EffectiveCountall:52683
+G4WT11 > EffectiveCountnoscattering:5608
+G4WT11 > countEall=2164.09
+G4WT11 > countEnoco=554.266
+G4WT7 > 
+
+Fe15mud8
+G4WT6 > EffectiveCountall:56462
+G4WT6 > EffectiveCountnoscattering:5680
+G4WT6 > countEall=2514.64
+G4WT6 > countEnoco=692.988
+G4WT5 > 
+
+Water2mud0
+G4WT1 > 
+G4WT11 > 
+G4WT11 > --------------------End of Local Run------------------------
+G4WT11 >  The run consists of 249584 gamma of 500 keV
+G4WT11 >  Cumulated dose per run, in scoring volume : 0.494739 picoGy  rms = 0.000192587 picoGy 
+
+Water2mud1
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+G4WT2 >  The run consists of 249408 gamma of 1 MeV
+G4WT10 > 
+G4WT10 > --------------------End of Local Run------------------------
+
+Water2mud2
+G4WT11 > 
+G4WT9 > 
+G4WT9 > --------------------End of Local Run------------------------
+G4WT9 >  The run consists of 249408 gamma of 2 MeV
+G4WT6 > 
+
+Water2mud3
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 249408 gamma of 3 MeV
+G4WT0 >  Cumulated dose per run, in scoring volume : 3.28452 picoGy  rms = 0.000255248 picoGy 
+G4WT7 > 
+
+Water2mud4
+G4WT3 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 251140 gamma of 4 MeV
+G4WT0 > 
+G4WT11 > 
+
+Water2mud5
+G4WT10 > 
+G4WT3 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 249408 gamma of 8 MeV
+G4WT0 > 
+
+Water4mud0
+G4WT7 > 
+G4WT9 > 
+G4WT3 > 
+G4WT8 > 
+G4WT6 > 
+
+Water4mud1
+G4WT4 > 
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+G4WT2 >  The run consists of 249408 gamma of 1 MeV
+G4WT1 > 
+
+Water4mud2
+G4WT1 > 
+G4WT6 > 
+G4WT6 > --------------------End of Local Run------------------------
+G4WT6 >  The run consists of 249408 gamma of 2 MeV
+G4WT7 > 
+
+Water4mud3
+G4WT6 > 
+G4WT0 > 
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+G4WT2 >  The run consists of 249584 gamma of 3 MeV
+
+Water4mud4
+G4WT2 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 251140 gamma of 4 MeV
+G4WT0 > 
+
+Water4mud5
+G4WT10 > 
+G4WT10 > --------------------End of Local Run------------------------
+G4WT10 >  The run consists of 249584 gamma of 8 MeV
+G4WT6 > 
+G4WT6 > --------------------End of Local Run------------------------
+
+Water7mud0
+G4WT1 > 
+G4WT0 > 
+G4WT10 > 
+G4WT9 > 
+G4WT11 > 
+
+Water7mud1
+G4WT11 > 
+G4WT11 > --------------------End of Local Run------------------------
+G4WT11 >  The run consists of 249584 gamma of 1 MeV
+G4WT11 >  Cumulated dose per run, in scoring volume : 1.0521 picoGy  rms = 0.000237435 picoGy 
+G4WT11 > ------------------------------------------------------------
+
+Water7mud2
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+G4WT2 >  The run consists of 251140 gamma of 2 MeV
+G4WT11 > 
+G4WT11 > --------------------End of Local Run------------------------
+
+Water7mud3
+G4WT7 > 
+G4WT7 > --------------------End of Local Run------------------------
+G4WT7 >  The run consists of 249408 gamma of 3 MeV
+G4WT7 >  Cumulated dose per run, in scoring volume : 3.28507 picoGy  rms = 0.000249843 picoGy 
+G4WT7 > ------------------------------------------------------------
+
+Water7mud4
+G4WT4 > 
+G4WT4 > --------------------End of Local Run------------------------
+G4WT4 >  The run consists of 251140 gamma of 4 MeV
+G4WT4 >  Cumulated dose per run, in scoring volume : 4.42689 picoGy  rms = 0.000261487 picoGy 
+G4WT3 > 
+
+Water7mud5
+G4WT9 > 
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 251140 gamma of 8 MeV
+G4WT11 > 
+
+Water10mud0
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 249408 gamma of 500 keV
+G4WT1 >  Cumulated dose per run, in scoring volume : 0.494557 picoGy  rms = 0.000192485 picoGy 
+G4WT1 > ------------------------------------------------------------
+
+Water10mud1
+G4WT5 > 
+G4WT5 > --------------------End of Local Run------------------------
+G4WT9 > 
+G4WT9 > --------------------End of Local Run------------------------
+G4WT9 >  The run consists of 251140 gamma of 1 MeV
+
+Water10mud2
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT7 > 
+G4WT7 > --------------------End of Local Run------------------------
+G4WT7 >  The run consists of 249584 gamma of 2 MeV
+
+Water10mud3
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 249408 gamma of 3 MeV
+G4WT6 > 
+G4WT11 > 
+
+Water10mud4
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 251140 gamma of 4 MeV
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+
+Water10mud5
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT5 > 
+G4WT5 > --------------------End of Local Run------------------------
+G4WT5 >  The run consists of 251140 gamma of 8 MeV
+
+Water15mud0
+G4WT4 > 
+G4WT3 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 251140 gamma of 500 keV
+G4WT11 > 
+
+Water15mud1
+G4WT4 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 249408 gamma of 1 MeV
+G4WT10 > 
+
+Water15mud2
+G4WT7 > 
+G4WT7 > --------------------End of Local Run------------------------
+G4WT7 >  The run consists of 249408 gamma of 2 MeV
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+
+Water15mud3
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 249408 gamma of 3 MeV
+G4WT8 >  Cumulated dose per run, in scoring volume : 3.28432 picoGy  rms = 0.000256006 picoGy 
+G4WT8 > ------------------------------------------------------------
+
+Water15mud4
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+G4WT2 >  The run consists of 251140 gamma of 4 MeV
+G4WT2 >  Cumulated dose per run, in scoring volume : 4.42715 picoGy  rms = 0.000260974 picoGy 
+G4WT2 > ------------------------------------------------------------
+
+Water15mud5
+G4WT6 > 
+G4WT6 > --------------------End of Local Run------------------------
+G4WT6 >  The run consists of 249408 gamma of 8 MeV
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+
+Concrete2mud0
+G4WT3 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT4 > 
+G4WT6 > 
+G4WT1 > 
+
+Concrete2mud1
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 249408 gamma of 1 MeV
+G4WT6 > 
+G4WT5 > 
+
+Concrete2mud2
+G4WT1 > 
+G4WT6 > 
+G4WT6 > --------------------End of Local Run------------------------
+G4WT6 >  The run consists of 249408 gamma of 2 MeV
+G4WT2 > 
+
+Concrete2mud3
+G4WT4 > 
+G4WT5 > 
+G4WT5 > --------------------End of Local Run------------------------
+G4WT5 >  The run consists of 249408 gamma of 3 MeV
+G4WT3 > 
+
+Concrete2mud4
+G4WT6 > 
+G4WT10 > 
+G4WT10 > --------------------End of Local Run------------------------
+G4WT10 >  The run consists of 249408 gamma of 4 MeV
+G4WT0 > 
+
+Concrete2mud5
+G4WT3 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 249408 gamma of 8 MeV
+G4WT3 >  Cumulated dose per run, in scoring volume : 3.836 picoGy  rms = 0.000153614 picoGy 
+G4WT3 > ------------------------------------------------------------
+
+Concrete4mud0
+G4WT2 > 
+G4WT2 > --------------------End of Local Run------------------------
+G4WT2 >  The run consists of 251140 gamma of 500 keV
+G4WT2 >  Cumulated dose per run, in scoring volume : 0.219274 picoGy  rms = 8.43442e-05 picoGy 
+G4WT7 > 
+
+Concrete4mud1
+G4WT7 > 
+G4WT10 > 
+G4WT10 > --------------------End of Local Run------------------------
+G4WT10 >  The run consists of 249408 gamma of 1 MeV
+G4WT10 >  Cumulated dose per run, in scoring volume : 0.459025 picoGy  rms = 0.000104498 picoGy 
+
+Concrete4mud2
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 249584 gamma of 2 MeV
+G4WT8 >  Cumulated dose per run, in scoring volume : 0.945295 picoGy  rms = 0.000112181 picoGy 
+G4WT8 > ------------------------------------------------------------
+
+Concrete4mud3
+G4WT3 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 251140 gamma of 3 MeV
+G4WT3 >  Cumulated dose per run, in scoring volume : 1.43774 picoGy  rms = 0.000117771 picoGy 
+G4WT3 > ------------------------------------------------------------
+
+Concrete4mud4
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 249584 gamma of 4 MeV
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+
+Concrete4mud5
+G4WT11 > 
+G4WT11 > --------------------End of Local Run------------------------
+G4WT11 >  The run consists of 249408 gamma of 8 MeV
+G4WT6 > 
+G4WT2 > 
+
+Concrete7mud0
+G4WT1 > 
+G4WT11 > 
+G4WT11 > --------------------End of Local Run------------------------
+G4WT11 >  The run consists of 249408 gamma of 500 keV
+G4WT3 > 
+
+Concrete7mud1
+G4WT3 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 251140 gamma of 1 MeV
+G4WT0 > 
+
+Concrete7mud2
+G4WT9 > 
+G4WT9 > --------------------End of Local Run------------------------
+G4WT9 >  The run consists of 249408 gamma of 2 MeV
+G4WT9 >  Cumulated dose per run, in scoring volume : 0.944627 picoGy  rms = 0.000112319 picoGy 
+G4WT9 > ------------------------------------------------------------
+
+Concrete7mud3
+G4WT5 > 
+G4WT5 > --------------------End of Local Run------------------------
+G4WT5 >  The run consists of 251140 gamma of 3 MeV
+G4WT5 >  Cumulated dose per run, in scoring volume : 1.43776 picoGy  rms = 0.000117546 picoGy 
+G4WT5 > ------------------------------------------------------------
+
+Concrete7mud4
+G4WT3 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 251140 gamma of 4 MeV
+G4WT3 >  Cumulated dose per run, in scoring volume : 1.92298 picoGy  rms = 0.0001274 picoGy 
+G4WT11 > 
+
+Concrete7mud5
+G4WT8 > 
+G4WT11 > 
+G4WT11 > --------------------End of Local Run------------------------
+G4WT11 >  The run consists of 249408 gamma of 8 MeV
+G4WT7 > 
+
+Concrete10mud0
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 249408 gamma of 500 keV
+G4WT0 >  Cumulated dose per run, in scoring volume : 0.217754 picoGy  rms = 8.40966e-05 picoGy 
+G4WT1 > 
+
+Concrete10mud1
+G4WT4 > 
+G4WT9 > 
+G4WT6 > 
+G4WT6 > --------------------End of Local Run------------------------
+G4WT6 >  The run consists of 251140 gamma of 1 MeV
+
+Concrete10mud2
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 249408 gamma of 2 MeV
+G4WT8 >  Cumulated dose per run, in scoring volume : 0.944492 picoGy  rms = 0.000112117 picoGy 
+G4WT8 > ------------------------------------------------------------
+
+Concrete10mud3
+G4WT5 > 
+G4WT5 > --------------------End of Local Run------------------------
+G4WT5 >  The run consists of 249408 gamma of 3 MeV
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+
+Concrete10mud4
+G4WT5 > 
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 249408 gamma of 4 MeV
+G4WT11 > 
+
+Concrete10mud5
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 249408 gamma of 8 MeV
+G4WT7 > 
+G4WT7 > --------------------End of Local Run------------------------
+
+Concrete15mud0
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 249408 gamma of 500 keV
+G4WT9 > 
+G4WT1 > 
+
+Concrete15mud1
+G4WT8 > 
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
+G4WT1 >  The run consists of 251140 gamma of 1 MeV
+G4WT10 > 
+
+Concrete15mud2
+G4WT8 > 
+G4WT9 > 
+G4WT9 > --------------------End of Local Run------------------------
+G4WT9 >  The run consists of 249408 gamma of 2 MeV
+G4WT2 > 
+
+Concrete15mud3
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 249408 gamma of 3 MeV
+G4WT7 > 
+G4WT7 > --------------------End of Local Run------------------------
+
+Concrete15mud4
+G4WT3 > 
+G4WT3 > --------------------End of Local Run------------------------
+G4WT3 >  The run consists of 251140 gamma of 4 MeV
+G4WT10 > 
+G4WT5 > 
+
+Concrete15mud5
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 251140 gamma of 8 MeV
+G4WT10 > 
+G4WT3 > 
+
+Pb2mud0
+G4WT4 > EffectiveCountall:4607889
+G4WT4 > EffectiveCountnoscattering:3832139
+G4WT4 > countEall=68173.7
+G4WT4 > countEnoco=58880.6
+G4WT2 > 
+
+Pb2mud1
+G4WT7 > EffectiveCountall:5198077
+G4WT7 > EffectiveCountnoscattering:3725566
+G4WT7 > countEall=139614
+G4WT7 > countEnoco=107655
+G4WT1 > 
+
+Pb2mud2
+G4WT10 > EffectiveCountall:5745849
+G4WT10 > EffectiveCountnoscattering:3687658
+G4WT10 > countEall=234238
+G4WT10 > countEnoco=172972
+G4WT3 > 
+
+Pb2mud3
+G4WT5 > EffectiveCountall:5987850
+G4WT5 > EffectiveCountnoscattering:3677631
+G4WT5 > countEall=304996
+G4WT5 > countEnoco=229780
+G4WT7 > 
+
+Pb2mud4
+G4WT10 > EffectiveCountall:6185132
+G4WT10 > EffectiveCountnoscattering:3652932
+G4WT10 > countEall=348722
+G4WT10 > countEnoco=278308
+G4WT1 > 
+
+Pb2mud5
+G4WT9 > EffectiveCountall:7781744
+G4WT9 > EffectiveCountnoscattering:3594290
+G4WT9 > countEall=573729
+G4WT9 > countEnoco=447695
+G4WT9 > 
+
+Pb4mud0
+G4WT7 > EffectiveCountall:1993145
+G4WT7 > EffectiveCountnoscattering:1501378
+G4WT7 > countEall=28639.3
+G4WT7 > countEnoco=22430.6
+G4WT0 > 
+
+Pb4mud1
+G4WT6 > EffectiveCountall:2382090
+G4WT6 > EffectiveCountnoscattering:1413344
+G4WT6 > countEall=59432.4
+G4WT6 > countEnoco=39083.5
+G4WT0 > 
+
+Pb4mud2
+G4WT10 > EffectiveCountall:2737251
+G4WT10 > EffectiveCountnoscattering:1378119
+G4WT10 > countEall=107075
+G4WT10 > countEnoco=64615.8
+G4WT7 > 
+
+Pb4mud3
+G4WT2 > EffectiveCountall:2858904
+G4WT2 > EffectiveCountnoscattering:1371701
+G4WT2 > countEall=138683
+G4WT2 > countEnoco=85499.6
+G4WT10 > 
+
+Pb4mud4
+G4WT1 > EffectiveCountall:2916792
+G4WT1 > EffectiveCountnoscattering:1349778
+G4WT1 > countEall=162332
+G4WT1 > countEnoco=102198
+G4WT2 > 
+
+Pb4mud5
+G4WT5 > EffectiveCountall:3721623
+G4WT5 > EffectiveCountnoscattering:1304716
+G4WT5 > countEall=252609
+G4WT5 > countEnoco=161139
+G4WT1 > 
+
+Pb7mud0
+G4WT6 > EffectiveCountall:541077
+G4WT6 > EffectiveCountnoscattering:367399
+G4WT6 > countEall=7586.61
+G4WT6 > countEnoco=5436.61
+G4WT6 > 
+
+Pb7mud1
+G4WT7 > EffectiveCountall:680772
+G4WT7 > EffectiveCountnoscattering:329996
+G4WT7 > countEall=16829.5
+G4WT7 > countEnoco=9204.88
+G4WT3 > 
+
+Pb7mud2
+G4WT7 > EffectiveCountall:821792
+G4WT7 > EffectiveCountnoscattering:315292
+G4WT7 > countEall=31016.2
+G4WT7 > countEnoco=14779.9
+G4WT2 > 
+
+Pb7mud3
+G4WT8 > EffectiveCountall:867405
+G4WT8 > EffectiveCountnoscattering:311177
+G4WT8 > countEall=40087.1
+G4WT8 > countEnoco=19204.6
+G4WT0 > 
+
+Pb7mud4
+G4WT1 > EffectiveCountall:878799
+G4WT1 > EffectiveCountnoscattering:302836
+G4WT1 > countEall=45618.9
+G4WT1 > countEnoco=22641
+G4WT2 > 
+
+Pb7mud5
+G4WT6 > EffectiveCountall:1132507
+G4WT6 > EffectiveCountnoscattering:284907
+G4WT6 > countEall=69683.9
+G4WT6 > countEnoco=34633
+G4WT1 > 
+
+Pb10mud0
+G4WT10 > EffectiveCountall:142173
+G4WT10 > EffectiveCountnoscattering:89390
+G4WT10 > countEall=1990.26
+G4WT10 > countEnoco=1324.55
+G4WT10 > 
+
+Pb10mud1
+G4WT1 > EffectiveCountall:183942
+G4WT1 > EffectiveCountnoscattering:76899
+G4WT1 > countEall=4478.3
+G4WT1 > countEnoco=2142.52
+G4WT0 > 
+
+Pb10mud2
+G4WT10 > EffectiveCountall:232083
+G4WT10 > EffectiveCountnoscattering:72069
+G4WT10 > countEall=8586.31
+G4WT10 > countEnoco=3378.6
+G4WT4 > 
+
+Pb10mud3
+G4WT2 > EffectiveCountall:249048
+G4WT2 > EffectiveCountnoscattering:70684
+G4WT2 > countEall=11131
+G4WT2 > countEnoco=4363.91
+G4WT3 > 
+
+Pb10mud4
+G4WT11 > EffectiveCountall:252652
+G4WT11 > EffectiveCountnoscattering:67422
+G4WT11 > countEall=12652.4
+G4WT11 > countEnoco=5040.03
+G4WT4 > 
+
+Pb10mud5
+G4WT1 > EffectiveCountall:332775
+G4WT1 > EffectiveCountnoscattering:62145
+G4WT1 > countEall=19274.3
+G4WT1 > countEnoco=7584.62
+G4WT2 > 
+
+Pb15mud0
+G4WT8 > EffectiveCountall:14789
+G4WT8 > EffectiveCountnoscattering:8411
+G4WT8 > countEall=206.183
+G4WT8 > countEnoco=124.744
+G4WT0 > 
+
+Pb15mud1
+G4WT4 > EffectiveCountall:19703
+G4WT4 > EffectiveCountnoscattering:6666
+G4WT4 > countEall=472.881
+G4WT4 > countEnoco=185.927
+G4WT4 > 
+
+Pb15mud2
+G4WT5 > EffectiveCountall:25865
+G4WT5 > EffectiveCountnoscattering:6016
+G4WT5 > countEall=935.264
+G4WT5 > countEnoco=282.167
+G4WT9 > 
+
+Pb15mud3
+G4WT8 > EffectiveCountall:28753
+G4WT8 > EffectiveCountnoscattering:5811
+G4WT8 > countEall=1243.73
+G4WT8 > countEnoco=358.581
+G4WT10 > 
+
+Pb15mud4
+G4WT7 > EffectiveCountall:29699
+G4WT7 > EffectiveCountnoscattering:5522
+G4WT7 > countEall=1424.95
+G4WT7 > countEnoco=413.038
+G4WT4 > 
+
+Pb15mud5
+G4WT8 > EffectiveCountall:41507
+G4WT8 > EffectiveCountnoscattering:4824
+G4WT8 > countEall=2232.41
+G4WT8 > countEnoco=588.548
+G4WT0 > 
+

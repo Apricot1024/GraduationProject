@@ -881,86 +881,86 @@ See commands in /vis/modeling/trajectories/ for other options.
 --> G4TaskRunManager::CreateAndStartWorkers() --> Creating 3162 tasks with 3162 events/task...
 ==============================================================================================
 
-G4WT7 > EffectiveCountall:24986
-G4WT7 > EffectiveCountnoscattering:5968
-G4WT7 > countEall=920.481
-G4WT7 > countEnoco=279.915
-G4WT8 > 
-G4WT6 > 
-G4WT6 > --------------------End of Local Run------------------------
-G4WT6 >  The run consists of 834768 gamma of 2 MeV
-G4WT6 >  Cumulated dose per run, in scoring volume : 17.8918 picoGy  rms = 0.00207117 picoGy 
-G4WT6 > ------------------------------------------------------------
-G4WT6 > 
+G4WT5 > EffectiveCountall:25865
+G4WT5 > EffectiveCountnoscattering:6016
+G4WT5 > countEall=935.264
+G4WT5 > countEnoco=282.167
 G4WT9 > 
-G4WT9 > --------------------End of Local Run------------------------
-G4WT9 >  The run consists of 828444 gamma of 2 MeV
-G4WT7 > 
-G4WT7 > --------------------End of Local Run------------------------
-G4WT7 >  The run consists of 827038 gamma of 2 MeV
-G4WT7 >  Cumulated dose per run, in scoring volume : 17.7275 picoGy  rms = 0.00205557 picoGy 
-G4WT7 > ------------------------------------------------------------
-G4WT7 > 
-G4WT10 > 
-G4WT10 > --------------------End of Local Run------------------------
-G4WT10 >  The run consists of 822120 gamma of 2 MeV
-G4WT10 >  Cumulated dose per run, in scoring volume : 17.6239 picoGy  rms = 0.00204443 picoGy 
-G4WT10 > ------------------------------------------------------------
-G4WT10 > 
-G4WT1 > 
-G4WT1 > --------------------End of Local Run------------------------
-G4WT1 >  The run consists of 834768 gamma of 2 MeV
-G4WT1 >  Cumulated dose per run, in scoring volume : 17.8957 picoGy  rms = 0.00205415 picoGy 
-G4WT1 > ------------------------------------------------------------
-G4WT1 > 
-G4WT8 > --------------------End of Local Run------------------------
-G4WT8 >  The run consists of 822120 gamma of 2 MeV
-G4WT8 >  Cumulated dose per run, in scoring volume : 17.6303 picoGy  rms = 0.00202126 picoGy 
-G4WT8 > ------------------------------------------------------------
-G4WT8 > 
-G4WT5 > 
-G4WT5 > --------------------End of Local Run------------------------
-G4WT5 >  The run consists of 837930 gamma of 2 MeV
-G4WT9 >  Cumulated dose per run, in scoring volume : 17.7591 picoGy  rms = 0.00204787 picoGy 
-G4WT9 > ------------------------------------------------------------
-G4WT9 > 
-G4WT0 > 
-G4WT0 > --------------------End of Local Run------------------------
-G4WT0 >  The run consists of 822120 gamma of 2 MeV
-G4WT0 >  Cumulated dose per run, in scoring volume : 17.6244 picoGy  rms = 0.00204148 picoGy 
-G4WT4 > 
 G4WT3 > 
 G4WT3 > --------------------End of Local Run------------------------
-G4WT3 >  The run consists of 841092 gamma of 2 MeV
-G4WT3 >  Cumulated dose per run, in scoring volume : 18.0325 picoGy  rms = 0.00206347 picoGy 
-G4WT3 > ------------------------------------------------------------
-G4WT3 > 
-G4WT11 > 
-G4WT5 >  Cumulated dose per run, in scoring volume : 17.9639 picoGy  rms = 0.00205358 picoGy 
-G4WT5 > ------------------------------------------------------------
-G4WT5 > 
-G4WT0 > ------------------------------------------------------------
-G4WT0 > 
-G4WT4 > --------------------End of Local Run------------------------
-G4WT4 >  The run consists of 844254 gamma of 2 MeV
-G4WT4 >  Cumulated dose per run, in scoring volume : 18.1008 picoGy  rms = 0.00206223 picoGy 
-G4WT4 > ------------------------------------------------------------
+G4WT3 >  The run consists of 831606 gamma of 2 MeV
+G4WT1 > 
+G4WT1 > --------------------End of Local Run------------------------
 G4WT2 > 
 G4WT2 > --------------------End of Local Run------------------------
-G4WT2 >  The run consists of 844254 gamma of 2 MeV
-G4WT11 > --------------------End of Local Run------------------------
-G4WT11 >  The run consists of 841092 gamma of 2 MeV
-G4WT11 >  Cumulated dose per run, in scoring volume : 18.0339 picoGy  rms = 0.00205165 picoGy 
-G4WT11 > ------------------------------------------------------------
-G4WT4 > 
-G4WT2 >  Cumulated dose per run, in scoring volume : 18.1 picoGy  rms = 0.00206365 picoGy 
+G4WT2 >  The run consists of 834768 gamma of 2 MeV
+G4WT2 >  Cumulated dose per run, in scoring volume : 0.646502 picoGy  rms = 4.93021e-05 picoGy 
 G4WT2 > ------------------------------------------------------------
-G4WT2 > 
+G4WT0 > 
+G4WT0 > --------------------End of Local Run------------------------
+G4WT0 >  The run consists of 831606 gamma of 2 MeV
+G4WT7 > 
+G4WT7 > --------------------End of Local Run------------------------
+G4WT7 >  The run consists of 834768 gamma of 2 MeV
+G4WT7 >  Cumulated dose per run, in scoring volume : 0.64649 picoGy  rms = 4.93884e-05 picoGy 
+G4WT7 > ------------------------------------------------------------
+G4WT4 > 
+G4WT4 > --------------------End of Local Run------------------------
+G4WT10 > 
 G4WT11 > 
+G4WT11 > --------------------End of Local Run------------------------
+G4WT11 >  The run consists of 834768 gamma of 2 MeV
+G4WT11 >  Cumulated dose per run, in scoring volume : 0.646604 picoGy  rms = 4.86919e-05 picoGy 
+G4WT11 > ------------------------------------------------------------
+G4WT11 > 
+G4WT3 >  Cumulated dose per run, in scoring volume : 0.644189 picoGy  rms = 4.85905e-05 picoGy 
+G4WT3 > ------------------------------------------------------------
+G4WT3 > 
+G4WT1 >  The run consists of 831606 gamma of 2 MeV
+G4WT1 >  Cumulated dose per run, in scoring volume : 0.644067 picoGy  rms = 4.93713e-05 picoGy 
+G4WT1 > ------------------------------------------------------------
+G4WT8 > 
+G4WT8 > --------------------End of Local Run------------------------
+G4WT8 >  The run consists of 834768 gamma of 2 MeV
+G4WT8 >  Cumulated dose per run, in scoring volume : 0.646458 picoGy  rms = 4.94547e-05 picoGy 
+G4WT8 > ------------------------------------------------------------
+G4WT7 > 
+G4WT6 > 
+G4WT4 >  The run consists of 831606 gamma of 2 MeV
+G4WT10 > --------------------End of Local Run------------------------
+G4WT9 > --------------------End of Local Run------------------------
+G4WT9 >  The run consists of 831606 gamma of 2 MeV
+G4WT5 > 
+G4WT1 > 
+G4WT2 > 
+G4WT0 >  Cumulated dose per run, in scoring volume : 0.644143 picoGy  rms = 4.88427e-05 picoGy 
+G4WT8 > 
+G4WT6 > --------------------End of Local Run------------------------
+G4WT4 >  Cumulated dose per run, in scoring volume : 0.644054 picoGy  rms = 4.90023e-05 picoGy 
+G4WT10 >  The run consists of 831606 gamma of 2 MeV
+G4WT9 >  Cumulated dose per run, in scoring volume : 0.644111 picoGy  rms = 4.89178e-05 picoGy 
+G4WT9 > ------------------------------------------------------------
+G4WT9 > 
+G4WT5 > --------------------End of Local Run------------------------
+G4WT5 >  The run consists of 836524 gamma of 2 MeV
+G4WT5 >  Cumulated dose per run, in scoring volume : 0.647889 picoGy  rms = 4.93378e-05 picoGy 
+G4WT0 > ------------------------------------------------------------
+G4WT0 > 
+G4WT6 >  The run consists of 834768 gamma of 2 MeV
+G4WT10 >  Cumulated dose per run, in scoring volume : 0.644205 picoGy  rms = 4.85886e-05 picoGy 
+G4WT6 >  Cumulated dose per run, in scoring volume : 0.64657 picoGy  rms = 4.91658e-05 picoGy 
+G4WT6 > ------------------------------------------------------------
+G4WT10 > ------------------------------------------------------------
+G4WT10 > 
+G4WT6 > 
+G4WT5 > ------------------------------------------------------------
+G4WT5 > 
+G4WT4 > ------------------------------------------------------------
+G4WT4 > 
 
 --------------------End of Global Run-----------------------
  The run consists of 10000000 
- Cumulated dose per run, in scoring volume : 214.384 picoGy  rms = 0.00711035 picoGy 
+ Cumulated dose per run, in scoring volume : 7.74528 picoGy  rms = 0.000169933 picoGy 
 ------------------------------------------------------------
 
 0 events have been kept for refreshing and/or reviewing.
