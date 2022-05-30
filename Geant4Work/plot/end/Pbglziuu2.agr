@@ -54,7 +54,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue May 24 01:13:35 2022"
+@timestamp def "Fri May 27 18:29:50 2022"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -292,7 +292,7 @@
 @    s0 errorbar riser clip off
 @    s0 errorbar riser clip length 0.100000
 @    s0 comment "/home/apricot/Documents/GraduationProject/Geant4Work/plot/end/Pb2mudf.dat"
-@    s0 legend  "2mud"
+@    s0 legend  "2\f{Symbol}m\f{Time-Roman}d"
 @    s1 hidden false
 @    s1 type xy
 @    s1 symbol 1
@@ -341,7 +341,7 @@
 @    s1 errorbar riser clip off
 @    s1 errorbar riser clip length 0.100000
 @    s1 comment "/home/apricot/Documents/GraduationProject/Geant4Work/plot/end/Pb4mudf.dat"
-@    s1 legend  "4mud"
+@    s1 legend  "4\f{Symbol}m\f{Time-Roman}d"
 @target G0.S0
 @type xy
 0.5 1.3754941

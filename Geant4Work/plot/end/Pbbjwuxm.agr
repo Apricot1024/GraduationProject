@@ -54,7 +54,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Wed May 25 00:25:50 2022"
+@timestamp def "Fri May 27 18:28:40 2022"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -223,7 +223,7 @@
 @    altyaxis  off
 @    legend on
 @    legend loctype view
-@    legend 0.85, 0.82
+@    legend 0.85, 0.83
 @    legend box color 1
 @    legend box pattern 1
 @    legend box linewidth 1.0
@@ -292,7 +292,7 @@
 @    s0 errorbar riser clip off
 @    s0 errorbar riser clip length 0.100000
 @    s0 comment "/home/apricot/Documents/GraduationProject/Geant4Work/plot/end/Pb2mudpoint.dat"
-@    s0 legend  "surface2mud"
+@    s0 legend  "surface2\f{Symbol}m\f{Time-Roman}d"
 @    s1 hidden false
 @    s1 type xy
 @    s1 symbol 2
@@ -341,7 +341,7 @@
 @    s1 errorbar riser clip off
 @    s1 errorbar riser clip length 0.100000
 @    s1 comment "/home/apricot/Documents/GraduationProject/Geant4Work/plot/end/Pb2mudsurface.dat"
-@    s1 legend  "point2mud"
+@    s1 legend  "point2\f{Symbol}m\f{Time-Roman}d"
 @    s2 hidden false
 @    s2 type xy
 @    s2 symbol 1
@@ -390,7 +390,7 @@
 @    s2 errorbar riser clip off
 @    s2 errorbar riser clip length 0.100000
 @    s2 comment "/home/apricot/Documents/GraduationProject/Geant4Work/plot/end/Pb4mudpoint.dat"
-@    s2 legend  "surface4mud"
+@    s2 legend  "surface4\f{Symbol}m\f{Time-Roman}d"
 @    s3 hidden false
 @    s3 type xy
 @    s3 symbol 2
@@ -439,7 +439,7 @@
 @    s3 errorbar riser clip off
 @    s3 errorbar riser clip length 0.100000
 @    s3 comment "/home/apricot/Documents/GraduationProject/Geant4Work/plot/end/Pb4mudsurface.dat"
-@    s3 legend  "point4mud"
+@    s3 legend  "point4\f{Symbol}m\f{Time-Roman}d"
 @    s4 hidden false
 @    s4 type xy
 @    s4 symbol 1
@@ -488,7 +488,7 @@
 @    s4 errorbar riser clip off
 @    s4 errorbar riser clip length 0.100000
 @    s4 comment "/home/apricot/Documents/GraduationProject/Geant4Work/plot/end/Pb7mudpoint.dat"
-@    s4 legend  "surface7mud"
+@    s4 legend  "surface7\f{Symbol}m\f{Time-Roman}d"
 @    s5 hidden false
 @    s5 type xy
 @    s5 symbol 2
@@ -537,7 +537,7 @@
 @    s5 errorbar riser clip off
 @    s5 errorbar riser clip length 0.100000
 @    s5 comment "/home/apricot/Documents/GraduationProject/Geant4Work/plot/end/Pb7mudsurface.dat"
-@    s5 legend  "point7mud"
+@    s5 legend  "point7\f{Symbol}m\f{Time-Roman}d"
 @target G0.S0
 @type xy
 0.5 1.1695027
