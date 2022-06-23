@@ -8,6 +8,8 @@ yib1=a1(1)*xi+a1(2);
 yic1=exp(yib1);
 yib2=a2(1)*xi+a2(2);
 yic2=exp(yib2);
+r1=formular1(yi1,yib1)
+r2=formular1(yi2,yib2)
 figure(1)
 plot(xi,yia1,'r+',xi,yic1)
 figure(2)

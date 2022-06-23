@@ -6,7 +6,7 @@
 
 
 **************************************************************
- Geant4 version Name: geant4-11-00-patch-01 [MT]   (8-March-2022)
+ Geant4 version Name: geant4-11-00-patch-02 [MT]   (25-May-2022)
   << in Multi-threaded mode >> 
                        Copyright : Geant4 Collaboration
                       References : NIM A 506 (2003), 250-303
@@ -881,100 +881,3 @@ See commands in /vis/modeling/trajectories/ for other options.
 --> G4TaskRunManager::CreateAndStartWorkers() --> Creating 3162 tasks with 3162 events/task...
 ==============================================================================================
 
-G4WT6 > EffectiveCountallnoconv:2111191
-G4WT6 > EffectiveCountnoscattering:1537469
-G4WT6 > countEgammaconvrepeat=1538039
-G4WT6 > countEall=1.00668e+06
-G4WT6 > countEnoco=768989
-G4WT11 > 
-G4WT3 > 
-G4WT3 > --------------------End of Local Run------------------------
-G4WT3 >  The run consists of 834768 gamma of 500 keV
-G4WT3 >  Cumulated dose per run, in scoring volume : 470.924 nanoGy  rms = 34.9657 nanoGy 
-G4WT3 > ------------------------------------------------------------
-G4WT8 > 
-G4WT8 > --------------------End of Local Run------------------------
-G4WT8 >  The run consists of 834768 gamma of 500 keV
-G4WT8 >  Cumulated dose per run, in scoring volume : 477.89 nanoGy  rms = 37.7268 nanoGy 
-G4WT8 > ------------------------------------------------------------
-G4WT8 > 
-G4WT0 > 
-G4WT9 > 
-G4WT9 > --------------------End of Local Run------------------------
-G4WT9 >  The run consists of 837930 gamma of 500 keV
-G4WT9 >  Cumulated dose per run, in scoring volume : 471.704 nanoGy  rms = 35.9666 nanoGy 
-G4WT9 > ------------------------------------------------------------
-G4WT6 > 
-G4WT6 > --------------------End of Local Run------------------------
-G4WT6 >  The run consists of 839686 gamma of 500 keV
-G4WT6 >  Cumulated dose per run, in scoring volume : 525.168 nanoGy  rms = 35.2605 nanoGy 
-G4WT6 > ------------------------------------------------------------
-G4WT6 > 
-G4WT1 > 
-G4WT1 > --------------------End of Local Run------------------------
-G4WT1 >  The run consists of 831606 gamma of 500 keV
-G4WT1 >  Cumulated dose per run, in scoring volume : 405.059 nanoGy  rms = 26.1167 nanoGy 
-G4WT1 > ------------------------------------------------------------
-G4WT1 > 
-G4WT10 > 
-G4WT4 > 
-G4WT4 > --------------------End of Local Run------------------------
-G4WT4 >  The run consists of 831606 gamma of 500 keV
-G4WT4 >  Cumulated dose per run, in scoring volume : 458.728 nanoGy  rms = 31.3671 nanoGy 
-G4WT4 > ------------------------------------------------------------
-G4WT4 > 
-G4WT7 > 
-G4WT7 > --------------------End of Local Run------------------------
-G4WT7 >  The run consists of 831606 gamma of 500 keV
-G4WT7 >  Cumulated dose per run, in scoring volume : 445.797 nanoGy  rms = 34.6083 nanoGy 
-G4WT7 > ------------------------------------------------------------
-G4WT7 > 
-G4WT0 > --------------------End of Local Run------------------------
-G4WT9 > 
-G4WT5 > 
-G4WT5 > --------------------End of Local Run------------------------
-G4WT5 >  The run consists of 828444 gamma of 500 keV
-G4WT5 >  Cumulated dose per run, in scoring volume : 462.623 nanoGy  rms = 31.5174 nanoGy 
-G4WT5 > ------------------------------------------------------------
-G4WT5 > 
-G4WT10 > --------------------End of Local Run------------------------
-G4WT10 >  The run consists of 831606 gamma of 500 keV
-G4WT10 >  Cumulated dose per run, in scoring volume : 431.955 nanoGy  rms = 32.8818 nanoGy 
-G4WT10 > ------------------------------------------------------------
-G4WT10 > 
-G4WT3 > 
-G4WT2 > 
-G4WT2 > --------------------End of Local Run------------------------
-G4WT2 >  The run consists of 834768 gamma of 500 keV
-G4WT0 >  The run consists of 828444 gamma of 500 keV
-G4WT0 >  Cumulated dose per run, in scoring volume : 471.455 nanoGy  rms = 34.2432 nanoGy 
-G4WT0 > ------------------------------------------------------------
-G4WT0 > 
-G4WT11 > --------------------End of Local Run------------------------
-G4WT11 >  The run consists of 834768 gamma of 500 keV
-G4WT11 >  Cumulated dose per run, in scoring volume : 437.107 nanoGy  rms = 35.4769 nanoGy 
-G4WT11 > ------------------------------------------------------------
-G4WT11 > 
-G4WT2 >  Cumulated dose per run, in scoring volume : 442.145 nanoGy  rms = 30.961 nanoGy 
-G4WT2 > ------------------------------------------------------------
-G4WT2 > 
-
---------------------End of Global Run-----------------------
- The run consists of 10000000 
- Cumulated dose per run, in scoring volume : 5.50055 microGy rms = 116.236 nanoGy 
-------------------------------------------------------------
-
-0 events have been kept for refreshing and/or reviewing.
-  "/vis/reviewKeptEvents" to review them one by one.
-  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
-Graphics systems deleted.
-Visualization Manager deleting...
-Deleting G4ThreadLocalSingletons for type G4GeometryTolerance ...
-Deleting G4ThreadLocalSingletons for type G4ProcessTable ...
-Deleting G4ThreadLocalSingletons for type G4PhysicsListHelper ...
-Deleting G4ThreadLocalSingletons for type G4AccumulableManager ...
-Deleting G4ThreadLocalSingletons for type G4LossTableManager ...
-Deleting G4ThreadLocalSingletons for type G4CrossSectionDataSetRegistry ...
-Deleting G4ThreadLocalSingletons for type G4HadronicInteractionRegistry ...
-Deleting G4ThreadLocalSingletons for type G4CascadeParameters ...
-ThreadPool destroyed
